@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese Brazilian (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "Base Comum"
+    IDS_LEX_WEB_SRC         "Web (Código Fonte)"
+    IDS_LEX_XML_DOC         "XML (Documento)"
+    IDS_LEX_CSS_STYLE       "CSS Style Sheets"
+    IDS_LEX_PRISM_CSV       "CSV Prism"
+    IDS_LEX_CPP_SRC         "C/C++ (Código Fonte)"
+    IDS_LEX_CSHARP_SRC      "C# (Código Fonte)"
+    IDS_LEX_RESOURCE_SCR    "Resource Script"
+    IDS_LEX_MAKEFILES       "Makefiles"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript"
+    IDS_LEX_VIS_BAS         "Visual Basic"
+    IDS_LEX_J_SCR           "JavaScript"
+    IDS_LEX_JAVA_SRC        "Java (Código Fonte)"
+    IDS_LEX_PASCAL_SRC      "Pascal (Código Fonte)"
+    IDS_LEX_ASM_SCR         "Assembly (Script)"
+    IDS_LEX_PERL_SCR        "Perl (Script)"
+    IDS_LEX_CONF            "Arquivos de Configuração"
+    IDS_LEX_BATCH           "Arquivos .bat (processamento em lote)"
+    IDS_LEX_DIFF            "Arquivos Diff"
+    IDS_LEX_SQL             "Query SQL"
+    IDS_LEX_PYTHON          "Python (Script)"
+    IDS_LEX_APC_CFG         "Apache (Arquivos de Configuração)"
+    IDS_LEX_PWRSHELL        "PowerShell (Script)"
+    IDS_LEX_D_SRC           "D (Código Fonte)"
+    IDS_LEX_GO_SRC          "Go (Código Fonte)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awk (Script)"
+    IDS_LEX_ANSI_ART        "ANSI Art"
+    IDS_LEX_SHELL_SCR       "Shell (Script)"
+    IDS_LEX_REG_FILES       "Arquivos de Registro"
+    IDS_LEX_VHDL            "VHDL"
+    IDS_LEX_JSON            "JSON"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS"
+    IDS_LEX_INNO            "Inno (Script de Configuração)"
+    IDS_LEX_RUBY            "Ruby (Script)"
+    IDS_LEX_LUA             "Lua (Script)"
+    IDS_LEX_TCL             "Tcl (Script)"
+    IDS_LEX_AUTOIT3         "AutoIt3 (Script)"
+    IDS_LEX_LATEX           "Arquivos LaTeX"
+    IDS_LEX_AHK             "AutoHotkey (Script)"
+    IDS_LEX_CMAKE           "Cmake (Script)"
+    IDS_LEX_AVI_SYNTH       "AviSynth (Script)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML"
+    IDS_LEX_COFFEE_SCR      "Coffeescript"
+    IDS_LEX_MATLAB          "MATLAB"
+    IDS_LEX_NIM_SRC         "Nim (Código Fonte)"
+    IDS_LEX_R_STAT          "R-S-SPlus Código Estatístico)"
+    IDS_LEX_RUST_SRC        "Rust (Código Fonte)"
+    IDS_LEX_AHKL            "AutoHotkey_L (Script)"
+    IDS_LEX_TEXT_FILES      "Arquivos Texto"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Código Fonte Dart"
+    IDS_LEX_KOTLIN_SRC      "Código Fonte Kotlin"
+    IDS_LEX_JULIA_SCR       "Script Julia"
+    IDS_LEX_KIX_SCR         "Script KiXtart"
+    IDS_LEX_FORTRAN         "Código Fonte Fortran"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "HDL da Verilog"
+    IDS_LEX_SYSVERILOG      "HDVL da SystemVerilog"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "Estilo Padrão"
+    IDS_LEX_STD_MARGIN      "Números de Margens e Números de Linhas"
+    IDS_LEX_STD_BRACE       "Par de Colchetes (Indicador)"
+    IDS_LEX_STD_BRACE_FAIL  "Par de Colchetes Erro (Indicador)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "Controle de Caracteres (Fonte)"
+    IDS_LEX_STD_INDENT      "Guia de Indentação (Cor)"
+    IDS_LEX_STD_SEL         "Texto Selecionado (Cores)"
+    IDS_LEX_STD_WSPC        "Espaço em branco (Cores, Tamanho 1-12)"
+    IDS_LEX_STD_LN_BACKGR   "Marcar Linha Atual"
+    IDS_LEX_STD_CARET       "Indicador de Inserção (^) (Cor, Tamanho 1-3)"
+    IDS_LEX_STD_LONG_LN     "Marcador de Linha Longo (Cores)"
+    IDS_LEX_STD_X_SPC       "Espaçamento de Linhas Extra (Tamanho)"
+    IDS_LEX_2ND_STYLE       "Segundo estilo padrão"
+    IDS_LEX_2ND_MARGIN      "Segundo Número de Margens e Linhas"
+    IDS_LEX_2ND_BRACE       "Segundo Par de Colchetes (Indicador)"
+    IDS_LEX_2ND_BRACE_FAIL  "Segundo Par de Colchetes Erro (Indicador)"
+    IDS_LEX_2ND_CTRL_CHAR   "Segundo Controle de Caracteres (Fonte)"
+    IDS_LEX_2ND_INDENT      "Segundo Guia de Indentação (Cor)"
+    IDS_LEX_2ND_SEL         "Segundo Texto Selecionado (Cores)"
+    IDS_LEX_2ND_WSPC        "Segundo Espaço em branco (Cores, Tamanho 1-12)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "Segundo Marcar Linha Atual"
+    IDS_LEX_2ND_CARET       "Segundo Indicador de Inserção (^) (Cor, Tamanho 1-3)"
+    IDS_LEX_2ND_LONG_LN     "Segundo Marcador de Linha Extra Longo (Cores)"
+    IDS_LEX_2ND_X_SPC       "Segundo Espaçamento de Linha Extra (Tamanho)"
+    IDS_LEX_STD_BKMRK       "Marca-Página e Folding (Cores, Tamanho)"
+    IDS_LEX_2ND_BKMRK       "Segundo Marca-Página e Dobra (Cores, Tamanho)"
+    IDS_LEX_STR_Default     "Padrão"
+    IDS_LEX_STR_Comment     "Comentário"
+    IDS_LEX_STR_Keyword     "Palavra-Chave"
+    IDS_LEX_STR_Identifier  "Identificador"
+    IDS_LEX_STR_Number      "Número"
+    IDS_LEX_STR_String      "String"
+    IDS_LEX_STR_Operator    "Operador"
+    IDS_LEX_STR_PreProc     "Preprocessador"
+    IDS_LEX_STR_VerbStrg    "String Exata"
+    IDS_LEX_STR_RegEx       "Regex"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML Tag"
+    IDS_LEX_STR_63137       "HTML Tag Desconhecida"
+    IDS_LEX_STR_63138       "HTML Atributo"
+    IDS_LEX_STR_63139       "HTML Atributo Desconhecido"
+    IDS_LEX_STR_63140       "HTML Valor"
+    IDS_LEX_STR_63141       "HTML String"
+    IDS_LEX_STR_63142       "HTML Outra Tag Dentro"
+    IDS_LEX_STR_63143       "HTML Comentário"
+    IDS_LEX_STR_63144       "HTML Entidade"
+    IDS_LEX_STR_63145       "XML Identificador"
+    IDS_LEX_STR_63146       "ASP Tag de Inicio"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP Tag de Inicio"
+    IDS_LEX_STR_63149       "PHP Padrão"
+    IDS_LEX_STR_63150       "PHP String"
+    IDS_LEX_STR_63151       "PHP Simple String"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP Palavra-Chave"
+    IDS_LEX_STR_63153       "PHP Número"
+    IDS_LEX_STR_63154       "PHP Variável"
+    IDS_LEX_STR_63155       "PHP String Variável"
+    IDS_LEX_STR_63156       "PHP Variável Complexa"
+    IDS_LEX_STR_63157       "PHP Comentário"
+    IDS_LEX_STR_63158       "PHP Operador"
+    IDS_LEX_STR_63159       "JS Padrão"
+    IDS_LEX_STR_63160       "JS Comentário"
+    IDS_LEX_STR_63161       "JS Número"
+    IDS_LEX_STR_63162       "JS Identificador"
+    IDS_LEX_STR_63163       "JS Palavra-Chave"
+    IDS_LEX_STR_63164       "JS String"
+    IDS_LEX_STR_63165       "JS Símbolos"
+    IDS_LEX_STR_63166       "JS Regex"
+    IDS_LEX_STR_63167       "ASP JS Padrão"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS Comentário"
+    IDS_LEX_STR_63169       "ASP JS Número"
+    IDS_LEX_STR_63170       "ASP JS Identificador"
+    IDS_LEX_STR_63171       "ASP JS Palavra-Chave"
+    IDS_LEX_STR_63172       "ASP JS String"
+    IDS_LEX_STR_63173       "ASP JS Symbols"
+    IDS_LEX_STR_63174       "ASP JS Regex"
+    IDS_LEX_STR_63175       "VBS Padrão"
+    IDS_LEX_STR_63176       "VBS Comentário"
+    IDS_LEX_STR_63177       "VBS Número"
+    IDS_LEX_STR_63178       "VBS Palavra-Chave"
+    IDS_LEX_STR_63179       "VBS String"
+    IDS_LEX_STR_63180       "VBS Identificador"
+    IDS_LEX_STR_63181       "ASP VBS Padrão"
+    IDS_LEX_STR_63182       "ASP VBS Comentário"
+    IDS_LEX_STR_63183       "ASP VBS Número"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS Palavra-Chave"
+    IDS_LEX_STR_63185       "ASP VBS String"
+    IDS_LEX_STR_63186       "ASP VBS Identificador"
+    IDS_LEX_STR_63187       "XML Tag"
+    IDS_LEX_STR_63188       "XML Atributos"
+    IDS_LEX_STR_63189       "XML Valores"
+    IDS_LEX_STR_63190       "XML String"
+    IDS_LEX_STR_63191       "XML Outra Tag Dentro"
+    IDS_LEX_STR_63192       "XML Comentário"
+    IDS_LEX_STR_63193       "XML Entidade"
+    IDS_LEX_STR_63194       "Tag-Classe"
+    IDS_LEX_STR_63195       "Tag-ID"
+    IDS_LEX_STR_63196       "Tag-Atributos"
+    IDS_LEX_STR_63197       "Pseudo-Classe"
+    IDS_LEX_STR_63198       "Pseudo-Classe Desconhecida"
+    IDS_LEX_STR_63199       "CSS Propriedade"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "Propriedade Desconhecida"
+    IDS_LEX_STR_Value       "Valor"
+    IDS_LEX_STR_63202       "Importante"
+    IDS_LEX_STR_63203       "Diretiva"
+    IDS_LEX_STR_Target      "Alvo"
+    IDS_LEX_STR_63205       "Asm Inline"
+    IDS_LEX_STR_63206       "CPU Instrução"
+    IDS_LEX_STR_63207       "FPU Instrução"
+    IDS_LEX_STR_Register    "Registro"
+    IDS_LEX_STR_63209       "Directiva Operand"
+    IDS_LEX_STR_63210       "Instrução Estendida"
+    IDS_LEX_STR_63211       "String com Aspas Duplas"
+    IDS_LEX_STR_63212       "String com Aspas Simples"
+    IDS_LEX_STR_63213       "POD (Comum)"
+    IDS_LEX_STR_63214       "POD (Exata)"
+    IDS_LEX_STR_63215       "Scalar $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "Matriz @var"
+    IDS_LEX_STR_63217       "Hash %var"
+    IDS_LEX_STR_63218       "Tabela de Símbolos *var"
+    IDS_LEX_STR_63219       "Regex /re/ ou m{re}"
+    IDS_LEX_STR_63220       "Substituição s/re/ore/"
+    IDS_LEX_STR_63221       "Plica Reversa"
+    IDS_LEX_STR_63222       "Seleção de Dados"
+    IDS_LEX_STR_63223       "Here-Doc (Delimitador)"
+    IDS_LEX_STR_63224       "Here-Doc (Aspas Simples, q)"
+    IDS_LEX_STR_63225       "Here-Doc (Aspas Duplas, qq)"
+    IDS_LEX_STR_63226       "Here-Doc (Plica Reversa, qx)"
+    IDS_LEX_STR_63227       "String de Aspas Simples (Generica, q)"
+    IDS_LEX_STR_63228       "String de Aspas Duplas (qq)"
+    IDS_LEX_STR_63229       "Plica Reversa (qx)"
+    IDS_LEX_STR_63230       "Regex (qr)"
+    IDS_LEX_STR_63231       "Matriz (qw)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "Seleção"
+    IDS_LEX_STR_Assign      "Tarefa"
+    IDS_LEX_STR_63234       "Valor Padrão"
+    IDS_LEX_STR_Label       "Rótulo"
+    IDS_LEX_STR_Cmd         "Comando"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "Origem e Destino"
+    IDS_LEX_STR_63239       "Definição de Posição"
+    IDS_LEX_STR_63240       "Adicionar Linha"
+    IDS_LEX_STR_63241       "Remover Linha"
+    IDS_LEX_STR_63242       "Mudar Linha"
+    IDS_LEX_STR_63243       "Identificador Aspeado"
+    IDS_LEX_STR_63244       "String com triplas aspas duplas"
+    IDS_LEX_STR_63245       "String com triplas aspas simples"
+    IDS_LEX_STR_ClassName   "Nome de Classe"
+    IDS_LEX_STR_FctName     "Nome de Função"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "Endereço IP"
+    IDS_LEX_STR_Var         "Variável"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "Alias"
+    IDS_LEX_STR_63252       "Erro de Análise"
+    IDS_LEX_STR_Prototyp    "Protótipo"
+    IDS_LEX_STR_63254       "Formatar Identifier"
+    IDS_LEX_STR_63255       "Formatar Body"
+    IDS_LEX_STR_63256       "HTML Elemento de Texto"
+    IDS_LEX_STR_63257       "XML Elemento de Texto"
+    IDS_LEX_STR_63258       "Typedefs/Classes"
+    IDS_LEX_STR_63259       "Commentar Doc"
+    IDS_LEX_STR_Keyword2nd  "Segunda Palavra-Chave"
+    IDS_LEX_STR_Error       "Erro"
+    IDS_LEX_STR_63262       "Marcar Ocorrências (Indicador)"
+    IDS_LEX_STR_63263       "Segundo Marcar Ocorrências (Indicador)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "Hotspots de Hyperlink"
+    IDS_LEX_STR_63265       "Segundo Hotspots de Hyperlink"
+    IDS_LEX_STR_63266       "Segundo Common Base"
+    IDS_LEX_STR_63267       "Variável na String"
+    IDS_LEX_STR_63268       "Lista Ordenada"
+    IDS_LEX_STR_Infix       "Infix"
+    IDS_LEX_STR_InfixEOL    "Infix EOL"
+    IDS_LEX_STR_63271       "Funções do Pacote Básico"
+    IDS_LEX_STR_63272       "Outras Funções do Pacote"
+    IDS_LEX_STR_Function    "Funções"
+    IDS_LEX_STR_Const       "Constantes"
+    IDS_LEX_STR_63275       "Sub-seleções"
+    IDS_LEX_STR_63276       "Grupos de Seção"
+    IDS_LEX_STR_63277       "Definição de Função"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "Definição Se"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "Definição Macro"
+    IDS_LEX_STR_Param       "Parâmetro"
+    IDS_LEX_STR_63282       "Expansão Inline"
+    IDS_LEX_STR_63283       "Pascal Comentário"
+    IDS_LEX_STR_63284       "Pascal Palavra-Chave"
+    IDS_LEX_STR_63285       "Valores Nome"
+    IDS_LEX_STR_63286       "Valores Tipe"
+    IDS_LEX_STR_Hex         "Hex"
+    IDS_LEX_STR_AddKey      "Chave Adicionada"
+    IDS_LEX_STR_DelKey      "Chave Deletada"
+    IDS_LEX_STR_Esc         "Esquivada"
+    IDS_LEX_STR_63291       "GUID no Caminho Chave"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "Símbolo"
+    IDS_LEX_STR_63294       "Módulo Nome"
+    IDS_LEX_STR_63295       "Instância Var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "Classe Var"
+    IDS_LEX_STR_63297       "Seleção de Dados"
+    IDS_LEX_STR_BaseFct     "Funções Básicas"
+    IDS_LEX_STR_63299       "String, Tabela & Funções Matemáticas"
+    IDS_LEX_STR_63300       "Input, Output & Instalações do Sistema"
+    IDS_LEX_STR_LitStrg     "String Literal"
+    IDS_LEX_STR_63302       "Pseudo-Elemento"
+    IDS_LEX_STR_Media       "Midia"
+    IDS_LEX_STR_GlobClass   "Classe Global"
+    IDS_LEX_STR_63305       "Função Definida por Usuário"
+    IDS_LEX_STR_63306       "Caractere Especial"
+    IDS_LEX_STR_63307       "Segmento Exato"
+    IDS_LEX_STR_63308       "Expressão Operadora"
+    IDS_LEX_STR_63309       "Deferência a Variável"
+    IDS_LEX_STR_63310       "Controle de Fluxo"
+    IDS_LEX_STR_63311       "Teclas e Botões"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "Variáveis Embutidas"
+    IDS_LEX_STR_63313       "Palavras-Chave de Variáveis"
+    IDS_LEX_STR_Filter      "Filtro"
+    IDS_LEX_STR_Plugin      "Plugin"
+    IDS_LEX_STR_63316       "Propriedade Clip"
+    IDS_LEX_STR_63317       "Início de Linha"
+    IDS_LEX_STR_Strong      "Forte"
+    IDS_LEX_STR_Emph        "Ênfase"
+    IDS_LEX_STR_63320       "Título 1"
+    IDS_LEX_STR_63321       "Título 2"
+    IDS_LEX_STR_63322       "Título 3"
+    IDS_LEX_STR_63323       "Título 4"
+    IDS_LEX_STR_63324       "Título 5"
+    IDS_LEX_STR_63325       "Título 6"
+    IDS_LEX_STR_63326       "Pré-Caractere"
+    IDS_LEX_STR_63327       "Lista não ordenada"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "Bloco de Citação"
+    IDS_LEX_STR_63329       "Riscado"
+    IDS_LEX_STR_63330       "Linha Horizontal"
+    IDS_LEX_STR_Link        "Link"
+    IDS_LEX_STR_Code        "Código"
+    IDS_LEX_STR_Ref         "Referência"
+    IDS_LEX_STR_Doc         "Documento"
+    IDS_LEX_STR_Txt         "Texto"
+    IDS_LEX_STR_StdOp       "Operador Padrão"
+    IDS_LEX_STR_Attrib      "Atributo"
+    IDS_LEX_STR_StdFct      "Função Padrão"
+    IDS_LEX_STR_StdPck      "Pacote Padrão"
+    IDS_LEX_STR_StdTyp      "Tipo Padrão"
+    IDS_LEX_STR_Word        "Palavra"
+    IDS_LEX_STR_Verb        "Exato"
+    IDS_LEX_STR_63343       "Tipo Embutido"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "Byte String"
+    IDS_LEX_STR_63345       "Outra Palavra-Chave"
+    IDS_LEX_STR_63346       "Vida Útil"
+    IDS_LEX_STR_Obj         "Objeto"
+    IDS_LEX_STR_Key         "Tecla"
+    IDS_LEX_STR_HotKey      "Tecla Atalho"
+    IDS_LEX_STR_HotStrg     "HotString"
+    IDS_LEX_STR_HotStrgOp   "HotStringOption"
+    IDS_LEX_STR_63352       "Cor Inline-IME"
+    IDS_LEX_STR_63353       "Segunda Cor Inline-IME"
+    IDS_LEX_STR_63354       "Indicador de Multi Edição"
+    IDS_LEX_STR_63355       "Segundo Indicador de Multi Edição"
+    IDS_LEX_STR_DateTime    "Data-Hora"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "Definição For Each"
+    IDS_LEX_STR_63358       "Definição While"
+    IDS_LEX_STR_Math        "Math"
+    IDS_LEX_STR_Scalar      "Scalar"
+    IDS_LEX_STR_Subst       "Substituição"
+    IDS_LEX_STR_Modf        "Modificador"
+    IDS_LEX_STR_Tag         "Tag"
+    IDS_LEX_STR_63364       "Propriedade Nome"
+    IDS_LEX_STR_63365       "Palavra-Chave LD"
+    IDS_LEX_STR_63366       "Sequência ESC"
+    IDS_LEX_STR_63367       "Unicode-Point Hover"
+    IDS_LEX_STR_63368       "2nd Unicode-Point Hover"
+    IDS_LEX_STR_Interface   "Interface"
+    IDS_LEX_STR_Annot       "Anotação"
+    IDS_LEX_STR_63371       "Comentário Doc Word"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "Decorador"
+    IDS_LEX_STR_63373       "Marcador de Tarefa"
+    IDS_LEX_STR_63374       "Erro de Comentário de Documento"
+    IDS_LEX_STR_TypeOp      "Operador de Tipo"
+    IDS_LEX_STR_63376       "Continuação"
+    IDS_LEX_STR_Special     "Especial"
+    IDS_LEX_STR_63378       "Operador de síntaxe"
+    IDS_LEX_STR_63379       "String não fechada"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "IRI compacto"
+    IDS_LEX_STR_SendKey     "Chave de Envio"
+    IDS_LEX_STR_63383       "Metadados"
+    IDS_LEX_STR_Enum        "Enumeração"
+    IDS_LEX_STR_63385       "String TriQ"
+    IDS_LEX_STR_63386       "Identificador de Símbolo"
+    IDS_LEX_STR_63387       "Operador de Símbolos"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "String EOL"
+    IDS_LEX_STR_Backticks   "Acentos Graves"
+    IDS_LEX_STR_GUIDStrg    "Cadeia GUID"
+    IDS_LEX_STR_Global      "Global"
+    IDS_LEX_STR_Input       "Entrada"
+    IDS_LEX_STR_Output      "Saída"
+    IDS_LEX_STR_InOut       "Entrada/Saída"
+    IDS_LEX_STR_PortConn    "Conexão de Porta"
+    IDS_LEX_STR_SysTasks    "Tarefas do Sistema"
+    IDS_LEX_STR_AfterLabel  "Depois do Rótulo"
+    IDS_LEX_STR_Table       "Tabela"
+    IDS_LEX_STR_StarCmd     "Comando de Estrela"
+    IDS_LEX_STR_SlashCmd    "Comando de Barra"
+    IDS_LEX_STR_Processor   "Processador"
+    IDS_LEX_STR_Argument    "Argumento"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "Marcador do Histórico de Alterações Modificado"
+    IDS_LEX_STD_CH_SAVED        "Marcador do Histórico de Alterações Salvo"
+    IDS_LEX_STD_CH_REV_TO_MOD   "Marcador do Histórico de Alterações Revertido para Modificado"
+    IDS_LEX_STD_CH_REV_TO_ORG   "Marcador do Histórico de Alterações Revertido para Origem"
+    IDS_LEX_2ND_CH_MODIFIED     "2º Marcador do Histórico de Alterações Modificado"
+    IDS_LEX_2ND_CH_SAVED        "2º Marcador do Histórico de Alterações Salvo"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "2º Marcador do Histórico de Alterações Revertido para Modificado"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "2º Marcador do Histórico de Alterações Revertido para Origem"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "Coluna 0"
+    IDS_LEX_CSV_COL_1       "Coluna 1"
+    IDS_LEX_CSV_COL_2       "Coluna 2"
+    IDS_LEX_CSV_COL_3       "Coluna 3"
+    IDS_LEX_CSV_COL_4       "Coluna 4"
+    IDS_LEX_CSV_COL_5       "Coluna 5"
+    IDS_LEX_CSV_COL_6       "Coluna 6"
+    IDS_LEX_CSV_COL_7       "Coluna 7"
+    IDS_LEX_CSV_COL_8       "Coluna 8"
+    IDS_LEX_CSV_COL_9       "Coluna 9"
+END
+
+#endif    // Portuguese Brazilian (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

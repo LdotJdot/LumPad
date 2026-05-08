@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese Simplified (China) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE_SIMPLIFIED, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "基本方案"
+    IDS_LEX_WEB_SRC         "Web 源代码"
+    IDS_LEX_XML_DOC         "XML 文件"
+    IDS_LEX_CSS_STYLE       "CSS 样式表"
+    IDS_LEX_PRISM_CSV       "彩色 CSV 表格"
+    IDS_LEX_CPP_SRC         "C/C++ 源代码"
+    IDS_LEX_CSHARP_SRC      "C# 源代码"
+    IDS_LEX_RESOURCE_SCR    "资源脚本"
+    IDS_LEX_MAKEFILES       "Makefile"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript 脚本"
+    IDS_LEX_VIS_BAS         "Visual Basic 源代码"
+    IDS_LEX_J_SCR           "JavaScript 脚本"
+    IDS_LEX_JAVA_SRC        "Java 源代码"
+    IDS_LEX_PASCAL_SRC      "Pascal 源代码"
+    IDS_LEX_ASM_SCR         "汇编语言源代码"
+    IDS_LEX_PERL_SCR        "Perl 脚本"
+    IDS_LEX_CONF            "配置文件"
+    IDS_LEX_BATCH           "批处理文件"
+    IDS_LEX_DIFF            "Diff 文件"
+    IDS_LEX_SQL             "SQL 脚本"
+    IDS_LEX_PYTHON          "Python 脚本"
+    IDS_LEX_APC_CFG         "Apache 配置文件"
+    IDS_LEX_PWRSHELL        "PowerShell 脚本"
+    IDS_LEX_D_SRC           "D 源代码"
+    IDS_LEX_GO_SRC          "Go 源代码"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awk 脚本"
+    IDS_LEX_ANSI_ART        "ANSI 字符画"
+    IDS_LEX_SHELL_SCR       "Shell 脚本"
+    IDS_LEX_REG_FILES       "注册表项"
+    IDS_LEX_VHDL            "VHDL 源代码"
+    IDS_LEX_JSON            "JSON 文件"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS 脚本"
+    IDS_LEX_INNO            "Inno 脚本"
+    IDS_LEX_RUBY            "Ruby 脚本"
+    IDS_LEX_LUA             "Lua 脚本"
+    IDS_LEX_TCL             "Tcl 脚本"
+    IDS_LEX_AUTOIT3         "AutoIt3 脚本"
+    IDS_LEX_LATEX           "LaTeX 源代码"
+    IDS_LEX_AHK             "AutoHotkey 脚本"
+    IDS_LEX_CMAKE           "CMake 脚本"
+    IDS_LEX_AVI_SYNTH       "AviSynth 脚本"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML 文件"
+    IDS_LEX_COFFEE_SCR      "Coffeescript 脚本"
+    IDS_LEX_MATLAB          "MATLAB 源代码"
+    IDS_LEX_NIM_SRC         "Nim 源代码"
+    IDS_LEX_R_STAT          "R-S-SPlus 统计代码"
+    IDS_LEX_RUST_SRC        "Rust 源代码"
+    IDS_LEX_AHKL            "AutoHotkey_L 脚本"
+    IDS_LEX_TEXT_FILES      "文本文件"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Dart 源代码"
+    IDS_LEX_KOTLIN_SRC      "Kotlin 源代码"
+    IDS_LEX_JULIA_SCR       "Julia 脚本"
+    IDS_LEX_KIX_SCR         "KiXtart 脚本"
+    IDS_LEX_FORTRAN         "Fortran 源代码"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "Verilog HDL"
+    IDS_LEX_SYSVERILOG      "SystemVerilog HDVL"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "基本样式"
+    IDS_LEX_STD_MARGIN      "页边距和行号"
+    IDS_LEX_STD_BRACE       "已配对的括号（指示符）"
+    IDS_LEX_STD_BRACE_FAIL  "未配对的括号（指示符）"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "控制字符（字体）"
+    IDS_LEX_STD_INDENT      "缩进指引（颜色）"
+    IDS_LEX_STD_SEL         "已选定的文本（颜色）"
+    IDS_LEX_STD_WSPC        "空白符（颜色，大小必须为 1-12）"
+    IDS_LEX_STD_LN_BACKGR   "高亮的当前行"
+    IDS_LEX_STD_CARET       "插入光标（颜色，大小必须为 1-3）"
+    IDS_LEX_STD_LONG_LN     "行长度标记（颜色）"
+    IDS_LEX_STD_X_SPC       "额外的行间距（大小）"
+    IDS_LEX_2ND_STYLE       "备选基本样式"
+    IDS_LEX_2ND_MARGIN      "备选：页边距和行号"
+    IDS_LEX_2ND_BRACE       "备选：已配对的括号（指示符）"
+    IDS_LEX_2ND_BRACE_FAIL  "备选：未配对的括号（指示符）"
+    IDS_LEX_2ND_CTRL_CHAR   "备选：控制字符（字体）"
+    IDS_LEX_2ND_INDENT      "备选：缩进指引（颜色）"
+    IDS_LEX_2ND_SEL         "备选：已选定的文本（颜色）"
+    IDS_LEX_2ND_WSPC        "备选：空白符（颜色，大小必须为 1-12）"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "备选：高亮的当前行"
+    IDS_LEX_2ND_CARET       "备选：插入光标（颜色，大小必须为 1-3）"
+    IDS_LEX_2ND_LONG_LN     "备选：行长度标记（颜色）"
+    IDS_LEX_2ND_X_SPC       "备选：额外的行间距（大小）"
+    IDS_LEX_STD_BKMRK       "书签和折叠（颜色, 大小）"
+    IDS_LEX_2ND_BKMRK       "备选：书签和折叠（颜色, 大小）"
+    IDS_LEX_STR_Default     "默认"
+    IDS_LEX_STR_Comment     "注释"
+    IDS_LEX_STR_Keyword     "关键字"
+    IDS_LEX_STR_Identifier  "标识符"
+    IDS_LEX_STR_Number      "数值"
+    IDS_LEX_STR_String      "字符串"
+    IDS_LEX_STR_Operator    "运算符"
+    IDS_LEX_STR_PreProc     "预处理器"
+    IDS_LEX_STR_VerbStrg    "原样字符串"
+    IDS_LEX_STR_RegEx       "正则表达式"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML 标记"
+    IDS_LEX_STR_63137       "HTML 未知标记"
+    IDS_LEX_STR_63138       "HTML 属性"
+    IDS_LEX_STR_63139       "HTML 未知属性"
+    IDS_LEX_STR_63140       "HTML 值"
+    IDS_LEX_STR_63141       "HTML 字符串"
+    IDS_LEX_STR_63142       "HTML 其它内部标记"
+    IDS_LEX_STR_63143       "HTML 注释"
+    IDS_LEX_STR_63144       "HTML 实体"
+    IDS_LEX_STR_63145       "XML 标识符"
+    IDS_LEX_STR_63146       "ASP 起始标记"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP 起始标记"
+    IDS_LEX_STR_63149       "PHP 默认"
+    IDS_LEX_STR_63150       "PHP 字符串"
+    IDS_LEX_STR_63151       "PHP 简单字符串"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP 关键字"
+    IDS_LEX_STR_63153       "PHP 数值"
+    IDS_LEX_STR_63154       "PHP 变量"
+    IDS_LEX_STR_63155       "PHP 字符串变量"
+    IDS_LEX_STR_63156       "PHP Complex 变量"
+    IDS_LEX_STR_63157       "PHP 注释"
+    IDS_LEX_STR_63158       "PHP 运算符"
+    IDS_LEX_STR_63159       "JS 默认"
+    IDS_LEX_STR_63160       "JS 注释"
+    IDS_LEX_STR_63161       "JS 数值"
+    IDS_LEX_STR_63162       "JS 标识符"
+    IDS_LEX_STR_63163       "JS 关键字"
+    IDS_LEX_STR_63164       "JS 字符串"
+    IDS_LEX_STR_63165       "JS 符号"
+    IDS_LEX_STR_63166       "JS 正则表达式"
+    IDS_LEX_STR_63167       "ASP JS 默认"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS 注释"
+    IDS_LEX_STR_63169       "ASP JS 数值"
+    IDS_LEX_STR_63170       "ASP JS 标识符"
+    IDS_LEX_STR_63171       "ASP JS 关键字"
+    IDS_LEX_STR_63172       "ASP JS 字符串"
+    IDS_LEX_STR_63173       "ASP JS 符号"
+    IDS_LEX_STR_63174       "ASP JS 正则表达式"
+    IDS_LEX_STR_63175       "VBS 默认"
+    IDS_LEX_STR_63176       "VBS 注释"
+    IDS_LEX_STR_63177       "VBS 数值"
+    IDS_LEX_STR_63178       "VBS 关键字"
+    IDS_LEX_STR_63179       "VBS 字符串"
+    IDS_LEX_STR_63180       "VBS 标识符"
+    IDS_LEX_STR_63181       "ASP VBS 默认"
+    IDS_LEX_STR_63182       "ASP VBS 注释"
+    IDS_LEX_STR_63183       "ASP VBS 数值"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS 关键字"
+    IDS_LEX_STR_63185       "ASP VBS 字符串"
+    IDS_LEX_STR_63186       "ASP VBS 标识符"
+    IDS_LEX_STR_63187       "XML 标记"
+    IDS_LEX_STR_63188       "XML 属性"
+    IDS_LEX_STR_63189       "XML 值"
+    IDS_LEX_STR_63190       "XML 字符串"
+    IDS_LEX_STR_63191       "XML 其它内部标记"
+    IDS_LEX_STR_63192       "XML 注释"
+    IDS_LEX_STR_63193       "XML 实体"
+    IDS_LEX_STR_63194       "标记类别"
+    IDS_LEX_STR_63195       "标记 ID"
+    IDS_LEX_STR_63196       "标记属性"
+    IDS_LEX_STR_63197       "伪类"
+    IDS_LEX_STR_63198       "未知伪类"
+    IDS_LEX_STR_63199       "CSS 属性"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "未知属性"
+    IDS_LEX_STR_Value       "值"
+    IDS_LEX_STR_63202       "重要"
+    IDS_LEX_STR_63203       "指示"
+    IDS_LEX_STR_Target      "目标"
+    IDS_LEX_STR_63205       "内联汇编"
+    IDS_LEX_STR_63206       "CPU 指令"
+    IDS_LEX_STR_63207       "FPU 指令"
+    IDS_LEX_STR_Register    "寄存器"
+    IDS_LEX_STR_63209       "指令操作数"
+    IDS_LEX_STR_63210       "扩展指令"
+    IDS_LEX_STR_63211       "双引号字符串"
+    IDS_LEX_STR_63212       "单引号字符串"
+    IDS_LEX_STR_63213       "POD（普通）"
+    IDS_LEX_STR_63214       "POD（原样）"
+    IDS_LEX_STR_63215       "标量 $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "数组 @var"
+    IDS_LEX_STR_63217       "散列表 %var"
+    IDS_LEX_STR_63218       "Typeglob *var"
+    IDS_LEX_STR_63219       "正则表达式 /re/ 或 m{re}"
+    IDS_LEX_STR_63220       "替换规则 s/re/ore/"
+    IDS_LEX_STR_63221       "反引号"
+    IDS_LEX_STR_63222       "数据段"
+    IDS_LEX_STR_63223       "Here-Doc（分隔符）"
+    IDS_LEX_STR_63224       "Here-Doc（单引号，q）"
+    IDS_LEX_STR_63225       "Here-Doc（双引号，qq）"
+    IDS_LEX_STR_63226       "Here-Doc（反引号，qx）"
+    IDS_LEX_STR_63227       "单引号字符串（通用，q）"
+    IDS_LEX_STR_63228       "双引号字符串（qq）"
+    IDS_LEX_STR_63229       "反引号字符串（qx）"
+    IDS_LEX_STR_63230       "正则表达式（qr）"
+    IDS_LEX_STR_63231       "数组（qw）"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "小节"
+    IDS_LEX_STR_Assign      "赋值"
+    IDS_LEX_STR_63234       "默认值"
+    IDS_LEX_STR_Label       "标签"
+    IDS_LEX_STR_Cmd         "命令"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "源和目标"
+    IDS_LEX_STR_63239       "位置设置"
+    IDS_LEX_STR_63240       "增加行"
+    IDS_LEX_STR_63241       "删除行"
+    IDS_LEX_STR_63242       "变更行"
+    IDS_LEX_STR_63243       "引用的标识符"
+    IDS_LEX_STR_63244       "三重双引号字符串"
+    IDS_LEX_STR_63245       "三重单引号字符串"
+    IDS_LEX_STR_ClassName   "类名"
+    IDS_LEX_STR_FctName     "函数名"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "IP 地址"
+    IDS_LEX_STR_Var         "变量"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "别名"
+    IDS_LEX_STR_63252       "解析错误"
+    IDS_LEX_STR_Prototyp    "原型"
+    IDS_LEX_STR_63254       "格式标识符"
+    IDS_LEX_STR_63255       "格式体"
+    IDS_LEX_STR_63256       "HTML 元素文本"
+    IDS_LEX_STR_63257       "XML 元素文本"
+    IDS_LEX_STR_63258       "typedef/class"
+    IDS_LEX_STR_63259       "注释文档"
+    IDS_LEX_STR_Keyword2nd  "次要关键字"
+    IDS_LEX_STR_Error       "错误"
+    IDS_LEX_STR_63262       "高亮的匹配项（指示符）"
+    IDS_LEX_STR_63263       "备选：高亮的匹配项（指示符）"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "检测到的超链接"
+    IDS_LEX_STR_63265       "备选：检测到的超链接"
+    IDS_LEX_STR_63266       "备选基本方案"
+    IDS_LEX_STR_63267       "字符串中的变量"
+    IDS_LEX_STR_63268       "有序列表"
+    IDS_LEX_STR_Infix       "中缀"
+    IDS_LEX_STR_InfixEOL    "中缀换行"
+    IDS_LEX_STR_63271       "基础包函数"
+    IDS_LEX_STR_63272       "其它包函数"
+    IDS_LEX_STR_Function    "函数"
+    IDS_LEX_STR_Const       "常量"
+    IDS_LEX_STR_63275       "子小节"
+    IDS_LEX_STR_63276       "小节组"
+    IDS_LEX_STR_63277       "函数定义"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "If 定义"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "宏定义"
+    IDS_LEX_STR_Param       "参数"
+    IDS_LEX_STR_63282       "内联展开"
+    IDS_LEX_STR_63283       "Pascal 注释"
+    IDS_LEX_STR_63284       "Pascal 关键字"
+    IDS_LEX_STR_63285       "值名"
+    IDS_LEX_STR_63286       "值类型"
+    IDS_LEX_STR_Hex         "十六进制"
+    IDS_LEX_STR_AddKey      "增加键"
+    IDS_LEX_STR_DelKey      "删除键"
+    IDS_LEX_STR_Esc         "已转义的"
+    IDS_LEX_STR_63291       "在路径中的 GUID"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "符号"
+    IDS_LEX_STR_63294       "模块名"
+    IDS_LEX_STR_63295       "实例变量"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "类变量"
+    IDS_LEX_STR_63297       "数据段"
+    IDS_LEX_STR_BaseFct     "基础函数"
+    IDS_LEX_STR_63299       "字符串、表和数学函数"
+    IDS_LEX_STR_63300       "输入/输出和系统设施"
+    IDS_LEX_STR_LitStrg     "字符串字面值"
+    IDS_LEX_STR_63302       "伪元素"
+    IDS_LEX_STR_Media       "媒体"
+    IDS_LEX_STR_GlobClass   "全局类"
+    IDS_LEX_STR_63305       "用户定义的函数"
+    IDS_LEX_STR_63306       "特殊字符"
+    IDS_LEX_STR_63307       "原样片段"
+    IDS_LEX_STR_63308       "表达式运算符"
+    IDS_LEX_STR_63309       "变量解引用"
+    IDS_LEX_STR_63310       "控制流"
+    IDS_LEX_STR_63311       "按键和按钮"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "内置变量"
+    IDS_LEX_STR_63313       "变量关键字"
+    IDS_LEX_STR_Filter      "筛选器"
+    IDS_LEX_STR_Plugin      "插件"
+    IDS_LEX_STR_63316       "剪辑属性"
+    IDS_LEX_STR_63317       "行起始"
+    IDS_LEX_STR_Strong      "加粗"
+    IDS_LEX_STR_Emph        "强调"
+    IDS_LEX_STR_63320       "标题 1"
+    IDS_LEX_STR_63321       "标题 2"
+    IDS_LEX_STR_63322       "标题 3"
+    IDS_LEX_STR_63323       "标题 4"
+    IDS_LEX_STR_63324       "标题 5"
+    IDS_LEX_STR_63325       "标题 6"
+    IDS_LEX_STR_63326       "起始字符"
+    IDS_LEX_STR_63327       "无序列表"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "块引文"
+    IDS_LEX_STR_63329       "删除线"
+    IDS_LEX_STR_63330       "水平分隔线"
+    IDS_LEX_STR_Link        "超链接"
+    IDS_LEX_STR_Code        "代码"
+    IDS_LEX_STR_Ref         "引用"
+    IDS_LEX_STR_Doc         "文档"
+    IDS_LEX_STR_Txt         "文本"
+    IDS_LEX_STR_StdOp       "标准运算符"
+    IDS_LEX_STR_Attrib      "属性"
+    IDS_LEX_STR_StdFct      "标准函数"
+    IDS_LEX_STR_StdPck      "标准包"
+    IDS_LEX_STR_StdTyp      "标准类型"
+    IDS_LEX_STR_Word        "单词"
+    IDS_LEX_STR_Verb        "原样字符串"
+    IDS_LEX_STR_63343       "内置类型"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "字节串"
+    IDS_LEX_STR_63345       "其它关键字"
+    IDS_LEX_STR_63346       "Rust 生命期"
+    IDS_LEX_STR_Obj         "对象"
+    IDS_LEX_STR_Key         "键"
+    IDS_LEX_STR_HotKey      "快捷键"
+    IDS_LEX_STR_HotStrg     "快捷字符串"
+    IDS_LEX_STR_HotStrgOp   "快捷字符串选项"
+    IDS_LEX_STR_63352       "输入法候选文本颜色"
+    IDS_LEX_STR_63353       "备选：输入法候选文本颜色"
+    IDS_LEX_STR_63354       "多点编辑指示符"
+    IDS_LEX_STR_63355       "备选：多点编辑指示符"
+    IDS_LEX_STR_DateTime    "日期时间"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "For Each 定义"
+    IDS_LEX_STR_63358       "While 定义"
+    IDS_LEX_STR_Math        "数学"
+    IDS_LEX_STR_Scalar      "标量"
+    IDS_LEX_STR_Subst       "替换"
+    IDS_LEX_STR_Modf        "修饰符"
+    IDS_LEX_STR_Tag         "标记"
+    IDS_LEX_STR_63364       "属性名"
+    IDS_LEX_STR_63365       "LD 关键字"
+    IDS_LEX_STR_63366       "ESC 序列"
+    IDS_LEX_STR_63367       "Unicode 代码点悬停提示"
+    IDS_LEX_STR_63368       "备选：Unicode 代码点悬停提示"
+    IDS_LEX_STR_Interface   "接口"
+    IDS_LEX_STR_Annot       "注解"
+    IDS_LEX_STR_63371       "注释文档关键字"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "修饰符"
+    IDS_LEX_STR_63373       "任务标记"
+    IDS_LEX_STR_63374       "注释文档错误"
+    IDS_LEX_STR_TypeOp      "类型运算符"
+    IDS_LEX_STR_63376       "续行"
+    IDS_LEX_STR_Special     "特殊"
+    IDS_LEX_STR_63378       "语法运算符"
+    IDS_LEX_STR_63379       "未关闭的字符串"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "紧凑 IRI"
+    IDS_LEX_STR_SendKey     "发送键"
+    IDS_LEX_STR_63383       "元数据"
+    IDS_LEX_STR_Enum        "枚举"
+    IDS_LEX_STR_63385       "三重引号字符串"
+    IDS_LEX_STR_63386       "符号标识符"
+    IDS_LEX_STR_63387       "符号运算符"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "字符串换行"
+    IDS_LEX_STR_Backticks   "反引号"
+    IDS_LEX_STR_GUIDStrg    "GUID 字符串"
+    IDS_LEX_STR_Global      "全局"
+    IDS_LEX_STR_Input       "输入"
+    IDS_LEX_STR_Output      "输出"
+    IDS_LEX_STR_InOut       "输入输出"
+    IDS_LEX_STR_PortConn    "端口连接"
+    IDS_LEX_STR_SysTasks    "系统任务"
+    IDS_LEX_STR_AfterLabel  "在标签后"
+    IDS_LEX_STR_Table       "表"
+    IDS_LEX_STR_StarCmd     "星号命令"
+    IDS_LEX_STR_SlashCmd    "斜杠命令"
+    IDS_LEX_STR_Processor   "处理器"
+    IDS_LEX_STR_Argument    "参数"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "变更记录标记：已修改"
+    IDS_LEX_STD_CH_SAVED        "变更记录标记：已保存"
+    IDS_LEX_STD_CH_REV_TO_MOD   "变更记录标记：还原为已修改"
+    IDS_LEX_STD_CH_REV_TO_ORG   "变更记录标记：还原为原文件"
+    IDS_LEX_2ND_CH_MODIFIED     "备选：变更记录标记：已修改"
+    IDS_LEX_2ND_CH_SAVED        "备选：变更记录标记：已保存"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "备选：变更记录标记：还原为已修改"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "备选：变更记录标记：还原为原文件"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "列 0"
+    IDS_LEX_CSV_COL_1       "列 1"
+    IDS_LEX_CSV_COL_2       "列 2"
+    IDS_LEX_CSV_COL_3       "列 3"
+    IDS_LEX_CSV_COL_4       "列 4"
+    IDS_LEX_CSV_COL_5       "列 5"
+    IDS_LEX_CSV_COL_6       "列 6"
+    IDS_LEX_CSV_COL_7       "列 7"
+    IDS_LEX_CSV_COL_8       "列 8"
+    IDS_LEX_CSV_COL_9       "列 9"
+END
+
+#endif    // Chinese Simplified (China) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

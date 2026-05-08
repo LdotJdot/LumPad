@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Afrikaans (South Africa) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_AFK)
+LANGUAGE LANG_AFRIKAANS, SUBLANG_AFRIKAANS_SOUTH_AFRICA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Maak Oop",                               IDM_FILE_OPEN
+        MENUITEM "Maak Oop m/ &Gunsteling Program...",      IDM_FILE_OPENWITH
+        MENUITEM "&Quickview",                              IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "K&opie Naam",                             IDM_POP_COPYNAME
+        MENUITEM "Skep S&kakel...",                         IDM_FILE_CREATELINK
+        MENUITEM "&Stoor As...",                            IDM_FILE_SAVEAS
+        MENUITEM "Kopieer/Sk&uif...",                       IDM_FILE_COPYMOVE
+        MENUITEM "V&erwyder...",                            IDM_FILE_DELETE
+        MENUITEM "Her&noem...",                             IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Begin",                                  IDM_FILE_LAUNCH
+        MENUITEM "&Hardloop m/ Argumente...",               IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Eienska&ppe",                            IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Nuwe Lêer...",               IDM_FILE_NEW
+        MENUITEM "Nu&we Gids...",               IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Lêer &Filter...",             IDM_VIEW_FILTER
+        MENUITEM "Stel Filte&r Terug",          IDM_VIEW_FILTERALL
+        POPUP "Wy&s"
+        BEGIN
+            MENUITEM "&Gidse",                  IDM_VIEW_FOLDERS
+            MENUITEM "&Lêers",                  IDM_VIEW_FILES
+            MENUITEM "&Stelsel Voorwerpe",      IDM_VIEW_HIDDEN
+        END
+        POPUP "S&orteer"
+        BEGIN
+            MENUITEM "deur &Naam",              IDM_SORT_NAME
+            MENUITEM "deur &Groote",            IDM_SORT_SIZE
+            MENUITEM "deur &Tipe",              IDM_SORT_TYPE
+            MENUITEM "deur &Datum",             IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "&Keur Om",                IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Ga&an na...",                 IDM_FILE_GOTO
+        MENUITEM "&Gaan na Gunstelinge",        IDM_VIEW_FAVORITES
+        MENUITEM "Wysig Gunst&elinge",          IDM_VIEW_EDITFAVORITES
+        MENUITEM "&Gidse...",                   IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Wys Dri&ves",                 IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "Stoor &Instellings",          IDM_VIEW_SAVESETTINGS
+        MENUITEM "Stel &Teiken Op...",          IDM_VIEW_FINDTARGET
+        MENUITEM "O&psies...",                  IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Gidse...",                   IDM_FILE_CHANGEDIR
+        MENUITEM "Dryf &Eienskappe",            IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "Wys Dri&ves",                 IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Wys &Nutsbalk",               IDM_VIEW_TOOLBAR
+        MENUITEM "&Wysig Nutsbalk...",          IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Wys &Statusbalk",             IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Maak MiniPath Oop",           IDM_TRAY_RESTORE
+        MENUITEM "Maak MiniPath Toe",           IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Afrikaans (South Africa) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

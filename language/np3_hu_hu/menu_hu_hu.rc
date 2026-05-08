@@ -1,0 +1,637 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_HUNGARIAN_HUNGARY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MUI_MAINMENU MENU
+BEGIN
+    POPUP "&Fájl"
+    BEGIN
+        MENUITEM "&Új\tCtrl+N",                                        IDM_FILE_NEW
+
+        MENUITEM "Close &Tab",                                      IDM_FILE_CLOSETAB
+        MENUITEM "Me&gnyitás...\tCtrl+O",                              IDM_FILE_OPEN
+        MENUITEM "&Mentés\tCtrl+S",                                    IDM_FILE_SAVE
+        MENUITEM "Mentés m&ásként...\tF6",                             IDM_FILE_SAVEAS
+        MENUITEM "Másolat m&entése...\tCtrl+F6",                       IDM_FILE_SAVECOPY
+        MENUITEM "Mentés e&redeti fájl dátumával/idővel\tCtrl+Alt+F6", IDM_FILE_PRESERVE_FILEMODTIME
+        MENUITEM SEPARATOR
+        MENUITEM "&Csak olvasható Fájl attribútum",                    IDM_FILE_READONLY
+        MENUITEM "&Fájl zárolása (Olvasásra megosztva)",               IDM_FILE_LOCK_SHARE_READ
+        MENUITEM SEPARATOR
+        MENUITEM "Kódolási &jelmondat beállítása...",                  IDM_SETPASS
+        MENUITEM SEPARATOR
+        POPUP "Útvonal másolása a vágólapra"
+        BEGIN
+            MENUITEM "Csak fájl&név másolása\tCtrl+F9",            IDM_EDIT_INSERT_FILENAME
+            MENUITEM "Csak a &könyvtár útvonal másolása",          IDM_EDIT_INSERT_DIRNAME
+            MENUITEM "Teljes &útvonal másolása\tCtrl+Shift+F9",    IDM_EDIT_INSERT_PATHNAME
+        END
+        POPUP "In&dítás"
+        BEGIN
+            MENUITEM "&Új üres ablak\tAlt+N",              IDM_FILE_NEWWINDOW
+            MENUITEM "&Példány duplikálás\tAlt+Shift+N",   IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "&Emelt szinten indítás",             IDM_FILE_LAUNCH_ELEVATED
+            MENUITEM SEPARATOR
+            MENUITEM "Dokumentum &végrehajtása\tCtrl+L",   IDM_FILE_LAUNCH
+            MENUITEM "&Megnyitás ezzel...\tAlt+L",         IDM_FILE_OPENWITH
+            MENUITEM "&Parancs...\tCtrl+R",                IDM_FILE_RUN
+            MENUITEM SEPARATOR
+            MENUITEM "Web sablon &2\tCtrl+Shift+2",        CMD_WEBACTION2
+            MENUITEM "Web sablon &1\tCtrl+Shift+1",        CMD_WEBACTION1
+            MENUITEM SEPARATOR
+            MENUITEM "Fájl&böngésző megnyitása",           IDM_FILE_EXPLORE_DIR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Visszaállás fájlból\tF5",               IDM_FILE_REVERT
+        MENUITEM "Fájl&változások kihagyása",                      CMD_IGNORE_FILE_VARS
+        POPUP "&Kódolás"
+        BEGIN
+            POPUP "Visszaállás fájlból másként&"
+            BEGIN
+                MENUITEM "&Alapértelmezett (beállítás)",       CMD_RECODEDEFAULT
+                MENUITEM "A&NSI-ra\tCtrl+Shift+A",             CMD_RECODEANSI
+                MENUITEM "&OEM-re\tCtrl+Shift+O",              CMD_RECODEOEM
+                MENUITEM "&GB18030-ra\tCtrl+Shift+F10",        CMD_RECODEGB18030
+                MENUITEM SEPARATOR
+                MENUITEM "ASCII-t UTF-8-k&ént\tCtrl+Shift+F8", CMD_RELOADASCIIASUTF8
+                MENUITEM "Erőltetett U&CHARDET analízis",      CMD_RELOADFORCEDETECTION
+                MENUITEM "Kódolási elemek ki&hagyása\tAlt+F8", CMD_RELOADNOENCODETAGS
+                MENUITEM SEPARATOR
+                MENUITEM "&További kódolások...\tF8",          IDM_ENCODING_RECODE
+            END
+            POPUP "&Dokumentum átállítása"
+            BEGIN
+                MENUITEM "&ANSI",                          IDM_ENCODING_ANSI
+                MENUITEM "&Unicode",                       IDM_ENCODING_UNICODE
+                MENUITEM "Unicode &Big Endian",            IDM_ENCODING_UNICODEREV
+                MENUITEM "UTF-&8\tShift+F8",               IDM_ENCODING_UTF8
+                MENUITEM "UTF-8 &Szignatúrával",           IDM_ENCODING_UTF8SIGN
+                MENUITEM SEPARATOR
+                MENUITEM "&További kódolások...\tF9",      IDM_ENCODING_SELECT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Kó&dolások alapért. beállítása...",  IDM_ENCODING_SETDEFAULT
+        END
+        POPUP "Sorvé&gek"
+        BEGIN
+            MENUITEM "&Windows (CR+LF)",            IDM_LINEENDINGS_CRLF
+            MENUITEM "&Mac (CR)",                   IDM_LINEENDINGS_CR
+            MENUITEM "&Unix (LF)",                  IDM_LINEENDINGS_LF
+            MENUITEM SEPARATOR
+            MENUITEM "&Alapértelmezett...",         IDM_LINEENDINGS_SETDEFAULT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Behúzások ellenőrzése...",       CMD_CHECK_INDENTATION
+        MENUITEM SEPARATOR
+        MENUITEM "&Oldalbeállítás...",              IDM_FILE_PAGESETUP
+        MENUITEM "&Nyomtatás...\tCtrl+P",           IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Tulajdonságok...",               IDM_FILE_PROPERTIES
+        MENUITEM "Asztali parancsikon k&észítése",  IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "&Kedvencek"
+        BEGIN
+            MENUITEM "&Kedvencek megnyitása...\tAlt+I",     IDM_FILE_OPENFAV
+            MENUITEM "&Aktuális fájl hozzáadása...\tAlt+K", IDM_FILE_ADDTOFAV
+            MENUITEM "Ke&zelés...\tAlt+F9",                 IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "&Restore Last Session",                           IDM_FILE_RESTORE_SESSION
+        MENUITEM "Előzmény (&Történet)...\tCtrl+Alt+H",     IDM_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "Kilépé&s\tAlt+F4",                        IDM_FILE_EXIT
+    END
+    POPUP "&Szerkesztés"
+    BEGIN
+        MENUITEM "&Csak olvasható dokumentum"   IDM_VIEW_READONLY
+        MENUITEM SEPARATOR
+        MENUITEM "&Visszavonás\tCtrl+Z",        IDM_EDIT_UNDO
+        MENUITEM "&Újra\tCtrl+Y",               IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Kivá&gás\tCtrl+X",            IDM_EDIT_CUT
+        MENUITEM "&Másolás\tCtrl+C",            IDM_EDIT_COPY
+        MENUITEM "Mind m&ásolása\tAlt+C",       IDM_EDIT_COPYALL
+        MENUITEM "Vág&ólaphoz ad\tCtrl+E",      IDM_EDIT_COPYADD
+        MENUITEM "&Beillesztés\tCtrl+V",        IDM_EDIT_PASTE
+        MENUITEM "&Csere\tCtrl+K",              IDM_EDIT_SWAP
+        MENUITEM "Min&d kijelölése\tCtrl+A",    IDM_EDIT_SELECTALL
+        MENUITEM "&Törlés\tDel",                IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Vágólap t&örlése",            IDM_EDIT_CLEARCLIPBOARD
+        MENUITEM "&Vágólapfigyelés állapotváltása", IDM_EDIT_TOGGLE_PASTEBOARD
+        MENUITEM SEPARATOR
+        POPUP "Sza&vak"
+        BEGIN
+            MENUITEM "&Szó kiegészítése\tCtrl+Alt+Enter",      IDM_EDIT_COMPLETEWORD
+            MENUITEM SEPARATOR
+            MENUITEM "Kurzor egy szónyit &balra\tCtrl+ ←",     CMD_CTRLLEFT
+            MENUITEM "Kurzor egy szónyit &jobbra\tCtrl+ →",    CMD_CTRLRIGHT
+            MENUITEM "Szó &törlése balra\tCtrl+Back",          CMD_CTRLBACK
+            MENUITEM "Szó t&örlése jobbra\tCtrl+Del",          CMD_CTRLDEL
+        END
+        POPUP "S&orok"
+        BEGIN
+            MENUITEM "Mozgatás &fel\tAlt+ ↑",                  IDM_EDIT_MOVELINEUP
+            MENUITEM "Mozgatás l&e\tAlt+ ↓",                   IDM_EDIT_MOVELINEDOWN
+            MENUITEM SEPARATOR
+            MENUITEM "Kijelölés vagy a&ktuális sor kivágása\tCtrl+X",      IDM_EDIT_CUT
+            MENUITEM "Kijelölés &sorainak kivágása\tCtrl+Shift+X",         IDM_EDIT_CUTLINE
+            MENUITEM "Kijelölés vagy aktuális s&or másolása\tCtrl+C",      IDM_EDIT_COPY
+            MENUITEM "Kijelölés sorainak má&solása\tCtrl+Shift+C",         IDM_EDIT_COPYLINE
+            MENUITEM SEPARATOR
+            MENUITEM "Sor/Kijelölés d&uplikálása\tCtrl+D",  IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM "Soro&k felcserélése\tAlt+D",          IDM_EDIT_LINETRANSPOSE
+            MENUITEM "Sor t&örlése\tCtrl+Shift+D",          IDM_EDIT_DELETELINE
+            MENUITEM SEPARATOR
+            MENUITEM "Törlés sor elejéig\tCtrl+Shift+Back", IDM_EDIT_DELETELINELEFT
+            MENUITEM "Törlés sor végéig\tCtrl+Shift+Del",   IDM_EDIT_DELETELINERIGHT
+            MENUITEM SEPARATOR
+            MENUITEM "&Oszlop sortörés...\tCtrl+Shift+W",   IDM_EDIT_COLUMNWRAP
+            MENUITEM SEPARATOR
+            MENUITEM "&Duplikált sorok egyesítése\tCtrl+Alt+D",   IDM_EDIT_UNITEDUPLICATELINES
+            MENUITEM "D&uplikált sorok törlése",              IDM_EDIT_REMOVEDUPLICATELINES
+            MENUITEM "&Üres sorok egyesítése\tAlt+Y",        IDM_EDIT_MERGEEMPTYLINES
+            MENUITEM "Üres kar.-eket tart. sorok egyes&ítése\tCtrl+Alt+Y", IDM_EDIT_MERGEBLANKLINES
+            MENUITEM "Üres so&rok törlése\tAlt+R",           IDM_EDIT_REMOVEEMPTYLINES
+            MENUITEM "Üres kar.-eket &tar. sorok törlése\tCtrl+Alt+B", IDM_EDIT_REMOVEBLANKLINES
+        END
+        POPUP "Hala&dó"
+        BEGIN
+            MENUITEM "&Behúzás",                           IDM_EDIT_INDENT
+            MENUITEM "Behúzás törlése",                    IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            POPUP "S&or megjegyzés"
+            BEGIN
+                MENUITEM "&Váltás\tCtrl+Q",                  IDM_EDIT_LINECOMMENT
+                MENUITEM "&Hozzáadás\tCtrl+Alt+Q",           IDM_EDIT_LINECOMMENT_ADD
+                MENUITEM "&Eltávolítás\tCtrl+Alt+Shift+Q",   IDM_EDIT_LINECOMMENT_REMOVE
+                MENUITEM "&Blokk szerkesztése\tAlt+Shift+Q", IDM_EDIT_LINECOMMENT_BLOCKEDIT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "&Blokk megjegyzés\tCtrl+Shift+Q",            IDM_EDIT_STREAMCOMMENT
+            MENUITEM SEPARATOR
+            POPUP "&Kijelölés körbevétele"
+            BEGIN
+                MENUITEM "&Aposztróf\tCtrl+1",             CMD_STRINGIFY
+                MENUITEM "I&dézőjel\tCtrl+2",              CMD_STRINGIFY2
+                MENUITEM SEPARATOR
+                MENUITEM "( )\tCtrl+3",                    CMD_EMBRACE
+                MENUITEM "[ ]\tCtrl+4",                    CMD_EMBRACE2
+                MENUITEM "{ }\tCtrl+5",                    CMD_EMBRACE3
+                MENUITEM SEPARATOR
+                MENUITEM "&Backtick\tCtrl+6",              CMD_EMBRACE4
+                MENUITEM SEPARATOR
+                MENUITEM "&Egyéni...\tAlt+Q",              IDM_EDIT_ENCLOSESELECTION
+            END
+            MENUITEM "Sor/Kijelölés &duplikálása\tCtrl+D", IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "Kitöltés &szóközökkel\tAlt+B",      IDM_EDIT_PADWITHSPACES
+            MENUITEM "&Első kar. törlése\tAlt+Z",         IDM_EDIT_STRIP1STCHAR
+            MENUITEM "&Utolsó kar. törlése\tAlt+U",       IDM_EDIT_STRIPLASTCHAR
+            MENUITEM "Sorvégi &üres kar. törlése\tAlt+W", IDM_EDIT_TRIMLINES
+            MENUITEM "Üres kar. &tömörítése\tCtrl+Alt+P", IDM_EDIT_COMPRESS_BLANKS
+            MENUITEM SEPARATOR
+            MENUITEM "Sorok &módosítása...\tAlt+M",       IDM_EDIT_MODIFYLINES
+            MENUITEM "Sorok &rendezése...\tAlt+O",        IDM_EDIT_SORTLINES
+            MENUITEM SEPARATOR
+            MENUITEM "Sorok i&gazítása...\tAlt+J",          IDM_EDIT_ALIGN
+            MENUITEM "Sorok szétv&ágása\tCtrl+I",           IDM_EDIT_SPLITLINES
+            MENUITEM "Sorok összefű&zése\tCtrl+J",          IDM_EDIT_JOINLINES
+            MENUITEM "Sorok eg&ybeolvasztása\tCtrl+Alt+J",  IDM_EDIT_JOINLN_NOSP
+            MENUITEM "&Bekezdések megőrzése\tCtrl+Shift+J", IDM_EDIT_JOINLINES_PARA
+            MENUITEM SEPARATOR
+            MENUITEM "Ugrás a kijelölés &elejére\tCtrl+,",  CMD_JUMP2SELSTART
+            MENUITEM "Ugrás a kijelölés &végére\tCtrl+.",   CMD_JUMP2SELEND
+        END
+        POPUP "Ko&nvertálás"
+        BEGIN
+            MENUITEM "&Nagybetűs\tCtrl+Shift+U",          IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "&Kisbetűs\tCtrl+U",                 IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "Kis/Nagybetű &váltás\tCtrl+Alt+U",  IDM_EDIT_INVERTCASE
+            MENUITEM "Mint &Cím\tCtrl+Alt+I",             IDM_EDIT_TITLECASE
+            MENUITEM "Mint &mondat\tCtrl+Alt+O",          IDM_EDIT_SENTENCECASE
+            MENUITEM SEPARATOR
+            MENUITEM "Kijelölésben &Tabulátorrá\tCtrl+Shift+T",    IDM_EDIT_CONVERTSPACES
+            MENUITEM "Kijelölés Ta&b-mentes\tCtrl+Shift+S",        IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "Behúzás Tab&ulátorrá\tCtrl+Alt+T",           IDM_EDIT_CONVERTSPACES2
+            MENUITEM "Behúzás Tab-m&entes\tCtrl+Alt+S",            IDM_EDIT_CONVERTTABS2
+            MENUITEM SEPARATOR
+            MENUITEM "Base&64 kódolás",                   IDM_EDIT_BASE64ENCODE
+            MENUITEM "Base6&4 dekódolás",                 IDM_EDIT_BASE64DECODE
+            MENUITEM "Base64 dekódolás kódlapra...",      IDM_EDIT_B64DECODESEL
+            MENUITEM SEPARATOR
+            MENUITEM "&URL bekódolás\tCtrl+Shift+E",               IDM_EDIT_URLENCODE
+            MENUITEM "U&RL kikódolás\tCtrl+Shift+R",               IDM_EDIT_URLDECODE
+            MENUITEM "Fájlrendszer útvonal URL-re\tCtrl+F10",      IDM_EDIT_PATH2URL
+            MENUITEM "URL-t fájlrendszer útvonallá\tAlt+F10",      IDM_EDIT_URL2PATH
+            MENUITEM SEPARATOR
+            MENUITEM "Backslash-ek váltása",                       IDM_EDIT_INVERTBACKSLASH
+            MENUITEM "Törtvonalak váltása",                        IDM_EDIT_INVERTSLASH
+            MENUITEM SEPARATOR
+            MENUITEM "&Kar. -> Hex\tCtrl+Alt+X",                   IDM_EDIT_CHAR2HEX
+            MENUITEM "&Hex ->Kar.\tCtrl+Alt+C",                    IDM_EDIT_HEX2CHAR
+        END
+        POPUP "&Beillesztés"
+        BEGIN
+            MENUITEM "&Fölé egy új sor\tCtrl+Enter",               CMD_INSERTNEWLINE
+            MENUITEM SEPARATOR
+            MENUITEM "&HTML/XML elem...\tAlt+X",                   IDM_EDIT_INSERT_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "&Kódolás azonosító\tCtrl+F8",                IDM_EDIT_INSERT_ENCODING
+            MENUITEM SEPARATOR
+            MENUITEM "&Dátum/Idő (rövid)\tCtrl+F5",                IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "Dátum/Idő (&hosszú)\tCtrl+Shift+F5",         IDM_EDIT_INSERT_LONGDATE
+            MENUITEM "&Aktuális időbélyeg",                        CMD_INSERT_TIMESTAMP
+            MENUITEM "Időbélye&gek frissítése\tShift+F5",          CMD_UPDATE_TIMESTAMPS
+        END
+        POPUP "&Vegyes"
+        BEGIN
+            MENUITEM "&GUID másolása a vágólapra\tCtrl+Shift+.",       IDM_EDIT_INSERT_GUID
+            MENUITEM SEPARATOR
+            MENUITEM "Vezérlőkar.-ek v&édelme\tCtrl+Alt+E",            IDM_EDIT_ESCAPECCHARS
+            MENUITEM "Vezérlőkar.-ek védelem t&örlése\tCtrl+Alt+R",    IDM_EDIT_UNESCAPECCHARS
+            MENUITEM SEPARATOR
+            MENUITEM "Szám nö&velése\tCtrl+Alt+NK+",                   CMD_INCREASENUM
+            MENUITEM "Szám &csökkentése\tCtrl+Alt+NK-",                CMD_DECREASENUM
+            MENUITEM SEPARATOR
+            MENUITEM "&Zárójelpár keresése\tCtrl+B",                   IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "Kijelölés zárójel &párig\tCtrl+Shift+B",         IDM_EDIT_SELTOMATCHINGBRACE
+            MENUITEM SEPARATOR
+            MENUITEM "Kijelölés a következői&g\tCtrl+Alt+F2",          IDM_EDIT_SELTONEXT
+            MENUITEM "Kijelölés az &előzőig\tCtrl+Alt+Shift+F2",       IDM_EDIT_SELTOPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Szó vag&y sorok kijelölése\tCtrl+Spc",           IDM_EDIT_SELECTWORD
+            MENUITEM "Összes egyezés ki&jelölése\tCtrl+Shift+Spc",     IDM_EDIT_SELECTALLMATCHES
+            MENUITEM SEPARATOR
+            MENUITEM "Visszavonás műveletek szétvágása sortöréseknél", IDM_VIEW_SPLIT_UNDOTYPSEQ_LNBRK
+        END
+        MENUITEM SEPARATOR
+        POPUP "Köny&vjelzők"
+        BEGIN
+            MENUITEM "&Váltás\tCtrl+F2",            BME_EDIT_BOOKMARKTOGGLE
+            MENUITEM SEPARATOR
+            MENUITEM "Ugrás a k&övetkezőre\tF2",    BME_EDIT_BOOKMARKNEXT
+            MENUITEM "Ugrás az el&őzőre\tShift+F2", BME_EDIT_BOOKMARKPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Összes tö&rlése\tAlt+F2",     BME_EDIT_BOOKMARKCLEAR
+        END
+    END
+    POPUP "Keresé&s"
+    BEGIN
+        MENUITEM "&Keresés...\tCtrl+F",                    IDM_EDIT_FIND
+        MENUITEM "Keresési &szöveg mentése\tAlt+F3",       IDM_EDIT_SAVEFIND
+        MENUITEM "K&övetkező keresése\tF3",                IDM_EDIT_FINDNEXT
+        MENUITEM "Elő&ző keresése\tShift+F3",              IDM_EDIT_FINDPREV
+        MENUITEM "Kijelölés következő találat\tCtrl+F3",   CMD_FINDNEXTSEL
+        MENUITEM "Kijelölés előző találat\tCtrl+Shift+F3", CMD_FINDPREVSEL
+        MENUITEM "&Csere...\tCtrl+H",                      IDM_EDIT_REPLACE
+        MENUITEM "Következő cse&réje\tF4",                 IDM_EDIT_REPLACENEXT
+        MENUITEM "&Ugrás...\tCtrl+G",                      IDM_EDIT_GOTOLINE
+    END
+    POPUP "&Nézet"
+    BEGIN
+        MENUITEM "Sort&örés\tCtrl+W",                     IDM_VIEW_WORDWRAP
+        MENUITEM "&Hosszú sor jelölő\tCtrl+Alt+L",        IDM_VIEW_LONGLINEMARKER
+        MENUITEM "&Behúzás jelölése\tCtrl+Shift+G",       IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM SEPARATOR
+        MENUITEM "Sortö&rés jelzése\tCtrl+Shift+7",       IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM "Sz&óközök megjelenítése\tCtrl+Shift+8", IDM_VIEW_SHOWBLANKS
+        MENUITEM "Sorvégek &megjelenítése\tCtrl+Shift+9", IDM_VIEW_SHOWEOLS
+        MENUITEM SEPARATOR
+        POPUP "Előzményjelölők megváltoztatása"
+        BEGIN
+            MENUITEM "Ne jelenjen meg előzmény-jelölő",      IDM_VIEW_CHGHIST_NONE
+            MENUITEM "Megjelenítés a margóban",              IDM_VIEW_CHGHIST_MARGIN
+            MENUITEM "Megjelenítés a dokumentumban",         IDM_VIEW_CHGHIST_DOCTXT
+            MENUITEM "Összes előzmény-jelölő megjelenítése", IDM_VIEW_CHGHIST_ALL
+        END
+        MENUITEM "Változás/Visszavonás előzmények törlése"   IDM_VIEW_CHGHIST_CLEAR_UNDOREDO
+        MENUITEM SEPARATOR
+        MENUITEM "Hivatkoz&ások kiemelése\tCtrl+Alt+W",   IDM_VIEW_HYPERLINKHOTSPOTS
+        POPUP "Szín&választó területek"
+        BEGIN
+            MENUITEM "Kika&pcsolva",                     IDM_VIEW_COLORDEFHOTSPOTS
+            MENUITEM "&RGB+A"                            IDM_VIEW_COLOR_RGBA
+            MENUITEM "&A+RGB"                            IDM_VIEW_COLOR_ARGB
+            MENUITEM "&BGRA"                             IDM_VIEW_COLOR_BGRA
+        END
+        MENUITEM "&Unicode-Pontok kiemelése",             IDM_VIEW_UNICODE_POINTS
+        MENUITEM "&Zárójelpár kiemelés\tCtrl+Shift+V",    IDM_VIEW_MATCHBRACES
+        POPUP "Akt&uális sor kiemelése\tCtrl+Shift+I"
+        BEGIN
+            MENUITEM "&Nincs kiemelés",                   IDM_VIEW_HILITCURLN_NONE
+            MENUITEM "Háttérs&zín",                       IDM_VIEW_HILITCURLN_BACK
+            MENUITEM "K&eret",                            IDM_VIEW_HILITCURLN_FRAME
+        END
+        POPUP "Elő&fordulások kiemelése"
+        BEGIN
+            MENUITEM "&Aktív\tAlt+A",                   IDM_VIEW_MARKOCCUR_ONOFF
+            MENUITEM "&Könyvjelzők is",                 IDM_VIEW_MARKOCCUR_BOOKMARKS
+            MENUITEM SEPARATOR
+            MENUITEM "Csak a l&áthatóak",               IDM_VIEW_MARKOCCUR_VISIBLE
+            MENUITEM SEPARATOR
+            MENUITEM "Kis/Nag&ybetű érzékeny egyezés",  IDM_VIEW_MARKOCCUR_CASE
+            POPUP "Csak &egész szavak esetén"
+            BEGIN
+                MENUITEM "Kika&pcsolva",                IDM_VIEW_MARKOCCUR_WNONE
+                MENUITEM "Kijelölt sza&vak egyezése",   IDM_VIEW_MARKOCCUR_WORD
+                MENUITEM "Aktuális &szó egyezése",      IDM_VIEW_MARKOCCUR_CURRENT
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Sorok s&záma\tCtrl+Shift+N",          IDM_VIEW_LINENUMBERS
+        MENUITEM "Könyvjelző &Margó\tCtrl+Shift+M",     IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Előzményjelölő a margóban",           IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+        MENUITEM SEPARATOR
+        POPUP "&Behajtások"
+        BEGIN
+            MENUITEM "Kó&dblokk behajtások",                    IDM_VIEW_FOLDING
+            MENUITEM "Kódblokk &váltás\tCtrl+Alt+F",            IDM_VIEW_TOGGLEFOLDS
+            MENUITEM SEPARATOR
+            MENUITEM "Ugrás a &köv. behajtásra\tAlt+ +",        CMD_FOLDJUMPDOWN
+            MENUITEM "Ugrás az &előző behajtásra\tAlt+ –",      CMD_FOLDJUMPUP
+            MENUITEM SEPARATOR
+            MENUITEM "Behajtás &becsukása\tAlt+ ←",             CMD_FOLDCOLLAPSE
+            MENUITEM "Behajtás ki&nyitása\tAlt+ →",             CMD_FOLDEXPAND
+        END
+        POPUP "&Megjelenítés"
+        BEGIN
+            MENUITEM "Fókuszált nézet\tCtrl+Alt+V",             IDM_VIEW_TOGGLE_VIEW
+            POPUP "Nézet mód"
+            BEGIN
+                MENUITEM "Behajtások",                          IDM_VIEW_FV_FOLD
+                MENUITEM "Könyvjelzők",                         IDM_VIEW_FV_BOOKMARK
+                MENUITEM "Kiemelések",                          IDM_VIEW_FV_HIGHLIGHT
+                MENUITEM "Könyvjelzők és Behajtások",           IDM_VIEW_FV_BKMRKFOLD
+                MENUITEM "Kiemelések és Behajtások",            IDM_VIEW_FV_HIGHLGFOLD
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "&Naplófájl követése",                     IDM_VIEW_CHASING_DOCTAIL
+            MENUITEM "&Görgetés a fájl vége után is",           IDM_VIEW_SCROLLPASTEOF
+            MENUITEM "&Hivatkozások címke megjelenítése",       IDM_VIEW_SHOW_HYPLNK_CALLTIP
+        END
+        MENUITEM SEPARATOR
+        POPUP "P&anelek"
+        BEGIN
+            MENUITEM "&Címsor megjelenítése",                   IDM_VIEW_TITLEBAR
+            MENUITEM "Menü&sor megjelenítése",                  IDM_VIEW_MENUBAR
+            MENUITEM "Esz&köztár megjelenítése",                IDM_VIEW_TOOLBAR
+            MENUITEM "Állapotso&r megjelenítése",               IDM_VIEW_STATUSBAR
+            MENUITEM SEPARATOR
+            MENUITEM "Eszköztár té&ma betöltése...",            IDM_VIEW_LOADTHEMETB
+            MENUITEM "Eszköztár testresza&bása...",             IDM_VIEW_CUSTOMIZETB
+            MENUITEM "Váltás &Eszköztárak",                     IDM_VIEW_TOGGLETB
+            MENUITEM "&DPI skálázás eszköztár",                 IDM_VIEW_DPISCALETB
+        END
+        POPUP "&Nagyítás"
+        BEGIN
+            MENUITEM "&Nagyítás\tCtrl+ +",                      IDM_VIEW_ZOOMIN
+            MENUITEM "&Kicsinyítés\tCtrl+ –",                   IDM_VIEW_ZOOMOUT
+            MENUITEM "Nagyítás &visszaállítása\tCtrl+0",        IDM_VIEW_RESETZOOM
+        END
+        POPUP "&Pozíció"
+        BEGIN
+            MENUITEM "Pozíció értékek másolása\tCtrl+Shift+K",    CMD_COPYWINPOS
+            MENUITEM "Ugrás az alapért. pozícióra\tCtrl+Shift+P", CMD_DEFAULTWINPOS
+            MENUITEM "Mentés alapért. pozícióként",               CMD_SAVEASDEFWINPOS
+            MENUITEM "Alapértelmezett pozíció törlése",           CMD_CLEARSAVEDWINPOS
+            MENUITEM "Ugrás kezdeti pozícióra\tCtrl+F11",         CMD_INITIALWINPOS
+            MENUITEM "Váltás teljes képernyőre\tF11",             CMD_FULLSCRWINPOS
+            MENUITEM "&Ragadós ablak pozíció",                    IDM_VIEW_STICKYWINPOS
+        END
+    END
+    POPUP "Meg&jelenés"
+    BEGIN
+        MENUITEM "Sa&blonok testreszabása...\tCtrl+F12",               IDM_VIEW_SCHEMECONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "S&zínkiemelés sablon...\tF12",                       IDM_VIEW_SCHEME
+        MENUITEM "&2. általános alap\tShift+F12",                      IDM_VIEW_USE2NDDEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "Általános betűtí&pus...\tAlt+F12",                   IDM_VIEW_FONT
+        MENUITEM "&Jelenlegi sablon alap betűtípusa...\tCtrl+Alt+F12", IDM_VIEW_CURRENTSCHEME
+        MENUITEM SEPARATOR
+        MENUITEM "Windows sötét mód",                                  IDM_VIEW_WIN_DARK_MODE
+    END
+    POPUP "&Beállítások"
+    BEGIN
+        MENUITEM "Tabulátorok mint s&zóköz",                    IDM_SET_TABSASSPACES
+        MENUITEM "&Tab beállítások...\tCtrl+T",                 IDM_SET_TABSETTINGS
+        MENUITEM "&Sortörés beállítások...",                    IDM_SET_WORDWRAPSETTINGS
+        MENUITEM "&Hosszú sorok beállításai...",                IDM_SET_LONGLINESETTINGS
+        MENUITEM "A&utomatikus behúzás",                        IDM_SET_AUTOINDENTTEXT
+        MENUITEM "Automatikus záró i&dézőjelek",                IDM_SET_AUTOCLOSEQUOTES
+        MENUITEM "Automatikus záró zárójelek",                  IDM_SET_AUTOCLOSEBRACKETS
+        MENUITEM "HTML/&XML aut. lezárás\tCtrl+Shift+H",        IDM_SET_AUTOCLOSETAGS
+        MENUITEM "Szó kie&gészítés",                            IDM_SET_AUTOCOMPLETEWORDS
+        MENUITEM "Lexer kul&csszavak kiegészítése",             IDM_SET_AUTOCLEXKEYWORDS
+        MENUITEM "Szó el&választók váltása\tCtrl+Alt+A",        IDM_SET_ALTERNATE_WORD_SEPS
+        MENUITEM SEPARATOR
+        MENUITEM "Egy &példány fájlonként",                     IDM_SET_SINGLEFILEINSTANCE
+        MENUITEM "Figyel&meztetés fájl változásáról...\tAlt+F5", IDM_SET_CHANGENOTIFY
+        ///MENUITEM "Aut. mentés / Bizt. mentés beállításai...",IDM_SET_AUTOSAVE_BACKUP
+        MENUITEM "&Üzenethang némítása",                        IDM_SET_MUTE_MESSAGEBEEP
+        MENUITEM "&UNC útvonal feloldása",                      IDM_SET_RESOLVE_UNC_PATHS
+        POPUP "Esc g&omb funkciója"
+        BEGIN
+            MENUITEM "&Semmi",                       IDM_SET_NOESCFUNC
+            MENUITEM "Notepad&3 elrejtése",          IDM_SET_ESCMINIMIZE
+            MENUITEM "Kilé&pés a LumPad-ból",      IDM_SET_ESCEXIT
+        END
+        MENUITEM "Eszközök &futtatása előtt mentés",    IDM_SET_SAVEBEFORERUNNINGTOOLS
+        MENUITEM "Mi&ni kifejezések kiszámítása",       IDM_SET_EVALTINYEXPRONSEL
+        MENUITEM "Tö&bbszörös kijelölés engedélyezése", IDM_SET_MULTIPLE_SELECTION
+        POPUP "&Alapértelmezett könyvtár"
+        BEGIN
+            MENUITEM "A&ktuális fájl könyvtára",        IDM_SET_DEFAULTDIR
+            MENUITEM "Ala&pértelmezettre visszaállít",  IDM_SET_DEFAULTDIR_RESET
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Emlékezés"
+        BEGIN
+            MENUITEM "&Legutóbbi fájlokra emlékezzen",       IDM_SET_NOSAVERECENT
+            MENUITEM "&Őrizze meg a kurzor pozícióját",      IDM_SET_NOPRESERVECARET
+            MENUITEM "&Keresési mintákra emlékezzen",        IDM_SET_NOSAVEFINDREPL
+            MENUITEM "Leg&utóbbi fájl betöltése induláskor", IDM_SET_AUTOLOAD_MRU_FILE
+        END
+        POPUP "&Ablak"
+        BEGIN
+            POPUP "Ablak &címsor megjelenítése"
+            BEGIN
+                MENUITEM "C&sak a fájl neve",                 IDM_SET_SHOWFILENAMEONLY
+                MENUITEM "Fájlnév és kön&yvtár",              IDM_SET_SHOWFILENAMEFIRST
+                MENUITEM "&Teljes útvonal",                   IDM_SET_SHOWFULLPATH
+                MENUITEM "S&zöveg kivonat\tCtrl+9",           IDM_SET_SHOWEXCERPT
+            END
+            MENUITEM "&Ablak újrahasznosítása\tCtrl+Shift+L", IDM_SET_REUSEWINDOW
+            MENUITEM "Mindig &felül\tAlt+T",                  IDM_SET_ALWAYSONTOP
+            MENUITEM "Lekicsinyítés az &óra mellé",           IDM_SET_MINTOTRAY
+            MENUITEM "&Átlátszó mód\tAlt+G",                  IDM_SET_TRANSPARENT
+        END
+        POPUP "Tech&nológia"
+        BEGIN
+            POPUP "&Renderelés"
+            BEGIN
+                MENUITEM "DirectWrite (&Direct2D)",             IDM_SET_RENDER_TECH_D2D
+                MENUITEM "DirectWrite &Retain",                 IDM_SET_RENDER_TECH_D2DRETAIN
+                MENUITEM "Direct&Write GDI DC",                 IDM_SET_RENDER_TECH_D2DDC
+                MENUITEM "&GDI (ligatúrák nélkül)",             IDM_SET_RENDER_TECH_GDI
+            END
+            POPUP "R&TL elrendezés (GDI)"
+            BEGIN
+                MENUITEM "&Terület szerkesztése",          IDM_SET_RTL_LAYOUT_EDIT
+                MENUITEM "&Egyéb párbesz. ablakok",        IDM_SET_RTL_LAYOUT_DLG
+            END
+            POPUP "K&étirányú"
+            BEGIN
+                MENUITEM "Nincs",                          IDM_SET_BIDIRECTIONAL_NONE
+                MENUITEM "Balról jobbra",                  IDM_SET_BIDIRECTIONAL_L2R
+                MENUITEM "Jobbról balra",                  IDM_SET_BIDIRECTIONAL_R2L
+            END
+        END
+        POPUP "&Haladó konfiguráció"
+        BEGIN
+            MENUITEM "Beállítások mentése &kilépéskor",    IDM_SET_SAVESETTINGS
+            MENUITEM "Beállítások mentése &most\tF7",      IDM_SET_SAVESETTINGSNOW
+            MENUITEM "&Beállításfájl megnyitása\tCtrl+F7", CMD_OPENINIFILE
+        END
+    END
+    POPUP "&Súgó"
+    BEGIN
+        MENUITEM "&Parancssori súgó...",                IDM_HELP_CMD
+        MENUITEM "&Névjegy...\tShift+F1",               IDM_HELP_ABOUT
+    END
+END
+
+
+IDR_MUI_POPUPMENU MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "Hiperhivatkozás megnyitása",   CMD_OPEN_HYPERLINK
+        MENUITEM "Hiperhivatkozás URL másolása", CMD_COPY_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "Visszavonás",                IDM_EDIT_UNDO
+        MENUITEM "Újra",                       IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Kivágás",                    IDM_EDIT_CUT
+        MENUITEM "Másolás",                    IDM_EDIT_COPY
+        MENUITEM "Beillesztés",                IDM_EDIT_PASTE
+        MENUITEM "Törlés",                     IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Mind kjelölése",             IDM_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        POPUP "Kis/nagybetű átalakítás"
+        BEGIN
+            MENUITEM "Nagybetűs",              CMD_CTX_UPPERCASE
+            MENUITEM "Kisbetűs",               CMD_CTX_LOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "Kis/Nagybetű váltás",    CMD_CTX_INVERTCASE
+            MENUITEM "Címszerű",               CMD_CTX_TITLECASE
+            MENUITEM "Mondat",                 CMD_CTX_SENTENCECASE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Aktuális becsukás váltása",  IDM_VIEW_TOGGLE_CURRENT_FOLD
+        MENUITEM SEPARATOR
+        MENUITEM "Webes művelet 1",            CMD_WEBACTION1
+        MENUITEM "Webes művelet 2",            CMD_WEBACTION2
+        MENUITEM "Fájlböngésző megnyitása",    IDM_FILE_EXPLORE_DIR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Címsor megjelenítése",                   IDM_VIEW_TITLEBAR
+        MENUITEM "Menüsor megjelenítése",                  IDM_VIEW_MENUBAR
+        MENUITEM "Eszköztár megjelenítése",                IDM_VIEW_TOOLBAR
+        MENUITEM "Állapotsor megjelenítése",               IDM_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Eszköztár téma betöltése...",            IDM_VIEW_LOADTHEMETB
+        MENUITEM "Eszköztár testreszabása...",             IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Váltás Eszköztárak",                     IDM_VIEW_TOGGLETB
+        MENUITEM "DPI skálázás eszköztár",                 IDM_VIEW_DPISCALETB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Jelölő törlése",              IDM_EDIT_CLEAR_MARKER
+        MENUITEM "Jelölőtípus sorok kivágása",  IDM_EDIT_CUT_MARKED
+        MENUITEM "Jelölőtípus sorok másolása",  IDM_EDIT_COPY_MARKED
+        MENUITEM "Jelölőtípus sorok törlése",   IDM_EDIT_DELETE_MARKED
+        MENUITEM SEPARATOR
+        MENUITEM "Kódblokk behajtások",         IDM_VIEW_FOLDING
+        MENUITEM "Sorok száma",                 IDM_VIEW_LINENUMBERS
+        MENUITEM "Könyvjelző margók",           IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Előzményjelölő margó",        IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "LumPad megnyitása",         IDM_TRAY_RESTORE
+        MENUITEM "Kilépés a LumPad-ból",      IDM_TRAY_EXIT
+    END
+END
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

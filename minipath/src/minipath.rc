@@ -1,0 +1,283 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <winresrc.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include <winresrc.h>\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+  "#include ""minipath.ver""\r\n"
+
+#if defined(MUI_BASE_LNG_EN_US)
+  "#include ""../language/mp_en_us/mp_en_us.rc""\r\n"
+#elif defined(MUI_BASE_LNG_AF_ZA)
+  "#include ""../language/mp_af_za/mp_af_za.rc""\r\n"
+#elif defined(MUI_BASE_LNG_BE_BY)
+  "#include ""../language/mp_be_by/mp_be_by.rc""\r\n"
+#elif defined(MUI_BASE_LNG_DE_DE)
+  "#include ""../language/mp_de_de/mp_de_de.rc""\r\n"
+#elif defined(MUI_BASE_LNG_EL_GR)
+  "#include ""../language/mp_el_gr/mp_el_gr.rc""\r\n"
+#elif defined(MUI_BASE_LNG_EN_GB)
+  "#include ""../language/mp_en_gb/mp_en_gb.rc""\r\n"
+#elif defined(MUI_BASE_LNG_ES_ES)
+  "#include ""../language/mp_es_es/mp_es_es.rc""\r\n"
+#elif defined(MUI_BASE_LNG_FI_FI)
+  "#include ""../language/mp_fi_fi/mp_fi_fi.rc""\r\n"
+#elif defined(MUI_BASE_LNG_FR_FR)
+  "#include ""../language/mp_fr_fr/mp_fr_fr.rc""\r\n"
+#elif defined(MUI_BASE_LNG_HI_IN)
+  "#include ""../language/mp_hi_in/mp_hi_in.rc""\r\n"
+#elif defined(MUI_BASE_LNG_HU_HU)
+  "#include ""../language/mp_hu_hu/mp_hu_hu.rc""\r\n"
+#elif defined(MUI_BASE_LNG_ID_ID)
+  "#include ""../language/mp_id_id/mp_id_id.rc""\r\n"
+#elif defined(MUI_BASE_LNG_IT_IT)
+  "#include ""../language/mp_it_it/mp_it_it.rc""\r\n"
+#elif defined(MUI_BASE_LNG_JA_JP)
+  "#include ""../language/mp_ja_jp/mp_ja_jp.rc""\r\n"
+#elif defined(MUI_BASE_LNG_KO_KR)
+  "#include ""../language/mp_ko_kr/mp_ko_kr.rc""\r\n"
+#elif defined(MUI_BASE_LNG_NL_NL)
+  "#include ""../language/mp_nl_nl/mp_nl_nl.rc""\r\n"
+#elif defined(MUI_BASE_LNG_PL_PL)
+  "#include ""../language/mp_pl_pl/mp_pl_pl.rc""\r\n"
+#elif defined(MUI_BASE_LNG_PT_BR)
+  "#include ""../language/mp_pt_br/mp_pt_br.rc""\r\n"
+#elif defined(MUI_BASE_LNG_PT_PT)
+  "#include ""../language/mp_pt_pt/mp_pt_pt.rc""\r\n"
+#elif defined(MUI_BASE_LNG_RU_RU)
+  "#include ""../language/mp_ru_ru/mp_ru_ru.rc""\r\n"
+#elif defined(MUI_BASE_LNG_SK_SK)
+  "#include ""../language/mp_sk_sk/mp_sk_sk.rc""\r\n"
+#elif defined(MUI_BASE_LNG_SV_SE)
+  "#include ""../language/mp_sv_se/mp_sv_se.rc""\r\n"
+#elif defined(MUI_BASE_LNG_TR_TR)
+  "#include ""../language/mp_tr_tr/mp_tr_tr.rc""\r\n"
+#elif defined(MUI_BASE_LNG_VI_VN)
+  "#include ""../language/mp_vi_vn/mp_vi_vn.rc""\r\n"
+#elif defined(MUI_BASE_LNG_ZH_CN)
+  "#include ""../language/mp_zh_cn/mp_zh_cn.rc""\r\n"
+#elif defined(MUI_BASE_LNG_ZH_TW)
+  "#include ""../language/mp_zh_tw/mp_zh_tw.rc""\r\n"
+#else
+#error "No MUI Base Language defined - Please set Preprocessor Define accordingly!"
+#endif
+
+  "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINWND             ICON                    "..\\res\\MiniPath.ico"
+IDI_CROSS2              ICON                    "..\\res\\cross2.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CROSSHAIR           CURSOR                  "..\\res\\crosshair.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINWND             BITMAP                  "..\\res\\Toolbar.bmp"
+IDB_OPEN                BITMAP                  "..\\res\\Open.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(65001)  // UTF-8
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+//~~~ Linker generated and merged & embedded by manifesttool
+//~~~IDR_RT_MANIFEST         RT_MANIFEST             "..\\res\\minipath.exe.manifest"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINWND ACCELERATORS
+BEGIN
+    "1",            IDM_SORT_NAME,          VIRTKEY, CONTROL, NOINVERT
+    "2",            IDM_SORT_SIZE,          VIRTKEY, CONTROL, NOINVERT
+    "3",            IDM_SORT_TYPE,          VIRTKEY, CONTROL, NOINVERT
+    "4",            IDM_SORT_DATE,          VIRTKEY, CONTROL, NOINVERT
+    "5",            IDM_SORT_REVERSE,       VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_FILE_CHANGEDIR,     VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_FILE_NEWDIR,        VIRTKEY, ALT, NOINVERT
+    "E",            ACC_TOGGLE_FOCUSEDIT,   VIRTKEY, CONTROL, NOINVERT
+    "F",            ACC_FIRETARGET,         VIRTKEY, CONTROL, NOINVERT
+    "G",            IDM_FILE_GOTO,          VIRTKEY, CONTROL, NOINVERT
+    "G",            ACC_GOTOTARGET,         VIRTKEY, ALT, NOINVERT
+    "H",            IDM_VIEW_SAVESETTINGS,  VIRTKEY, CONTROL, NOINVERT
+    "K",            IDM_FILE_CREATELINK,    VIRTKEY, CONTROL, NOINVERT
+    "P",            ACC_DEFAULTWINPOS,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "L",            IDM_FILE_LAUNCH,        VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_FILE_OPENWITH,      VIRTKEY, ALT, NOINVERT
+    "M",            IDM_VIEW_FILTER,        VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_FILE_NEW,           VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_VIEW_NEWWINDOW,     VIRTKEY, ALT, NOINVERT
+    "P",            ACC_SNAPTOTARGET,       VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_FILE_QUICKVIEW,     VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_FILE_RUN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_FILE_SAVEAS,        VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_VIEW_STATUSBAR,     VIRTKEY, ALT, NOINVERT
+    "T",            SC_ALWAYSONTOP,         VIRTKEY, CONTROL, NOINVERT
+    "T",            IDM_VIEW_TOOLBAR,       VIRTKEY, ALT, NOINVERT
+    "U",            ACC_SWITCHTRANSPARENCY, VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_VIEW_DRIVEBOX,      VIRTKEY, ALT, NOINVERT
+    VK_BACK,        IDT_UPDIR,              VIRTKEY, NOINVERT
+    VK_BACK,        IDT_ROOT,               VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDM_FILE_DELETE,        VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_FILE_DELETE2,       VIRTKEY, SHIFT, NOINVERT
+    VK_DELETE,      IDM_FILE_DELETE3,       VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DOWN,        IDT_FILE_NEXT,          VIRTKEY, ALT, NOINVERT
+    VK_ESCAPE,      ACC_ESCAPE,             VIRTKEY, NOINVERT
+    VK_F1,          SC_ABOUT,               VIRTKEY, NOINVERT
+    VK_F11,         IDM_VIEW_FAVORITES,     VIRTKEY, NOINVERT
+    VK_F12,         IDM_VIEW_OPTIONS,       VIRTKEY, NOINVERT
+    VK_F12,         ACC_SELECTTARGET,       VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDM_FILE_RENAME,        VIRTKEY, NOINVERT
+    VK_F5,          IDM_VIEW_UPDATE,        VIRTKEY, NOINVERT
+    VK_F6,          IDM_FILE_COPYMOVE,      VIRTKEY, NOINVERT
+    VK_F7,          IDM_VIEW_SAVESETTINGS,  VIRTKEY, NOINVERT
+    VK_F7,          ACC_SELECTINIFILE,      VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_VIEW_EDITFAVORITES, VIRTKEY, NOINVERT
+    VK_LEFT,        IDT_HISTORY_BACK,       VIRTKEY, ALT, NOINVERT
+    VK_MULTIPLY,    IDM_VIEW_FILTERALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      IDM_FILE_PROPERTIES,    VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       IDT_HISTORY_FORWARD,    VIRTKEY, ALT, NOINVERT
+    VK_TAB,         ACC_NEXTCTL,            VIRTKEY, NOINVERT
+    VK_TAB,         ACC_PREVCTL,            VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          IDT_FILE_PREV,          VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+IDS_WARN_PREF_LNG_NOT_AVAIL  "Sorry, your prefered language (%s) is not available.\nIf you like, join our translation project."
+END
+
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "minipath.ver"
+
+#if defined(MUI_BASE_LNG_EN_US)
+  #include "../language/mp_en_us/mp_en_us.rc"
+#elif defined(MUI_BASE_LNG_AF_ZA)
+  #include "../language/mp_af_za/mp_af_za.rc"
+#elif defined(MUI_BASE_LNG_BE_BY)
+  #include "../language/mp_be_by/mp_be_by.rc"
+#elif defined(MUI_BASE_LNG_DE_DE)
+  #include "../language/mp_de_de/mp_de_de.rc"
+#elif defined(MUI_BASE_LNG_EL_GR)
+  #include "../language/mp_el_gr/mp_el_gr.rc"
+#elif defined(MUI_BASE_LNG_EN_GB)
+  #include "../language/mp_en_gb/mp_en_gb.rc"
+#elif defined(MUI_BASE_LNG_ES_ES)
+  #include "../language/mp_es_es/mp_es_es.rc"
+#elif defined(MUI_BASE_LNG_FI_FI)
+  #include "../language/mp_fi_fi/mp_fi_fi.rc"
+#elif defined(MUI_BASE_LNG_FR_FR)
+  #include "../language/mp_fr_fr/mp_fr_fr.rc"
+#elif defined(MUI_BASE_LNG_HI_IN)
+  #include "../language/mp_hi_in/mp_hi_in.rc"
+#elif defined(MUI_BASE_LNG_HU_HU)
+  #include "../language/mp_hu_hu/mp_hu_hu.rc"
+#elif defined(MUI_BASE_LNG_ID_ID)
+  #include "../language/mp_id_id/mp_id_id.rc"
+#elif defined(MUI_BASE_LNG_IT_IT)
+  #include "../language/mp_it_it/mp_it_it.rc"
+#elif defined(MUI_BASE_LNG_JA_JP)
+  #include "../language/mp_ja_jp/mp_ja_jp.rc"
+#elif defined(MUI_BASE_LNG_KO_KR)
+  #include "../language/mp_ko_kr/mp_ko_kr.rc"
+#elif defined(MUI_BASE_LNG_NL_NL)
+  #include "../language/mp_nl_nl/mp_nl_nl.rc"
+#elif defined(MUI_BASE_LNG_PL_PL)
+  #include "../language/mp_pl_pl/mp_pl_pl.rc"
+#elif defined(MUI_BASE_LNG_PT_BR)
+  #include "../language/mp_pt_br/mp_pt_br.rc"
+#elif defined(MUI_BASE_LNG_PT_PT)
+  #include "../language/mp_pt_pt/mp_pt_pt.rc"
+#elif defined(MUI_BASE_LNG_RU_RU)
+  #include "../language/mp_ru_ru/mp_ru_ru.rc"
+#elif defined(MUI_BASE_LNG_SK_SK)
+  #include "../language/mp_sk_sk/mp_sk_sk.rc"
+#elif defined(MUI_BASE_LNG_SV_SE)
+  #include "../language/mp_sv_se/mp_sv_se.rc"
+#elif defined(MUI_BASE_LNG_TR_TR)
+  #include "../language/mp_tr_tr/mp_tr_tr.rc"
+#elif defined(MUI_BASE_LNG_VI_VN)
+  #include "../language/mp_vi_vn/mp_vi_vn.rc"
+#elif defined(MUI_BASE_LNG_ZH_CN)
+  #include "../language/mp_zh_cn/mp_zh_cn.rc"
+#elif defined(MUI_BASE_LNG_ZH_TW)
+  #include "../language/mp_zh_tw/mp_zh_tw.rc"
+#else
+#error "No MUI Base Language defined - Please set Preprocessor Define accordingly!"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

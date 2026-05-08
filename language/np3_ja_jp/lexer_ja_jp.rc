@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese (Japan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "標準配色"
+    IDS_LEX_WEB_SRC         "Webソースコード"
+    IDS_LEX_XML_DOC         "XML文書"
+    IDS_LEX_CSS_STYLE       "CSSスタイルシート"
+    IDS_LEX_PRISM_CSV       "CSV 虹色"
+    IDS_LEX_CPP_SRC         "C/C++コード"
+    IDS_LEX_CSHARP_SRC      "C#コード"
+    IDS_LEX_RESOURCE_SCR    "Resourceファイル"
+    IDS_LEX_MAKEFILES       "Makefile"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript"
+    IDS_LEX_VIS_BAS         "Visual Basic"
+    IDS_LEX_J_SCR           "JavaScript"
+    IDS_LEX_JAVA_SRC        "Javaコード"
+    IDS_LEX_PASCAL_SRC      "Pascalコード"
+    IDS_LEX_ASM_SCR         "Assembly:アセンブリ"
+    IDS_LEX_PERL_SCR        "Perlスクリプト"
+    IDS_LEX_CONF            "Config:設定ファイル"
+    IDS_LEX_BATCH           "Batch:バッチファイル"
+    IDS_LEX_DIFF            "Diffファイル"
+    IDS_LEX_SQL             "SQLクエリ"
+    IDS_LEX_PYTHON          "Pythonスクリプト"
+    IDS_LEX_APC_CFG         "Apache設定ファイル"
+    IDS_LEX_PWRSHELL        "PowerShellスクリプト"
+    IDS_LEX_D_SRC           "Dコード"
+    IDS_LEX_GO_SRC          "Goコード"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awkスクリプト"
+    IDS_LEX_ANSI_ART        "ASCIIアート"
+    IDS_LEX_SHELL_SCR       "Shellスクリプト"
+    IDS_LEX_REG_FILES       "Registry:レジストリ"
+    IDS_LEX_VHDL            "VHDL"
+    IDS_LEX_JSON            "JSON"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS"
+    IDS_LEX_INNO            "Inno Setupスクリプト"
+    IDS_LEX_RUBY            "Rubyスクリプト"
+    IDS_LEX_LUA             "Luaスクリプト"
+    IDS_LEX_TCL             "Tclスクリプト"
+    IDS_LEX_AUTOIT3         "AutoIt3スクリプト"
+    IDS_LEX_LATEX           "LaTeX文書"
+    IDS_LEX_AHK             "AutoHotkeyスクリプト"
+    IDS_LEX_CMAKE           "Cmakeスクリプト"
+    IDS_LEX_AVI_SYNTH       "AviSynthスクリプト"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML"
+    IDS_LEX_COFFEE_SCR      "Coffeescript"
+    IDS_LEX_MATLAB          "MATLAB"
+    IDS_LEX_NIM_SRC         "Nimコード"
+    IDS_LEX_R_STAT          "R-S-SPlus Statisticsコード"
+    IDS_LEX_RUST_SRC        "Rustコード"
+    IDS_LEX_AHKL            "AutoHotkey_Lスクリプト"
+    IDS_LEX_TEXT_FILES      "テキストファイル"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Dartソースコード"
+    IDS_LEX_KOTLIN_SRC      "Kotlinソースコード"
+    IDS_LEX_JULIA_SCR       "Juliaスクリプト"
+    IDS_LEX_KIX_SCR         "KiXtartスクリプト"
+    IDS_LEX_FORTRAN         "Fortranソースコード"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "Verilog HDL"
+    IDS_LEX_SYSVERILOG      "SystemVerilog HDVL"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "デフォルトのスタイル"
+    IDS_LEX_STD_MARGIN      "行数"
+    IDS_LEX_STD_BRACE       "対応する括弧 (強調)"
+    IDS_LEX_STD_BRACE_FAIL  "未対応の括弧 (強調)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "制御文字 (フォント)"
+    IDS_LEX_STD_INDENT      "インデントのガイド (色)"
+    IDS_LEX_STD_SEL         "選択文字列 (色)"
+    IDS_LEX_STD_WSPC        "空白 (色、サイズ 1-12)"
+    IDS_LEX_STD_LN_BACKGR   "現在の行の強調表示"
+    IDS_LEX_STD_CARET       "キャレット (色, サイズ 1-3)"
+    IDS_LEX_STD_LONG_LN     "行の長さのガイド (色)"
+    IDS_LEX_STD_X_SPC       "行間の余白 (サイズ)"
+    IDS_LEX_2ND_STYLE       "第2 デフォルトのスタイル"
+    IDS_LEX_2ND_MARGIN      "第2 行数"
+    IDS_LEX_2ND_BRACE       "第2 対応する括弧 (強調)"
+    IDS_LEX_2ND_BRACE_FAIL  "第2 未対応の括弧 (強調)"
+    IDS_LEX_2ND_CTRL_CHAR   "第2 制御文字 (フォント)"
+    IDS_LEX_2ND_INDENT      "第2 インデントのガイド (色)"
+    IDS_LEX_2ND_SEL         "第2 選択文字列 (色)"
+    IDS_LEX_2ND_WSPC        "第2 空白 (色, サイズ 1-12)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "第2 現在の行の強調表示"
+    IDS_LEX_2ND_CARET       "第2 キャレット (色, サイズ 1-3)"
+    IDS_LEX_2ND_LONG_LN     "第2 行の長さのガイド (色)"
+    IDS_LEX_2ND_X_SPC       "第2 行間の余白 (サイズ)"
+    IDS_LEX_STD_BKMRK       "しおりと折りたたみ (色、サイズ)"
+    IDS_LEX_2ND_BKMRK       "第2 しおりと折りたたみ (色、サイズ)"
+    IDS_LEX_STR_Default     "デフォルト"
+    IDS_LEX_STR_Comment     "コメント"
+    IDS_LEX_STR_Keyword     "キーワード"
+    IDS_LEX_STR_Identifier  "識別子"
+    IDS_LEX_STR_Number      "数値"
+    IDS_LEX_STR_String      "文字列"
+    IDS_LEX_STR_Operator    "演算子"
+    IDS_LEX_STR_PreProc     "プリプロセッサ"
+    IDS_LEX_STR_VerbStrg    "逐語的文字列 (Verbatim)"
+    IDS_LEX_STR_RegEx       "正規表現"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML タグ"
+    IDS_LEX_STR_63137       "HTML タグ 未定義"
+    IDS_LEX_STR_63138       "HTML 属性"
+    IDS_LEX_STR_63139       "HTML 属性 未定義"
+    IDS_LEX_STR_63140       "HTML 値"
+    IDS_LEX_STR_63141       "HTML 文字列"
+    IDS_LEX_STR_63142       "HTML タグ内その他"
+    IDS_LEX_STR_63143       "HTML コメント"
+    IDS_LEX_STR_63144       "HTML エンティティ"
+    IDS_LEX_STR_63145       "XML 識別子"
+    IDS_LEX_STR_63146       "ASP 開始タグ"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP 開始タグ"
+    IDS_LEX_STR_63149       "PHP"
+    IDS_LEX_STR_63150       "PHP 文字列 (二重引用符)"
+    IDS_LEX_STR_63151       "PHP 文字列 (引用符)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP キーワード"
+    IDS_LEX_STR_63153       "PHP 数値"
+    IDS_LEX_STR_63154       "PHP 変数"
+    IDS_LEX_STR_63155       "PHP 変数 (文字列内)"
+    IDS_LEX_STR_63156       "PHP 可変変数 (文字列内)"
+    IDS_LEX_STR_63157       "PHP コメント"
+    IDS_LEX_STR_63158       "PHP 演算子"
+    IDS_LEX_STR_63159       "JS"
+    IDS_LEX_STR_63160       "JS コメント"
+    IDS_LEX_STR_63161       "JS 数値"
+    IDS_LEX_STR_63162       "JS 識別子"
+    IDS_LEX_STR_63163       "JS キーワード"
+    IDS_LEX_STR_63164       "JS 文字列"
+    IDS_LEX_STR_63165       "JS シンボル"
+    IDS_LEX_STR_63166       "JS 正規表現"
+    IDS_LEX_STR_63167       "ASP JS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS コメント"
+    IDS_LEX_STR_63169       "ASP JS 数値"
+    IDS_LEX_STR_63170       "ASP JS 識別子"
+    IDS_LEX_STR_63171       "ASP JS キーワード"
+    IDS_LEX_STR_63172       "ASP JS 文字列"
+    IDS_LEX_STR_63173       "ASP JS シンボル"
+    IDS_LEX_STR_63174       "ASP JS 正規表現"
+    IDS_LEX_STR_63175       "VBS"
+    IDS_LEX_STR_63176       "VBS コメント"
+    IDS_LEX_STR_63177       "VBS 数値"
+    IDS_LEX_STR_63178       "VBS キーワード"
+    IDS_LEX_STR_63179       "VBS 文字列"
+    IDS_LEX_STR_63180       "VBS 識別子"
+    IDS_LEX_STR_63181       "ASP VBS"
+    IDS_LEX_STR_63182       "ASP VBS コメント"
+    IDS_LEX_STR_63183       "ASP VBS 数値"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS キーワード"
+    IDS_LEX_STR_63185       "ASP VBS 文字列"
+    IDS_LEX_STR_63186       "ASP VBS 識別子"
+    IDS_LEX_STR_63187       "XML タグ"
+    IDS_LEX_STR_63188       "XML 属性"
+    IDS_LEX_STR_63189       "XML 値"
+    IDS_LEX_STR_63190       "XML 文字列"
+    IDS_LEX_STR_63191       "XML タグ内その他"
+    IDS_LEX_STR_63192       "XML コメント"
+    IDS_LEX_STR_63193       "XML エンティティ"
+    IDS_LEX_STR_63194       "クラス"
+    IDS_LEX_STR_63195       "ID"
+    IDS_LEX_STR_63196       "属性"
+    IDS_LEX_STR_63197       "疑似クラス"
+    IDS_LEX_STR_63198       "疑似クラス (未定義)"
+    IDS_LEX_STR_63199       "CSS プロパティ"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "プロパティ (未定義)"
+    IDS_LEX_STR_Value       "値"
+    IDS_LEX_STR_63202       "Important"
+    IDS_LEX_STR_63203       "ディレクティブ"
+    IDS_LEX_STR_Target      "ターゲット"
+    IDS_LEX_STR_63205       "インラインアセンブラ"
+    IDS_LEX_STR_63206       "CPU命令"
+    IDS_LEX_STR_63207       "FPU命令"
+    IDS_LEX_STR_Register    "レジスタ"
+    IDS_LEX_STR_63209       "Directive Operand(※訳求 オペランド命令)"
+    IDS_LEX_STR_63210       "拡張命令"
+    IDS_LEX_STR_63211       "文字列 (ダブルクォート)"
+    IDS_LEX_STR_63212       "文字列 (シングルクォート)"
+    IDS_LEX_STR_63213       "POD (一般)"
+    IDS_LEX_STR_63214       "POD (Verbatim)"
+    IDS_LEX_STR_63215       "スカラー $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "配列 @var"
+    IDS_LEX_STR_63217       "連想配列 %var"
+    IDS_LEX_STR_63218       "シンボルテーブル *var"
+    IDS_LEX_STR_63219       "正規表現 /re/ or m{re}"
+    IDS_LEX_STR_63220       "置換 s/re/ore/"
+    IDS_LEX_STR_63221       "バッククォート"
+    IDS_LEX_STR_63222       "Data セクション"
+    IDS_LEX_STR_63223       "ヒアドキュメント (区切り)"
+    IDS_LEX_STR_63224       "ヒアドキュメント (シングルクオート, q)"
+    IDS_LEX_STR_63225       "ヒアドキュメント (ダブルクオート, qq)"
+    IDS_LEX_STR_63226       "ヒアドキュメント (バッククォート, qx)"
+    IDS_LEX_STR_63227       "シングルクオート文字列 (一般, q)"
+    IDS_LEX_STR_63228       "ダブルクオート文字列 (qq)"
+    IDS_LEX_STR_63229       "バッククォート (qx)"
+    IDS_LEX_STR_63230       "正規表現 (qr)"
+    IDS_LEX_STR_63231       "配列 (qw)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "セクション"
+    IDS_LEX_STR_Assign      "代入"
+    IDS_LEX_STR_63234       "デフォルト値"
+    IDS_LEX_STR_Label       "ラベル"
+    IDS_LEX_STR_Cmd         "コマンド"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "比較対象のファイル"
+    IDS_LEX_STR_63239       "場所"
+    IDS_LEX_STR_63240       "新規行"
+    IDS_LEX_STR_63241       "削除行"
+    IDS_LEX_STR_63242       "変更行"
+    IDS_LEX_STR_63243       "識別子 (引用符)"
+    IDS_LEX_STR_63244       "文字列 (トリプル・ダブルクォート)"
+    IDS_LEX_STR_63245       "文字列 (トリプル・シングルクォート)"
+    IDS_LEX_STR_ClassName   "クラス名"
+    IDS_LEX_STR_FctName     "関数名"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "IPアドレス"
+    IDS_LEX_STR_Var         "変数"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "エイリアス"
+    IDS_LEX_STR_63252       "解析エラー"
+    IDS_LEX_STR_Prototyp    "プロトタイプ"
+    IDS_LEX_STR_63254       "フォーマット識別子"
+    IDS_LEX_STR_63255       "フォーマット内容"
+    IDS_LEX_STR_63256       "HTML要素内の文章"
+    IDS_LEX_STR_63257       "XML要素内の文章"
+    IDS_LEX_STR_63258       "Typedef/クラス"
+    IDS_LEX_STR_63259       "コメント Doc"
+    IDS_LEX_STR_Keyword2nd  "キーワード2"
+    IDS_LEX_STR_Error       "エラー"
+    IDS_LEX_STR_63262       "単語出現マーカー (強調)"
+    IDS_LEX_STR_63263       "第2 単語出現マーカー (強調)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "URLアドレスにリンク"
+    IDS_LEX_STR_63265       "第2 URLアドレスにリンク"
+    IDS_LEX_STR_63266       "標準配色2"
+    IDS_LEX_STR_63267       "文字列内の変数"
+    IDS_LEX_STR_63268       "配列 (番号付きリスト)"
+    IDS_LEX_STR_Infix       "${} (Infix, 訳求)"
+    IDS_LEX_STR_InfixEOL    "$() (Infix EOL, 訳求)"
+    IDS_LEX_STR_63271       "関数 (基本パッケージ)"
+    IDS_LEX_STR_63272       "関数 (ほかのパッケージ)"
+    IDS_LEX_STR_Function    "関数"
+    IDS_LEX_STR_Const       "定数"
+    IDS_LEX_STR_63275       "サブセクション"
+    IDS_LEX_STR_63276       "セクショングループ"
+    IDS_LEX_STR_63277       "関数定義"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "If定義"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "マクロ定義"
+    IDS_LEX_STR_Param       "引数"
+    IDS_LEX_STR_63282       "インライン展開"
+    IDS_LEX_STR_63283       "Pascal コメント"
+    IDS_LEX_STR_63284       "Pascal キーワード"
+    IDS_LEX_STR_63285       "値の名前"
+    IDS_LEX_STR_63286       "型"
+    IDS_LEX_STR_Hex         "Hex (16進数)"
+    IDS_LEX_STR_AddKey      "キーの追加"
+    IDS_LEX_STR_DelKey      "キーの削除"
+    IDS_LEX_STR_Esc         "エスケープ"
+    IDS_LEX_STR_63291       "キーのパス中の GUID"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "シンボル"
+    IDS_LEX_STR_63294       "モジュール名"
+    IDS_LEX_STR_63295       "インスタンス変数"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "クラス変数"
+    IDS_LEX_STR_63297       "Data セクション"
+    IDS_LEX_STR_BaseFct     "基本関数"
+    IDS_LEX_STR_63299       "文字列、テーブル、Function"
+    IDS_LEX_STR_63300       "入力、出力、OSの機能"
+    IDS_LEX_STR_LitStrg     "リテラル文字列"
+    IDS_LEX_STR_63302       "擬似要素"
+    IDS_LEX_STR_Media       "メディアクエリ"
+    IDS_LEX_STR_GlobClass   "グローバルクラス"
+    IDS_LEX_STR_63305       "ユーザー定義関数"
+    IDS_LEX_STR_63306       "特殊文字 (エスケープ文字?)"
+    IDS_LEX_STR_63307       "区切り部分"
+    IDS_LEX_STR_63308       "式演算子"
+    IDS_LEX_STR_63309       "変数逆参照 (%)"
+    IDS_LEX_STR_63310       "制御フロー"
+    IDS_LEX_STR_63311       "キー・ボタン"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "変数 (組み込み)"
+    IDS_LEX_STR_63313       "変数"
+    IDS_LEX_STR_Filter      "フィルター"
+    IDS_LEX_STR_Plugin      "プラグイン"
+    IDS_LEX_STR_63316       "クリップのプロパティ"
+    IDS_LEX_STR_63317       "改行 (Line Begin)"
+    IDS_LEX_STR_Strong      "強調 (太字)"
+    IDS_LEX_STR_Emph        "強勢 (斜体)"
+    IDS_LEX_STR_63320       "見出しレベル1"
+    IDS_LEX_STR_63321       "見出しレベル2"
+    IDS_LEX_STR_63322       "見出しレベル3"
+    IDS_LEX_STR_63323       "見出しレベル4"
+    IDS_LEX_STR_63324       "見出しレベル5"
+    IDS_LEX_STR_63325       "見出しレベル6"
+    IDS_LEX_STR_63326       "Pre 文字列"
+    IDS_LEX_STR_63327       "箇条書きリスト"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "引用 (BlockQuote)"
+    IDS_LEX_STR_63329       "打消し"
+    IDS_LEX_STR_63330       "水平線 (HR)"
+    IDS_LEX_STR_Link        "リンク"
+    IDS_LEX_STR_Code        "コード"
+    IDS_LEX_STR_Ref         "Reference (*)"
+    IDS_LEX_STR_Doc         "ドキュメント"
+    IDS_LEX_STR_Txt         "文字列"
+    IDS_LEX_STR_StdOp       "標準演算子"
+    IDS_LEX_STR_Attrib      "属性 (Attribute)"
+    IDS_LEX_STR_StdFct      "標準関数 (Function)"
+    IDS_LEX_STR_StdPck      "標準パッケージ"
+    IDS_LEX_STR_StdTyp      "標準型 (Type)"
+    IDS_LEX_STR_Word        "Word"
+    IDS_LEX_STR_Verb        "逐語的 (Verbatim)"
+    IDS_LEX_STR_63343       "型 (組み込み)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "バイト文字列"
+    IDS_LEX_STR_63345       "他のキーワード"
+    IDS_LEX_STR_63346       "Rust ライフタイム"
+    IDS_LEX_STR_Obj         "オブジェクト"
+    IDS_LEX_STR_Key         "キー"
+    IDS_LEX_STR_HotKey      "ホットキー"
+    IDS_LEX_STR_HotStrg     "ホットストリング"
+    IDS_LEX_STR_HotStrgOp   "ホットストリング・オプション"
+    IDS_LEX_STR_63352       "インライン入力時のIME変換"
+    IDS_LEX_STR_63353       "第2 インライン入力時のIME変換"
+    IDS_LEX_STR_63354       "マルチ編集の表示"
+    IDS_LEX_STR_63355       "第2 マルチ編集の表示"
+    IDS_LEX_STR_DateTime    "日時"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "For Each 構文"
+    IDS_LEX_STR_63358       "While 構文"
+    IDS_LEX_STR_Math        "数式"
+    IDS_LEX_STR_Scalar      "スカラー"
+    IDS_LEX_STR_Subst       "置換"
+    IDS_LEX_STR_Modf        "修飾子"
+    IDS_LEX_STR_Tag         "タグ"
+    IDS_LEX_STR_63364       "プロパティ名"
+    IDS_LEX_STR_63365       "LD キーワード"
+    IDS_LEX_STR_63366       "エスケープシーケンス"
+    IDS_LEX_STR_63367       "Unicode 符号位置にマウス焦点"
+    IDS_LEX_STR_63368       "第2 Unicode 符号位置にマウス焦点"
+    IDS_LEX_STR_Interface   "インターフェース"
+    IDS_LEX_STR_Annot       "アノテーション"
+    IDS_LEX_STR_63371       "コメント Doc 用語"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "デコレータ"
+    IDS_LEX_STR_63373       "タスク一覧用コメント"
+    IDS_LEX_STR_63374       "コメント Doc エラー"
+    IDS_LEX_STR_TypeOp      "型演算子"
+    IDS_LEX_STR_63376       "継続行"
+    IDS_LEX_STR_Special     "特別"
+    IDS_LEX_STR_63378       "構文演算子"
+    IDS_LEX_STR_63379       "閉じられていない文字列"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "短縮 IRI"
+    IDS_LEX_STR_SendKey     "キー送信"
+    IDS_LEX_STR_63383       "メタデータ"
+    IDS_LEX_STR_Enum        "列挙 (enum)"
+    IDS_LEX_STR_63385       "文字列 (トリプル・クォート)"
+    IDS_LEX_STR_63386       "シンボル 識別子"
+    IDS_LEX_STR_63387       "シンボル 演算子"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "文字列 EOL"
+    IDS_LEX_STR_Backticks   "バッククォート"
+    IDS_LEX_STR_GUIDStrg    "GUID 文字列"
+    IDS_LEX_STR_Global      "グローバル"
+    IDS_LEX_STR_Input       "Input"
+    IDS_LEX_STR_Output      "Output"
+    IDS_LEX_STR_InOut       "InOut"
+    IDS_LEX_STR_PortConn    "ポート接続"
+    IDS_LEX_STR_SysTasks    "システムタスク"
+    IDS_LEX_STR_AfterLabel  "ラベル以降"
+    IDS_LEX_STR_Table       "Table"
+    IDS_LEX_STR_StarCmd     "Star Command"
+    IDS_LEX_STR_SlashCmd    "Slash Command"
+    IDS_LEX_STR_Processor   "Processor"
+    IDS_LEX_STR_Argument    "Argument"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "変更履歴の目印 修正済み"
+    IDS_LEX_STD_CH_SAVED        "変更履歴の目印 保存済み"
+    IDS_LEX_STD_CH_REV_TO_MOD   "変更履歴の目印 修正済みへと戻した"
+    IDS_LEX_STD_CH_REV_TO_ORG   "変更履歴の目印 原文へと戻した"
+    IDS_LEX_2ND_CH_MODIFIED     "第2 変更履歴の目印 修正済み"
+    IDS_LEX_2ND_CH_SAVED        "第2 変更履歴の目印 保存済み"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "第2 変更履歴の目印 修正済みへと戻した"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "第2 変更履歴の目印 原文へと戻した"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "列 0"
+    IDS_LEX_CSV_COL_1       "列 1"
+    IDS_LEX_CSV_COL_2       "列 2"
+    IDS_LEX_CSV_COL_3       "列 3"
+    IDS_LEX_CSV_COL_4       "列 4"
+    IDS_LEX_CSV_COL_5       "列 5"
+    IDS_LEX_CSV_COL_6       "列 6"
+    IDS_LEX_CSV_COL_7       "列 7"
+    IDS_LEX_CSV_COL_8       "列 8"
+    IDS_LEX_CSV_COL_9       "列 9"
+END
+
+#endif    // Japanese (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

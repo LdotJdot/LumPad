@@ -1,0 +1,637 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Vietnamese (Vietnam) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_VIT)
+LANGUAGE LANG_VIETNAMESE, SUBLANG_VIETNAMESE_VIETNAM
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MUI_MAINMENU MENU
+BEGIN
+    POPUP "Tệp(&F)"
+    BEGIN
+        MENUITEM "Tạo mới(&N)\tCtrl+N",                                    IDM_FILE_NEW
+
+        MENUITEM "Close &Tab",                                      IDM_FILE_CLOSETAB
+        MENUITEM "Mở(&O)...\tCtrl+O",                                    IDM_FILE_OPEN
+        MENUITEM "Lưu(&S)\tCtrl+S",                                      IDM_FILE_SAVE
+        MENUITEM "Lưu dưới tên khác(&A)...\tF6",                                 IDM_FILE_SAVEAS
+        MENUITEM "Lưu bản sao(&C)...\tCtrl+F6",                           IDM_FILE_SAVECOPY
+        MENUITEM "Lưu với ngày/giờ của tệp gốc(&M)\tCtrl+Alt+F6", IDM_FILE_PRESERVE_FILEMODTIME
+        MENUITEM SEPARATOR
+        MENUITEM "Thuộc tính chỉ đọc(&R)",              IDM_FILE_READONLY
+        MENUITEM "Khóa tệp (chia sẻ đọc)(&L)",                 IDM_FILE_LOCK_SHARE_READ
+        MENUITEM SEPARATOR
+        MENUITEM "Cài đặt mật khẩu mã hóa(&Y)...",                IDM_SETPASS
+        MENUITEM SEPARATOR
+        POPUP "Đường dẫn clipboard(&D)"
+        BEGIN
+            MENUITEM "Chỉ sao chép tên tệp\tCtrl+F9",          IDM_EDIT_INSERT_FILENAME
+            MENUITEM "Chỉ sao chép đường dẫn thư mục(&D)",           IDM_EDIT_INSERT_DIRNAME
+            MENUITEM "Sao chép toàn bộ đường dẫn\tCtrl+Shift+F9",      IDM_EDIT_INSERT_PATHNAME
+        END
+        POPUP "Thực thi(&L)"
+        BEGIN
+            MENUITEM "Cửa sổ mới trống(&N)\tAlt+N",           IDM_FILE_NEWWINDOW
+            MENUITEM "Nhân bản phiên bản(&D)\tAlt+Shift+N",   IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "Chạy lại với quyền quản trị(&R)",         IDM_FILE_LAUNCH_ELEVATED
+            MENUITEM SEPARATOR
+            MENUITEM "Chạy tài liệu(&D)\tCtrl+L",                IDM_FILE_LAUNCH
+            MENUITEM "Mở với...(&O)\tAlt+L",  IDM_FILE_OPENWITH
+            MENUITEM "Lệnh(&C)...\tCtrl+R",                IDM_FILE_RUN
+            MENUITEM SEPARATOR
+            MENUITEM "Mẫu web 1(&1)\tCtrl+Shift+1",        CMD_WEBACTION1
+            MENUITEM "Mẫu web 2(&2)\tCtrl+Shift+2",        CMD_WEBACTION2
+            MENUITEM SEPARATOR
+            MENUITEM "Mở trình duyệt tệp(&F)",                       IDM_FILE_EXPLORE_DIR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Khôi phục từ tệp(&V)\tF5",                  IDM_FILE_REVERT
+        MENUITEM "Bỏ qua biến tệp(&I)",                      CMD_IGNORE_FILE_VARS
+        POPUP "Mã hóa(&E)"
+        BEGIN
+            POPUP "Khôi phục tiếp theo từ tệp(&R)"
+            BEGIN
+                MENUITEM "Mặc định (cài đặt) (&D)",             CMD_RECODEDEFAULT
+                MENUITEM "ANSI (&N)\tCtrl+Shift+A",            CMD_RECODEANSI
+                MENUITEM "OEM (&O)\tCtrl+Shift+O",             CMD_RECODEOEM
+                MENUITEM "GB18030 (&G)\tCtrl+Shift+F10",       CMD_RECODEGB18030
+                MENUITEM SEPARATOR
+                MENUITEM "ASCII thành UTF-8 (&F)\tCtrl+Shift+F8",  CMD_RELOADASCIIASUTF8
+                MENUITEM "Phân tích UCHARDET cưỡng bức(&C)",          CMD_RELOADFORCEDETECTION
+                MENUITEM "Bỏ qua thẻ mã hóa (&I)\tAlt+F8",          CMD_RELOADNOENCODETAGS
+                MENUITEM SEPARATOR
+                MENUITEM "Thêm mã hóa(&M)...\tF8",         IDM_ENCODING_RECODE
+            END
+            POPUP "Đặt tài liệu tiếp theo(&S)"
+            BEGIN
+                MENUITEM "ANSI(&A)",                            IDM_ENCODING_ANSI
+                MENUITEM "Unicode(&U)",                      IDM_ENCODING_UNICODE
+                MENUITEM "Unicode Big Endian(&B)",              IDM_ENCODING_UNICODEREV
+                MENUITEM "UTF-8(&8)\tShift+F8",                 IDM_ENCODING_UTF8
+                MENUITEM "UTF-8 có chữ ký(&S)",               IDM_ENCODING_UTF8SIGN
+                MENUITEM SEPARATOR
+                MENUITEM "Thêm mã hóa(&M)...\tF9",         IDM_ENCODING_SELECT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Cài đặt mã hóa mặc định(&D)...",          IDM_ENCODING_SETDEFAULT
+        END
+        POPUP "Kết thúc dòng(&G)"
+        BEGIN
+            MENUITEM "&Windows (CR+LF)",                IDM_LINEENDINGS_CRLF
+            MENUITEM "&Mac (CR)",                          IDM_LINEENDINGS_CR
+            MENUITEM "&Unix (LF)",                     IDM_LINEENDINGS_LF
+            MENUITEM SEPARATOR
+            MENUITEM "Mặc định(&D)...",                  IDM_LINEENDINGS_SETDEFAULT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Chọn thụt lề(&I)...",                     CMD_CHECK_INDENTATION
+        MENUITEM SEPARATOR
+        MENUITEM "Cài đặt trang(&U)...",                        IDM_FILE_PAGESETUP
+        MENUITEM "Máy in(&P)...\tCtrl+P",                      IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Thuộc tính(&T)...",                              IDM_FILE_PROPERTIES
+        MENUITEM "Tạo liên kết trên màn hình nền(&K)",                 IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "Yêu thích(&F)"
+        BEGIN
+            MENUITEM "Mở yêu thích(&O)...\tAlt+I",           IDM_FILE_OPENFAV
+            MENUITEM "Thêm tệp hiện tại(&A)...\tAlt+K",           IDM_FILE_ADDTOFAV
+            MENUITEM "Quản lý(&M)...\tAlt+F9",                   IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "&Restore Last Session",                           IDM_FILE_RESTORE_SESSION
+        MENUITEM "Gần đây (Lịch sử sử dụng)(&H)...\tCtrl+Alt+H",             IDM_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "Thoát(&X)\tAlt+F4",                          IDM_FILE_EXIT
+    END
+    POPUP "Chỉnh sửa(&E)"
+    BEGIN
+        MENUITEM "Tài liệu chỉ đọc(&R)"                          IDM_VIEW_READONLY
+        MENUITEM SEPARATOR
+        MENUITEM "Hoàn tác(&U)\tCtrl+Z",                      IDM_EDIT_UNDO
+        MENUITEM "Làm lại(&R)\tCtrl+Y",                      IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cắt(&T)\tCtrl+X",                       IDM_EDIT_CUT
+        MENUITEM "Sao chép(&C)\tCtrl+C",                           IDM_EDIT_COPY
+        MENUITEM "Sao chép tất cả(&L)\tAlt+C",                       IDM_EDIT_COPYALL
+        MENUITEM "Sao chép thêm(&A)\tCtrl+E",                      IDM_EDIT_COPYADD
+        MENUITEM "Dán(&P)\tCtrl+V",                      IDM_EDIT_PASTE
+        MENUITEM "Hoán đổi(&W)\tCtrl+K",                 IDM_EDIT_SWAP
+        MENUITEM "Chọn tất cả(&S)\tCtrl+A",                      IDM_EDIT_SELECTALL
+        MENUITEM "Xóa(&D)\tDel",                              IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Xóa bộ nhớ tạm(&E)",                         IDM_EDIT_CLEARCLIPBOARD
+        MENUITEM "Bật/tắt &giám sát bảng tạm",  IDM_EDIT_TOGGLE_PASTEBOARD
+        MENUITEM SEPARATOR
+        POPUP "Từ(&W)"
+        BEGIN
+            MENUITEM "Hoàn thành từ(&C)\tCtrl+Alt+Enter",         IDM_EDIT_COMPLETEWORD
+            MENUITEM SEPARATOR
+            MENUITEM "Di chuyển từ con trỏ sang trái(&L)\tCtrl+ ←",        CMD_CTRLLEFT
+            MENUITEM "Di chuyển từ con trỏ sang phải(&R)\tCtrl+ →",      CMD_CTRLRIGHT
+            MENUITEM "Xóa từ bên trái(&D)\tCtrl+Back",              CMD_CTRLBACK
+            MENUITEM "Xóa từ bên phải(&W)\tCtrl+Del",             CMD_CTRLDEL
+        END
+        POPUP "Dòng(&I)"
+        BEGIN
+            MENUITEM "Di chuyển lên(&U)\tAlt+ ↑",                      IDM_EDIT_MOVELINEUP
+            MENUITEM "Di chuyển xuống(&M)\tAlt+ ↓",                    IDM_EDIT_MOVELINEDOWN
+            MENUITEM SEPARATOR
+            MENUITEM "Cắt mục đã chọn hoặc dòng hiện tại(&I)\tCtrl+X",   IDM_EDIT_CUT
+            MENUITEM "Cắt toàn bộ dòng đã chọn(&L)\tCtrl+Shift+X", IDM_EDIT_CUTLINE
+            MENUITEM "Sao chép mục đã chọn hoặc dòng hiện tại(&C)\tCtrl+C",      IDM_EDIT_COPY
+            MENUITEM "Sao chép toàn bộ dòng đã chọn(&W)\tCtrl+Shift+C",    IDM_EDIT_COPYLINE
+            MENUITEM SEPARATOR
+            MENUITEM "Nhân bản dòng/mục đã chọn(&D)\tCtrl+D",               IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM "Hoán đổi dòng(&T)\tAlt+D",                   IDM_EDIT_LINETRANSPOSE
+            MENUITEM "Xóa dòng(&E)\tCtrl+Shift+D",              IDM_EDIT_DELETELINE
+            MENUITEM SEPARATOR
+            MENUITEM "Xóa dòng bên trái(&N)\tCtrl+Shift+Back",   IDM_EDIT_DELETELINELEFT
+            MENUITEM "Xóa dòng bên phải(&H)\tCtrl+Shift+Del",   IDM_EDIT_DELETELINERIGHT
+            MENUITEM SEPARATOR
+            MENUITEM "Ngắt dòng (&W)...\tCtrl+Shift+W",       IDM_EDIT_COLUMNWRAP
+            MENUITEM SEPARATOR
+            MENUITEM "Kết hợp các dòng trùng lặp(&U)\tCtrl+Alt+D",      IDM_EDIT_UNITEDUPLICATELINES
+            MENUITEM "Xóa các dòng trùng lặp(&V)",         IDM_EDIT_REMOVEDUPLICATELINES
+            MENUITEM "Kết hợp các dòng trống(&G)\tAlt+Y",             IDM_EDIT_MERGEEMPTYLINES
+            MENUITEM "Kết hợp các dòng trắng(&K)\tCtrl+Alt+Y",      IDM_EDIT_MERGEBLANKLINES
+            MENUITEM "Xóa các dòng trống(&R)\tAlt+R",             IDM_EDIT_REMOVEEMPTYLINES
+            MENUITEM "Xóa các dòng trắng(&B)\tCtrl+Alt+B",      IDM_EDIT_REMOVEBLANKLINES
+        END
+        POPUP "Nâng cao(&N)"
+        BEGIN
+            MENUITEM "Thụt lề(&I)",                           IDM_EDIT_INDENT
+            MENUITEM "Bỏ thụt lề(&U)",                           IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            POPUP "Chú thích dòng(&C)"
+            BEGIN
+                MENUITEM "Chuyển đổi(&T)\tCtrl+Q",               IDM_EDIT_LINECOMMENT
+                MENUITEM "Thêm(&A)\tCtrl+Alt+Q",              IDM_EDIT_LINECOMMENT_ADD
+                MENUITEM "Xóa(&R)\tCtrl+Alt+Shift+Q",     IDM_EDIT_LINECOMMENT_REMOVE
+                MENUITEM "Chặn chỉnh sửa(&B)\tAlt+Shift+Q",      IDM_EDIT_LINECOMMENT_BLOCKEDIT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Chú thích dòng (Stream)(&R)\tCtrl+Shift+Q",           IDM_EDIT_STREAMCOMMENT
+            MENUITEM SEPARATOR
+            POPUP "Bao quanh mục đã chọn(&E)"
+            BEGIN
+                MENUITEM "Dấu nháy đơn(&S)\tCtrl+1",             CMD_STRINGIFY
+                MENUITEM "Dấu nháy kép(&D)\tCtrl+2",             CMD_STRINGIFY2
+                MENUITEM SEPARATOR
+                MENUITEM "( )\tCtrl+3",                      CMD_EMBRACE
+                MENUITEM "[ ]\tCtrl+4",                      CMD_EMBRACE2
+                MENUITEM "{ }\tCtrl+5",                      CMD_EMBRACE3
+                MENUITEM SEPARATOR
+                MENUITEM "Dấu nháy ngược(&B)\tCtrl+6",             CMD_EMBRACE4
+                MENUITEM SEPARATOR
+                MENUITEM "Chỉ định(&W)...\tAlt+Q",               IDM_EDIT_ENCLOSESELECTION
+            END
+            MENUITEM "Nhân bản mục đã chọn/dòng(&D)\tCtrl+D",              IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "Điền bằng khoảng trắng(&P)\tAlt+B",             IDM_EDIT_PADWITHSPACES
+            MENUITEM "Xóa ký tự đầu tiên(&F)\tAlt+Z",             IDM_EDIT_STRIP1STCHAR
+            MENUITEM "Xóa ký tự cuối cùng(&L)\tAlt+U",             IDM_EDIT_STRIPLASTCHAR
+            MENUITEM "Xóa khoảng trắng cuối cùng(&T)\tAlt+W",               IDM_EDIT_TRIMLINES
+            MENUITEM "Nén khoảng trắng(&B)\tCtrl+Alt+P",             IDM_EDIT_COMPRESS_BLANKS
+            MENUITEM SEPARATOR
+            MENUITEM "Chỉnh sửa dòng(&M)...\tAlt+M",                 IDM_EDIT_MODIFYLINES
+            MENUITEM "Sắp xếp dòng(&O)...\tAlt+O",                 IDM_EDIT_SORTLINES
+            MENUITEM SEPARATOR
+            MENUITEM "Căn chỉnh dòng(&A)...\tAlt+J",               IDM_EDIT_ALIGN
+            MENUITEM "Chia dòng(&I)\tCtrl+I",                IDM_EDIT_SPLITLINES
+            MENUITEM "Kết hợp dòng(&J)\tCtrl+J",                IDM_EDIT_JOINLINES
+            MENUITEM "Kết hợp dòng không khoảng trắng(&E)\tCtrl+Alt+J",            IDM_EDIT_JOINLN_NOSP
+            MENUITEM "Giữ đoạn văn(&V)\tCtrl+Shift+J",        IDM_EDIT_JOINLINES_PARA
+            MENUITEM SEPARATOR
+            MENUITEM "Di chuyển đến điểm bắt đầu chọn\tCtrl+,",    CMD_JUMP2SELSTART
+            MENUITEM "Di chuyển đến điểm kết thúc chọn\tCtrl+.",      CMD_JUMP2SELEND
+        END
+        POPUP "Chuyển đổi(&V)"
+        BEGIN
+            MENUITEM "Chuyển thành chữ hoa(&U)\tCtrl+Shift+U",                IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "Chuyển thành chữ thường(&L)\tCtrl+U",                      IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "Đảo ngược chữ hoa/thường(&I)\tCtrl+Alt+U",             IDM_EDIT_INVERTCASE
+            MENUITEM "Chữ cái đầu từ thành chữ hoa(&T)\tCtrl+Alt+I",       IDM_EDIT_TITLECASE
+            MENUITEM "Chữ cái đầu câu thành chữ hoa(&S)\tCtrl+Alt+O",       IDM_EDIT_SENTENCECASE
+            MENUITEM SEPARATOR
+            MENUITEM "Chỉ định tab cho vùng chọn(&A)\tCtrl+Shift+T",        IDM_EDIT_CONVERTSPACES
+            MENUITEM "Hủy bỏ tab cho vùng chọn(&N)\tCtrl+Shift+S",        IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "Chỉ định tab cho thụt lề(&B)\tCtrl+Alt+T",           IDM_EDIT_CONVERTSPACES2
+            MENUITEM "Hủy bỏ tab cho thụt lề(&F)\tCtrl+Alt+S",           IDM_EDIT_CONVERTTABS2
+            MENUITEM SEPARATOR
+            MENUITEM "Mã hóa Base64(&6)",                    IDM_EDIT_BASE64ENCODE
+            MENUITEM "Giải mã Base64(&4)",                    IDM_EDIT_BASE64DECODE
+            MENUITEM "Giải mã Base64 với mã trang...",      IDM_EDIT_B64DECODESEL
+            MENUITEM SEPARATOR
+            MENUITEM "Mã hóa URL(&E)\tCtrl+Shift+E",               IDM_EDIT_URLENCODE
+            MENUITEM "Giải mã URL(&D)\tCtrl+Shift+R",               IDM_EDIT_URLDECODE
+            MENUITEM "Đường dẫn hệ thống file từ URL\tCtrl+F10",        IDM_EDIT_PATH2URL
+            MENUITEM "URL từ đường dẫn hệ thống file\tAlt+F10",         IDM_EDIT_URL2PATH
+            MENUITEM SEPARATOR
+            MENUITEM "Đảo ngược dấu gạch chéo",                        IDM_EDIT_INVERTBACKSLASH
+            MENUITEM "Đảo ngược dấu gạch chéo nghiêng",                            IDM_EDIT_INVERTSLASH
+            MENUITEM SEPARATOR
+            MENUITEM "Chuyển ký tự thành Hex(&H)\tCtrl+Alt+X",          IDM_EDIT_CHAR2HEX
+            MENUITEM "Chuyển Hex thành ký tự(&C)\tCtrl+Alt+C",          IDM_EDIT_HEX2CHAR
+        END
+        POPUP "Chèn(&N)"
+        BEGIN
+            MENUITEM "Dòng mới lên trên(&N)\tCtrl+Enter",                  CMD_INSERTNEWLINE
+            MENUITEM SEPARATOR
+            MENUITEM "Thẻ HTML/XML(&M)...\tAlt+X",                IDM_EDIT_INSERT_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "Nhận diện mã hóa(&E)\tCtrl+F8",                  IDM_EDIT_INSERT_ENCODING
+            MENUITEM SEPARATOR
+            MENUITEM "Ngày/Thời gian (định dạng ngắn)(&S)\tCtrl+F5",           IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "Ngày/Thời gian (định dạng dài)(&L)\tCtrl+Shift+F5",       IDM_EDIT_INSERT_LONGDATE
+            MENUITEM "Dấu thời gian hiện tại(&T)",                      CMD_INSERT_TIMESTAMP
+            MENUITEM "Cập nhật dấu thời gian(&U)\tShift+F5",            CMD_UPDATE_TIMESTAMPS
+        END
+        POPUP "Khác(&I)"
+        BEGIN
+            MENUITEM "Sao chép GUID vào clipboard(&G)\tCtrl+Shift+.",      IDM_EDIT_INSERT_GUID
+            MENUITEM SEPARATOR
+            MENUITEM "Escape ký tự C(&P)\tCtrl+Alt+E",          IDM_EDIT_ESCAPECCHARS
+            MENUITEM "Hủy escape ký tự C(&U)\tCtrl+Alt+R",     IDM_EDIT_UNESCAPECCHARS
+            MENUITEM SEPARATOR
+            MENUITEM "Tăng số(&I)\tCtrl+Alt+NK+",               CMD_INCREASENUM
+            MENUITEM "Giảm số(&D)\tCtrl+Alt+NK-",               CMD_DECREASENUM
+            MENUITEM SEPARATOR
+            MENUITEM "Tìm dấu ngoặc tương ứng(&F)\tCtrl+B",              IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "Chọn dấu ngoặc tương ứng(&S)\tCtrl+Shift+B",       IDM_EDIT_SELTOMATCHINGBRACE
+            MENUITEM SEPARATOR
+            MENUITEM "Chọn tiếp theo(&X)\tCtrl+Alt+F2",            IDM_EDIT_SELTONEXT
+            MENUITEM "Chọn trước đó(&V)\tCtrl+Alt+Shift+F2",      IDM_EDIT_SELTOPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Chọn từ hoặc dòng(&W)\tCtrl+Spc",              IDM_EDIT_SELECTWORD
+            MENUITEM "Chọn tất cả khớp(&A)\tCtrl+Shift+Spc", IDM_EDIT_SELECTALLMATCHES
+            MENUITEM SEPARATOR
+            MENUITEM "Xử lý Undo khi phân chia tại dòng(&T)",      IDM_VIEW_SPLIT_UNDOTYPSEQ_LNBRK
+        END
+        MENUITEM SEPARATOR
+        POPUP "Đánh dấu(&K)"
+        BEGIN
+            MENUITEM "Chuyển đổi(&T)\tCtrl+F2",                     BME_EDIT_BOOKMARKTOGGLE
+            MENUITEM SEPARATOR
+            MENUITEM "Đi đến đánh dấu tiếp theo(&N)\tF2",              BME_EDIT_BOOKMARKNEXT
+            MENUITEM "Đi đến đánh dấu trước đó(&P)\tShift+F2",        BME_EDIT_BOOKMARKPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Xóa tất cả(&C)\tAlt+F2",                    BME_EDIT_BOOKMARKCLEAR
+        END
+    END
+    POPUP "Tìm kiếm(&R)"
+    BEGIN
+        MENUITEM "Tìm(&F)...\tCtrl+F",                     IDM_EDIT_FIND
+        MENUITEM "Lưu văn bản tìm kiếm(&A)\tAlt+F3",              IDM_EDIT_SAVEFIND
+        MENUITEM "Tìm tiếp theo(&N)\tF3",                        IDM_EDIT_FINDNEXT
+        MENUITEM "Tìm trước đó(&P)\tShift+F3",                  IDM_EDIT_FINDPREV
+        MENUITEM "Tìm tiếp theo trong vùng chọn(&X)\tCtrl+F3",               CMD_FINDNEXTSEL
+        MENUITEM "Tìm trước đó trong vùng chọn(&V)\tCtrl+Shift+F3",         CMD_FINDPREVSEL
+        MENUITEM "Thay thế(&R)...\tCtrl+H",                    IDM_EDIT_REPLACE
+        MENUITEM "Thay thế tiếp theo(&E)\tF4",                      IDM_EDIT_REPLACENEXT
+        MENUITEM "Đi đến(&G)...\tCtrl+G",                     IDM_EDIT_GOTOLINE
+    END
+    POPUP "Xem(&V)"
+    BEGIN
+        MENUITEM "Ngắt dòng(&R)\tCtrl+W",                    IDM_VIEW_WORDWRAP
+        MENUITEM "Chỉ báo dòng dài(&L)\tCtrl+Alt+L",             IDM_VIEW_LONGLINEMARKER
+        MENUITEM "Hướng dẫn thụt lề(&A)\tCtrl+Shift+G",       IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM SEPARATOR
+        MENUITEM "Hiển thị ký hiệu ngắt dòng(&P)\tCtrl+Shift+7",     IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM "Hiển thị khoảng trắng(&B)\tCtrl+Shift+8",            IDM_VIEW_SHOWBLANKS
+        MENUITEM "Hiển thị ký hiệu kết thúc dòng(&E)\tCtrl+Shift+9",           IDM_VIEW_SHOWEOLS
+        MENUITEM SEPARATOR
+        POPUP "Thay đổi dấu hiệu thay đổi"
+        BEGIN
+            MENUITEM "Không thay đổi dấu hiệu",           IDM_VIEW_CHGHIST_NONE
+            MENUITEM "Chỉ hiển thị ở lề",                 IDM_VIEW_CHGHIST_MARGIN
+            MENUITEM "Chỉ hiển thị trong tài liệu",               IDM_VIEW_CHGHIST_DOCTXT
+            MENUITEM "Hiển thị tất cả dấu hiệu thay đổi",             IDM_VIEW_CHGHIST_ALL
+        END
+        MENUITEM "Xóa lịch sử thay đổi/hoàn tác"             IDM_VIEW_CHGHIST_CLEAR_UNDOREDO
+        MENUITEM SEPARATOR
+        MENUITEM "Điểm nóng liên kết(&Y)\tCtrl+Alt+W",       IDM_VIEW_HYPERLINKHOTSPOTS
+        POPUP "Định nghĩa màu điểm nóng(&C)"
+        BEGIN
+            MENUITEM "Tắt(&O)",                          IDM_VIEW_COLORDEFHOTSPOTS
+            MENUITEM "RGB+A(&R)"                          IDM_VIEW_COLOR_RGBA
+            MENUITEM "A+RGB(&A)"                          IDM_VIEW_COLOR_ARGB
+            MENUITEM "BGRA(&B)"                           IDM_VIEW_COLOR_BGRA
+        END
+        MENUITEM "Nhấn mạnh điểm Unicode(&U)",             IDM_VIEW_UNICODE_POINTS
+        MENUITEM "Nhận diện ngoặc cú pháp(&V)\tCtrl+Shift+V",         IDM_VIEW_MATCHBRACES
+        POPUP "Nhấn mạnh dòng hiện tại(&G)\tCtrl+Shift+I"
+        BEGIN
+            MENUITEM "Không nhấn mạnh(&N)",                    IDM_VIEW_HILITCURLN_NONE
+            MENUITEM "Màu nền(&C)",                        IDM_VIEW_HILITCURLN_BACK
+            MENUITEM "Khung viền(&F)",                    IDM_VIEW_HILITCURLN_FRAME
+        END
+        POPUP "Hiển thị mục(&K)"
+        BEGIN
+            MENUITEM "Bật(&A)\tAlt+A",                     IDM_VIEW_MARKOCCUR_ONOFF
+            MENUITEM "Cũng đánh dấu sách(&B)",               IDM_VIEW_MARKOCCUR_BOOKMARKS
+            MENUITEM SEPARATOR
+            MENUITEM "Chỉ khớp các mục đang hiển thị(&V)",               IDM_VIEW_MARKOCCUR_VISIBLE
+            MENUITEM SEPARATOR
+            MENUITEM "Phân biệt chữ hoa chữ thường(&C)",                    IDM_VIEW_MARKOCCUR_CASE
+            POPUP "Chỉ khớp toàn bộ từ(&W)"
+            BEGIN
+                MENUITEM "Tắt(&O)",                    IDM_VIEW_MARKOCCUR_WNONE
+                MENUITEM "Khớp từ đã chọn(&S)",             IDM_VIEW_MARKOCCUR_WORD
+                MENUITEM "Khớp từ hiện tại(&R)",             IDM_VIEW_MARKOCCUR_CURRENT
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Số dòng(&N)\tCtrl+Shift+N",               IDM_VIEW_LINENUMBERS
+        MENUITEM "Lề đánh dấu sách(&M)\tCtrl+Shift+M",      IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Thay đổi lề lịch sử sử dụng",               IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+        MENUITEM SEPARATOR
+        POPUP "Gấp lại"
+        BEGIN
+            MENUITEM "Gấp mã(&F)",                       IDM_VIEW_FOLDING
+            MENUITEM "Chuyển đổi gấp lại(&T)\tCtrl+Alt+F",      IDM_VIEW_TOGGLEFOLDS
+            MENUITEM SEPARATOR
+            MENUITEM "Di chuyển đến gấp tiếp theo(&N)\tAlt+ +",         CMD_FOLDJUMPDOWN
+            MENUITEM "Di chuyển đến gấp trước đó(&P)\tAlt+ –",         CMD_FOLDJUMPUP
+            MENUITEM SEPARATOR
+            MENUITEM "Gấp lại thu nhỏ(&C)\tAlt+ ←",                          CMD_FOLDCOLLAPSE
+            MENUITEM "Gấp lại mở rộng(&E)\tAlt+ →",                          CMD_FOLDEXPAND
+        END
+        POPUP "Hiển thị(&D)"
+        BEGIN
+            MENUITEM "Chế độ tập trung(&F)\tCtrl+Alt+V",                IDM_VIEW_TOGGLE_VIEW
+            POPUP "Chế độ xem"
+            BEGIN
+                MENUITEM "Gấp lại",                            IDM_VIEW_FV_FOLD
+                MENUITEM "Đánh dấu sách",                        IDM_VIEW_FV_BOOKMARK
+                MENUITEM "Nhấn mạnh",                       IDM_VIEW_FV_HIGHLIGHT
+                MENUITEM "Đánh dấu sách và gấp lại",                IDM_VIEW_FV_BKMRKFOLD
+                MENUITEM "Nhấn mạnh và gấp lại",               IDM_VIEW_FV_HIGHLGFOLD
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Nhật ký theo dõi(&M)",                            IDM_VIEW_CHASING_DOCTAIL
+            MENUITEM "Cuộn đến cuối tệp(&S)",        IDM_VIEW_SCROLLPASTEOF
+            MENUITEM "Hiển thị công cụ thông tin liên kết(&H)",         IDM_VIEW_SHOW_HYPLNK_CALLTIP
+        END
+        MENUITEM SEPARATOR
+        POPUP "Bảng điều khiển(&A)"
+        BEGIN
+            MENUITEM "Hiển thị thanh tiêu đề",                   IDM_VIEW_TITLEBAR
+            MENUITEM "Hiển thị thanh menu",                      IDM_VIEW_MENUBAR
+            MENUITEM "Hiển thị thanh công cụ(&T)",                IDM_VIEW_TOOLBAR
+            MENUITEM "Hiển thị thanh trạng thái(&S)",            IDM_VIEW_STATUSBAR
+            MENUITEM SEPARATOR
+            MENUITEM "Tải chủ đề thanh công cụ(&L)...",           IDM_VIEW_LOADTHEMETB
+            MENUITEM "Tùy chỉnh thanh công cụ(&U)...",            IDM_VIEW_CUSTOMIZETB
+            MENUITEM "Chuyển đổi thanh công cụ(&G)",             IDM_VIEW_TOGGLETB
+            MENUITEM "Thanh công cụ tỷ lệ DPI(&D)",              IDM_VIEW_DPISCALETB
+        END
+        POPUP "Phóng to/Thu nhỏ(&Z)"
+        BEGIN
+            MENUITEM "Phóng to(&I)\tCtrl+ +",                    IDM_VIEW_ZOOMIN
+            MENUITEM "Thu nhỏ(&O)\tCtrl+ –",                    IDM_VIEW_ZOOMOUT
+            MENUITEM "Đặt lại phóng to/thu nhỏ(&R)\tCtrl+0",      IDM_VIEW_RESETZOOM
+        END
+        POPUP "Vị trí(&P)"
+        BEGIN
+            MENUITEM "Sao chép phạm vi vị trí cửa sổ(&A)\tCtrl+Shift+K",         CMD_COPYWINPOS
+            MENUITEM "Căn chỉnh theo vị trí mặc định(&N)\tCtrl+Shift+P",       CMD_DEFAULTWINPOS
+            MENUITEM "Lưu theo vị trí mặc định(&S)",                    CMD_SAVEASDEFWINPOS
+            MENUITEM "Xóa vị trí mặc định đã lưu(&C)",                  CMD_CLEARSAVEDWINPOS
+            MENUITEM "Căn chỉnh theo vị trí ban đầu(&I)\tCtrl+F11",       CMD_INITIALWINPOS
+            MENUITEM "Chuyển đổi vị trí toàn bộ khu vực(&F)\tF11",          CMD_FULLSCRWINPOS
+            MENUITEM "Vị trí cửa sổ cố định(&T)",                       IDM_VIEW_STICKYWINPOS
+        END
+    END
+    POPUP "Hình thức(&P)"
+    BEGIN
+        MENUITEM "Tùy chỉnh cấu hình kiểu(&C)...\tCtrl+F12",                 IDM_VIEW_SCHEMECONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Chọn cấu hình cú pháp(&X)...\tF12",                 IDM_VIEW_SCHEME
+        MENUITEM "Sử dụng cơ sở chung thứ hai\tShift+F12",             IDM_VIEW_USE2NDDEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "Phông chữ mặc định toàn cầu(&D)...\tAlt+F12",       IDM_VIEW_FONT
+        MENUITEM "Phông chữ mặc định của cấu hình hiện tại(&H)...\tCtrl+Alt+F12",    IDM_VIEW_CURRENTSCHEME
+        MENUITEM SEPARATOR
+        MENUITEM "Chế độ tối của Windows",                            IDM_VIEW_WIN_DARK_MODE
+    END
+    POPUP "Cài đặt(&S)"
+    BEGIN
+        MENUITEM "Chèn tab bằng khoảng trắng(&S)",                IDM_SET_TABSASSPACES
+        MENUITEM "Cài đặt tab(&T)...\tCtrl+T",                  IDM_SET_TABSETTINGS
+        MENUITEM "Cài đặt xuống dòng(&W)...",                   IDM_SET_WORDWRAPSETTINGS
+        MENUITEM "Cài đặt dòng dài(&O)...",                    IDM_SET_LONGLINESETTINGS
+        MENUITEM "Tự động thụt lề văn bản(&I)",                   IDM_SET_AUTOINDENTTEXT
+        MENUITEM "Tự động đóng ngoặc kép(&Q)",                   IDM_SET_AUTOCLOSEQUOTES
+        MENUITEM "Tự động đóng ngoặc(&B)",                      IDM_SET_AUTOCLOSEBRACKETS
+        MENUITEM "Tự động đóng thẻ HTML/XML(&H)\tCtrl+Shift+H", IDM_SET_AUTOCLOSETAGS
+        MENUITEM "Tự động hoàn thành từ(&U)",                   IDM_SET_AUTOCOMPLETEWORDS
+        MENUITEM "Tự động hoàn thành từ khóa lexer(&K)",         IDM_SET_AUTOCLEXKEYWORDS
+        MENUITEM "Ký tự phân cách từ thay thế(&P)\tCtrl+Alt+A", IDM_SET_ALTERNATE_WORD_SEPS
+        MENUITEM SEPARATOR
+        MENUITEM "Một phiên bản cho mỗi tệp(&F)",                IDM_SET_SINGLEFILEINSTANCE
+        MENUITEM "Thông báo thay đổi tệp(&C)...\tAlt+F5",       IDM_SET_CHANGENOTIFY
+        ///MENUITEM "Cài đặt lưu tự động / Sao lưu...",          IDM_SET_AUTOSAVE_BACKUP
+        MENUITEM "Tắt âm báo tin nhắn(&M)",                       IDM_SET_MUTE_MESSAGEBEEP
+        MENUITEM "Phân giải thành &đường dẫn UNC",                    IDM_SET_RESOLVE_UNC_PATHS
+        POPUP "Chức năng phím ESC(&E)"
+        BEGIN
+            MENUITEM "Không(&N)",                              IDM_SET_NOESCFUNC
+            MENUITEM "Thu nhỏ LumPad(&M)",                    IDM_SET_ESCMINIMIZE
+            MENUITEM "Thoát LumPad(&X)",                      IDM_SET_ESCEXIT
+        END
+        MENUITEM "Lưu trước khi chạy công cụ(&V)",                IDM_SET_SAVEBEFORERUNNINGTOOLS
+        MENUITEM "Tính toán biểu thức nhỏ",                      IDM_SET_EVALTINYEXPRONSEL
+        MENUITEM "Sử dụng chọn nhiều",                           IDM_SET_MULTIPLE_SELECTION
+        POPUP "Default &Directory"
+        BEGIN
+            MENUITEM "Đặt thành &thư mục của tệp hiện tại",  IDM_SET_DEFAULTDIR
+            MENUITEM "&Đặt lại về mặc định",                 IDM_SET_DEFAULTDIR_RESET
+        END
+        MENUITEM SEPARATOR
+        POPUP "Nhớ(&R)"
+        BEGIN
+            MENUITEM "Nhớ tệp gần đây(&R)",                     IDM_SET_NOSAVERECENT
+            MENUITEM "Giữ vị trí con trỏ văn bản(&C)",            IDM_SET_NOPRESERVECARET
+            MENUITEM "Nhớ mẫu tìm kiếm(&S)",                     IDM_SET_NOSAVEFINDREPL
+            MENUITEM "Tự động tải tệp gần đây(&A)",              IDM_SET_AUTOLOAD_MRU_FILE
+        END
+        POPUP "Cửa sổ(&N)"
+        BEGIN
+            POPUP "Hiển thị tiêu đề cửa sổ(&W)"
+            BEGIN
+                MENUITEM "Tên tệp chỉ(&F)",                      IDM_SET_SHOWFILENAMEONLY
+                MENUITEM "Tên tệp và thư mục(&D)",               IDM_SET_SHOWFILENAMEFIRST
+                MENUITEM "Đường dẫn đầy đủ(&P)",                  IDM_SET_SHOWFULLPATH
+                MENUITEM "Trích xuất văn bản(&T)\tCtrl+9",       IDM_SET_SHOWEXCERPT
+            END
+            MENUITEM "Tái sử dụng cửa sổ(&R)\tCtrl+Shift+L",     IDM_SET_REUSEWINDOW
+            MENUITEM "Luôn luôn trên cùng(&A)\tAlt+T",          IDM_SET_ALWAYSONTOP
+            MENUITEM "Thu nhỏ vào khay hệ thống(&M)",            IDM_SET_MINTOTRAY
+            MENUITEM "Chế độ trong suốt(&T)\tAlt+G",            IDM_SET_TRANSPARENT
+        END
+        POPUP "Công nghệ(&G)"
+        BEGIN
+            POPUP "Kết xuất(&R)"
+            BEGIN
+                MENUITEM "DirectWrite (Direct2D)(&D)",          IDM_SET_RENDER_TECH_D2D
+                MENUITEM "Giữ DirectWrite(&R)",                 IDM_SET_RENDER_TECH_D2DRETAIN
+                MENUITEM "DirectWrite GDI DC(&W)",              IDM_SET_RENDER_TECH_D2DDC
+                MENUITEM "GDI (Không hợp nhất) (&G)",           IDM_SET_RENDER_TECH_GDI
+            END
+            POPUP "Bố cục RTL (GDI)(&T)"
+            BEGIN
+                MENUITEM "Khu vực chỉnh sửa(&E)",                IDM_SET_RTL_LAYOUT_EDIT
+                MENUITEM "Hộp thoại khác(&O)",                   IDM_SET_RTL_LAYOUT_DLG
+            END
+            POPUP "Hai chiều(&B)"
+            BEGIN
+                MENUITEM "Không(&N)",                           IDM_SET_BIDIRECTIONAL_NONE
+                MENUITEM "Từ trái sang phải(&L)",               IDM_SET_BIDIRECTIONAL_L2R
+                MENUITEM "Từ phải sang trái(&R)",               IDM_SET_BIDIRECTIONAL_R2L
+            END
+        END
+        POPUP "Cấu hình nâng cao(&A)"
+        BEGIN
+            MENUITEM "Lưu cài đặt khi thoát(&X)",              IDM_SET_SAVESETTINGS
+            MENUITEM "Lưu cài đặt ngay bây giờ(&N)\tF7",       IDM_SET_SAVESETTINGSNOW
+            MENUITEM "Mở tệp cài đặt(&O)\tCtrl+F7",          CMD_OPENINIFILE
+        END
+    END
+    POPUP "Trợ giúp(&H)"
+    BEGIN
+        MENUITEM "Trợ giúp dòng lệnh(&C)...",               IDM_HELP_CMD
+        MENUITEM "Thông tin(&A)...\tShift+F1",              IDM_HELP_ABOUT
+    END
+END
+
+
+IDR_MUI_POPUPMENU MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "Mở liên kết",                  CMD_OPEN_HYPERLINK
+        MENUITEM "Sao chép URL siêu liên kết",           CMD_COPY_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "Hoàn tác",                     IDM_EDIT_UNDO
+        MENUITEM "Làm lại",                     IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cắt",                         IDM_EDIT_CUT
+        MENUITEM "Sao chép",                    IDM_EDIT_COPY
+        MENUITEM "Dán",                        IDM_EDIT_PASTE
+        MENUITEM "Xóa",                        IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Chọn tất cả",                 IDM_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        POPUP "Convert Case"
+        BEGIN
+            MENUITEM "Chữ hoa",              CMD_CTX_UPPERCASE
+            MENUITEM "Chữ thường",              CMD_CTX_LOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "Đảo chữ hoa/thường",            CMD_CTX_INVERTCASE
+            MENUITEM "Chữ Hoa Đầu Từ",             CMD_CTX_TITLECASE
+            MENUITEM "Chữ hoa đầu câu",          CMD_CTX_SENTENCECASE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Chuyển đổi gấp hiện tại",      IDM_VIEW_TOGGLE_CURRENT_FOLD
+        MENUITEM SEPARATOR
+        MENUITEM "Mở tác vụ web 1",             CMD_WEBACTION1
+        MENUITEM "Mở tác vụ web 2",             CMD_WEBACTION2
+        MENUITEM "Mở Explorer",                IDM_FILE_EXPLORE_DIR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Hiển thị thanh tiêu đề",        IDM_VIEW_TITLEBAR
+        MENUITEM "Hiển thị thanh menu",          IDM_VIEW_MENUBAR
+        MENUITEM "Hiển thị thanh công cụ",       IDM_VIEW_TOOLBAR
+        MENUITEM "Hiển thị thanh trạng thái",    IDM_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Tải chủ đề thanh công cụ...",  IDM_VIEW_LOADTHEMETB
+        MENUITEM "Tùy chỉnh thanh công cụ...",   IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Chuyển đổi thanh công cụ",     IDM_VIEW_TOGGLETB
+        MENUITEM "Thanh công cụ tỷ lệ DPI",      IDM_VIEW_DPISCALETB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Xóa đánh dấu",                   IDM_EDIT_CLEAR_MARKER
+        MENUITEM "Cắt dòng có đánh dấu",           IDM_EDIT_CUT_MARKED
+        MENUITEM "Sao chép dòng có đánh dấu",      IDM_EDIT_COPY_MARKED
+        MENUITEM "Xóa dòng có đánh dấu",           IDM_EDIT_DELETE_MARKED
+        MENUITEM SEPARATOR
+        MENUITEM "Gấp",                          IDM_VIEW_FOLDING
+        MENUITEM "Số dòng",                      IDM_VIEW_LINENUMBERS
+        MENUITEM "Gờ đánh dấu",                  IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Thay đổi gờ lịch sử",          IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Mở LumPad",                 IDM_TRAY_RESTORE
+        MENUITEM "Thoát LumPad",              IDM_TRAY_EXIT
+    END
+END
+
+#endif    // Vietnamese (Vietnam) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

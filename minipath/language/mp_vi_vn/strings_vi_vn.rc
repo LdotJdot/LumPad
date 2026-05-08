@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Vietnamese (Vietnam) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_VIT)
+LANGUAGE LANG_VIETNAMESE, SUBLANG_VIETNAMESE_VIETNAM
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDT_HISTORY_BACK        "Quay lại"
+    IDT_HISTORY_FORWARD     "Tiến tới"
+    IDT_UPDIR               "Thư mục trên"
+    IDT_ROOT                "Thư mục gốc"
+    IDT_VIEW_FAVORITES      "Yêu thích"
+    IDT_FILE_PREV           "Tập tin trước"
+    IDT_FILE_NEXT           "Tập tin kế tiếp"
+    IDT_FILE_RUN            "Chạy"
+    IDT_FILE_QUICKVIEW      "Xem nhanh"
+    IDT_FILE_SAVEAS         "Lưu thành..."
+    IDT_FILE_COPYMOVE       "Sao chép/Di chuyển"
+    IDT_FILE_DELETE         "Xóa"
+    IDT_FILE_DELETE2        "Xóa (không sử dụng thùng rác)"
+    IDT_VIEW_FILTER         "Bộ lọc"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE            "MiniPath"
+    IDS_NUMFILES            "%s mục"
+    IDS_NUMFILES2           "%s mục | Bộ lọc"
+    IDS_SAVEFILE            "Đang lưu ""%s""..."
+    IDS_OPEN_FILE_WITH      "Mở bằng %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CD              "Lỗi truy cập thư mục\nKhông thể truy cập vào thư mục đã chọn\nVui lòng kiểm tra ổ đĩa hoặc kết nối mạng"
+    IDS_ERR_FILE            "Lỗi truy cập tệp\nKhông thể truy cập vào ""%s""\nCó thể tệp đang được sử dụng bởi ứng dụng khác\nVui lòng kiểm tra ổ đĩa hoặc kết nối mạng"
+    IDS_ERR_NEW             "Lỗi truy cập tệp\nKhông thể tạo tệp mới\nVui lòng kiểm tra ổ đĩa hoặc kết nối mạng"
+    IDS_ERR_NEWDIR          "Lỗi truy cập thư mục\nKhông thể tạo thư mục mới\nVui lòng kiểm tra ổ đĩa hoặc kết nối mạng"
+    IDS_ERR_SAVEAS1         "Lỗi lưu tệp\nLỗi khi lưu ""%s""\nCó thể tệp đã tồn tại và không có quyền ghi"
+    IDS_ERR_SAVEAS2         "Lỗi lưu tệp\nĐã xảy ra lỗi khi gỡ bỏ thuộc tính chỉ đọc của tệp đã lưu"
+    IDS_ERR_CMDLINE         "MiniPath\nĐã xảy ra lỗi khi truy cập tệp hoặc thư mục được chỉ định trên dòng lệnh"
+    IDS_ERR_STARTUPDIR      "MiniPath\nKhông thể truy cập thư mục khởi động"
+    IDS_ERR_DROP1           "MiniPath\nKhông thể truy cập tệp hoặc thư mục bị kéo thả"
+    IDS_ERR_DROP2           "MiniPath\nChỉ có thể kéo thả một tệp hoặc thư mục tại một thời điểm"
+    IDS_ERR_FAVORITES       "Yêu thích\nKhông thể truy cập vào thư mục ""Yêu thích""\nVui lòng chỉ định thư mục hợp lệ trong hộp thoại ""Tùy chọn"""
+    IDS_ERR_LNK_GETPATH     "Lỗi liên kết\nKhông có đường dẫn hệ thống tệp hợp lệ cho đối tượng liên kết\nCó thể liên kết không tham chiếu đến tệp hoặc thư mục"
+    IDS_ERR_LNK_NOACCESS    "Lỗi liên kết\nKhông có quyền truy cập đường dẫn hệ thống tệp cho đối tượng liên kết\nVui lòng kiểm tra ổ đĩa hoặc kết nối mạng"
+    IDS_ERR_CREATELINK      "Lỗi liên kết\nĐã xảy ra lỗi khi tạo liên kết được chỉ định\nCó thể thư mục đích không có quyền ghi"
+    IDS_ERR_FILTER          "Lỗi bộ lọc tệp\nChưa chỉ định bộ lọc bổ sung\nVui lòng tham khảo tệp readme của MiniPath để biết thêm chi tiết"
+    IDS_ERR_PREVWINDISABLED "MiniPath\nCửa sổ MiniPath hiện có đang được sử dụng hoặc có hộp thoại hoạt động\nBạn có muốn mở cửa sổ MiniPath khác?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TARGETDISABLED  "MiniPath\nCửa sổ đích hiện có đang được sử dụng hoặc có hộp thoại hoạt động\nBạn có muốn mở cửa sổ mới?"
+    IDS_ERR_INVALIDTARGET   "MiniPath\nVui lòng đảm bảo tất cả các trường bắt buộc đã được hoàn thành\nNgoài ra, nếu có tùy chọn phù hợp, bạn cần tìm cửa sổ đích"
+    IDS_ERR_INIOPEN         "MiniPath\nKhông thể truy cập tệp cấu hình của MiniPath"
+    IDS_ERR_INICREATE       "Lưu cài đặt\nĐã xảy ra lỗi khi tạo tệp cấu hình"
+    IDS_ERR_INIWRITE        "Lưu cài đặt\nCài đặt không được lưu!\nKhông có quyền ghi vào tệp cấu hình"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHEXE           "Tìm tệp thực thi"
+    IDS_GETQUICKVIEWER      "Tìm trình xem nhanh"
+    IDS_GETTARGET           "Tìm trình chỉnh sửa"
+    IDS_NEWFILE             "Tạo tệp mới"
+    IDS_FILTER_ALL          "Tất cả các tệp (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Tệp thực thi (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\nTất cả các tệp (*.*)\n*.*\n"
+    IDS_GETDIRECTORY        "Chọn thư mục mới"
+    IDS_FAVORITES           "Chỉ định thư mục ""Yêu thích"""
+END
+
+STRINGTABLE
+BEGIN
+    SC_ALWAYSONTOP          "Luôn ở trên cùng(&K)"
+    SC_ABOUT                "Thông tin(&I)..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENWITH            "Chọn thư mục chứa liên kết đến ứng dụng yêu thích"
+    IDS_COPYMOVE            "Chọn thư mục đích"
+    IDS_CREATELINK          "Chọn thư mục đích của liên kết mới"
+    IDS_SAVESETTINGS        "Lưu cài đặt\nCài đặt chương trình hiện tại đã được lưu"
+    IDS_MUI_TRANSL_AUTHOR   "(vi-VN) Bản dịch tiếng Việt của kun7752"
+END
+
+
+#endif    // Vietnamese (Vietnam) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

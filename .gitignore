@@ -1,0 +1,83 @@
+si# OS generated files #
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode
+.venv
+.agent
+
+# C++ Junk           #
+######################
+*.aps
+*.ilk
+*.lib
+*.obj
+*.opensdf
+*.pdb
+*.pyc
+*.res
+*.sdf
+*.suo
+*.tlog
+*.user
+*.VC.db*
+
+/.vs
+/Bin
+#/Build/Ignore*
+#/Build/*portable*
+/Build/notepad3*setup*
+/Build/Resources
+/Build/Packages
+
+/_upgrade_backup
+
+/other_sln/packages
+
+### changes by Version.ps1 script ###
+/_Version_*.cmd
+/_Version_*.lnk
+/Versions/build.txt
+/Versions/day.txt
+/res/Notepad3.exe.conf.manifest
+/res/LumPad.exe.conf.manifest
+/minipath/res/MiniPath.exe.manifest.conf
+/src/VersionEx.h
+/minipath/src/VersionEx.h
+
+/test/test.log
+/Notepad3.VC.VC.opendb
+
+/grepWin/portables/*.zip
+
+/np3portableapp/Signing*.cmd
+/np3portableapp/Signing*.txt
+/np3portableapp/_buildname.txt
+/np3portableapp/Notepad3Portable*.7z
+/np3portableapp/Notepad3Portable*.exe
+/np3portableapp/Notepad3Portable*.exe
+/np3portableapp/Notepad3Portable/Notepad3Portable*.exe
+/np3portableapp/Notepad3Portable/App/AppInfo/appinfo.ini
+/np3portableapp/Notepad3Portable/App/AppInfo/installer.ini
+/np3portableapp/Notepad3Portable/App/DefaultData/settings/
+/np3portableapp/Notepad3Portable/App/Notepad3/x64/*.exe
+/np3portableapp/Notepad3Portable/App/Notepad3/x64/lng
+/np3portableapp/Notepad3Portable/App/Notepad3/x86/*.exe
+/np3portableapp/Notepad3Portable/App/Notepad3/x86/lng
+/np3portableapp/Notepad3Portable/App/Notepad3/Docs/
+#
+
+# Upgrade staging directory
+_upgrade_staging/
+
+# Research documents (local only)
+/todo/research/
+
+# ARM64 build intermediate directories
+**/ARM64/

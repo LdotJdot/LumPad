@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish (Finland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+LANGUAGE LANG_FINNISH, SUBLANG_FINNISH_FINLAND
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDT_HISTORY_BACK        "Takaisin"
+    IDT_HISTORY_FORWARD     "Eteenpäin"
+    IDT_UPDIR               "Ylempi hakemisto"
+    IDT_ROOT                "Juurihakemisto"
+    IDT_VIEW_FAVORITES      "Suosikit"
+    IDT_FILE_PREV           "Edellinen tiedosto"
+    IDT_FILE_NEXT           "Seuraava tiedosto"
+    IDT_FILE_RUN            "Suorita"
+    IDT_FILE_QUICKVIEW      "Pikakatselu"
+    IDT_FILE_SAVEAS         "Tallenna nimellä"
+    IDT_FILE_COPYMOVE       "Kopioi/siirrä"
+    IDT_FILE_DELETE         "Poista"
+    IDT_FILE_DELETE2        "Poista (ei roskakori)"
+    IDT_VIEW_FILTER         "Suodatin"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE            "MiniPath"
+    IDS_NUMFILES            "%s Kohdetta"
+    IDS_NUMFILES2           "%s Kohdetta | suodatin"
+    IDS_SAVEFILE            "Tallennetaan ""%s""..."
+    IDS_OPEN_FILE_WITH      "Avaa ohjelmalla %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CD              "Hakemiston käyttövirhe\nPääsyä määritettyyn hakemistoon ei ole\nTarkista levy tai verkkoyhteys"
+    IDS_ERR_FILE            "Tiedoston käyttövirhe\nPääsyä tiedostoon ""%s"" ei ole\nTiedostoa voi käyttää jokin toinen sovellus\nTarkista levy tai verkkoyhteys"
+    IDS_ERR_NEW             "Tiedoston käyttövirhe\nTiedostoa ei voitu luoda\nTarkista levy tai verkkoyhteys"
+    IDS_ERR_NEWDIR          "Hakemiston käyttövirhe\nHakemistoa ei voitu luoda\nTarkista levy tai verkkoyhteys"
+    IDS_ERR_SAVEAS1         "Tiedoston tallennusvirhe\nVirhe ""%s"" tallennuksessa\nMahdollisesti jo olemassa oleva tiedosto on kirjoitussuojattu"
+    IDS_ERR_SAVEAS2         "Tiedoston tallennusvirhe\nVirhe tallennetun tiedoston lukuattribuutin poistamisessa"
+    IDS_ERR_CMDLINE         "MiniPath\nVirhe komentorivillä määritetyn tiedoston tai hakemiston käytössä"
+    IDS_ERR_STARTUPDIR      "MiniPath\nKäynnistyshakemistoon ei ole pääsyä"
+    IDS_ERR_DROP1           "MiniPath\nPudotettuun tiedostoon tai hakemistoon ei ole pääsyä"
+    IDS_ERR_DROP2           "MiniPath\nVain yksi tiedosto tai hakemisto voidaan pudottaa kerralla"
+    IDS_ERR_FAVORITES       "Favourites\nEi pääsyä ""Suosikit"" -kansioon\nMääritä kelvollinen hakemisto ""Asetukset"" -valintaikkunassa"
+    IDS_ERR_LNK_GETPATH     "Linkkivirhe\nLinkitylle objektille ei ole käytettävissä kelvollista tiedostopolkua\nLinkki ei todennäköisesti viittaa tiedostoon eikä hakemistoon"
+    IDS_ERR_LNK_NOACCESS    "Linkkivirhe\nPääsyä linkitetyn objektin tiedostojärjestelmäpolkuun ei ole\nTarkista levy tai verkkoyhteys"
+    IDS_ERR_CREATELINK      "Linkkivirhe\nVirhe määritetyn linkin luomisessa\nMahdollisesti kohdehakemisto on kirjoitussuojattu"
+    IDS_ERR_FILTER          "Tiedostosuodatinvirhe\nLisäsuodattimia ei ole määritetty\nLue lisätietoja MiniPath readme-tiedostosta"
+    IDS_ERR_PREVWINDISABLED "MiniPath\nOlemassa oleva MiniPath-ikkuna on varattu tai siinä on aktiivinen valintaikkuna\nHaluatko avata toisen MiniPath-ikkunan?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TARGETDISABLED  "MiniPath\nOlemassa oleva kohdeikkuna on varattu tai siinä on aktiivinen valintaikkuna\nHaluatko avata uuden ikkunan?"
+    IDS_ERR_INVALIDTARGET   "MiniPath\nVarmista, että kaikki vaaditut kentät on täytetty\nSinun on myös löydettävä kohdeikkuna, jos kyseinen vaihtoehto on käytössä"
+    IDS_ERR_INIOPEN         "MiniPath\nMiniPath-konfiguraatiotiedostoon ei ole pääsyä"
+    IDS_ERR_INICREATE       "Tallenna asetukset\nVirhe asetustiedoston luomisessa"
+    IDS_ERR_INIWRITE        "Tallenna asetukset\nAsetuksia ei ole tallennettu!\nKirjoitusoikeutta asetustiedostoon ei ole"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHEXE           "Etsi suoritettava tiedosto"
+    IDS_GETQUICKVIEWER      "Etsi Pikakatselu"
+    IDS_GETTARGET           "Etsi editori"
+    IDS_NEWFILE             "Uusi tiedosto"
+    IDS_FILTER_ALL          "Kaikki tiedostot (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Suoritettavat tiedostot (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\nKaikki tiedostot (*.*)\n*.*\n"
+    IDS_GETDIRECTORY        "Valitse uusi hakemisto"
+    IDS_FAVORITES           "Määritä ""Suosikit"" -hakemisto"
+END
+
+STRINGTABLE
+BEGIN
+    SC_ALWAYSONTOP          "&Pidä päällimmäisenä"
+    SC_ABOUT                "&Tietoja..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENWITH            "Valitse hakemisto, jossa on linkkejä suosikkisovelluksiisi"
+    IDS_COPYMOVE            "Valitse kohdehakemisto"
+    IDS_CREATELINK          "Valitse uuden linkin kohdehakemisto"
+    IDS_SAVESETTINGS        "Tallenna asetukset\nTämänhetkiset ohjelma-asetukset on tallennettu"
+    IDS_MUI_TRANSL_AUTHOR   "(fi-FI) Käännös Veikko-M"
+END
+
+
+#endif    // Finnish (Finland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_HUNGARIAN_HUNGARY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDT_HISTORY_BACK        "Vissza"
+    IDT_HISTORY_FORWARD     "Előre"
+    IDT_UPDIR               "Egy mappával feljebb"
+    IDT_ROOT                "Gyökér mappa"
+    IDT_VIEW_FAVORITES      "Kedvencek"
+    IDT_FILE_PREV           "Előző fájl"
+    IDT_FILE_NEXT           "Következő fájl"
+    IDT_FILE_RUN            "Futtatás"
+    IDT_FILE_QUICKVIEW      "Gyorsnézet"
+    IDT_FILE_SAVEAS         "Mentés másként"
+    IDT_FILE_COPYMOVE       "Másolás/Mozgatás"
+    IDT_FILE_DELETE         "Törlés"
+    IDT_FILE_DELETE2        "Törlés (Lomtár kihagyás)"
+    IDT_VIEW_FILTER         "Szűrő"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE            "MiniPath"
+    IDS_NUMFILES            "%s objektum"
+    IDS_NUMFILES2           "%s Objektum | Szűrő"
+    IDS_SAVEFILE            " ""%s"" mentése..."
+    IDS_OPEN_FILE_WITH      "Megnyitás ezzel: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CD              "Mappa hozzáférési hiba\nNincs hozzáférésem a megadott mappához\nEllenőrizze a lemezt vagy a hálózati kapcsoaltot"
+    IDS_ERR_FILE            "Fáj hozzáférési hiba\nNincs hozzáférésem ehhez: ""%s""\nLehet, hogy a fájlt egy másik alkalmazás használja\nEllenőrizze a lemezt vagy a hálózati kapcsolatot"
+    IDS_ERR_NEW             "Fáj hozzáférési hiba\nA fájlt nem lehet létrehozni\nEllenőrizze a lemezt vagy a hálózati kapcsolatot"
+    IDS_ERR_NEWDIR          "Mappa hozzáférési hiba\nA mappát nem lehet létrehozni\nEllenőrizze a lemezt vagy a hálózati kapcsolatot"
+    IDS_ERR_SAVEAS1         "Fájl mentési hiba\nHiba ""%s"" mentésekor\nLehet, hogy egy már létező fájl írásvédett"
+    IDS_ERR_SAVEAS2         "Fájl mentési hiba\nHiba a mentett fájlnál a csak-olvasható attribútum törlésekor"
+    IDS_ERR_CMDLINE         "MiniPath\nHiba a parancssorban megadott fájl vagy mappa elérésekor"
+    IDS_ERR_STARTUPDIR      "MiniPath\nNincs hozzáférés az indítási mappához"
+    IDS_ERR_DROP1           "MiniPath\nNincs hozzáférés az ejtett fájlhoz vagy mappához"
+    IDS_ERR_DROP2           "MiniPath\nEgyszerre csak egy fájlt vagy mappát lehet az ablakra ejteni"
+    IDS_ERR_FAVORITES       "Kedvencek\nNincs hozzáférés a ""Kedvencek"" mappához\nAdjon meg egy érvényes mappát a ""Beállítások"" ablakban"
+    IDS_ERR_LNK_GETPATH     "Hivatkozási hiba\nNincs érvényes fájlrendszer-útvonal a hivatkozott objektumhoz\nTalán a hivatkozás nem egy fájlra vagy mappára mutat"
+    IDS_ERR_LNK_NOACCESS    "Hivatkozási hiba\nNincs hozzáférésem a hivatkozott objektum fájlrendszeri útvonalához\nEllenőrizze a lemezt vagy a hálózati kapcsolatot"
+    IDS_ERR_CREATELINK      "Hivatkozási hiba\nHiba a megadott hivatkozás létrehozásakor\nTalán a célmappa írásvédett"
+    IDS_ERR_FILTER          "Fájlszűrő hiba\nNincs további szűrő megadva\nKérem, nézze meg a MiniPath readme fájlban a további információkat"
+    IDS_ERR_PREVWINDISABLED "MiniPath\nA már futó MiniPath ablak foglalt vagy nyitva van egy párbeszédablaka\nSzeretne egy újabb Minipath ablakot megnyitni?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TARGETDISABLED  "MiniPath\nA létező cél-ablak foglalt vagy nyitva van egy párbeszédablaka\nSzeretne egy újabb ablakot megnyitni?"
+    IDS_ERR_INVALIDTARGET   "MiniPath\nKérem, győződjön meg róla, hogy minden szükséges mező ki van töltve\nUgyancsak találnia kell egy cél ablakot, ha a megfelelő opció be van kapcsolva"
+    IDS_ERR_INIOPEN         "MiniPath\nNincs hozzáférésem a MiniPath konfigurációs fájljához"
+    IDS_ERR_INICREATE       "Beállítások mentése\nHiba a konfigurációs fájl létrehozásakor"
+    IDS_ERR_INIWRITE        "Beállítások mentése\nA beállítások nincsenek mentve!\nNincs írási jogom a konfigurációs fájlhoz"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHEXE           "Végrehajtható keresése"
+    IDS_GETQUICKVIEWER      "Gyorsnézet keresése"
+    IDS_GETTARGET           "Szerkesztő keresése"
+    IDS_NEWFILE             "Új fájl"
+    IDS_FILTER_ALL          "Minden fájl (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Végrehajtható fájlok (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\nMinden fájl (*.*)\n*.*\n"
+    IDS_GETDIRECTORY        "Válasszon egy új mappát"
+    IDS_FAVORITES           "Adja meg a ""Kedvencek"" mappát"
+END
+
+STRINGTABLE
+BEGIN
+    SC_ALWAYSONTOP          "Maradjon &felül"
+    SC_ABOUT                "&Info..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENWITH            "Válassza ki a kedvenc alkalmazásaira mutató mappát"
+    IDS_COPYMOVE            "Válasszon egy célmappát"
+    IDS_CREATELINK          "Válasszon egy célmappát az új hivatkozásnak"
+    IDS_SAVESETTINGS        "Beállítások mentése\nA jelenlegi program beállítások el lettek mentve"
+    IDS_MUI_TRANSL_AUTHOR   "(hu-HU) Magyar fordítás: xsak"
+END
+
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

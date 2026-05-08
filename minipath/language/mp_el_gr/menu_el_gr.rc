@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Greek (Greece) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ELL)
+LANGUAGE LANG_GREEK, SUBLANG_GREEK_GREECE
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "Ά&νοιγμα",                    IDM_FILE_OPEN
+        MENUITEM "Άν&οιγμα με/ Εναλλακτική εφαρμογή...",   IDM_FILE_OPENWITH
+        MENUITEM "Γ&ρήγορη προβολή",            IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Αντι&γραφή ονόματος",         IDM_POP_COPYNAME
+        MENUITEM "Δημιουργία &συνδέσμου...",    IDM_FILE_CREATELINK
+        MENUITEM "Απο&θήκευση ως...",           IDM_FILE_SAVEAS
+        MENUITEM "Αντιγραφή/Μετα&κίνηση...",    IDM_FILE_COPYMOVE
+        MENUITEM "&Διαγραφή...",                IDM_FILE_DELETE
+        MENUITEM "&Μετονομασία...",             IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Ε&κκίνηση",                   IDM_FILE_LAUNCH
+        MENUITEM "&Εκτέλεση με/ Ορίσματα...",   IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Ιδιότητες",                  IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Νέ&ο αρχείο...",              IDM_FILE_NEW
+        MENUITEM "&Νέος κατάλογος...",           IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "&Φίλτρο αρχείων...",          IDM_VIEW_FILTER
+        MENUITEM "Ε&παναφορά φίλτρου",          IDM_VIEW_FILTERALL
+        POPUP "&Εμφάνιση"
+        BEGIN
+            MENUITEM "&Κατάλογοι",              IDM_VIEW_FOLDERS
+            MENUITEM "&Αρχεία",                 IDM_VIEW_FILES
+            MENUITEM "Αντικείμενα &συστήματος", IDM_VIEW_HIDDEN
+        END
+        POPUP "&Ταξινόμηση"
+        BEGIN
+            MENUITEM "ανά Ό&νομα",              IDM_SORT_NAME
+            MENUITEM "ανά &Μέγεθος",            IDM_SORT_SIZE
+            MENUITEM "ανά &Τύπο",               IDM_SORT_TYPE
+            MENUITEM "ανά &Ημερομηνία",         IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "&Αντίστροφα",             IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Μετά&βαση...",                IDM_FILE_GOTO
+        MENUITEM "&Μετάβαση στα αγαπημένα",     IDM_VIEW_FAVORITES
+        MENUITEM "Επε&ξεργασία αγαπημένων",     IDM_VIEW_EDITFAVORITES
+        MENUITEM "&Κατάλογος...",               IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Εμφάνιση μονάδων &δίσκων",    IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "&Αποθήκευση ρυθμίσεων",       IDM_VIEW_SAVESETTINGS
+        MENUITEM "&Ρυθμίσεις προορισμού...",    IDM_VIEW_FINDTARGET
+        MENUITEM "Επι&λογές...",                IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Κατάλογος...",               IDM_FILE_CHANGEDIR
+        MENUITEM "&Ιδιότητες μονάδας δίσκου",   IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "Εμφάνιση μονάδων &δίσκων",    IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Εμφάνιση &γραμμής εργαλείων", IDM_VIEW_TOOLBAR
+        MENUITEM "&Επεξεργασία γραμμής εργαλείων...",   IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Εμφάνιση γραμμής &κατάστασης",        IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Άνοιγμα του MiniPath",        IDM_TRAY_RESTORE
+        MENUITEM "Έξοδος του MiniPath",         IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Greek (Greece) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

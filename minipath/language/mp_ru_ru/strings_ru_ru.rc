@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_RUSSIAN_RUSSIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDT_HISTORY_BACK        "Назад"
+    IDT_HISTORY_FORWARD     "Вперед"
+    IDT_UPDIR               "На уровень выше"
+    IDT_ROOT                "Корневая папка"
+    IDT_VIEW_FAVORITES      "Избранное"
+    IDT_FILE_PREV           "Предыдущий файл"
+    IDT_FILE_NEXT           "Следующий файл"
+    IDT_FILE_RUN            "Выполнить"
+    IDT_FILE_QUICKVIEW      "Быстрый просмотр"
+    IDT_FILE_SAVEAS         "Сохранить как"
+    IDT_FILE_COPYMOVE       "Копировать/переместить"
+    IDT_FILE_DELETE         "Удалить"
+    IDT_FILE_DELETE2        "Удалить (пропустить Корзину)"
+    IDT_VIEW_FILTER         "Фильтр"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE            "MiniPath"
+    IDS_NUMFILES            "Объектов: %s"
+    IDS_NUMFILES2           "Объектов: %s | Фильтр"
+    IDS_SAVEFILE            "Сохранение «%s»..."
+    IDS_OPEN_FILE_WITH      "Открыть в %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CD              "Ошибка доступа к папке\nНет доступа к указанной папке\nПроверьте диск или сетевое соединение"
+    IDS_ERR_FILE            "Ошибка доступа к файлу\nНет доступа к «%s»\nЭтот файл может быть занят другим приложением\nПроверьте диск или сетевое соединение"
+    IDS_ERR_NEW             "Ошибка доступа к файлу\nНевозможно создать файл\nПроверьте диск или сетевое соединение"
+    IDS_ERR_NEWDIR          "Ошибка доступа к папке\nНевозможно создать папку\nПроверьте диск или сетевое соединение"
+    IDS_ERR_SAVEAS1         "Ошибка сохранения файла\nОшибка сохранения «%s»\nВозможно, существующий файл защищен от записи"
+    IDS_ERR_SAVEAS2         "Ошибка сохранения файла\nОшибка удаления атрибутов «только для чтения» у файла"
+    IDS_ERR_CMDLINE         "MiniPath\nОшибка доступа к файлу или папке, указанных в командной строке"
+    IDS_ERR_STARTUPDIR      "MiniPath\nНет доступа к стартовой папке"
+    IDS_ERR_DROP1           "MiniPath\nНет доступа к перетянутому файлу или папке"
+    IDS_ERR_DROP2           "MiniPath\nЗа один раз можно перетащить только один файл"
+    IDS_ERR_FAVORITES       "Избранное\nНет доступа к папке «Избранное»\nУкажите правильную папку в настройках приложения"
+    IDS_ERR_LNK_GETPATH     "Ошибка ярлыка\nНевозможно определить путь к объекту\nВозможно, ярлык не ссылается на файл или папку"
+    IDS_ERR_LNK_NOACCESS    "Ошибка ярлыка\nНет доступа к объекту, на который ссылается ярлык\nПроверьте диск или сетевое соединение"
+    IDS_ERR_CREATELINK      "Ошибка ярлыка\nОшибка создания ярлыка\nВозможно, папка защищена от записи"
+    IDS_ERR_FILTER          "Ошибка фильтра файлов\nДополнительные фильтры не найдены\nБольше информации можно найти в описании к MiniPath"
+    IDS_ERR_PREVWINDISABLED "MiniPath\nСуществующий экземпляр MiniPath либо занят, либо имеет открытое диалоговое окно\nЖелаете открыть новый экземпляр MiniPath?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TARGETDISABLED  "MiniPath\nСуществующий экземпляр приложения либо занят, либо имеет открытое диалоговое окно\nЖелаете открыть новое окно?"
+    IDS_ERR_INVALIDTARGET   "MiniPath\nУбедитесь, что все обязательные поля заполнены\nВам также нужно будет найти целевое окно, если соответствующая опция включена"
+    IDS_ERR_INIOPEN         "MiniPath\nНет доступа к конфигурационному файлу MiniPath"
+    IDS_ERR_INICREATE       "Сохранение настроек\nОшибка создания конфигурационного файла"
+    IDS_ERR_INIWRITE        "Сохранение настроек\nНастройки не сохранены!\nНет доступа к конфигурационному файлу"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHEXE           "Найти приложение"
+    IDS_GETQUICKVIEWER      "Найти приложение быстрого просмотра"
+    IDS_GETTARGET           "Найти редактор"
+    IDS_NEWFILE             "Новый файл"
+    IDS_FILTER_ALL          "Все файлы (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Исполняемые файлы (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\nВсе файлы (*.*)\n*.*\n"
+    IDS_GETDIRECTORY        "Выберите новую папку"
+    IDS_FAVORITES           "Укажите папку «Избранное»"
+END
+
+STRINGTABLE
+BEGIN
+    SC_ALWAYSONTOP          "&Поверх других окон"
+    SC_ABOUT                "&Информация..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENWITH            "Выберите папку с ярлыками избранных приложений"
+    IDS_COPYMOVE            "Укажите папку назначения"
+    IDS_CREATELINK          "Укажите папку назначения для нового ярлыка"
+    IDS_SAVESETTINGS        "Сохранение настроек\nТекущие настройки приложения сохранены"
+    IDS_MUI_TRANSL_AUTHOR   "(ru-RU) Перевод: alexantr"
+END
+
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

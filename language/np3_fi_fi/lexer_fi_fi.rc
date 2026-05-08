@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish (Finland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+LANGUAGE LANG_FINNISH, SUBLANG_FINNISH_FINLAND
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "Common Base"
+    IDS_LEX_WEB_SRC         "Web Source Code"
+    IDS_LEX_XML_DOC         "XML Document"
+    IDS_LEX_CSS_STYLE       "CSS Style Sheets"
+    IDS_LEX_PRISM_CSV       "CSV Prism"
+    IDS_LEX_CPP_SRC         "C/C++ Source Code"
+    IDS_LEX_CSHARP_SRC      "C# Source Code"
+    IDS_LEX_RESOURCE_SCR    "Resource Script"
+    IDS_LEX_MAKEFILES       "Makefiles"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript"
+    IDS_LEX_VIS_BAS         "Visual Basic"
+    IDS_LEX_J_SCR           "JavaScript"
+    IDS_LEX_JAVA_SRC        "Java Source Code"
+    IDS_LEX_PASCAL_SRC      "Pascal Source Code"
+    IDS_LEX_ASM_SCR         "Assembly Script"
+    IDS_LEX_PERL_SCR        "Perl Script"
+    IDS_LEX_CONF            "Configuration Files"
+    IDS_LEX_BATCH           "Batch Files"
+    IDS_LEX_DIFF            "Diff Files"
+    IDS_LEX_SQL             "SQL Query"
+    IDS_LEX_PYTHON          "Python Script"
+    IDS_LEX_APC_CFG         "Apache Config Files"
+    IDS_LEX_PWRSHELL        "PowerShell Script"
+    IDS_LEX_D_SRC           "D Source Code"
+    IDS_LEX_GO_SRC          "Go Source Code"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awk Script"
+    IDS_LEX_ANSI_ART        "ANSI Art"
+    IDS_LEX_SHELL_SCR       "Shell Script"
+    IDS_LEX_REG_FILES       "Registry Files"
+    IDS_LEX_VHDL            "VHDL"
+    IDS_LEX_JSON            "JSON"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS"
+    IDS_LEX_INNO            "Inno Setup Script"
+    IDS_LEX_RUBY            "Ruby Script"
+    IDS_LEX_LUA             "Lua Script"
+    IDS_LEX_TCL             "Tcl Script"
+    IDS_LEX_AUTOIT3         "AutoIt3 Script"
+    IDS_LEX_LATEX           "LaTeX Files"
+    IDS_LEX_AHK             "AutoHotkey Script"
+    IDS_LEX_CMAKE           "Cmake Script"
+    IDS_LEX_AVI_SYNTH       "AviSynth Script"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML"
+    IDS_LEX_COFFEE_SCR      "Coffeescript"
+    IDS_LEX_MATLAB          "MATLAB"
+    IDS_LEX_NIM_SRC         "Nim Source Code"
+    IDS_LEX_R_STAT          "R-S-SPlus Statistics Code"
+    IDS_LEX_RUST_SRC        "Rust Source Code"
+    IDS_LEX_AHKL            "AutoHotkey_L Script"
+    IDS_LEX_TEXT_FILES      "Text Files"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Dart Source Code"
+    IDS_LEX_KOTLIN_SRC      "Kotlin Source Code"
+    IDS_LEX_JULIA_SCR       "Julia Script"
+    IDS_LEX_KIX_SCR         "KiXtart Script"
+    IDS_LEX_FORTRAN         "Fortran Source Code"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "Verilog HDL"
+    IDS_LEX_SYSVERILOG      "SystemVerilog HDVL"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "Oletustyyli"
+    IDS_LEX_STD_MARGIN      "Marginaalit ja rivinumerot"
+    IDS_LEX_STD_BRACE       "Vastaavat sulkeet (ilmaisin)"
+    IDS_LEX_STD_BRACE_FAIL  "Vastaavat sulkeet virhe (ilmaisin)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "Ohjausmerkit (fontti)"
+    IDS_LEX_STD_INDENT      "Sisennysopas (väri)"
+    IDS_LEX_STD_SEL         "Valittu teksti (värit)"
+    IDS_LEX_STD_WSPC        "Tyhjä tila (värit, koko 1-12)"
+    IDS_LEX_STD_LN_BACKGR   "Nykyisen rivin korostus"
+    IDS_LEX_STD_CARET       "Karetti (väri, koko 1-20)"
+    IDS_LEX_STD_LONG_LN     "Pitkän rivin merkki (värit)"
+    IDS_LEX_STD_X_SPC       "Ylimääräinen riviväli (koko)"
+    IDS_LEX_2ND_STYLE       "2. oletustyyli"
+    IDS_LEX_2ND_MARGIN      "2. marginaalit ja rivinumerot"
+    IDS_LEX_2ND_BRACE       "2. vastaava aaltosulku (ilmaisin)"
+    IDS_LEX_2ND_BRACE_FAIL  "2. vastaava aaltosulkuvirhe (ilmaisin)"
+    IDS_LEX_2ND_CTRL_CHAR   "2. ohjausmerkit (fontti)"
+    IDS_LEX_2ND_INDENT      "2. sisennysopas (väri)"
+    IDS_LEX_2ND_SEL         "2. valittu teksti (värit)"
+    IDS_LEX_2ND_WSPC        "2. tyhjä tila (värit, koko 1-12))"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "2. nykyisen rivin korostus"
+    IDS_LEX_2ND_CARET       "2. karetti (väri, koko 1-20)"
+    IDS_LEX_2ND_LONG_LN     "2, pitkän rivin merkki (värit)"
+    IDS_LEX_2ND_X_SPC       "2. ylimääräinen riviväli (koko)"
+    IDS_LEX_STD_BKMRK       "Kirjanmerkit ja taitto (värit, koko)"
+    IDS_LEX_2ND_BKMRK       "2. kirjanmerkit ja taitto (värit, koko)"
+    IDS_LEX_STR_Default     "Oletus"
+    IDS_LEX_STR_Comment     "Kommentti"
+    IDS_LEX_STR_Keyword     "Avainsana"
+    IDS_LEX_STR_Identifier  "Tunniste"
+    IDS_LEX_STR_Number      "Numero"
+    IDS_LEX_STR_String      "Merkkijono"
+    IDS_LEX_STR_Operator    "Operaattori"
+    IDS_LEX_STR_PreProc     "Esikäsittelijä"
+    IDS_LEX_STR_VerbStrg    "Sanatarkka merkkijono"
+    IDS_LEX_STR_RegEx       "Regex"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML tagi"
+    IDS_LEX_STR_63137       "HTML tuntematon tagi"
+    IDS_LEX_STR_63138       "HTML attribuutti"
+    IDS_LEX_STR_63139       "HTML tuntematon attribuutti"
+    IDS_LEX_STR_63140       "HTML arvo"
+    IDS_LEX_STR_63141       "HTML merkkijono"
+    IDS_LEX_STR_63142       "HTML muu sisäinen tagi"
+    IDS_LEX_STR_63143       "HTML kommentti"
+    IDS_LEX_STR_63144       "HTML entiteetti"
+    IDS_LEX_STR_63145       "XML tunniste"
+    IDS_LEX_STR_63146       "ASP alkutagi"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP alkutagi"
+    IDS_LEX_STR_63149       "PHP oletus"
+    IDS_LEX_STR_63150       "PHP merkkijono"
+    IDS_LEX_STR_63151       "PHP yksinkertainen merkkijono"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP avainsana"
+    IDS_LEX_STR_63153       "PHP numero"
+    IDS_LEX_STR_63154       "PHP muuttuja"
+    IDS_LEX_STR_63155       "PHP merkkijonomuuttuja"
+    IDS_LEX_STR_63156       "PHP kompleksinen muuttuja"
+    IDS_LEX_STR_63157       "PHP kommentti"
+    IDS_LEX_STR_63158       "PHP operaattori"
+    IDS_LEX_STR_63159       "JS oletus"
+    IDS_LEX_STR_63160       "JS kommentti"
+    IDS_LEX_STR_63161       "JS numero"
+    IDS_LEX_STR_63162       "JS tunniste"
+    IDS_LEX_STR_63163       "JS avainsana"
+    IDS_LEX_STR_63164       "JS merkkijono"
+    IDS_LEX_STR_63165       "JS symbolit"
+    IDS_LEX_STR_63166       "JS Regex"
+    IDS_LEX_STR_63167       "ASP JS oletus"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS kommentti"
+    IDS_LEX_STR_63169       "ASP JS numero"
+    IDS_LEX_STR_63170       "ASP JS tunniste"
+    IDS_LEX_STR_63171       "ASP JS avainsana"
+    IDS_LEX_STR_63172       "ASP JS merkkijono"
+    IDS_LEX_STR_63173       "ASP JS symbolit"
+    IDS_LEX_STR_63174       "ASP JS Regex"
+    IDS_LEX_STR_63175       "VBS oletus"
+    IDS_LEX_STR_63176       "VBS kommentti"
+    IDS_LEX_STR_63177       "VBS numero"
+    IDS_LEX_STR_63178       "VBS avainsana"
+    IDS_LEX_STR_63179       "VBS merkkijono"
+    IDS_LEX_STR_63180       "VBS tunniste"
+    IDS_LEX_STR_63181       "ASP VBS oletus"
+    IDS_LEX_STR_63182       "ASP VBS kommentti"
+    IDS_LEX_STR_63183       "ASP VBS numero"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS avainsana"
+    IDS_LEX_STR_63185       "ASP VBS merkkijono"
+    IDS_LEX_STR_63186       "ASP VBS tunniste"
+    IDS_LEX_STR_63187       "XML tagi"
+    IDS_LEX_STR_63188       "XML attribuutti"
+    IDS_LEX_STR_63189       "XML arvo"
+    IDS_LEX_STR_63190       "XML merkkijono"
+    IDS_LEX_STR_63191       "XML muu sisäinen tagi"
+    IDS_LEX_STR_63192       "XML kommentti"
+    IDS_LEX_STR_63193       "XML entiteetti"
+    IDS_LEX_STR_63194       "Tagi-luokka"
+    IDS_LEX_STR_63195       "Tagi-ID"
+    IDS_LEX_STR_63196       "Tagi-attribuutti"
+    IDS_LEX_STR_63197       "Pseudo-luokka"
+    IDS_LEX_STR_63198       "Tuntematon pseudo-luokka"
+    IDS_LEX_STR_63199       "CSS ominaisuus"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "Tuntematon ominaisuus"
+    IDS_LEX_STR_Value       "arvo"
+    IDS_LEX_STR_63202       "Tärkeä"
+    IDS_LEX_STR_63203       "Direktiivi"
+    IDS_LEX_STR_Target      "Kohde"
+    IDS_LEX_STR_63205       "Inline Asm"
+    IDS_LEX_STR_63206       "CPU ohje"
+    IDS_LEX_STR_63207       "FPU ohje"
+    IDS_LEX_STR_Register    "Rekisteri"
+    IDS_LEX_STR_63209       "Direktiivi operaattori"
+    IDS_LEX_STR_63210       "Lisäohje"
+    IDS_LEX_STR_63211       "Tuplalainausmerkkijono"
+    IDS_LEX_STR_63212       "Merkkijono puolilainausmerkit"
+    IDS_LEX_STR_63213       "POD (yleinen)"
+    IDS_LEX_STR_63214       "POD (sanatarkka)"
+    IDS_LEX_STR_63215       "Skalaari $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "Joukko @var"
+    IDS_LEX_STR_63217       "Hash %var"
+    IDS_LEX_STR_63218       "Symbolitaulukko *var"
+    IDS_LEX_STR_63219       "Regex /re/ tai m{re}"
+    IDS_LEX_STR_63220       "Korvaus s/re/ore/"
+    IDS_LEX_STR_63221       "Takaisin-merkit"
+    IDS_LEX_STR_63222       "Data-osio"
+    IDS_LEX_STR_63223       "Here-Doc (erotin)"
+    IDS_LEX_STR_63224       "Here-Doc (puolilainausmerkit , q)"
+    IDS_LEX_STR_63225       "Here-Doc (tuplalainausmerkkijono, qq)"
+    IDS_LEX_STR_63226       "Here-Doc (takaisinmerkit, qx)"
+    IDS_LEX_STR_63227       "Puolilainausmerkkijono (yleinen, q)"
+    IDS_LEX_STR_63228       "Tuplalainausmerkkijono (qq)"
+    IDS_LEX_STR_63229       "Takaisin-merkit (qx)"
+    IDS_LEX_STR_63230       "Regex (qr)"
+    IDS_LEX_STR_63231       "Joukko (qw)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "Osio"
+    IDS_LEX_STR_Assign      "Osoitus"
+    IDS_LEX_STR_63234       "Oletusarvo"
+    IDS_LEX_STR_Label       "Nimi"
+    IDS_LEX_STR_Cmd         "Komento"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "Lähde ja kohde"
+    IDS_LEX_STR_63239       "Sijaintiasetus"
+    IDS_LEX_STR_63240       "Rivin lisäys"
+    IDS_LEX_STR_63241       "Rivin poisto"
+    IDS_LEX_STR_63242       "Rivin muutos"
+    IDS_LEX_STR_63243       "Lainattu tunniste"
+    IDS_LEX_STR_63244       "Merkkijono kolmoistuplalainausmerkit"
+    IDS_LEX_STR_63245       "Merkkijono kolmois- yksittäislainausmerkit"
+    IDS_LEX_STR_ClassName   "Luokan nimi"
+    IDS_LEX_STR_FctName     "Funktion nimi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "IP osoite"
+    IDS_LEX_STR_Var         "Muuttuja"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "Alias"
+    IDS_LEX_STR_63252       "Jäsennysvirhe"
+    IDS_LEX_STR_Prototyp    "Prototyyppi"
+    IDS_LEX_STR_63254       "Formaatin tunniste"
+    IDS_LEX_STR_63255       "Formaatin runko"
+    IDS_LEX_STR_63256       "HTML elementtiteksti"
+    IDS_LEX_STR_63257       "XML elementtiteksti"
+    IDS_LEX_STR_63258       "Tyyppimääritelmä/luokat"
+    IDS_LEX_STR_63259       "Komm.dokumentti"
+    IDS_LEX_STR_Keyword2nd  "Avainsana 2."
+    IDS_LEX_STR_Error       "Virhe"
+    IDS_LEX_STR_63262       "Merkitse esiintymät (ilmaisin)"
+    IDS_LEX_STR_63263       "2. Merkitse esiintymät (ilmaisin)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "Hyperlinkkien hotspotit"
+    IDS_LEX_STR_63265       "2. hyperlinkkien hotspotit"
+    IDS_LEX_STR_63266       "2n. Common Base"
+    IDS_LEX_STR_63267       "Muuttuja merkkijonon sisällä"
+    IDS_LEX_STR_63268       "Järjestetty luettelo"
+    IDS_LEX_STR_Infix       "Infix"
+    IDS_LEX_STR_InfixEOL    "Infix EOL"
+    IDS_LEX_STR_63271       "Peruspaketin toiminnot"
+    IDS_LEX_STR_63272       "Muut pakettitoiminnot"
+    IDS_LEX_STR_Function    "Toiminto"
+    IDS_LEX_STR_Const       "Vakio"
+    IDS_LEX_STR_63275       "Alaosio"
+    IDS_LEX_STR_63276       "Osioryhmä"
+    IDS_LEX_STR_63277       "Toiminnon määritelmä"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "Jos määritelmä"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "Makron määritelmä"
+    IDS_LEX_STR_Param       "Parametri"
+    IDS_LEX_STR_63282       "Inline-laajennus"
+    IDS_LEX_STR_63283       "Pascal kommentti"
+    IDS_LEX_STR_63284       "Pascal avainsana"
+    IDS_LEX_STR_63285       "Arvon nimi"
+    IDS_LEX_STR_63286       "Arvon tyyppi"
+    IDS_LEX_STR_Hex         "Helsa"
+    IDS_LEX_STR_AddKey      "Lisätty avain"
+    IDS_LEX_STR_DelKey      "Poistettu avain"
+    IDS_LEX_STR_Esc         "Escapoitu"
+    IDS_LEX_STR_63291       "GUID avainpolussa"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "Symboli"
+    IDS_LEX_STR_63294       "Moduulin nimi"
+    IDS_LEX_STR_63295       "Tapausmuuttuja"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "Luokkamuuttuja"
+    IDS_LEX_STR_63297       "Dataosio"
+    IDS_LEX_STR_BaseFct     "Perustoiminnot"
+    IDS_LEX_STR_63299       "Merkkijono-, taulukko- ja matematiikkatoiminnot"
+    IDS_LEX_STR_63300       "Tulo-, lähtö- ja järjestelmätoiminnot"
+    IDS_LEX_STR_LitStrg     "Literaali merkkijono"
+    IDS_LEX_STR_63302       "Pseudoelementti"
+    IDS_LEX_STR_Media       "Media"
+    IDS_LEX_STR_GlobClass   "Globaaliluokka"
+    IDS_LEX_STR_63305       "Käyttäjän määrittämä toiminto"
+    IDS_LEX_STR_63306       "Erikoismerkki"
+    IDS_LEX_STR_63307       "Sanatarkka jakso"
+    IDS_LEX_STR_63308       "Lausekeoperaattori"
+    IDS_LEX_STR_63309       "Muuttujaviittaus"
+    IDS_LEX_STR_63310       "Hallinnan kulku"
+    IDS_LEX_STR_63311       "Näppäimet ja painikkeet"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "Sisäiset muuttujat"
+    IDS_LEX_STR_63313       "Muuttujan avainsana"
+    IDS_LEX_STR_Filter      "Suodatin"
+    IDS_LEX_STR_Plugin      "Lisäosa"
+    IDS_LEX_STR_63316       "Leikkeen ominaisuus"
+    IDS_LEX_STR_63317       "Rivin alku"
+    IDS_LEX_STR_Strong      "Vahva"
+    IDS_LEX_STR_Emph        "Painotus"
+    IDS_LEX_STR_63320       "Otsikko 1"
+    IDS_LEX_STR_63321       "Otsikko 2"
+    IDS_LEX_STR_63322       "Otsikko 3"
+    IDS_LEX_STR_63323       "Otsikko 4"
+    IDS_LEX_STR_63324       "Otsikko 5"
+    IDS_LEX_STR_63325       "Otsikko 6"
+    IDS_LEX_STR_63326       "Alkumerkki"
+    IDS_LEX_STR_63327       "Järjestämätön luettelo"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "Lohkolainaus"
+    IDS_LEX_STR_63329       "Yliviivaus"
+    IDS_LEX_STR_63330       "Vaakaviivain"
+    IDS_LEX_STR_Link        "Linkki"
+    IDS_LEX_STR_Code        "Koodi"
+    IDS_LEX_STR_Ref         "Viite"
+    IDS_LEX_STR_Doc         "Dokumentti"
+    IDS_LEX_STR_Txt         "Teksti"
+    IDS_LEX_STR_StdOp       "Vakio-operaattori"
+    IDS_LEX_STR_Attrib      "Attribuutti"
+    IDS_LEX_STR_StdFct      "Vakiofunktio"
+    IDS_LEX_STR_StdPck      "Vakiopaketti"
+    IDS_LEX_STR_StdTyp      "Vakiotyyppi"
+    IDS_LEX_STR_Word        "Sana"
+    IDS_LEX_STR_Verb        "Sanatarkka"
+    IDS_LEX_STR_63343       "Sisäänrakennettu tyyppi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "Tavumerkkijono"
+    IDS_LEX_STR_63345       "Muu avainsana"
+    IDS_LEX_STR_63346       "Suuri elinikä"
+    IDS_LEX_STR_Obj         "Kohde"
+    IDS_LEX_STR_Key         "Näppäin"
+    IDS_LEX_STR_HotKey      "Pikanäppäin"
+    IDS_LEX_STR_HotStrg     "Pikasana"
+    IDS_LEX_STR_HotStrgOp   "Pikasanavaihtoehto"
+    IDS_LEX_STR_63352       "Inline-IME väri"
+    IDS_LEX_STR_63353       "2. Inline-IME väri"
+    IDS_LEX_STR_63354       "Monimuokkausilmaisin"
+    IDS_LEX_STR_63355       "2. monimuokkausilmaisin"
+    IDS_LEX_STR_DateTime    "Päiväys-aika"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "Jokaiselle määritelmälle"
+    IDS_LEX_STR_63358       "Kun määritelmä"
+    IDS_LEX_STR_Math        "Matematiikka"
+    IDS_LEX_STR_Scalar      "Skalaari"
+    IDS_LEX_STR_Subst       "Korvaus"
+    IDS_LEX_STR_Modf        "Muunnin"
+    IDS_LEX_STR_Tag         "Tagi"
+    IDS_LEX_STR_63364       "Ominaisuuden nimi"
+    IDS_LEX_STR_63365       "LD avainsana"
+    IDS_LEX_STR_63366       "ESC järjestys"
+    IDS_LEX_STR_63367       "Unicode-pisteen leijutus"
+    IDS_LEX_STR_63368       "2. Unicode-pisteen leijutus"
+    IDS_LEX_STR_Interface   "Käyttöliittymä"
+    IDS_LEX_STR_Annot       "Selite"
+    IDS_LEX_STR_63371       "Kommenttisana"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "Koristelu"
+    IDS_LEX_STR_63373       "Tehtävän merkki"
+    IDS_LEX_STR_63374       "Kommenttivirhe"
+    IDS_LEX_STR_TypeOp      "Tyyppioperaattori"
+    IDS_LEX_STR_63376       "Jatkuminen"
+    IDS_LEX_STR_Special     "Erityinen"
+    IDS_LEX_STR_63378       "Syntaksioperaattori"
+    IDS_LEX_STR_63379       "Sulkeutumaton merkkijono"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "Kompakti IRI"
+    IDS_LEX_STR_SendKey     "Lähetysnäppäin"
+    IDS_LEX_STR_63383       "Meta-Data"
+    IDS_LEX_STR_Enum        "Luetelma"
+    IDS_LEX_STR_63385       "TriQ-merkkijono"
+    IDS_LEX_STR_63386       "Symbolitunniste"
+    IDS_LEX_STR_63387       "Symbolioperaattori"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "Merkkijonon loppu"
+    IDS_LEX_STR_Backticks   "Takarastit"
+    IDS_LEX_STR_GUIDStrg    "GUID merkkijono"
+    IDS_LEX_STR_Global      "Globaali"
+    IDS_LEX_STR_Input       "Tulo"
+    IDS_LEX_STR_Output      "Lähtö"
+    IDS_LEX_STR_InOut       "Sisään/Ulos"
+    IDS_LEX_STR_PortConn    "Porttiyhteys"
+    IDS_LEX_STR_SysTasks    "Järjestelmätehtävät"
+    IDS_LEX_STR_AfterLabel  "Nimen jälkeen"
+    IDS_LEX_STR_Table       "Taulukko"
+    IDS_LEX_STR_StarCmd     "Star-komento"
+    IDS_LEX_STR_SlashCmd    "Slash-komento"
+    IDS_LEX_STR_Processor   "Prosessori"
+    IDS_LEX_STR_Argument    "Argumentti"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "Muutoshistorian merkintä muokattu"
+    IDS_LEX_STD_CH_SAVED        "Muutoshistorian merkintä tallennettu"
+    IDS_LEX_STD_CH_REV_TO_MOD   "Muutoshistorian merkintä palautettu muokattuun"
+    IDS_LEX_STD_CH_REV_TO_ORG   "Muutoshistorian merkintä palautettu alkuperäiseksi"
+    IDS_LEX_2ND_CH_MODIFIED     "2. Muutoshistorian merkintä muokattu"
+    IDS_LEX_2ND_CH_SAVED        "2. Muutoshistorian merkintä tallennettu"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "2. Muutoshistorian merkintä palautettu muokattuun"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "2. Muutoshistorian merkintä palautettu alkuperäiseksin"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "Sarake 0"
+    IDS_LEX_CSV_COL_1       "Sarake 1"
+    IDS_LEX_CSV_COL_2       "Sarake 2"
+    IDS_LEX_CSV_COL_3       "Sarake 3"
+    IDS_LEX_CSV_COL_4       "Sarake 4"
+    IDS_LEX_CSV_COL_5       "Sarake 5"
+    IDS_LEX_CSV_COL_6       "Sarake 6"
+    IDS_LEX_CSV_COL_7       "Sarake 7"
+    IDS_LEX_CSV_COL_8       "Sarake 8"
+    IDS_LEX_CSV_COL_9       "Sarake 9"
+END
+
+#endif    // Finnish (Finland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

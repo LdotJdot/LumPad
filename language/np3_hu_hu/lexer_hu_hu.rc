@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_HUNGARIAN_HUNGARY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "Általános alap"
+    IDS_LEX_WEB_SRC         "Web forráskód"
+    IDS_LEX_XML_DOC         "XML dokumentum"
+    IDS_LEX_CSS_STYLE       "CSS stíluslap"
+    IDS_LEX_PRISM_CSV       "CSV Prism"
+    IDS_LEX_CPP_SRC         "C/C++ forráskód"
+    IDS_LEX_CSHARP_SRC      "C# forráskód"
+    IDS_LEX_RESOURCE_SCR    "Resource szkript"
+    IDS_LEX_MAKEFILES       "Makefile-ok"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript"
+    IDS_LEX_VIS_BAS         "Visual Basic"
+    IDS_LEX_J_SCR           "JavaScript"
+    IDS_LEX_JAVA_SRC        "Java forráskód"
+    IDS_LEX_PASCAL_SRC      "Pascal forráskód"
+    IDS_LEX_ASM_SCR         "Assembly szkript"
+    IDS_LEX_PERL_SCR        "Perl szkript"
+    IDS_LEX_CONF            "Konfigurációs fájl"
+    IDS_LEX_BATCH           "Batch fájlok"
+    IDS_LEX_DIFF            "Diff fájlok"
+    IDS_LEX_SQL             "SQL lekérdezés"
+    IDS_LEX_PYTHON          "Python szkript"
+    IDS_LEX_APC_CFG         "Apache konfigurációs fájl"
+    IDS_LEX_PWRSHELL        "PowerShell szkript"
+    IDS_LEX_D_SRC           "D forráskód"
+    IDS_LEX_GO_SRC          "Go forráskód"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awk szkript"
+    IDS_LEX_ANSI_ART        "ANSI Art"
+    IDS_LEX_SHELL_SCR       "Shell szkript"
+    IDS_LEX_REG_FILES       "Registry fájl"
+    IDS_LEX_VHDL            "VHDL"
+    IDS_LEX_JSON            "JSON"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS"
+    IDS_LEX_INNO            "Inno Setup szkript"
+    IDS_LEX_RUBY            "Ruby szkript"
+    IDS_LEX_LUA             "Lua szkript"
+    IDS_LEX_TCL             "Tcl szkript"
+    IDS_LEX_AUTOIT3         "AutoIt3 szkript"
+    IDS_LEX_LATEX           "LaTeX fájlok"
+    IDS_LEX_AHK             "AutoHotkey szkript"
+    IDS_LEX_CMAKE           "Cmake szkript"
+    IDS_LEX_AVI_SYNTH       "AviSynth szkript"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML"
+    IDS_LEX_COFFEE_SCR      "Coffeescript"
+    IDS_LEX_MATLAB          "MATLAB"
+    IDS_LEX_NIM_SRC         "Nim forráskód"
+    IDS_LEX_R_STAT          "R-S-SPlus statisztika kód"
+    IDS_LEX_RUST_SRC        "Rust forráskód"
+    IDS_LEX_AHKL            "AutoHotkey_L szkript"
+    IDS_LEX_TEXT_FILES      "Szövegfájlok"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Dart forráskód"
+    IDS_LEX_KOTLIN_SRC      "Kotlin forráskód"
+    IDS_LEX_JULIA_SCR       "Julia Script"
+    IDS_LEX_KIX_SCR         "KiXtart szkript"
+    IDS_LEX_FORTRAN         "Fortran forráskód"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "Verilog HDL"
+    IDS_LEX_SYSVERILOG      "SystemVerilog HDVL"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "Alapértelmezett stílus"
+    IDS_LEX_STD_MARGIN      "Margók és sorszámok"
+    IDS_LEX_STD_BRACE       "Zárójelpár (jelzés)"
+    IDS_LEX_STD_BRACE_FAIL  "Zárójelpár hiba (jelzés)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "Vezérlőkarakterek (betű)"
+    IDS_LEX_STD_INDENT      "Behúzási segéd (szín)"
+    IDS_LEX_STD_SEL         "Kijelölt szöveg (színek)"
+    IDS_LEX_STD_WSPC        "Whitespace (színek, méret 1-12)"
+    IDS_LEX_STD_LN_BACKGR   "Jelenlegi sor kiemelése"
+    IDS_LEX_STD_CARET       "Kurzor (szín, méret 1-3)"
+    IDS_LEX_STD_LONG_LN     "Hosszú sor jelölése (színek)"
+    IDS_LEX_STD_X_SPC       "Extra sortávolság (méret)"
+    IDS_LEX_2ND_STYLE       "2. alapértelmezett stílus"
+    IDS_LEX_2ND_MARGIN      "2. margók és sorszámok"
+    IDS_LEX_2ND_BRACE       "2. zárójelpár (jelzés)"
+    IDS_LEX_2ND_BRACE_FAIL  "2. zárójelpár hiba (jelzés)"
+    IDS_LEX_2ND_CTRL_CHAR   "2. vezérlőkarakterek (betű)"
+    IDS_LEX_2ND_INDENT      "2. behúzási segéd (szín)"
+    IDS_LEX_2ND_SEL         "2. kijelölt szöveg (színek)"
+    IDS_LEX_2ND_WSPC        "2. whitespace (színek, méret 1-12)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "2. Aktuális sor kiemelése"
+    IDS_LEX_2ND_CARET       "2. Kurzor (szín, méret 1-3)"
+    IDS_LEX_2ND_LONG_LN     "2. Hosszú sor jelölő (színek)"
+    IDS_LEX_2ND_X_SPC       "2. Extra sortávolság (méret)"
+    IDS_LEX_STD_BKMRK       "Kedvencek és Behajtás (színek, méret)"
+    IDS_LEX_2ND_BKMRK       "2. Kedvencek és Behajtás (színek, méret)"
+    IDS_LEX_STR_Default     "Alapértelmezett"
+    IDS_LEX_STR_Comment     "Megjegyzés"
+    IDS_LEX_STR_Keyword     "Kulcsszó"
+    IDS_LEX_STR_Identifier  "Azonosító"
+    IDS_LEX_STR_Number      "Szám"
+    IDS_LEX_STR_String      "Szöveg"
+    IDS_LEX_STR_Operator    "Operátor"
+    IDS_LEX_STR_PreProc     "Előfeldolgozó"
+    IDS_LEX_STR_VerbStrg    "Verbatim szöveg"
+    IDS_LEX_STR_RegEx       "Reg. kif."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML elem"
+    IDS_LEX_STR_63137       "HTML ismeretlen elem"
+    IDS_LEX_STR_63138       "HTML Attribútum"
+    IDS_LEX_STR_63139       "HTML ismeretlen attribútum"
+    IDS_LEX_STR_63140       "HTML érték"
+    IDS_LEX_STR_63141       "HTML szöveg"
+    IDS_LEX_STR_63142       "HTML más belső elem"
+    IDS_LEX_STR_63143       "HTML megjegyzés"
+    IDS_LEX_STR_63144       "HTML entitás"
+    IDS_LEX_STR_63145       "XML azonosító"
+    IDS_LEX_STR_63146       "ASP kezdő elem"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP kezdő elem"
+    IDS_LEX_STR_63149       "PHP alapértelmezett"
+    IDS_LEX_STR_63150       "PHP szöveg"
+    IDS_LEX_STR_63151       "PHP egyszerű szöveg"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP kulcsszó"
+    IDS_LEX_STR_63153       "PHP szám"
+    IDS_LEX_STR_63154       "PHP változó"
+    IDS_LEX_STR_63155       "PHP szövegváltozó"
+    IDS_LEX_STR_63156       "PHP komplex változó"
+    IDS_LEX_STR_63157       "PHP megjegyzés"
+    IDS_LEX_STR_63158       "PHP operátor"
+    IDS_LEX_STR_63159       "JS alapértelmezett"
+    IDS_LEX_STR_63160       "JS megjegyzés"
+    IDS_LEX_STR_63161       "JS szám"
+    IDS_LEX_STR_63162       "JS azonosító"
+    IDS_LEX_STR_63163       "JS kulcsszó"
+    IDS_LEX_STR_63164       "JS szöveg"
+    IDS_LEX_STR_63165       "JS szimbólum"
+    IDS_LEX_STR_63166       "JS reg. kif."
+    IDS_LEX_STR_63167       "ASP JS alapértelmezett"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS megjegyzés"
+    IDS_LEX_STR_63169       "ASP JS szám"
+    IDS_LEX_STR_63170       "ASP JS azonosító"
+    IDS_LEX_STR_63171       "ASP JS kulcsszó"
+    IDS_LEX_STR_63172       "ASP JS szöveg"
+    IDS_LEX_STR_63173       "ASP JS szimbólum"
+    IDS_LEX_STR_63174       "ASP JS reg. kif."
+    IDS_LEX_STR_63175       "VBS alapértelmezett"
+    IDS_LEX_STR_63176       "VBS megjegyzés"
+    IDS_LEX_STR_63177       "VBS szám"
+    IDS_LEX_STR_63178       "VBS kulcsszó"
+    IDS_LEX_STR_63179       "VBS szöveg"
+    IDS_LEX_STR_63180       "VBS azonosító"
+    IDS_LEX_STR_63181       "ASP VBS alapértelmezett"
+    IDS_LEX_STR_63182       "ASP VBS megjegyzés"
+    IDS_LEX_STR_63183       "ASP VBS szám"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS kulcsszó"
+    IDS_LEX_STR_63185       "ASP VBS szöveg"
+    IDS_LEX_STR_63186       "ASP VBS azonosító"
+    IDS_LEX_STR_63187       "XML elem"
+    IDS_LEX_STR_63188       "XML attribútum"
+    IDS_LEX_STR_63189       "XML érték"
+    IDS_LEX_STR_63190       "XML szöveg"
+    IDS_LEX_STR_63191       "XML egyéb belső elem"
+    IDS_LEX_STR_63192       "XML megjegyzés"
+    IDS_LEX_STR_63193       "XML entitás"
+    IDS_LEX_STR_63194       "Tag-osztály"
+    IDS_LEX_STR_63195       "Tag-ID"
+    IDS_LEX_STR_63196       "Tag-attriútum"
+    IDS_LEX_STR_63197       "Pszeudo-osztály"
+    IDS_LEX_STR_63198       "Ismeretlen pszeudo-osztály"
+    IDS_LEX_STR_63199       "CSS tulajdonság"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "Ismeretlen tulajdonság"
+    IDS_LEX_STR_Value       "Érték"
+    IDS_LEX_STR_63202       "Fontos"
+    IDS_LEX_STR_63203       "Direktíva"
+    IDS_LEX_STR_Target      "Target"
+    IDS_LEX_STR_63205       "Belső Asm"
+    IDS_LEX_STR_63206       "CPU utasítás"
+    IDS_LEX_STR_63207       "FPU utasítás"
+    IDS_LEX_STR_Register    "Regiszter"
+    IDS_LEX_STR_63209       "Direktíva operandus"
+    IDS_LEX_STR_63210       "Kiterjesztett utasítás"
+    IDS_LEX_STR_63211       "Szöveg idézőjelben"
+    IDS_LEX_STR_63212       "Szöveg aposztrófok között"
+    IDS_LEX_STR_63213       "POD (általános)"
+    IDS_LEX_STR_63214       "POD (Verbatim)"
+    IDS_LEX_STR_63215       "Skaláris $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "Tömb @var"
+    IDS_LEX_STR_63217       "Hash %var"
+    IDS_LEX_STR_63218       "Szimbólum tábla *var"
+    IDS_LEX_STR_63219       "Reg.kif. /re/ vagy m{re}"
+    IDS_LEX_STR_63220       "Helyettesítés s/re/ore/"
+    IDS_LEX_STR_63221       "Back Ticks"
+    IDS_LEX_STR_63222       "Adat szakasz"
+    IDS_LEX_STR_63223       "Here-Doc (Delimiter)"
+    IDS_LEX_STR_63224       "Here-Doc (Single Quoted, q)"
+    IDS_LEX_STR_63225       "Here-Doc (Double Quoted, qq)"
+    IDS_LEX_STR_63226       "Here-Doc (Back Ticks, qx)"
+    IDS_LEX_STR_63227       "Szöveg aposzrófok között (Generic, q)"
+    IDS_LEX_STR_63228       "Szöveg idézőjelek között (qq)"
+    IDS_LEX_STR_63229       "Back Ticks (qx)"
+    IDS_LEX_STR_63230       "Reg. kif. (qr)"
+    IDS_LEX_STR_63231       "Tömb (qw)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "Szakasz"
+    IDS_LEX_STR_Assign      "Hozzárendelés"
+    IDS_LEX_STR_63234       "Alapértelmezett érték"
+    IDS_LEX_STR_Label       "Címke"
+    IDS_LEX_STR_Cmd         "Parancs"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "Forrás és cél"
+    IDS_LEX_STR_63239       "Pozíció beállítás"
+    IDS_LEX_STR_63240       "Sor hozzáadás"
+    IDS_LEX_STR_63241       "Sor törlés"
+    IDS_LEX_STR_63242       "Sor változtatás"
+    IDS_LEX_STR_63243       "Idézett azonosító"
+    IDS_LEX_STR_63244       "String Triple Double Quotes"
+    IDS_LEX_STR_63245       "String Triple Single Quotes"
+    IDS_LEX_STR_ClassName   "Osztály név"
+    IDS_LEX_STR_FctName     "Függvény név"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "IP cím"
+    IDS_LEX_STR_Var         "Változó"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "Alias"
+    IDS_LEX_STR_63252       "Elemzési hiba"
+    IDS_LEX_STR_Prototyp    "Prototípus"
+    IDS_LEX_STR_63254       "Formátum azonosító"
+    IDS_LEX_STR_63255       "Formátum tartalom"
+    IDS_LEX_STR_63256       "HTML elem szöveg"
+    IDS_LEX_STR_63257       "XML elem szöveg"
+    IDS_LEX_STR_63258       "Típusdef./Osztályok"
+    IDS_LEX_STR_63259       "Megjegyzés szöveg"
+    IDS_LEX_STR_Keyword2nd  "2. kulcsszó"
+    IDS_LEX_STR_Error       "Hiba"
+    IDS_LEX_STR_63262       "Találatok megjelölélse (Indikátor)"
+    IDS_LEX_STR_63263       "2. találatok megjelölése (Indikátor)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "Hiperhivatkozás területe"
+    IDS_LEX_STR_63265       "2. hiperhivatkozás területe"
+    IDS_LEX_STR_63266       "2. általános alap"
+    IDS_LEX_STR_63267       "Szövegen belüli változó"
+    IDS_LEX_STR_63268       "Rendezett lista"
+    IDS_LEX_STR_Infix       "Infix"
+    IDS_LEX_STR_InfixEOL    "Infix EOL"
+    IDS_LEX_STR_63271       "Alapcsomag függvény"
+    IDS_LEX_STR_63272       "Egyéb csomag függvény"
+    IDS_LEX_STR_Function    "Függvény"
+    IDS_LEX_STR_Const       "Konstans"
+    IDS_LEX_STR_63275       "Alszakasz"
+    IDS_LEX_STR_63276       "Szakasz csoport"
+    IDS_LEX_STR_63277       "Függvény definíció"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "If definíció"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "Makró definíció"
+    IDS_LEX_STR_Param       "Paraméter"
+    IDS_LEX_STR_63282       "Soron belüli kiterjesztés"
+    IDS_LEX_STR_63283       "Pascal megjegyzés"
+    IDS_LEX_STR_63284       "Pascal kulcsszó"
+    IDS_LEX_STR_63285       "Érték név"
+    IDS_LEX_STR_63286       "Érték típus"
+    IDS_LEX_STR_Hex         "Hex"
+    IDS_LEX_STR_AddKey      "Hozzáadott kulcs"
+    IDS_LEX_STR_DelKey      "Törölt kulcs"
+    IDS_LEX_STR_Esc         "Escape-elt"
+    IDS_LEX_STR_63291       "GUID kulcs útvonalban"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "Szimbólum"
+    IDS_LEX_STR_63294       "Modul név"
+    IDS_LEX_STR_63295       "Példány változó"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "Osztály változó"
+    IDS_LEX_STR_63297       "Adat szakasz"
+    IDS_LEX_STR_BaseFct     "Alap függvények"
+    IDS_LEX_STR_63299       "Szöveg, tábla és Mat. függvények"
+    IDS_LEX_STR_63300       "Input, Output és rendszer lehetőségek"
+    IDS_LEX_STR_LitStrg     "Betű szerinti szöveg"
+    IDS_LEX_STR_63302       "Pszeudo-elem"
+    IDS_LEX_STR_Media       "Média"
+    IDS_LEX_STR_GlobClass   "Globális osztály"
+    IDS_LEX_STR_63305       "Egyéni függvény"
+    IDS_LEX_STR_63306       "Speciális karaketer"
+    IDS_LEX_STR_63307       "Betű szerinti szegmens"
+    IDS_LEX_STR_63308       "Kifejezés operátor"
+    IDS_LEX_STR_63309       "Változó Dereferencia"
+    IDS_LEX_STR_63310       "Kontroll folyamata"
+    IDS_LEX_STR_63311       "Kulcsok és gombok"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "Beépített változók"
+    IDS_LEX_STR_63313       "Változó kulcsszó"
+    IDS_LEX_STR_Filter      "Szűrő"
+    IDS_LEX_STR_Plugin      "Plugin"
+    IDS_LEX_STR_63316       "Clip jellemző"
+    IDS_LEX_STR_63317       "Sor kezdete"
+    IDS_LEX_STR_Strong      "Félkövér"
+    IDS_LEX_STR_Emph        "Hangsúlyos"
+    IDS_LEX_STR_63320       "Fejléc 1"
+    IDS_LEX_STR_63321       "Fejléc 2"
+    IDS_LEX_STR_63322       "Fejlés 3"
+    IDS_LEX_STR_63323       "Fejlés 4"
+    IDS_LEX_STR_63324       "Fejlés 5"
+    IDS_LEX_STR_63325       "Fejlés 6"
+    IDS_LEX_STR_63326       "Pre kar."
+    IDS_LEX_STR_63327       "Rendezetlen lista"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "Idézet blokk"
+    IDS_LEX_STR_63329       "Áthúzott"
+    IDS_LEX_STR_63330       "Vízszintes vonal"
+    IDS_LEX_STR_Link        "Hivatkozás"
+    IDS_LEX_STR_Code        "Kód"
+    IDS_LEX_STR_Ref         "Hivatkozás"
+    IDS_LEX_STR_Doc         "Dokumentum"
+    IDS_LEX_STR_Txt         "Szöveg"
+    IDS_LEX_STR_StdOp       "Standard Operátor"
+    IDS_LEX_STR_Attrib      "Attribútum"
+    IDS_LEX_STR_StdFct      "Standard függvény"
+    IDS_LEX_STR_StdPck      "Standard csomag"
+    IDS_LEX_STR_StdTyp      "Standard típus"
+    IDS_LEX_STR_Word        "Szó"
+    IDS_LEX_STR_Verb        "Verbatim"
+    IDS_LEX_STR_63343       "Beépített stílus"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "Byte szöveg"
+    IDS_LEX_STR_63345       "Egyéb kulcsszó"
+    IDS_LEX_STR_63346       "Rust Lifetime"
+    IDS_LEX_STR_Obj         "Objektum"
+    IDS_LEX_STR_Key         "Kulcs"
+    IDS_LEX_STR_HotKey      "Gyorsbill."
+    IDS_LEX_STR_HotStrg     "HotString"
+    IDS_LEX_STR_HotStrgOp   "HotStringOption"
+    IDS_LEX_STR_63352       "Inline-IME szín"
+    IDS_LEX_STR_63353       "2nd Inline-IME szín"
+    IDS_LEX_STR_63354       "Többszörös szerkesztés jelzése"
+    IDS_LEX_STR_63355       "2. többszörös szerkesztés jelzése"
+    IDS_LEX_STR_DateTime    "Dátum-Idő"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "For Each definíció"
+    IDS_LEX_STR_63358       "While definíció"
+    IDS_LEX_STR_Math        "Matematikai"
+    IDS_LEX_STR_Scalar      "Skaláris"
+    IDS_LEX_STR_Subst       "Helyettesítés"
+    IDS_LEX_STR_Modf        "Módosító"
+    IDS_LEX_STR_Tag         "Tag"
+    IDS_LEX_STR_63364       "Tulajdonság név"
+    IDS_LEX_STR_63365       "LD Kulcsszó"
+    IDS_LEX_STR_63366       "ESC Szekvencia"
+    IDS_LEX_STR_63367       "Unicode-Point Hover"
+    IDS_LEX_STR_63368       "2nd Unicode-Point Hover"
+    IDS_LEX_STR_Interface   "Interface"
+    IDS_LEX_STR_Annot       "Annotáció"
+    IDS_LEX_STR_63371       "Comment Doc Word"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "Dekorátor"
+    IDS_LEX_STR_63373       "Feladatjelölő"
+    IDS_LEX_STR_63374       "Comment Doc Error"
+    IDS_LEX_STR_TypeOp      "Típusoperátor"
+    IDS_LEX_STR_63376       "Continuation"
+    IDS_LEX_STR_Special     "Speciális"
+    IDS_LEX_STR_63378       "Syntax Operator"
+    IDS_LEX_STR_63379       "Lezáratlan szöveg"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "Kompakt IRI"
+    IDS_LEX_STR_SendKey     "Send Key"
+    IDS_LEX_STR_63383       "Meta-Data"
+    IDS_LEX_STR_Enum        "Enumeration"
+    IDS_LEX_STR_63385       "TriQ-String"
+    IDS_LEX_STR_63386       "Szimbólum azonosító"
+    IDS_LEX_STR_63387       "Szimbólum operátor"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "Szöveg EOL"
+    IDS_LEX_STR_Backticks   "Backticks"
+    IDS_LEX_STR_GUIDStrg    "GUID String"
+    IDS_LEX_STR_Global      "Global"
+    IDS_LEX_STR_Input       "Input"
+    IDS_LEX_STR_Output      "Output"
+    IDS_LEX_STR_InOut       "InOut"
+    IDS_LEX_STR_PortConn    "Port kapcsolat"
+    IDS_LEX_STR_SysTasks    "Rendszerfeladatok"
+    IDS_LEX_STR_AfterLabel  "Címke után"
+    IDS_LEX_STR_Table       "Tábla"
+    IDS_LEX_STR_StarCmd     "Csillag parancs"
+    IDS_LEX_STR_SlashCmd    "Per parancs"
+    IDS_LEX_STR_Processor   "Processzor"
+    IDS_LEX_STR_Argument    "Argumentum"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "Változáselőzmény jelölő megváltozott"
+    IDS_LEX_STD_CH_SAVED        "Változáselőzmény jelölő elmentve"
+    IDS_LEX_STD_CH_REV_TO_MOD   "Változáselőzmény jelölő visszaállítva megváltozottra"
+    IDS_LEX_STD_CH_REV_TO_ORG   "Változáselőzmány jelölő visszaállítva eredetire"
+    IDS_LEX_2ND_CH_MODIFIED     "2. változáselőzmény jelölő megváltozott"
+    IDS_LEX_2ND_CH_SAVED        "2. változáselőzmény jelölő elmentve"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "2. változáselőzmény jelölő visszaállítva megváltozottra"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "2. változáselőzmány jelölő visszaállítva eredetire"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "Oszlop 0"
+    IDS_LEX_CSV_COL_1       "Oszlop 1"
+    IDS_LEX_CSV_COL_2       "Oszlop 2"
+    IDS_LEX_CSV_COL_3       "Oszlop 3"
+    IDS_LEX_CSV_COL_4       "Oszlop 4"
+    IDS_LEX_CSV_COL_5       "Oszlop 5"
+    IDS_LEX_CSV_COL_6       "Oszlop 6"
+    IDS_LEX_CSV_COL_7       "Oszlop 7"
+    IDS_LEX_CSV_COL_8       "Oszlop 8"
+    IDS_LEX_CSV_COL_9       "Oszlop 9"
+END
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

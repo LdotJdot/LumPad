@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hindi (India) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HIN)
+LANGUAGE LANG_HINDI, SUBLANG_HINDI_INDIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 227, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniPath"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "सही है",IDOK,170,90,50,14
+    ICON            IDI_MINIPATH,IDC_STATIC,7,7,48,48,SS_ICON|SS_REALSIZECONTROL,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_VERSION,65,7,175,12
+    LTEXT           "",IDC_COPYRIGHT,65,23,175,8
+    LTEXT           "",IDC_WEBPAGE2,65,26,175,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_WEBPAGE,"SysLink",WS_TABSTOP,65,33,175,10
+    LTEXT           "",IDC_AUTHORNAME,65,51,116,8
+    LTEXT           "",IDC_EMAIL2,65,75,116,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_EMAIL,"SysLink",WS_TABSTOP,65,61,116,10
+    LTEXT           "",IDC_TRANSL_AUTH, 65, 78, 200, 8
+END
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "चलाएं"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_RUN,IDC_STATIC,7,7,20,20
+    LTEXT           "चलाने लायक कोई प्रोग्राम फ़ाइल,\nफ़ोल्डर या दस्तावेज़ खोलने के लिए उसका नाम लिखें",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "सही है",IDOK,112,64,50,14
+    PUSHBUTTON      "रद्द करें",IDCANCEL,167,64,50,14
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 165, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "इसमें खोलें..."
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OPENWITHDIR,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,7,151,69
+    PUSHBUTTON      "",IDC_GETOPENWITHDIR,7,83,13,13
+    LTEXT           "अपनी पसंदीदा एप्लिकेशन के लिंक वाली निदेशिका बताने की लिए यहाँ क्लिक करें",IDC_OPENWITHDESCR,26,83,132,18
+    DEFPUSHBUTTON   "सही है",IDOK,52,108,50,14
+    PUSHBUTTON      "रद्द करें",IDCANCEL,108,108,50,14
+    SCROLLBAR       IDC_RESIZEGRIP3,7,112,10,10
+END
+
+IDD_GOTO DIALOGEX 0, 0, 224, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "यहाँ जाएं"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_GOTO,IDC_STATIC,7,7,20,20
+    LTEXT           "फ़ाइल या निदेशिका खोलने के लिए उसका नाम लिखें,\nया हाल में देखी गई निदेशिका सूची में से चुनें (&O)",IDC_STATIC,35,7,182,17
+    COMBOBOX        IDC_GOTO,35,35,182,126,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "सही है",IDOK,112,66,50,14,WS_DISABLED
+    PUSHBUTTON      "रद्द करें",IDCANCEL,167,66,50,14
+    SCROLLBAR       IDC_RESIZEGRIP,7,70,10,10
+END
+
+IDD_FILTER DIALOGEX 0, 0, 189, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "फ़ाइल फ़िल्टर"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "एक नया फ़िल्टर बताएं। विभिन्न फिल्टरों को ; से अलग करें (&F)",IDC_STATIC,7,7,175,8
+    EDITTEXT        IDC_FILTER,7,22,158,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSEFILTER,169,22,13,13
+    CONTROL         "फ़िल्टर से मेल खाती हुई फ़ाइलें बाहर रखें (&E)",IDC_NEGFILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,140,10
+    DEFPUSHBUTTON   "सही है",IDOK,77,58,50,14
+    PUSHBUTTON      "रद्द करें",IDCANCEL,132,58,50,14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 172, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "नाम बदलें"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "चालू:",IDC_STATIC,7,9,28,8
+    EDITTEXT        IDC_OLDNAME,39,7,126,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "नया: (&N)",IDC_STATIC,7,26,28,8
+    EDITTEXT        IDC_NEWNAME,39,25,126,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "सही है",IDOK,59,53,50,14,WS_DISABLED
+    PUSHBUTTON      "रद्द करें",IDCANCEL,115,53,50,14
+END
+
+IDD_NEWDIR DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "नई निदेशिका"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "नई निदेशिका का नाम बताएं:",IDC_STATIC,7,7,158,8
+    EDITTEXT        IDC_NEWDIR,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "सही है",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "रद्द करें",IDCANCEL,115,45,50,14
+END
+
+IDD_COPYMOVE DIALOGEX 0, 0, 230, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "कॉपी/स्थान बदलें"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "स्रोत:",IDC_STATIC,7,7,26,8
+    EDITTEXT        IDC_SOURCE,7,18,216,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "गंतव्य: (&D)",IDC_STATIC,7,37,40,8
+    COMBOBOX        IDC_DESTINATION,7,48,199,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSEDESTINATION,210,48,13,13
+    LTEXT           "क्रिया:",IDC_STATIC,7,66,24,8
+    CONTROL         "कॉपी (&C)",IDC_FUNCCOPY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,35,66,40,10
+    CONTROL         "स्थान बदलें (&M)",IDC_FUNCMOVE,"Button",BS_AUTORADIOBUTTON,35,78,55,10
+    DEFPUSHBUTTON   "सही है",IDOK,117,74,50,14,WS_DISABLED
+    PUSHBUTTON      "रद्द करें",IDCANCEL,173,74,50,14
+    SCROLLBAR       IDC_RESIZEGRIP2,7,78,10,10
+END
+
+IDPP_GENERAL DIALOGEX 0, 0, 240, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "सामान्य"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS,IDC_STATIC,10,10,20,20
+    LTEXT           "MiniPath के लिए सामान्य प्रोग्राम सेटिंग बताएं",IDC_STATIC,40,15,153,8
+    CONTROL         "ऑब्जेक्ट खोलने के लिए सिर्फ़ एक माउस-क्लिक ही स्वीकारें (&A)",IDC_SINGLECLICK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,46,195,10
+    CONTROL         "ट्रैक चुनाव सक्षम करें (&E)",IDC_TRACKSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,58,88,10
+    CONTROL         "सम्पूर्ण पंक्ति चुनाव सक्षम करें (&F)",IDC_FULLROWSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,70,115,10
+    CONTROL         "फ़ाइल खुली होने की अवस्था में लक्ष्य विंडो को हमेशा सक्रिय रखें (&C)",IDC_FOCUSEDIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,82,205,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,100,220,1
+    CONTROL         "MiniPath विंडो को हमेशा ऊपर रखें (&K)",IDC_ALWAYSONTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,140,10
+    CONTROL         "सिस्टम ट्रे में छोटा करें (पुनः सक्रिय करने लिए क्लिक करें) (&M)",IDC_MINIMIZETOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,190,10
+    CONTROL         "जब MiniPath शुरू हो, मौजूदा विंडो को पुनः इस्तेमाल करने का प्रयत्न करें (&T)",IDC_REUSEWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,133,230,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,151,220,1
+    CONTROL         "बाहर निकलते समय सेटिंग सहेजें (&S)",IDC_SAVESETTINGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,160,120,10
+END
+
+IDPP_ADVANCED DIALOGEX 0, 0, 240, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "उन्नत"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS2,IDC_STATIC,10,10,20,20
+    LTEXT           "MiniPath के लिए उन्नत प्रोग्राम सेटिंग बताएं",IDC_STATIC,40,15,160,8
+    CONTROL         "स्टार्टअप निर्देशिका: (&U)",IDC_STARTUPDIR,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,46,87,10
+    CONTROL         "हाल ही में अधिक प्रयोग हुई (&R)",IDC_GOTOMRU,"Button",BS_AUTORADIOBUTTON,100,46,100,10
+    CONTROL         """पसंदीदा"" फ़ोल्डर (&F)",IDC_GOTOFAV,"Button",BS_AUTORADIOBUTTON,100,58,75,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,76,220,1
+    CONTROL         "सहेजी हुई फ़ाइल का सिर्फ़ पढ़ने-योग्य गुण साफ़ करें (&C)",IDC_CLEARREADONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,170,10
+    CONTROL         "कॉपी की गई फ़ाइलों के नाम विरोधाभास होने में नाम बदलें (&N)",IDC_RENAMEONCOLLISION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,97,190,10
+    CONTROL         "मिटाई हुई फ़ाइल रीसाइकल बिन में भेजें। (&M)",IDC_USERECYCLEBIN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,140,10
+    CONTROL         "फ़ाइल मिटाने की पुष्टि न करें (यह अनुशंसित नहीं है) (&D)",IDC_NOCONFIRMDELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,170,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,139,220,1
+    CONTROL         """Esc"" कुंजी सक्षम करें (&E):",IDC_ESCFUNCTION,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,148,90,10
+    CONTROL         "विंडो छोटी करें (&W)",IDC_ESCMIN,"Button",BS_AUTORADIOBUTTON,100,148,71,10
+    CONTROL         "MiniPath से बाहर निकलें (&X)",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,100,160,100,10
+END
+
+IDPP_ITEMS DIALOGEX 0, 0, 240, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "आइटम"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_ITEMS,IDC_STATIC,10,10,21,20
+    LTEXT           "निदेशिका सूची में आइटम का दिखाव",IDC_STATIC,40,15,140,8
+    GROUPBOX        "रंग",IDC_STATIC,10,41,220,134
+    LTEXT           "कोई फ़िल्टर न होने की अवस्था में इस रंग के टेक्स्ट का प्रयोग करें:",IDC_STATIC,20,54,190,8
+    CONTROL         "डिफ़ॉल्ट विंडो रंग (&W)",IDC_COLOR_DEF1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,68,89,10
+    CONTROL         "मनचाहे रंग: (&C)",IDC_COLOR_CUST1,"Button",BS_AUTORADIOBUTTON,20,82,60,10
+    EDITTEXT        IDC_COLOR_SAMP1,85,80,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "रंग चुनें...",IDC_COLOR_PICK1,119,80,50,14
+    LTEXT           "फ़िल्टर क्रियशील होने में इस रंग का प्रयोग करें:",IDC_STATIC,20,105,146,8
+    CONTROL         "डिफ़ॉल्ट विंडो रंग (&E)",IDC_COLOR_DEF2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,119,89,10
+    CONTROL         "मनचाहे रंग: (&U)",IDC_COLOR_CUST2,"Button",BS_AUTORADIOBUTTON,20,133,60,10
+    EDITTEXT        IDC_COLOR_SAMP2,86,130,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "रंग चुनें...",IDC_COLOR_PICK2,120,130,50,14
+END
+
+IDPP_PROG DIALOGEX 0, 0, 240, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "स्थान"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_PROGS,IDC_STATIC,10,10,20,20
+    LTEXT           "बाहरी प्रोग्राम और स्थान बताएं",IDC_STATIC,40,15,140,8
+    LTEXT           "डिफ़ॉल्ट (&D) ""Quick View"" प्रोग्राम (Ctrl+Q):",IDC_STATIC,10,41,140,8
+    EDITTEXT        IDC_QUICKVIEW,10,52,206,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_Q,218,52,13,13,BS_BITMAP
+    LTEXT           "पसंदीदा फ़ोल्डर (F11): (&F)",IDC_STATIC,10,76,76,8
+    EDITTEXT        IDC_FAVORITES,10,87,206,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_F,218,87,13,13,BS_BITMAP
+END
+
+IDD_FINDTARGET DIALOGEX 0, 0, 276, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "लक्ष्य ऐप्लिकेशन"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "लक्ष्य ऐप्लिकेशन प्रयोग न करें, मात्र चुनी हुई फ़ाइल प्रक्षेपित करें",IDC_LAUNCH,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,7,250,10
+    CONTROL         "निम्न लक्ष्य ऐप्लिकेशन प्रयोग करें:",IDC_TARGET,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,21,131,10
+    LTEXT           "लक्ष्य ऐप्लिकेशन प्रगतिशील होने की अवस्था में क्रिया निर्देशित करें:",IDC_STATIC,7,64,220,8
+    EDITTEXT        IDC_TARGETPATH,20,35,230,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE,254,35,15,14,BS_BITMAP
+    LTEXT           "संदेश:",IDC_STATIC,20,120,32,8
+    CONTROL         "कुछ भी नहीं, प्रत्येक बार फ़ाइल खोलने में लक्ष्य ऐप्लिकेशन चलाएं",IDC_ALWAYSRUN,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,78,220,10
+    CONTROL         "लक्ष्य ऐप्लिकेशन विंडो को फ़ाइल खुली हुई है का संदेश भेजें:",IDC_SENDDROPMSG,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,92,198,10
+    CONTROL         "निम्न DDE कमांड चलाएं:",IDC_USEDDE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,106,135,10
+    LTEXT           "ऐप्लिकेशन:",IDC_STATIC,133,120,40,8
+    PUSHBUTTON      "विंडो खोजें...",IDC_FINDWIN,209,91,60,14
+    LTEXT           "विषय:",IDC_STATIC,203,120,20,8
+    EDITTEXT        IDC_DDEMSG,20,130,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDEAPP,133,130,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDETOPIC,203,130,66,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "सही है",IDOK,165,159,50,14
+    PUSHBUTTON      "रद्द करें",IDCANCEL,219,159,50,14
+END
+
+IDD_FINDWIN DIALOGEX 0, 0, 210, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "विंडो खोजें"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_CROSS1,IDC_CROSSCURSOR,7,7,21,20,SS_CENTERIMAGE
+    LTEXT           "विंडो को नया लक्ष्य बनाने हेतु crosshair को उसके ऊपर खींचें या रद्द करने के लिए Esc कुंजी दबाएं",IDC_STATIC,35,7,168,22
+    EDITTEXT        IDC_WINTITLE,35,35,168,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "विंडो क्लास",IDC_WINCLASS,7,60,45,8,NOT WS_VISIBLE
+    LTEXT           "विंडो मॉड्यूल",IDC_WINMODULE,7,70,51,8,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "सही है",IDOK,99,64,50,14,WS_DISABLED
+    PUSHBUTTON      "रद्द करें",IDCANCEL,153,64,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_NEWDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COPYMOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDPP_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_PROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FINDTARGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FINDWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#endif    // Hindi (India) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

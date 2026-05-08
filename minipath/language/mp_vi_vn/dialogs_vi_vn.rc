@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Vietnamese (Vietnam) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_VIT)
+LANGUAGE LANG_VIETNAMESE, SUBLANG_VIETNAMESE_VIETNAM
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 227, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniPath"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Đồng ý",IDOK,170,90,50,14
+    ICON            IDI_MINIPATH,IDC_STATIC,7,7,48,48,SS_ICON|SS_REALSIZECONTROL,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_VERSION,65,7,175,12
+    LTEXT           "",IDC_COPYRIGHT,65,23,175,8
+    LTEXT           "",IDC_WEBPAGE2,65,26,175,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_WEBPAGE,"SysLink",WS_TABSTOP,65,33,175,10
+    LTEXT           "",IDC_AUTHORNAME,65,51,116,8
+    LTEXT           "",IDC_EMAIL2,65,75,116,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_EMAIL,"SysLink",WS_TABSTOP,65,61,116,10
+    LTEXT           "",IDC_TRANSL_AUTH, 65, 78, 200, 8
+END
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chạy"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_RUN,IDC_STATIC,7,7,20,20
+    LTEXT           "Nhập tên tệp chương trình,\nthư mục hoặc tài liệu bạn muốn mở",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "Đồng ý",IDOK,112,64,50,14
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,167,64,50,14
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 165, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mở bằng chương trình khác..."
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OPENWITHDIR,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,7,151,69
+    PUSHBUTTON      "",IDC_GETOPENWITHDIR,7,83,13,13
+    LTEXT           "Nhấp vào đây để chỉ định thư mục có liên kết đến các ứng dụng yêu thích",IDC_OPENWITHDESCR,26,83,132,18
+    DEFPUSHBUTTON   "Đồng ý",IDOK,52,108,50,14
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,108,108,50,14
+    SCROLLBAR       IDC_RESIZEGRIP3,7,112,10,10
+END
+
+IDD_GOTO DIALOGEX 0, 0, 224, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Đi"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_GOTO,IDC_STATIC,7,7,20,20
+    LTEXT           "Nhập tên của tệp hoặc thư mục bạn muốn mở,\nhoặc chọn thư mục đã truy cập gần đây từ danh sách",IDC_STATIC,35,7,182,17
+    COMBOBOX        IDC_GOTO,35,35,182,126,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Đồng ý",IDOK,112,66,50,14,WS_DISABLED
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,167,66,50,14
+    SCROLLBAR       IDC_RESIZEGRIP,7,70,10,10
+END
+
+IDD_FILTER DIALOGEX 0, 0, 189, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bộ lọc tệp"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Chỉ định bộ lọc tệp mới. Tách nhiều bộ lọc bằng ; (&F)",IDC_STATIC,7,7,175,8
+    EDITTEXT        IDC_FILTER,7,22,158,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSEFILTER,169,22,13,13
+    CONTROL         "Loại trừ các tệp khớp với bộ lọc (&E)",IDC_NEGFILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,131,10
+    DEFPUSHBUTTON   "Đồng ý",IDOK,77,58,50,14
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,132,58,50,14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 172, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Đổi tên"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Hiện tại:",IDC_STATIC,7,9,28,8
+    EDITTEXT        IDC_OLDNAME,39,7,126,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Thay đổi:",IDC_STATIC,7,26,30,8
+    EDITTEXT        IDC_NEWNAME,39,25,126,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Đồng ý",IDOK,59,53,50,14,WS_DISABLED
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,115,53,50,14
+END
+
+IDD_NEWDIR DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Thư mục mới"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nhập tên thư mục mới:",IDC_STATIC,7,7,158,8
+    EDITTEXT        IDC_NEWDIR,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Đồng ý",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,115,45,50,14
+END
+
+IDD_COPYMOVE DIALOGEX 0, 0, 230, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sao chép/Di chuyển"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nguồn:",IDC_STATIC,7,7,43,8
+    EDITTEXT        IDC_SOURCE,7,18,216,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Đích(&D):",IDC_STATIC,7,37,43,8
+    COMBOBOX        IDC_DESTINATION,7,48,199,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSEDESTINATION,210,48,13,13
+    LTEXT           "Thao tác:",IDC_STATIC,7,66,30,8
+    CONTROL         "Sao chép(&C)",IDC_FUNCCOPY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,40,66,55,10
+    CONTROL         "Di chuyển(&M)",IDC_FUNCMOVE,"Button",BS_AUTORADIOBUTTON,40,78,55,10
+    DEFPUSHBUTTON   "Đồng ý",IDOK,117,74,50,14,WS_DISABLED
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,173,74,50,14
+    SCROLLBAR       IDC_RESIZEGRIP2,7,78,10,10
+END
+
+IDPP_GENERAL DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chung"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS,IDC_STATIC,10,10,20,20
+    LTEXT           "Chỉ định các thiết lập chung cho MiniPath",IDC_STATIC,40,15,180,8
+    CONTROL         "Cho phép mở đối tượng chỉ bằng một lần nhấp chuột(&A)",IDC_SINGLECLICK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,46,200,10
+    CONTROL         "Sử dụng chọn theo dõi(&E)",IDC_TRACKSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,58,195,10
+    CONTROL         "Sử dụng chọn hàng đầy đủ(&F)",IDC_FULLROWSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,70,195,10
+    CONTROL         "Luôn kích hoạt cửa sổ đích khi mở tập tin(&C)",IDC_FOCUSEDIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,82,195,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,100,205,1
+    CONTROL         "Luôn để cửa sổ MiniPath trên cùng(&K)",IDC_ALWAYSONTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,195,10
+    CONTROL         "Thu nhỏ vào khay hệ thống (Nhấn để kích hoạt lại)(&M)",IDC_MINIMIZETOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,195,10
+    CONTROL         "Sử dụng lại cửa sổ hiện có khi khởi động MiniPath(&T)",IDC_REUSEWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,133,195,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,151,205,1
+    CONTROL         "Lưu cài đặt khi thoát(&S)",IDC_SAVESETTINGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,160,195,10
+END
+
+IDPP_ADVANCED DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nâng cao"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS2,IDC_STATIC,10,10,20,20
+    LTEXT           "Chỉ định các thiết lập nâng cao cho MiniPath",IDC_STATIC,40,15,160,8
+    CONTROL         "Dùng thư mục khởi động(&U):",IDC_STARTUPDIR,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,46,105,10
+    CONTROL         "Sử dụng gần đây nhất(&R)",IDC_GOTOMRU,"Button",BS_AUTORADIOBUTTON,118,46,94,10
+    CONTROL         "Thư mục yêu thích(&F)",IDC_GOTOFAV,"Button",BS_AUTORADIOBUTTON,118,58,86,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,76,205,1
+    CONTROL         "Xóa thuộc tính chỉ đọc của tệp đã lưu(&C)",IDC_CLEARREADONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,159,10
+    CONTROL         "Đổi tên tệp sao chép nếu có xung đột tên(&N)",IDC_RENAMEONCOLLISION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,97,159,10
+    CONTROL         "Di chuyển tệp đã xóa vào Thùng rác(&M)",IDC_USERECYCLEBIN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,159,10
+    CONTROL         "Không xác nhận khi xóa tệp (Không khuyến nghị)(&D)",IDC_NOCONFIRMDELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,185,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,139,205,1
+    CONTROL         "Sử dụng phím ""Esc""(&E):",IDC_ESCFUNCTION,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,148,85,10
+    CONTROL         "Thu nhỏ cửa sổ(&W)",IDC_ESCMIN,"Button",BS_AUTORADIOBUTTON,100,148,78,10
+    CONTROL         "Thoát MiniPath(&X)",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,100,160,78,10
+END
+
+IDPP_ITEMS DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mục"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_ITEMS,IDC_STATIC,10,10,21,20
+    LTEXT           "Giao diện của các mục trong danh sách thư mục",IDC_STATIC,40,15,160,8
+    GROUPBOX        "Màu sắc",IDC_STATIC,10,41,205,134
+    LTEXT           "Sử dụng màu văn bản này nếu không có bộ lọc:",IDC_STATIC,20,54,166,8
+    CONTROL         "Màu mặc định của Windows(&W)",IDC_COLOR_DEF1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,68,120,10
+    CONTROL         "Màu tùy chỉnh(&C):",IDC_COLOR_CUST1,"Button",BS_AUTORADIOBUTTON,20,82,80,10
+    EDITTEXT        IDC_COLOR_SAMP1,105,80,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Chọn màu...",IDC_COLOR_PICK1,140,80,50,14
+    LTEXT           "Sử dụng màu văn bản này nếu bộ lọc đang hoạt động:",IDC_STATIC,20,105,186,8
+    CONTROL         "Màu mặc định của Windows(&E)",IDC_COLOR_DEF2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,119,120,10
+    CONTROL         "Màu tùy chỉnh(&U):",IDC_COLOR_CUST2,"Button",BS_AUTORADIOBUTTON,20,133,80,10
+    EDITTEXT        IDC_COLOR_SAMP2,105,130,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Chọn màu...",IDC_COLOR_PICK2,140,130,50,14
+END
+
+IDPP_PROG DIALOGEX 0, 0, 226, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vị trí"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_PROGS,IDC_STATIC,10,10,20,20
+    LTEXT           "Chỉ định chương trình và đường dẫn bên ngoài",IDC_STATIC,40,15,160,8
+    LTEXT           "Chương trình ""Xem nhanh"" mặc định(&D) (Ctrl+Q):",IDC_STATIC,10,41,166,8
+    EDITTEXT        IDC_QUICKVIEW,10,52,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_Q,203,52,13,13,BS_BITMAP
+    LTEXT           "Thư mục yêu thích(&F) (F11):",IDC_STATIC,10,76,136,8
+    EDITTEXT        IDC_FAVORITES,10,87,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_F,203,87,13,13,BS_BITMAP
+END
+
+IDD_FINDTARGET DIALOGEX 0, 0, 276, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ứng dụng đích"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "Chạy tệp đã chọn mà không sử dụng ứng dụng đích cụ thể",IDC_LAUNCH,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,7,250,10
+    CONTROL         "Sử dụng ứng dụng đích sau:",IDC_TARGET,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,21,131,10
+    LTEXT           "Chỉ định hành động nếu ứng dụng đích đã chạy:",IDC_STATIC,7,64,220,8
+    EDITTEXT        IDC_TARGETPATH,20,35,230,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE,254,35,15,14,BS_BITMAP
+    LTEXT           "Thông báo:",IDC_STATIC,20,120,40,8
+    CONTROL         "Không có. Mở tệp mỗi lần ứng dụng đích được chạy",IDC_ALWAYSRUN,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,78,220,10
+    CONTROL         "Gửi thông báo mở tệp đến cửa sổ ứng dụng đích:",IDC_SENDDROPMSG,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,92,198,10
+    CONTROL         "Chạy lệnh DDE sau:",IDC_USEDDE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,106,135,10
+    LTEXT           "Ứng dụng:",IDC_STATIC,133,120,50,8
+    PUSHBUTTON      "Tìm cửa sổ...",IDC_FINDWIN,209,91,60,14
+    LTEXT           "Chủ đề:",IDC_STATIC,203,120,28,8
+    EDITTEXT        IDC_DDEMSG,20,130,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDEAPP,133,130,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDETOPIC,203,130,66,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Đồng ý",IDOK,165,159,50,14
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,219,159,50,14
+END
+
+IDD_FINDWIN DIALOGEX 0, 0, 210, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tìm cửa sổ"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_CROSS1,IDC_CROSSCURSOR,7,7,21,20,SS_CENTERIMAGE
+    LTEXT           "Kéo đường chéo trên cửa sổ bạn muốn chọn hoặc nhấn phím Esc để hủy",IDC_STATIC,35,7,168,22
+    EDITTEXT        IDC_WINTITLE,35,35,168,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Lớp cửa sổ",IDC_WINCLASS,7,60,51,8,NOT WS_VISIBLE
+    LTEXT           "Module cửa sổ",IDC_WINMODULE,7,70,51,8,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Đồng ý",IDOK,99,64,50,14,WS_DISABLED
+    PUSHBUTTON      "Hủy bỏ",IDCANCEL,153,64,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_NEWDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COPYMOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDPP_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_PROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FINDTARGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FINDWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#endif    // Vietnamese (Vietnam) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

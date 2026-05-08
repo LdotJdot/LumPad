@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hindi (India) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HIN)
+LANGUAGE LANG_HINDI, SUBLANG_HINDI_INDIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "खोलें (&O)",                       IDM_FILE_OPEN
+        MENUITEM "अन्य एप के साथ खोलें (&W)...",   IDM_FILE_OPENWITH
+        MENUITEM "&Quickview",                  IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "नाम कॉपी करें (&C)",                  IDM_POP_COPYNAME
+        MENUITEM "लिंक बनाएं (&K)...",             IDM_FILE_CREATELINK
+        MENUITEM "इस रूप में सहेजें (&S)...",                 IDM_FILE_SAVEAS
+        MENUITEM "कॉपी/ले जाएं (&M)...",               IDM_FILE_COPYMOVE
+        MENUITEM "मिटाएं (&E)...",                  IDM_FILE_DELETE
+        MENUITEM "नाम बदलें (&N)...",                  IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "प्रक्षेपित करें (&L)",                     IDM_FILE_LAUNCH
+        MENUITEM "कोणांक के साथ चलाएं (&R)...",        IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "गुण (&P)",                 IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "नई फ़ाइल (&N)...",                IDM_FILE_NEW
+        MENUITEM "नई निदेशिका (&W)...",           IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "फ़ाइल  फ़िल्टर (&F)...",             IDM_VIEW_FILTER
+        MENUITEM "फ़िल्टर रीसेट करें (&R)",               IDM_VIEW_FILTERALL
+        POPUP "दिखाएं (&S)"
+        BEGIN
+            MENUITEM "निदेशिकाएं (&D)",            IDM_VIEW_FOLDERS
+            MENUITEM "फ़ाइलें (&F)",                  IDM_VIEW_FILES
+            MENUITEM "सिस्टम ऑब्जेक्ट (&S)",         IDM_VIEW_HIDDEN
+        END
+        POPUP "क्रमानुसार (&O)"
+        BEGIN
+            MENUITEM "नाम से (&N)",                IDM_SORT_NAME
+            MENUITEM "आकार से (&S)",                IDM_SORT_SIZE
+            MENUITEM "प्रकार से (&T)",                IDM_SORT_TYPE
+            MENUITEM "दिनाँक से (&D)",                IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "उल्टा करें (&R)",                IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "यहाँ पर जाएं (&T...",              IDM_FILE_GOTO
+        MENUITEM "पसंदीदा पर जाएं (&G)",             IDM_VIEW_FAVORITES
+        MENUITEM "पसंदीदा संपादित करें (&E)",          IDM_VIEW_EDITFAVORITES
+        MENUITEM "निदेशिका (&D)...",                IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "ड्राइव दिखाएं (&V)",                IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "सेटिंग सहेजें (&A)",              IDM_VIEW_SAVESETTINGS
+        MENUITEM "गंतव्य बनाएं (&T)...",            IDM_VIEW_FINDTARGET
+        MENUITEM "विकल्प (&P)...",                 IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "निदेशिका (&D)...",               IDM_FILE_CHANGEDIR
+        MENUITEM "ड्राइव गुण (&P)",           IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "ड्राइव दिखाएं (&V)",                IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "औज़ार पट्टी दिखाएं (&T)",               IDM_VIEW_TOOLBAR
+        MENUITEM "टूलपट्टी संपादित करें (&E)...",            IDM_VIEW_CUSTOMIZETB
+        MENUITEM "अवस्था पट्टी दिखाएं (&S)",             IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "MiniPath खोलें",               IDM_TRAY_RESTORE
+        MENUITEM "MiniPath से बाहर निकलें",               IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Hindi (India) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

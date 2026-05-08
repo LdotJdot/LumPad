@@ -1,0 +1,806 @@
+// Microsoft Visual C++ generated resource script.
+
+// encoding: UTF-8
+
+#pragma code_page(65001)  // UTF-8
+
+#include "resource.h"
+
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 2 resource.
+
+//
+
+#include "winresrc.h"
+
+#include "../common_res.h"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+// Finnish (Finland) resources
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+
+LANGUAGE LANG_FINNISH, SUBLANG_FINNISH_FINLAND
+
+#pragma code_page(65001)  // UTF-8
+
+
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// TEXTINCLUDE
+
+//
+
+
+
+1 TEXTINCLUDE
+
+BEGIN
+
+    "resource.h\0"
+
+END
+
+
+
+2 TEXTINCLUDE
+
+BEGIN
+
+    "#include ""winresrc.h""\r\n"
+
+    "#include ""../common_res.h""\r\n"
+
+    "\0"
+
+END
+
+
+
+3 TEXTINCLUDE
+
+BEGIN
+
+    "\r\n"
+
+    "\0"
+
+END
+
+
+
+#endif    // APSTUDIO_INVOKED
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// String Table
+
+//
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_NEW            "Uusi"
+
+    IDT_FILE_OPEN           "Avaa"
+
+    IDT_FILE_SAVE           "Tallenna"
+
+    IDT_FILE_RECENT         "Historia"
+
+    IDT_EDIT_UNDO           "Kumoa"
+
+    IDT_EDIT_REDO           "Tee uudelleen"
+
+    IDT_EDIT_CUT            "Leikkaa"
+
+    IDT_EDIT_COPY           "Kopioi"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_EDIT_PASTE          "Liitä"
+
+    IDT_EDIT_FIND           "Etsi"
+
+    IDT_EDIT_REPLACE        "Korvaa"
+
+    IDT_VIEW_WORDWRAP       "Rivitys"
+
+    IDT_VIEW_ZOOMIN         "Lähennä"
+
+    IDT_VIEW_RESETZOOM      "Nollaa zoomaus"
+
+    IDT_VIEW_ZOOMOUT        "Loitonna"
+
+    IDT_VIEW_SCHEME         "Valitse määrittely"
+
+    IDT_VIEW_SCHEMECONFIG   "Muokkaa määrittelyä"
+
+    IDT_FILE_EXIT           "Sulje"
+
+    IDT_FILE_SAVEAS         "Tallenna nimellä"
+
+    IDT_FILE_SAVECOPY       "Tallenna kopio"
+
+    IDT_EDIT_CLEAR          "Poista"
+
+    IDT_FILE_PRINT          "Tulosta"
+
+    IDT_FILE_OPENFAV        "Suosikit"
+
+    IDT_FILE_ADDTOFAV       "Lisää suosikkeihin"
+
+    IDT_VIEW_TOGGLEFOLDS    "Vaihda laskosta"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_LAUNCH          "Suorita dokumentti"
+
+    IDT_VIEW_NEW_WINDOW      "Uusi tyhjä ikkuna"
+
+    IDT_VIEW_TOGGLE_VIEW     "Keskitetty näkymä"
+
+    IDT_VIEW_CHASING_DOCTAIL "Seurantaloki"
+
+    IDT_VIEW_PIN_ON_TOP      "Aina päällimmäisenä"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_APPTITLE_ELEVATED "%s : Korotettu"
+
+    IDS_MUI_APPTITLE_PASTEBOARD "%s : PASTEBOARD"
+
+    IDS_MUI_UNTITLED        "Nimetön"
+
+    IDS_MUI_TITLEEXCERPT    """%s"""
+
+    IDS_MUI_READONLY        "(Vain luku)"
+
+    IDS_MUI_FILELOCKED      "<Yksinomainen>"
+
+    IDS_MUI_LOADFILE        "Ladataan ""%s""..."
+
+    IDS_MUI_SAVEFILE        "Tallennetaan ""%s""..."
+
+    IDS_MUI_PRINTFILE       "Tulostetaan sivu %i..."
+
+    IDS_MUI_SAVINGSETTINGS  "Tallennetaan asetukset..."
+
+    IDS_MUI_LINKDESCRIPTION "Muokkaa LumPad-ohjelmalla"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_FILTER_ALL      "Kaikki tiedostot (*.*)|*.*|"
+
+    IDS_MUI_FILTER_EXE      "Suoritettavat tiedostot (*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif)|*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif|All files (*.*)|*.*|"
+
+    IDS_MUI_FILTER_INI      "Määritystiedostot (*.ini)|*.ini|All files (*.*)|*.*|"
+
+    IDS_MUI_FILTER_BITMAP   "Bittikarttatiedostot (*.bmp)|*.bmp|All files (*.*)|*.*|"
+
+    IDS_MUI_OPENWITH        "Valitse hakemisto, jossa on linkkejä suosikkisovelluksiisi"
+
+    IDS_MUI_FAVORITES       "Select the directory with links to your favourite files"
+
+    IDS_MUI_BACKSLASHHELP   "Kenoviivan muunnokset\n\n\\a\tAlert (BEL, Ascii 7)\n\\b\tBackspace (BS, Ascii 8)\n\\f\tFormfeed (FF, Ascii 12)\n\\n\tNewline (LF, Ascii 10)\n\\r\tCarriage return (CR, Ascii 13)\n\\t\tHorizontal Tab (HT, Ascii 9)\n\\v\tVertical Tab (VT, Ascii 11)\n\\0oo\tOctal Value\n\\u####\tHexadecimal Value\n\\xhh\tHexadecimal Value\n\\\\\tBackslash"
+
+    IDS_MUI_REGEXPHELP      "RegExp-täsmäyssyntaksi (useita rivejä)\n\n.\tVastaa mitä tahansa merkkiä\n^\tTyhjä merkkijono välittömästi rivinvaihdon jälkeen\n$\tTyhjä merkkijono välittömästi ennen rivin loppua\n\\<\tSanan alku\n\\>\tSanan loppu\n\\b\tSanan raja\n[...]\tMerkkijoukko ([abc]) tai alue ([a-z])\n[^...]\tMerkit EIVÄT joukossa tai alueella\n\\d\tMikä tahansa desimaalinumero\n\\D\tMikä tahansa ei-numeraali merkki\n\\s\tKaikki välilyönnit\n\\S\tEi välilyöntimerkki\n\\w\tMikä tahansa ""sana""-merkki\n\\W\tMikä tahansa ""ei-sana""-merkki\n\\x\tEscape-merkki, jolla on muuten erityinen merkitys\n\\xHH\tMerkki heksadesimaalikoodilla HH\n?\tVastaavat numeroa 0 tai 1 kertaa\n*\tOsauma, joka edeltää 0 tai useammin\n+\tEdeltävät yhtä tai useampaa kertaa\n*? tai +?\tKvantoijien ""?"" ja ""+"" ei ahne vastaavuus\n(\tAlueen alku\n)\tAlueen loppu\n\\n\tViittaa alueeseen korvattaessa (n on 1-9)\n"
+
+    IDS_MUI_WILDCARDHELP    "Jokerimerkkihaku\n\n*\tVastaa nollaa tai useampaa merkkiä\n?\tVastaa täsmälleen yhtä merkkiä"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_LOADFILE    "Virhe ladattaessa ""%s"""
+
+    IDS_MUI_ERR_SAVEFILE    "Virhe tallennettaessa ""%s"""
+
+    IDS_MUI_ERR_PATHNOTFOUND "Polkua ""%s"" ei ole enää olemassa.\nLuodaanko polku ja tallennetaan tiedosto?"
+
+    IDS_MUI_ERR_DLG_FORMAT  "Virhe '%s', syy:\n%s(ID:%d)\n"
+
+    IDS_MUI_ERR_BROWSE      "Tiedostoselaimen laajennusta ei löytynyt\nMiniPath-tiedostoselaimen laajennuksen voi ladata osoitteesta https://rizonesoft.com"
+
+    IDS_MUI_ERR_GREPWIN     "Tiedostonhakulaajennusta ei löytynyt\ngrepWin Portable-tiedostonhakulaajennuksen voi ladata osoitteesta https://github.com/stefankueng/grepWin/releases"
+
+    IDS_MUI_ERR_GREPWIN_PORTAPPS
+
+                            "Tiedostonhakulaajennusta ei löytynyt\nAsenna grepWinPortablen uusin versio PortableApps-alustalle."
+
+    IDS_MUI_ERR_MRUDLG      "Valittuun tiedostoon ei ole pääsyä!\nTahdotko poistaa sen luettelosta?"
+
+    IDS_MUI_ERR_CREATELINK  "Virhe työpöytälinkin luomisessa"
+
+    IDS_MUI_ERR_PREVWINDISABLED
+
+                            "Nykyinen LumPad-ikkuna on varattu tai siinä on aktiivinen valintaikkuna\nTahdotko avata toisen LumPad-ikkunan?"
+
+    IDS_MUI_ERR_ENCODINGNA  "Valitun koodisivun muuntotaulukot eivät ole käytettävissä järjestelmässäsi"
+
+    IDS_MUI_ERR_UNICODE     "Virhe Unicode-tiedoston muuntamisessa\nTiedot menetetään, jos tiedosto tallennetaan!"
+
+    IDS_MUI_ERR_BITMAP      "Bittikartan ""%s"" mitat eivät ole sopivia\nSopiva mitoitus: %i x %i (leveys >= %i x korkeus)"
+
+    IDS_MUI_ERR_ELEVATED_RIGHTS
+
+                            "Käyttäjän oikeuksien korottamisvirhe!"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_UNICODE2    "Valittu koodaus ei tue tiettyjä nykyisen tekstin merkkejä, ja ne saatetaan korvata oletusarvoisilla sijoittimilla tallennettaessa. On suositeltavaa valita toinen tiedostokoodaus. Jatketaanko?"
+
+    IDS_MUI_ERR_DROP        "Vain yksi tiedosto voidaan pudottaa samanaikaisesti!"
+
+    IDS_MUI_ERR_ACCESSDENIED
+
+                            "Tiedostoa ""%s"" ei voi tallentaa, ja se voi olla suojattu\n\nHaluatko käynnistää %s:n 'korotettuna' sovelluksena?"
+
+    IDS_MUI_ERR_ADMINEXE    "Suoritettavaa hallinnointisovellusta ei löytynyt\nTarkista verkkosivustolta https://rizonesoft.com?"
+
+    IDS_MUI_ABOUT_LDOTJDOT    "LdotJdot  https://github.com/LdotJdot\r\n2026 build (LumPad fork)\r\n\r\nThis build adds:\r\n- Multi-tab editing with file name tab titles and full path tooltips\r\n- Session restore (startup and File menu)\r\n- External file-change notice when switching back to a background tab\r\n- Layout polish between tab strip and editor"
+
+    IDS_MUI_WARN_LOAD_BIG_FILE
+
+                            "Haluatko varmasti avata tämän suuren tiedoston?\n\t(size: %s >= %s)!\n(Tyyliä ja syntaksin korostusta ei käytetä!)"
+
+    IDS_MUI_ERR_FILE_TOO_LARGE
+
+                            "Tätä valtavaa tiedostoa (koko: %s) ei voi käsitellä!"
+
+    IDS_MUI_WARN_UNKNOWN_EXT
+
+                            "Tuntematon tiedostonimen pääte (%s)!\nLadataanko data kuitenkin?"
+
+    IDS_MUI_INDENT_CONSISTENT  "Tiedoston sisennys on yhtenäinen!"
+
+    IDS_MUI_EOLMODENAME_CRLF   "Windows (CR+LF)"
+
+    IDS_MUI_EOLMODENAME_LF     "Unix/Mac (LF)"
+
+    IDS_MUI_EOLMODENAME_CR     "Old Mac (CR)"
+
+    IDS_MUI_WARN_NORMALIZE_EOLS
+
+                            "Haluatko normalisoida kaikki rivin päätteet muotoon '%s'?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SELRECT         "Tätä toimintoa ei voi suorittaa suorakulmaisen valinnan sisällä"
+
+    IDS_MUI_SELMULTI        "Tätä toimintoa ei voi suorittaa monivalinnassa"
+
+    IDS_MUI_SELRECTORMULTI  "Tätä toimintoa ei voi suorittaa suorakulmaisen tai monivalinnan sisällä"
+
+    IDS_MUI_BUFFERTOOSMALL  "Tätä toimintoa ei voida suorittaa (liian pitkät rivit)"
+
+    IDS_MUI_FIND_WRAPFW     "Dokumentin loppu saavutettiin, haku aloitetaan alusta"
+
+    IDS_MUI_FIND_WRAPRE     "Dokumentin alku saavutettu, haku aloitetaan uudelleen sen lopusta"
+
+    IDS_MUI_NOTFOUND        "Määritellylle hakumallille ei löytynyt vastaavuutta"
+
+    IDS_MUI_REPLCOUNT       "Määritetyn hakumallin %s esiintymä(ä) korvattu"
+
+    IDS_MUI_ASK_ENCODING    "Tiedostokoodauksen vaihtaminen koodauksesta toiseen saattaa korvata tukemattoman tekstin oletusmerkeillä, ja peruutushistoria tyhjennetään. Jatketaanko?"
+
+    IDS_MUI_ASK_ENCODING2   "Olet muuttamassa tyhjän tiedoston koodausta. Huomaa, että tämä tyhjentää peruutushistorian, koska sitä ei voida synkronoida uuden koodauksen kanssa. Jatketaanko?"
+
+    IDS_MUI_ASK_CLEAR_UNDO  "Tämä toiminto tyhjentää peruutushistorian. Jatketaanko?"
+
+    IDS_MUI_INF_SESSION_RESTORE_FAIL  "Unable to restore the last saved session. Files may be missing, or session data is empty."
+
+    IDS_MUI_READONLY_SAVE   """%s"" on vain luettavissa. Tallennetaanko toiseen tiedostoon?"
+
+    IDS_MUI_FILECHANGENOTIFY
+
+                            "Ulkoinen ohjelma on muokannut nykyistä tiedostoa\nValitse:\n\nIgnore -\t\tOhita lisämuutokset\nLataa uudelleen -\tLataa tiedosto uudelleen\nMonitor -\t\tVaihda tiedostoseurantaan"
+
+    IDS_MUI_FILECHANGENOTIFY2 "Nykyinen tiedosto on poistettu. Tallennetaanko nyt?"
+
+    IDS_MUI_FILELOCK_ERROR  "Tiedoston ""%s"" yksinoikeuslukkoa ei voi hakea!"
+
+    IDS_MUI_STICKYWINPOS    "Ikkunan pysyvä sijainti on käytössä. Kaikki uudet LumPad-ikkunat käyttävät nykyisiä ikkunan sijoitusasetuksia"
+
+    IDS_MUI_SAVEDSETTINGS   "Nykyiset ohjelma-asetukset on tallennettu"
+
+    IDS_MUI_CREATEINI_FAIL  "Virhe määritystiedoston luomisessa"
+
+    IDS_MUI_WRITEINI_FAIL   "Virhe asetusten kirjoittamisessa määritystiedostoon"
+
+    IDS_MUI_INIFILE_READONLY
+
+                            "Määritystiedosto on vain luettavissa - sivuutetaanko ja ohitetaan asetukset?"
+
+    IDS_MUI_SETTINGSNOTSAVED
+
+                            "Olemassa olevaa määritystiedostoa ei löytynyt\nJos haluat säilyttää tyylimuutoksesi, tallenna asetukset nyt (F7) tai palaa järjestelmämääritykseen (Ctrl+F12) ja vie tyylisi"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_RELOADSETTINGS   "Aktivoidaanko tallennetut asetukset käynnistämällä ohjelma uudelleen?\n\n%s"
+
+    IDS_MUI_RELOADCFGSEX     "Jatkaessasi ilman uudelleenkäynnistystä, tallennettuja asetuksia ei käytetä, vaan sisäiset asetukset ohittavat ne ohjelmasta poistuttaessa!"
+
+    IDS_MUI_EXPORT_FAIL      "Virhe tyyliasetusten viemisessä kohteeseen ""%s"""
+
+    IDS_MUI_REGEX_INVALID    "Virhe säännöllisen lausekkeen käytössä. Lauseke on virheellinen!"
+
+    IDS_MUI_DROP_NO_FILE     "Kelvollista tiedostonimeä ei saatu\nJos pudotat tiedoston 32-bittisestä sovelluksesta, vedä ja pudota se LumPad:n työkalupalkkiin"
+
+    IDS_MUI_URL_DIR_EXISTS   "URL-osoitteessa määritetty hakemisto on olemassa!"
+
+    IDS_MUI_URL_FILE_EXISTS  "URL-osoitteessa määritetty tiedosto on olemassa!"
+
+    IDS_MUI_URL_PATH_NOT_FOUND
+
+                             "URL määriteltyä polkua ei löydy!"
+
+    IDS_MUI_URL_OPEN_FILE    "\nAlt + Avaa tiedosto klikkaamalla"
+
+    IDS_MUI_URL_OPEN_BROWSER "\nCtrl + Avaa linkki selaimessa klikkaamalla"
+
+    IDS_MUI_UNMATCHED_BRACE  "Unmatched Brace"
+
+    IDS_MUI_NO_ENCLOSING_BRACE "No Enclosing Brace"
+
+    IDS_MUI_TAB_CTX_CLOSE_OTHERS "Close Other Tabs"
+
+    IDS_MUI_TAB_CTX_CLOSE_ALL "Close All Tabs"
+
+    IDS_MUI_TAB_CTX_SPLIT "Move to New Window"
+
+    IDS_MUI_INF_PRSVFILEMODTM
+
+                             "Alkuperäisen tiedoston muokkausaikaleiman säilyttäminen käytössä\nVaihtoehto säilyy tämän istunnon ajan!"
+
+    IDS_MUI_OUT_OFF_OCCMRK   "Esiintymämerkit loppumassa (kirjanmerkki/korostus)!"
+
+    IDS_MUI_DOCUMENT_READONLY
+
+                             "Asiakirja on lukittu vain katseltavaksi. Pidätkö lukituksen muokkaamisen estämiseksi?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ASK_SAVE        "Tallennetaanko muutokset tiedostoon:\n%s?"
+
+    IDS_MUI_ASK_REVERT      "Palautetaanko tiedosto viimeksi tallennettuun tilaan?"
+
+    IDS_MUI_ASK_RECODE      "Uudelleenkoodaus edellyttää tiedoston lataamista uudelleen levyltä, tallentamattomat muutokset menetetään!"
+
+    IDS_MUI_ASK_CREATE      """%s"" ei löytynyt\nHaluatko luoda tämän tiedoston?"
+
+    IDS_MUI_PRINT_HEADER    "Tiedostonimi, nykyinen päivä ja aika|Tiedostonimi, Nykyinen päivä|Tiedostonimi|Jätä tyhjäksi"
+
+    IDS_MUI_PRINT_FOOTER    "Sivunumero|Jätä tyhjäksi"
+
+    IDS_MUI_PRINT_COLOR     "Normaali|Käänteinen vaaleus (tumma tausta)|Musta valkoisella|Väri valkoisella|Väri valkoisella (paitsi rivinumerot)|Ruudun värit"
+
+    IDS_MUI_PRINT_PAGENUM   "Sivu %i"
+
+    IDS_MUI_WARN_STYLE_RESET
+
+                            "Tämä toiminto palauttaa tyylin halutun väritilan tehdasasetuksiin ja vaihtaa aktiivisen teematiedoston tavalliseen config .ini -tiedostoon!"
+
+    IDS_MUI_ASK_INSTANCE_EXISTS
+
+                            "Yhden tiedoston instanssi:\n\nAsetetaanko kohdistus jo ladattuihin tiedostoesiintymiin?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_PRINT_EMPTY     "Tämä dokumentti ei sisällä tulostettavaa tekstiä"
+
+    IDS_MUI_PRINT_ERROR     "Virhe tulostettessa ""%s""!"
+
+    IDS_MUI_FAV_SUCCESS     "Nykyisen tiedoston pikakuvake on luotu suosikkihakemistoon"
+
+    IDS_MUI_FAV_FAILURE     "Nykyisen tiedoston pikakuvaketta ei voitu luoda\nVarmista, ettei ole olemassa toista samannimistä tiedostoa"
+
+    IDS_MUI_READONLY_MODIFY "Attribuutteja ""%s"" ei voitu muuttaa"
+
+    IDS_MUI_SAVEPOS         "Tallenna &sijainti\tCtrl+S"
+
+    IDS_MUI_RESETPOS        "&Palauta sijainti\tCtrl+R"
+
+    IDS_MUI_PREVIEW         "&Esilatseluasetukset\tCtrl+P"
+
+    IDS_MUI_PASS_FAILURE    "Salasana on virheellinen\nHaluatko kokeilla toista salasanaa?"
+
+    IDS_MUI_NOPASS          "Salakirjoituksen purku peruutettu!\nLuetaanko salattuja raakatietoja?"
+
+    IDS_MUI_STY_BASESTD     "BASE (oletustyyli):"
+
+    IDS_MUI_STY_BASE2ND     "BASE (2. oletustyyli):"
+
+    IDS_MUI_STY_LEXDEF      "%s - Oletustyyli:"
+
+    IDS_MUI_STY_LEXSTYLE    "%s tyyli:"
+
+    IDS_MUI_TITLE_RELBASE   "+++ BASE (%s) +++"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_TRANSL_AUTHOR   "(fi-FI) Käännös Veikko-M"
+
+    IDS_MUI_TITLE_FIXBASE   "BASE (%s)"
+
+    IDS_MUI_TITLE_RELCUR    "+++ %s: %s Tyyli +++"
+
+    IDS_MUI_TITLE_FIXCUR    "%s: %s Tyyli"
+
+    IDS_MUI_TITLE_RELARB    "+++ Tyyli '%s' (%s) +++"
+
+    IDS_MUI_TITLE_FIXARB    "Tyyli '%s' (%s)"
+
+    IDS_MUI_ASSOCIATED_EXT  "Liitetyt tiedostopäätteet:"
+
+    IDS_MUI_ZERO_LEN_MATCH  "^ Nollapituinen vastine"
+
+    IDS_MUI_GOTO_LINE       "Rivi (1 - %s):"
+
+    IDS_MUI_GOTO_COLUMN     "Sarake (1 - %s):"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_MENU_LANGUAGE   "Kie&li"
+
+    IDS_USE_LOCALE_DATEFMT  "Kieli määrittelee päiväysmuo&don"
+
+    IDS_MUI_MENU_THEMES     "Järje&stelykokoelma"
+
+    IDM_THEMES_FACTORY_RESET "&Tehdasasetusten palautus"
+
+    IDM_THEMES_STD_CFG       "&Vakiokonfiguraatio"
+
+    IDS_MUI_STATUSBAR_PREFIXES "Ln  ,Col  ,Sel  ,Sb  ,SLn  ,Occ  ,,,,,,,Ch  ,Repl  ,Eval  ,U+,"
+
+    IDS_MUI_STATUSBAR_POSTFIXES ",,,,,,,,,,,,,,,,"
+
+    IDS_CLEAR_ALL           "Tyhjennä kaikki"
+
+    IDS_MUI_CLEAR_FIND_HISTORY
+
+                            "Tyhjennä hakuhistoria"
+
+    IDS_MUI_CLEAR_REPL_HISTORY
+
+                            "Tyhjennä korvaushistoria"
+
+    IDS_MUI_SEARCHCLIPIFEMPTY
+
+                            "Haku leikepöydältä, jos valinta on tyhjä"
+
+    IDS_MUI_REPLCLIPTAG     "Korvaa leikepöydällä pikavalinnalla [^c]"
+
+    IDS_MUI_WRAPSEARCH_FWD  "Kierrä vastaavuus ylhäältäpäin"
+
+    IDS_MUI_WRAPSEARCH_BCK  "Kierrä vastaavuus alhaaltapäin"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SB_MARK_ALL_OCC   "Merkitse kaikki esiintymät..."
+
+    IDS_MUI_SB_TOGGLE_VIEW    "Vaihda näkymä..."
+
+    IDS_MUI_SB_REPLACE_ALL    "Korvaa kaikki..."
+
+    IDS_MUI_SB_WRAP_LINES     "Rivitys..."
+
+    IDS_MUI_SB_SORTING_LINES  "Lajittelurivit..."
+
+    IDS_MUI_SB_CONV_LNBRK     "Muunna rivinvaihdot..."
+
+    IDS_MUI_SB_RECODING_DOC   "Dokumentin uudelleenkoodaus..."
+
+    IDS_MUI_SB_LEXER_STYLING  "Käytä Lexer-tyyliä..."
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+IDS_MUI_CMDLINEHELP "\
+
+Käyttö:\r\n\
+
+LumPad [/?] [...[Koodaus]] [...[Rivin lopetustila]] [/e] [/g] [/m] [/l]\r\n\
+
+ \t[/q] [/s] [/d] [/h] [/x] [/c] [/b] [/n] [/r| [/p] [/t] [/i] [/o]\r\n\
+
+ \t[/f] [/u] [/v] [/vd] [/y] [/z] [[drive:][polku]tiedostonimi[...]]\r\n\r\n\
+
+Tiedosto\tPitäisi olla viimeinen argumentti, ei lainausmerkkejä oletuksena\r\n\
+
++\tHyväksy useita tiedostoargumentteja (välilyöntien kanssa)\r\n\
+
+-\tHyväksy yksi tiedostoargumentti (ilman välilyöntejä)\r\n\r\n\
+
+Vaihtoehdot:\r\n\
+
+/?\tNäytä tämä ohjeviesti\r\n\
+
+...\tKoodaus (/ansi, /unicode, /unicodebe, /utf8, /utf8sig)\r\n\
+
+...\tRivin lopetus (/crlf, /cr, /lf)\r\n\
+
+/e\tTiedoston lähdekoodaus\r\n\
+
+/g\tHyppää määritettyyn kohtaan (/g -1 tiedoston loppu)\r\n\
+
+/m\tTäsmää määritetty teksti (/m- last, /mr regex, /mb kenoviiva)\r\n\
+
+/l\tLataa muutetut tiedostot automaattisesti\r\n\
+
+/q\tPakota uusien tiedostojen luominen ilman kehotusta\r\n\
+
+/s\tValitse määritetty syntaksirakenne\r\n\
+
+/d\tValitse oletustekstirakenne\r\n\
+
+/h\tValitse verkkolähdekoodin rakenne\r\n\
+
+/x\tValitse XML-dokumentin rakenne\r\n\
+
+/c\tAvaa uusi ikkuna ja liitä leikepöydän sisältö\r\n\
+
+/b\tAvaa uusi liitetaulu leikepöydän merkintöjen keräämistä varten\r\n\
+
+/n\tAvaa aina uusi ikkuna (/ns yhden tiedoston esiintymä)\r\n\
+
+/r\tKäytä ikkunaa uudelleen (/rs yhden tiedoston esiintymä)\r\n\
+
+/p\tAseta ikkunan sijainti ja koko (/p0,/ps,/pd,f,l,t,r,b,m) tai /p <vasen>,\r\n\
+
+\t<ylä>,<leveys>,<korkeus>[,<dpi>[,<max>]]  (kaikki kokonaisluvut)\r\n\
+
+/t\tAseta ikkunan otsikko\r\n\
+
+/i\tKäynnistä ilmoitusalueen kuvakkeella\r\n\
+
+/o\tPidä ikkuna päällimmäisenä\r\n\
+
+/f\tMääritä ini-tiedosto (/f0 ei ini-tiedosto)\r\n\
+
+/u\tKäynnistä korotetuilla oikeuksilla\r\n\
+
+/v\tTulosta tiedosto välittömästi ja lopeta\r\n\
+
+/vd\tTulosta tiedosto (avaa tulostindialogi)\r\n\
+
+/y\tEtsi ympäristöPOLKU, jos kyseessä on suhteellinen tiedostonimi\r\n\
+
+/z\tOhita seuraava (käytettävissä rekisteripohjaiseen Notepad-\r\n\tkorvaukseen)\r\n\r\n\
+
+Esimerkkejä:\r\n\
+
+LumPad /utf8sig /crlf d:\\temp\\Test.txt\r\n\
+
+ \t... Avaa uusi tiedosto: ""Test.txt"" Koodaus=UTF-8-BOM, EoL=CRLF\r\n\
+
+LumPad /v d:\\temp\\Test.txt\r\n\
+
+ \t... Tulosta tiedosto: ""Test.txt"" välittömästi\
+
+"
+
+
+
+IDS_MUI_STYLEEDIT_HELP "\
+
+Tiedostonimipäätteet on erotettava toisistaan merkillä ';'\r\n\
+
+Merkinnät, jotka sisältävät '*', '?' tai '.' täsmää koko tiedostonimeen (jokerimerkki):\r\n\
+
+   Makefile*;CMakeLists.txt;test_*.py\r\n\r\n\
+
+Tyylin muoto:\r\n\
+
+fontti:Nimi; koko:[+/-]nn.mm; lihavoitu; kursiivi; alleviivaus;\r\n\
+
+fore:#ffffff; back:#bbbbbb; eolfilled; indic_gradient\r\n\r\n\
+
+Tyyliominaisuuksia voi kopioida käyttämällä ""Kopioi/liitä"" tai ""Vedä/pudota""\
+
+"
+
+
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+
+
+IDS_MUI_ABOUT_RTF_0  "{\
+
+\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fswiss\\fcharset0 Segoe UI;}}\
+
+{\\colortbl ;\\red80\\green160\\blue80;}\
+
+\\tx3500\\tx7000\\fs18\
+
+\\cf0 \\fs20\\b1\\ul1 Kehitystyö:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_1  "\
+
+\\cf0 \\fs20\\b1\\ul1 Avustajat:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_2  "\
+
+\\cf0 \\fs20\\b1\\ul1 Open Source / kirjastot:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_3  "\
+
+\\cf0 \\fs20\\b1\\ul1 Kiitokset seuraaville:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_4  "\
+
+\\cf0 \\fs20\\b1\\ul1 Resurssit:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_5  "\
+
+\\cf0 \\fs20\\b1\\ul1 Lisenssit:\\ul0\\b0\\fs18\\par\
+
+"
+
+
+
+END
+
+
+
+#endif    // Finnish (Finland) resources
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+#ifndef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 3 resource.
+
+//
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#endif    // not APSTUDIO_INVOKED
+
+
+

@@ -1,0 +1,566 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish (Turkey) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+LANGUAGE LANG_TURKISH, SUBLANG_TURKISH_TURKEY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_EOL_WIN             "Windows (CR+LF)"
+    IDS_EOL_MAC             "Mac (CR)"
+    IDS_EOL_UNIX            "Unix (LF)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_DEF_TXT         "1. Ortak temel"
+    IDS_LEX_WEB_SRC         "Web kaynak kodu"
+    IDS_LEX_XML_DOC         "XML belgesi"
+    IDS_LEX_CSS_STYLE       "CSS biçem sayfaları"
+    IDS_LEX_PRISM_CSV       "CSV prism"
+    IDS_LEX_CPP_SRC         "C/C++ kaynak kodu"
+    IDS_LEX_CSHARP_SRC      "C# kaynak kodu"
+    IDS_LEX_RESOURCE_SCR    "Kaynak betiği"
+    IDS_LEX_MAKEFILES       "Makefile dosyası"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VB_SCR          "VBScript"
+    IDS_LEX_VIS_BAS         "Visual Basic"
+    IDS_LEX_J_SCR           "JavaScript"
+    IDS_LEX_JAVA_SRC        "Java kaynak kodu"
+    IDS_LEX_PASCAL_SRC      "Pascal kaynak kodu"
+    IDS_LEX_ASM_SCR         "Assembly betiği"
+    IDS_LEX_PERL_SCR        "Perl betiği"
+    IDS_LEX_CONF            "Yapılandırma dosyaları"
+    IDS_LEX_BATCH           "Yığın dosyaları"
+    IDS_LEX_DIFF            "Fark dosyaları"
+    IDS_LEX_SQL             "SQL sorgusu"
+    IDS_LEX_PYTHON          "Python betiği"
+    IDS_LEX_APC_CFG         "Apache yapılandırma dosyaları"
+    IDS_LEX_PWRSHELL        "PowerShell betiği"
+    IDS_LEX_D_SRC           "D kaynak kodu"
+    IDS_LEX_GO_SRC          "Go kaynak kodu"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_AWK_SCR         "Awk betiği"
+    IDS_LEX_ANSI_ART        "ANSI sanatı"
+    IDS_LEX_SHELL_SCR       "Shell betiği"
+    IDS_LEX_REG_FILES       "Kayıt defteri dosyaları"
+    IDS_LEX_VHDL            "VHDL"
+    IDS_LEX_JSON            "JSON"
+    IDS_LEX_JSON5           "JSON5"
+    IDS_LEX_NSIS            "NSIS"
+    IDS_LEX_INNO            "Inno kurulum betiği"
+    IDS_LEX_RUBY            "Ruby betiği"
+    IDS_LEX_LUA             "Lua betiği"
+    IDS_LEX_TCL             "Tcl betiği"
+    IDS_LEX_AUTOIT3         "AutoIt3 betiği"
+    IDS_LEX_LATEX           "LaTeX dosyaları"
+    IDS_LEX_AHK             "AutoHotkey betiği"
+    IDS_LEX_CMAKE           "Cmake betiği"
+    IDS_LEX_AVI_SYNTH       "AviSynth betiği"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_MARKDOWN        "Markdown"
+    IDS_LEX_YAML            "YAML"
+    IDS_LEX_COFFEE_SCR      "Coffeescript"
+    IDS_LEX_MATLAB          "MATLAB"
+    IDS_LEX_NIM_SRC         "Nim kaynak kodu"
+    IDS_LEX_R_STAT          "R-S-SPlus istatistik kodu"
+    IDS_LEX_RUST_SRC        "Rust kaynak kodu"
+    IDS_LEX_AHKL            "AutoHotkey_L betiği"
+    IDS_LEX_TEXT_FILES      "Metin dosyaları"
+    IDS_LEX_TOML_CFG        "TOML"
+    IDS_LEX_DART_SRC        "Dart kaynak kodu"
+    IDS_LEX_KOTLIN_SRC      "Kotlin kaynak kodu"
+    IDS_LEX_JULIA_SCR       "Julia betiği"
+    IDS_LEX_KIX_SCR         "KiXtart betiği"
+    IDS_LEX_FORTRAN         "Fortran kaynak kodu"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_VERILOG         "Verilog HDL"
+    IDS_LEX_SYSVERILOG      "SystemVerilog HDVL"
+    IDS_LEX_ABAQUS          "ABAQUS"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_STYLE       "Varsayılan biçem"
+    IDS_LEX_STD_MARGIN      "Kenar boşlukları ve satır numaraları"
+    IDS_LEX_STD_BRACE       "Eşleşen parantezler (gösterge)"
+    IDS_LEX_STD_BRACE_FAIL  "Eşleşen parantezler hatası (gösterge)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CTRL_CHAR   "1. Kontrol karakterleri (yazı tipi)"
+    IDS_LEX_STD_INDENT      "1. Girinti rehberi (renk)"
+    IDS_LEX_STD_SEL         "1. Seçilmiş metin (renkler)"
+    IDS_LEX_STD_WSPC        "1. Boşluk (renkler, boyut 1-12)"
+    IDS_LEX_STD_LN_BACKGR   "1. Geçerli satır vurgulaması"
+    IDS_LEX_STD_CARET       "1. Şapka (renk, boyut 1-3)"
+    IDS_LEX_STD_LONG_LN     "1. Uzun satır işareti (renkler)"
+    IDS_LEX_STD_X_SPC       "1. Ek satır aralığı (boyut)"
+    IDS_LEX_2ND_STYLE       "2. Varsayılan biçem"
+    IDS_LEX_2ND_MARGIN      "2. Kenar boşlukları ve satır numaraları"
+    IDS_LEX_2ND_BRACE       "2. Eşleşen parantezler (gösterge)"
+    IDS_LEX_2ND_BRACE_FAIL  "2. Eşleşen parantez hatası (gösterge)"
+    IDS_LEX_2ND_CTRL_CHAR   "2. Kontrol karakterleri (yazı tipi)"
+    IDS_LEX_2ND_INDENT      "2. Girinti rehberi (renk)"
+    IDS_LEX_2ND_SEL         "2. Seçilmiş metin (renkler)"
+    IDS_LEX_2ND_WSPC        "2. Boşluk (renkler, boyut 1-12)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_2ND_LN_BACKGR   "2. Geçerli satır vurgulaması"
+    IDS_LEX_2ND_CARET       "2. Şapka (renk, boyut 1-3)"
+    IDS_LEX_2ND_LONG_LN     "2. Uzun satır işareti (renkler)"
+    IDS_LEX_2ND_X_SPC       "2. Ek satır aralığı (boyut)"
+    IDS_LEX_STD_BKMRK       "1. Yer imleri ve daraltma (renkler, boyut)"
+    IDS_LEX_2ND_BKMRK       "2. Yer imleri ve daraltma (renkler, boyut)"
+    IDS_LEX_STR_Default     "Varsayılan"
+    IDS_LEX_STR_Comment     "Açıklama"
+    IDS_LEX_STR_Keyword     "Anahtar sözcük"
+    IDS_LEX_STR_Identifier  "Belirteç"
+    IDS_LEX_STR_Number      "Sayı"
+    IDS_LEX_STR_String      "Dizge"
+    IDS_LEX_STR_Operator    "İşlem"
+    IDS_LEX_STR_PreProc     "Ön işleyici"
+    IDS_LEX_STR_VerbStrg    "Birebir dizge"
+    IDS_LEX_STR_RegEx       "Kurallı ifade"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63136       "HTML kod imi"
+    IDS_LEX_STR_63137       "HTML bilinmeyen kod imi"
+    IDS_LEX_STR_63138       "HTML özniteliği"
+    IDS_LEX_STR_63139       "HTML bilinmeyen öznitelik"
+    IDS_LEX_STR_63140       "HTML değeri"
+    IDS_LEX_STR_63141       "HTML dizgesi"
+    IDS_LEX_STR_63142       "HTML diğer iç kod imi"
+    IDS_LEX_STR_63143       "HTML açıklaması"
+    IDS_LEX_STR_63144       "HTML varlığı"
+    IDS_LEX_STR_63145       "XML belirteci"
+    IDS_LEX_STR_63146       "ASP başlangıç kod imi"
+    IDS_LEX_STR_63147       "CDATA"
+    IDS_LEX_STR_63148       "PHP başlangıç kod imi"
+    IDS_LEX_STR_63149       "PHP varsayılan"
+    IDS_LEX_STR_63150       "PHP dizgesi"
+    IDS_LEX_STR_63151       "PHP basit dizgesi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63152       "PHP anahtar sözcük"
+    IDS_LEX_STR_63153       "PHP sayı"
+    IDS_LEX_STR_63154       "PHP değişken"
+    IDS_LEX_STR_63155       "PHP dizgesi değişkeni"
+    IDS_LEX_STR_63156       "PHP karmaşık değişkeni"
+    IDS_LEX_STR_63157       "PHP açıklaması"
+    IDS_LEX_STR_63158       "PHP işlemi"
+    IDS_LEX_STR_63159       "JS varsayılan"
+    IDS_LEX_STR_63160       "JS açıklaması"
+    IDS_LEX_STR_63161       "JS sayı"
+    IDS_LEX_STR_63162       "JS belirteci"
+    IDS_LEX_STR_63163       "JS anahtar sözcük"
+    IDS_LEX_STR_63164       "JS dizgesi"
+    IDS_LEX_STR_63165       "JS simgeleri"
+    IDS_LEX_STR_63166       "JS kurallı ifadesi"
+    IDS_LEX_STR_63167       "ASP JS varsayılan"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63168       "ASP JS açıklaması"
+    IDS_LEX_STR_63169       "ASP JS sayı"
+    IDS_LEX_STR_63170       "ASP JS belirteci"
+    IDS_LEX_STR_63171       "ASP JS anahtar sözcüğü"
+    IDS_LEX_STR_63172       "ASP JS dizgesi"
+    IDS_LEX_STR_63173       "ASP JS simgesi"
+    IDS_LEX_STR_63174       "ASP JS kurallı ifadesi"
+    IDS_LEX_STR_63175       "VBS varsayılan"
+    IDS_LEX_STR_63176       "VBS açıklaması"
+    IDS_LEX_STR_63177       "VBS sayı"
+    IDS_LEX_STR_63178       "VBS anahtar sözcük"
+    IDS_LEX_STR_63179       "VBS dizgesi"
+    IDS_LEX_STR_63180       "VBS belirteci"
+    IDS_LEX_STR_63181       "ASP VBS varsayılan"
+    IDS_LEX_STR_63182       "ASP VBS açıklaması"
+    IDS_LEX_STR_63183       "ASP VBS sayı"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63184       "ASP VBS anahtar sözcüğü"
+    IDS_LEX_STR_63185       "ASP VBS dizgesi"
+    IDS_LEX_STR_63186       "ASP VBS belirteci"
+    IDS_LEX_STR_63187       "XML kod imi"
+    IDS_LEX_STR_63188       "XML özniteliği"
+    IDS_LEX_STR_63189       "XML değeri"
+    IDS_LEX_STR_63190       "XML dizgesi"
+    IDS_LEX_STR_63191       "XML diğer iç kod imi"
+    IDS_LEX_STR_63192       "XML açıklaması"
+    IDS_LEX_STR_63193       "XML varlığı"
+    IDS_LEX_STR_63194       "Kod imi sınıfı"
+    IDS_LEX_STR_63195       "Kod imi kimliği"
+    IDS_LEX_STR_63196       "Kod imi özniteliği"
+    IDS_LEX_STR_63197       "Sahte sınıf"
+    IDS_LEX_STR_63198       "Bilinmeyen sahte sınıf"
+    IDS_LEX_STR_63199       "CSS özelliği"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63200       "Bilinmeyen özellik"
+    IDS_LEX_STR_Value       "Değer"
+    IDS_LEX_STR_63202       "Önemli"
+    IDS_LEX_STR_63203       "Yönerge"
+    IDS_LEX_STR_Target      "Hedef"
+    IDS_LEX_STR_63205       "Satır arası Asm"
+    IDS_LEX_STR_63206       "CPU komutu"
+    IDS_LEX_STR_63207       "FPU komutu"
+    IDS_LEX_STR_Register    "Kaydet"
+    IDS_LEX_STR_63209       "Komut işlemi"
+    IDS_LEX_STR_63210       "Genişletilmiş komut"
+    IDS_LEX_STR_63211       "Çift tırnaklı dizge"
+    IDS_LEX_STR_63212       "Tek tırnaklı dizge"
+    IDS_LEX_STR_63213       "POD (ortak)"
+    IDS_LEX_STR_63214       "POD (birebir)"
+    IDS_LEX_STR_63215       "Skaler $var"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63216       "Dizi @var"
+    IDS_LEX_STR_63217       "Karma %var"
+    IDS_LEX_STR_63218       "Simge tablosu *var"
+    IDS_LEX_STR_63219       "Kurallı ifade /re/ ya da m{re}"
+    IDS_LEX_STR_63220       "Değişiklik s/re/ore/"
+    IDS_LEX_STR_63221       "Ters kesme"
+    IDS_LEX_STR_63222       "Veri bölümü"
+    IDS_LEX_STR_63223       "Buradaki belge (sınırlayıcı)"
+    IDS_LEX_STR_63224       "Buradaki belge (tek tırnaklı, q)"
+    IDS_LEX_STR_63225       "Buradaki belge (çift tırnaklı, qq)"
+    IDS_LEX_STR_63226       "Buradaki belge (ters kesme, qx)"
+    IDS_LEX_STR_63227       "Tek tırnaklı dizge (genel, q)"
+    IDS_LEX_STR_63228       "Çift tırnaklı dizge (qq)"
+    IDS_LEX_STR_63229       "Ters kesmeler (qx)"
+    IDS_LEX_STR_63230       "Kurallı ifade (qr)"
+    IDS_LEX_STR_63231       "Dizi (qw)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Section     "Bölüm"
+    IDS_LEX_STR_Assign      "Atama"
+    IDS_LEX_STR_63234       "Varsayılan değer"
+    IDS_LEX_STR_Label       "Etiket"
+    IDS_LEX_STR_Cmd         "Komut"
+    IDS_LEX_STR_63237       "SGML"
+    IDS_LEX_STR_63238       "Kaynak ve hedef"
+    IDS_LEX_STR_63239       "Konum ayarı"
+    IDS_LEX_STR_63240       "Satır ekleme"
+    IDS_LEX_STR_63241       "Satır silme"
+    IDS_LEX_STR_63242       "Satır değişikliği"
+    IDS_LEX_STR_63243       "Alıntılanmış belirteç"
+    IDS_LEX_STR_63244       "Üç çift tırnaklı dizge"
+    IDS_LEX_STR_63245       "Üç tek tırnaklı dizge"
+    IDS_LEX_STR_ClassName   "Sınıf adı"
+    IDS_LEX_STR_FctName     "İşlev adı"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_IpAdr       "IP adresi"
+    IDS_LEX_STR_Var         "Değişken"
+    IDS_LEX_STR_Cmdlet      "Cmdlet"
+    IDS_LEX_STR_Alias       "Takma ad"
+    IDS_LEX_STR_63252       "İşleme hatası"
+    IDS_LEX_STR_Prototyp    "Prototip"
+    IDS_LEX_STR_63254       "Biçim belirteci"
+    IDS_LEX_STR_63255       "Biçim gövdesi"
+    IDS_LEX_STR_63256       "HTML bileşeni metni"
+    IDS_LEX_STR_63257       "XML bileşeni metni"
+    IDS_LEX_STR_63258       "Tip tanımları/Sınıflar"
+    IDS_LEX_STR_63259       "Açıklama belgesi"
+    IDS_LEX_STR_Keyword2nd  "2. anahtar sözcük"
+    IDS_LEX_STR_Error       "Hata"
+    IDS_LEX_STR_63262       "1. Kopya işaretleri (gösterge)"
+    IDS_LEX_STR_63263       "2. Kopya işaretleri (gösterge)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63264       "1. Bağlantı noktaları"
+    IDS_LEX_STR_63265       "2. Bağlantı noktaları"
+    IDS_LEX_STR_63266       "2. Ortak temel"
+    IDS_LEX_STR_63267       "Dizge içinde değişken"
+    IDS_LEX_STR_63268       "Sıralı liste"
+    IDS_LEX_STR_Infix       "İç sabitleme"
+    IDS_LEX_STR_InfixEOL    "İç sabitleme satır sonu"
+    IDS_LEX_STR_63271       "Temel paket işlevleri"
+    IDS_LEX_STR_63272       "Diğer paket işlevleri"
+    IDS_LEX_STR_Function    "İşlev"
+    IDS_LEX_STR_Const       "Sabit"
+    IDS_LEX_STR_63275       "Alt bölüm"
+    IDS_LEX_STR_63276       "Bölüm grubu"
+    IDS_LEX_STR_63277       "İşlev tanımı"
+    IDS_LEX_STR_PageEx      "PageEx"
+    IDS_LEX_STR_63279       "Eğer tanımı"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63280       "Makro tanımı"
+    IDS_LEX_STR_Param       "Parametre"
+    IDS_LEX_STR_63282       "Satır arası genişletme"
+    IDS_LEX_STR_63283       "Pascal açıklaması"
+    IDS_LEX_STR_63284       "Pascal anahtasr sözcüğü"
+    IDS_LEX_STR_63285       "Değer adı"
+    IDS_LEX_STR_63286       "Değer türü"
+    IDS_LEX_STR_Hex         "Hex"
+    IDS_LEX_STR_AddKey      "Anahtar ekleme"
+    IDS_LEX_STR_DelKey      "Anahtar silme"
+    IDS_LEX_STR_Esc         "Escaped"
+    IDS_LEX_STR_63291       "Anahtar yolunda GUID"
+    IDS_LEX_STR_POD         "POD"
+    IDS_LEX_STR_Symbol      "Simge"
+    IDS_LEX_STR_63294       "Modül adı"
+    IDS_LEX_STR_63295       "Kopya değişkeni"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63296       "Sınıf değişkeni"
+    IDS_LEX_STR_63297       "Veri bölümü"
+    IDS_LEX_STR_BaseFct     "Temel işlevler"
+    IDS_LEX_STR_63299       "Dizge, tablo ve matematik işlevleri"
+    IDS_LEX_STR_63300       "Giriş, çıkış ve sistem olanakları"
+    IDS_LEX_STR_LitStrg     "Değişmez dizge"
+    IDS_LEX_STR_63302       "Sahte bileşen"
+    IDS_LEX_STR_Media       "Ortam"
+    IDS_LEX_STR_GlobClass   "Genel sınıf"
+    IDS_LEX_STR_63305       "Kullanıcı tanımlı işlev"
+    IDS_LEX_STR_63306       "Özel karakter"
+    IDS_LEX_STR_63307       "Birebir parça"
+    IDS_LEX_STR_63308       "İfade işlemi"
+    IDS_LEX_STR_63309       "Değişken referansı kaldırma"
+    IDS_LEX_STR_63310       "Akış denetimi"
+    IDS_LEX_STR_63311       "Anahtar ve düğmeler"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63312       "İç değişkenler"
+    IDS_LEX_STR_63313       "Değişken anahtar sözcüğü"
+    IDS_LEX_STR_Filter      "Süzgeç"
+    IDS_LEX_STR_Plugin      "Uygulama eki"
+    IDS_LEX_STR_63316       "Parça özelliği"
+    IDS_LEX_STR_63317       "Satır başlangıcı"
+    IDS_LEX_STR_Strong      "Koyu"
+    IDS_LEX_STR_Emph        "Vurgu"
+    IDS_LEX_STR_63320       "1. başlık"
+    IDS_LEX_STR_63321       "2. başlık"
+    IDS_LEX_STR_63322       "3. başlık"
+    IDS_LEX_STR_63323       "4. başlık"
+    IDS_LEX_STR_63324       "5. başlık"
+    IDS_LEX_STR_63325       "6. başlık"
+    IDS_LEX_STR_63326       "Ön karakter"
+    IDS_LEX_STR_63327       "Sıralanmamış liste"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63328       "Blok alıntı"
+    IDS_LEX_STR_63329       "Üzeri çizili"
+    IDS_LEX_STR_63330       "Yatay çizgi"
+    IDS_LEX_STR_Link        "Bağlantı"
+    IDS_LEX_STR_Code        "Kod"
+    IDS_LEX_STR_Ref         "Referans"
+    IDS_LEX_STR_Doc         "Belge"
+    IDS_LEX_STR_Txt         "Metin"
+    IDS_LEX_STR_StdOp       "Standart işlem"
+    IDS_LEX_STR_Attrib      "Öznitelik"
+    IDS_LEX_STR_StdFct      "Standart işlev"
+    IDS_LEX_STR_StdPck      "Standart paket"
+    IDS_LEX_STR_StdTyp      "Standart tür"
+    IDS_LEX_STR_Word        "Word"
+    IDS_LEX_STR_Verb        "Birebir"
+    IDS_LEX_STR_63343       "İç tür"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63344       "Bayt dizge"
+    IDS_LEX_STR_63345       "Diğer anahtar sözcükler"
+    IDS_LEX_STR_63346       "Eskime ömrü"
+    IDS_LEX_STR_Obj         "Nesne"
+    IDS_LEX_STR_Key         "Anahtar"
+    IDS_LEX_STR_HotKey      "Kısayol"
+    IDS_LEX_STR_HotStrg     "Kısayol dizgesi"
+    IDS_LEX_STR_HotStrgOp   "Kısayol dizgesi seçeneği"
+    IDS_LEX_STR_63352       "1. Satır arası IME rengi"
+    IDS_LEX_STR_63353       "2. Satır arası IME rengi"
+    IDS_LEX_STR_63354       "1. Çoklu düzenleme göstergesi"
+    IDS_LEX_STR_63355       "2. Çoklu düzenleme göstergesi"
+    IDS_LEX_STR_DateTime    "Tarih-saat"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_63357       "For each tanımı"
+    IDS_LEX_STR_63358       "While tanımı"
+    IDS_LEX_STR_Math        "Matematik"
+    IDS_LEX_STR_Scalar      "Skalet"
+    IDS_LEX_STR_Subst       "Değişiklik"
+    IDS_LEX_STR_Modf        "Değiştirici"
+    IDS_LEX_STR_Tag         "Kod imi"
+    IDS_LEX_STR_63364       "Özellik adı"
+    IDS_LEX_STR_63365       "LD anahtar sözcüğü"
+    IDS_LEX_STR_63366       "ESC sırası"
+    IDS_LEX_STR_63367       "1. Unikod noktası vurgusu"
+    IDS_LEX_STR_63368       "2. Unikod noktası vurgusu"
+    IDS_LEX_STR_Interface   "Arayüz"
+    IDS_LEX_STR_Annot       "Dipnot"
+    IDS_LEX_STR_63371       "Açıklama belgesi Word"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_Decor       "Dekoratör"
+    IDS_LEX_STR_63373       "Görev işareti"
+    IDS_LEX_STR_63374       "Açıklama belgesi sorunu"
+    IDS_LEX_STR_TypeOp      "Tür işlemi"
+    IDS_LEX_STR_63376       "Sürdürme"
+    IDS_LEX_STR_Special     "Özel"
+    IDS_LEX_STR_63378       "Yazım işlemi"
+    IDS_LEX_STR_63379       "Kapatılmamış dizge"
+    IDS_LEX_STR_63380       "URL/IRI"
+    IDS_LEX_STR_63381       "Kısa IRI"
+    IDS_LEX_STR_SendKey     "Tuş gönderme"
+    IDS_LEX_STR_63383       "Üst veri"
+    IDS_LEX_STR_Enum        "Hesaplama"
+    IDS_LEX_STR_63385       "TriQ dizgesi"
+    IDS_LEX_STR_63386       "Simge belirteci"
+    IDS_LEX_STR_63387       "Simge işlemi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STR_StrgEOL     "Dizge satır sonu"
+    IDS_LEX_STR_Backticks   "Ters tik"
+    IDS_LEX_STR_GUIDStrg    "GUID dizgesi"
+    IDS_LEX_STR_Global      "Genel"
+    IDS_LEX_STR_Input       "Giriş"
+    IDS_LEX_STR_Output      "Çıkış"
+    IDS_LEX_STR_InOut       "GirişÇıkış"
+    IDS_LEX_STR_PortConn    "Bağlantı noktası"
+    IDS_LEX_STR_SysTasks    "Sistem görevleri"
+    IDS_LEX_STR_AfterLabel  "Sonraki etiketi"
+    IDS_LEX_STR_Table       "Table"
+    IDS_LEX_STR_StarCmd     "Star Command"
+    IDS_LEX_STR_SlashCmd    "Slash Command"
+    IDS_LEX_STR_Processor   "Processor"
+    IDS_LEX_STR_Argument    "Argument"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_STD_CH_MODIFIED     "Değişiklik geçmişi işaretleyici değiştirildi"
+    IDS_LEX_STD_CH_SAVED        "Değişiklik geçmişi işaretleyici kaydedildi"
+    IDS_LEX_STD_CH_REV_TO_MOD   "Değişiklik geçmişi işaretleyici değiştirilmişe döndürüldü"
+    IDS_LEX_STD_CH_REV_TO_ORG   "Değişiklik geçmişi işaretleyici kaynağa döndürüldü"
+    IDS_LEX_2ND_CH_MODIFIED     "2. Değişiklik geçmişi işaretleyici değiştirildi"
+    IDS_LEX_2ND_CH_SAVED        "2. Değişiklik geçmişi işaretleyici kaydedildi"
+    IDS_LEX_2ND_CH_REV_TO_MOD   "2. Değişiklik geçmişi işaretleyici değiştirilmişe döndürüldü"
+    IDS_LEX_2ND_CH_REV_TO_ORG   "2. Değişiklik geçmişi işaretleyici kaynağa döndürüldü"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEX_CSV_COL_0       "0. sütun"
+    IDS_LEX_CSV_COL_1       "1. sütun"
+    IDS_LEX_CSV_COL_2       "2. sütun"
+    IDS_LEX_CSV_COL_3       "3. sütun"
+    IDS_LEX_CSV_COL_4       "4. sütun"
+    IDS_LEX_CSV_COL_5       "5. sütun"
+    IDS_LEX_CSV_COL_6       "6. sütun"
+    IDS_LEX_CSV_COL_7       "7. sütun"
+    IDS_LEX_CSV_COL_8       "8. sütun"
+    IDS_LEX_CSV_COL_9       "9. sütun"
+END
+
+#endif    // Turkish (Turkey) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

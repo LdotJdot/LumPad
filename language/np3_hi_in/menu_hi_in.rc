@@ -1,0 +1,637 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hindi (India) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HIN)
+LANGUAGE LANG_HINDI, SUBLANG_HINDI_INDIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MUI_MAINMENU MENU
+BEGIN
+    POPUP "फ़ाइल (&F)"
+    BEGIN
+        MENUITEM "नया (&N)\tCtrl+N",                                    IDM_FILE_NEW
+
+        MENUITEM "Close &Tab",                                      IDM_FILE_CLOSETAB
+        MENUITEM "&खोलें (&O)...\tCtrl+O",                                IDM_FILE_OPEN
+        MENUITEM "&सहेजें (&S)\tCtrl+S",                                   IDM_FILE_SAVE
+        MENUITEM "इस रूप में सहेजें (&A)...\tF6",                                 IDM_FILE_SAVEAS
+        MENUITEM "प्रतिलिपि सहेजें (&C)...\tCtrl+F6",                          IDM_FILE_SAVECOPY
+        MENUITEM "मूल प्रति के दिनाँक/समय में सहेजें (&M)\tCtrl+Alt+F6", IDM_FILE_PRESERVE_FILEMODTIME
+        MENUITEM SEPARATOR
+        MENUITEM "केवल पढ़ने योग्य फ़ाइल गुण (&R)",             IDM_FILE_READONLY
+        MENUITEM "फ़ाइल लॉक करें (साझे में पढ़ने योग्य) (&L)",                      IDM_FILE_LOCK_SHARE_READ
+        MENUITEM SEPARATOR
+        MENUITEM "एन्क्रिप्शन पासफ्रेज़ तैयार करें (&Y)...",                 IDM_SETPASS
+        MENUITEM SEPARATOR
+        POPUP "क्लिपबोर्ड का स्थान (&D)"
+        BEGIN
+            MENUITEM "सिर्फ़ फ़ाइल का नाम कॉपी करें (&F)\tCtrl+F9",       IDM_EDIT_INSERT_FILENAME
+            MENUITEM "सिर्फ़ निदेशिका-स्थान कॉपी करें (&D)",          IDM_EDIT_INSERT_DIRNAME
+            MENUITEM "पूरा स्थान कॉपी करें (&F)\tCtrl+Shift+F9",     IDM_EDIT_INSERT_PATHNAME
+        END
+        POPUP "प्रक्षेपित करें (&L)"
+        BEGIN
+            MENUITEM "ख़ाली नई विंडो  (&N)\tAlt+N",           IDM_FILE_NEWWINDOW
+            MENUITEM "अवस्था का प्रतिरूप  (&D)\tAlt+Shift+N",   IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "व्यवस्थापक के रूप में पुनः प्रक्षेपित करें (&R)",                 IDM_FILE_LAUNCH_ELEVATED
+            MENUITEM SEPARATOR
+            MENUITEM "दस्तावेज़ चलाएं (&D)\tCtrl+L",          IDM_FILE_LAUNCH
+            MENUITEM "इसमें खोलें (&O)...\tAlt+L",               IDM_FILE_OPENWITH
+            MENUITEM "आदेश (&C)...\tCtrl+R",                IDM_FILE_RUN
+            MENUITEM SEPARATOR
+            MENUITEM "वेब टेम्पलेट 1 (&1)\tCtrl+Shift+1",      CMD_WEBACTION1
+            MENUITEM "वेब टेम्पलेट 2 (&2)\tCtrl+Shift+2",      CMD_WEBACTION2
+            MENUITEM SEPARATOR
+            MENUITEM "फ़ाइल एक्स्प्लोरर खोलें (&F)",                IDM_FILE_EXPLORE_DIR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "फ़ाइल को वापस लाएं (&V)\tF5",                  IDM_FILE_REVERT
+        MENUITEM "फ़ाइल-चर को नज़रअंदाज़ करें  (&I)",                      CMD_IGNORE_FILE_VARS
+        POPUP "एन्कोडिंग (&E)"
+        BEGIN
+            POPUP "इस प्रकार से फ़ाइल में वापस लाएं (&R)"
+            BEGIN
+                MENUITEM "डिफ़ॉल्ट सेटिंग (&D)",             CMD_RECODEDEFAULT
+                MENUITEM "A&NSI\tCtrl+Shift+A",            CMD_RECODEANSI
+                MENUITEM "&OEM\tCtrl+Shift+O",             CMD_RECODEOEM
+                MENUITEM "&GB18030\tCtrl+Shift+F10",       CMD_RECODEGB18030
+                MENUITEM SEPARATOR
+                MENUITEM "ASCII को UT&F-8 के रूप में (&F)\tCtrl+Shift+F8", CMD_RELOADASCIIASUTF8
+                MENUITEM "UCHARDET विश्लेषण लागू करें (&C)",       CMD_RELOADFORCEDETECTION
+                MENUITEM "एन्कोडिंग टैग्स अनदेखा करें (&I)\tAlt+F8",  CMD_RELOADNOENCODETAGS
+                MENUITEM SEPARATOR
+                MENUITEM "अन्य एन्कोडिंग विकल्प (&M)...\tF8",         IDM_ENCODING_RECODE
+            END
+            POPUP "इस रूप में दस्तावेज़ तैयार करें (&S)"
+            BEGIN
+                MENUITEM "&ANSI",                          IDM_ENCODING_ANSI
+                MENUITEM "&Unicode",                       IDM_ENCODING_UNICODE
+                MENUITEM "Unicode &Big Endian",            IDM_ENCODING_UNICODEREV
+                MENUITEM "UTF-&8\tShift+F8",               IDM_ENCODING_UTF8
+                MENUITEM "UTF-8 with &Signature",          IDM_ENCODING_UTF8SIGN
+                MENUITEM SEPARATOR
+                MENUITEM "दूसरे एन्कोडिंग विकल्प (&M)...\tF9",         IDM_ENCODING_SELECT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "एन्कोडिंग डिफ़ॉल्ट चुनें (&D)...",          IDM_ENCODING_SETDEFAULT
+        END
+        POPUP "पंक्ति समाप्ति (&G)"
+        BEGIN
+            MENUITEM "&Windows (CR+LF)",            IDM_LINEENDINGS_CRLF
+            MENUITEM "&Mac (CR)",                   IDM_LINEENDINGS_CR
+            MENUITEM "&Unix (LF)",                  IDM_LINEENDINGS_LF
+            MENUITEM SEPARATOR
+            MENUITEM "डिफ़ॉल्ट (&D)...",                 IDM_LINEENDINGS_SETDEFAULT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "इंडेंटेशन जाँचें (&I)...",           CMD_CHECK_INDENTATION
+        MENUITEM SEPARATOR
+        MENUITEM "पृष्ठ सेटअप (&U)...",                  IDM_FILE_PAGESETUP
+        MENUITEM "मुद्रण (&P)...\tCtrl+P",               IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "गुण (&T)...",                  IDM_FILE_PROPERTIES
+        MENUITEM "डेस्कटॉप पर लिंक बनाएं (&K)",            IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "पसंदीदा (&F)"
+        BEGIN
+            MENUITEM "पसंदीदा खोलें (&O)...\tAlt+I",    IDM_FILE_OPENFAV
+            MENUITEM "चालू फ़ाइल जोड़ें (&A)...\tAlt+K",   IDM_FILE_ADDTOFAV
+            MENUITEM "प्रबंधित करें (&M)...\tAlt+F9",            IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "&Restore Last Session",                           IDM_FILE_RESTORE_SESSION
+        MENUITEM "हाल के खोले हुए (&H)...\tCtrl+Alt+H",  IDM_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "बाहर निकलें (&X)\tAlt+F4",                     IDM_FILE_EXIT
+    END
+    POPUP "संपादन (&E)"
+    BEGIN
+        MENUITEM "दस्तावेज़ केवल पढ़ने योग्य (&R)"         IDM_VIEW_READONLY
+        MENUITEM SEPARATOR
+        MENUITEM "पूर्ववत करें (&U)\tCtrl+Z",               IDM_EDIT_UNDO
+        MENUITEM "फिर से करें (&R)\tCtrl+Y",              IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "काटें (&T)\tCtrl+X",                   IDM_EDIT_CUT
+        MENUITEM "कॉपी (&C)\tCtrl+C",                  IDM_EDIT_COPY
+        MENUITEM "सारा कॉपी करें (&A)\tAlt+C",            IDM_EDIT_COPYALL
+        MENUITEM "कॉपी करें और जोड़ें (&Y)\tCtrl+E",       IDM_EDIT_COPYADD
+        MENUITEM "चिपकाएं (&P)\tCtrl+V",                IDM_EDIT_PASTE
+        MENUITEM "बदलें (&W)\tCtrl+K",                  IDM_EDIT_SWAP
+        MENUITEM "सारा चुनें (&S)\tCtrl+A",               IDM_EDIT_SELECTALL
+        MENUITEM "हटाएं (&D)\tDel",                     IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "क्लिपबोर्ड साफ़ करें (&E)",               IDM_EDIT_CLEARCLIPBOARD
+        MENUITEM "क्लिपबोर्ड &निगरानी टॉगल करें",  IDM_EDIT_TOGGLE_PASTEBOARD
+        MENUITEM SEPARATOR
+        POPUP "शब्द (&O)"
+        BEGIN
+            MENUITEM "पूरा शब्द (&C)\tCtrl+Alt+Enter",      IDM_EDIT_COMPLETEWORD
+            MENUITEM SEPARATOR
+            MENUITEM "कर्सर को शब्द के बाएं ले जाएं (&L)\tCtrl+ ←",         CMD_CTRLLEFT
+            MENUITEM "कर्सर को शब्द के दाएं ले जाएं (&R)\tCtrl+ →",         CMD_CTRLRIGHT
+            MENUITEM "बायाँ शब्द मिटाएं (&D)\tCtrl+Back",        CMD_CTRLBACK
+            MENUITEM "दायाँ शब्द मिटाएं (&W)\tCtrl+Del",         CMD_CTRLDEL
+        END
+        POPUP "रेखाएं (&L)"
+        BEGIN
+            MENUITEM "ऊपर लाएं (&U)\tAlt+ ↑",                    IDM_EDIT_MOVELINEUP
+            MENUITEM "नीचे लाएं (&M)\tAlt+ ↓",                     IDM_EDIT_MOVELINEDOWN
+            MENUITEM SEPARATOR
+            MENUITEM "चुना हुआ या चालू रेखा काटें (&I)\tCtrl+X",      IDM_EDIT_CUT
+            MENUITEM "चुनी हुई पूरी रेखाएं काटें (&L)\tCtrl+Shift+X",   IDM_EDIT_CUTLINE
+            MENUITEM "चुना हुआ या चालू रेखा कॉपी करें (&C)\tCtrl+C",     IDM_EDIT_COPY
+            MENUITEM "चुनी हुई सारी रेखाएं कॉपी करें (&Y)\tCtrl+Shift+C", IDM_EDIT_COPYLINE
+            MENUITEM SEPARATOR
+            MENUITEM "रेखा/चुनाव की प्रतिलिपि (&D)\tCtrl+D",            IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM "रेखाओं के क्रम की अदला बदली करें (&T)\tAlt+D",   IDM_EDIT_LINETRANSPOSE
+            MENUITEM "रेखा हटाएं (&E)\tCtrl+Shift+D",                IDM_EDIT_DELETELINE
+            MENUITEM SEPARATOR
+            MENUITEM "बाईं रेखा मिटाएं (&N)\tCtrl+Shift+Back",  IDM_EDIT_DELETELINELEFT
+            MENUITEM "दाईं रेखा मिटाएं (&H)\tCtrl+Shift+Del",   IDM_EDIT_DELETELINERIGHT
+            MENUITEM SEPARATOR
+            MENUITEM "स्तम्भ लपेटें (&W)...\tCtrl+Shift+W",       IDM_EDIT_COLUMNWRAP
+            MENUITEM SEPARATOR
+            MENUITEM "डुप्लीकेट रेखाएं मिलाएं (&U)\tCtrl+Alt+D",   IDM_EDIT_UNITEDUPLICATELINES
+            MENUITEM "डुप्लीकेट रेखाएं हटाएं (&V)",              IDM_EDIT_REMOVEDUPLICATELINES
+            MENUITEM "खाली रेखाएं मिलाएं (&G)\tAlt+Y",          IDM_EDIT_MERGEEMPTYLINES
+            MENUITEM "रिक्त रेखाएं मिलाएं (&K)\tCtrl+Alt+Y",     IDM_EDIT_MERGEBLANKLINES
+            MENUITEM "खाली रेखाएं हटाएं (&R)\tAlt+R",           IDM_EDIT_REMOVEEMPTYLINES
+            MENUITEM "रिक्त रेखाएं हटाएं (&B)\tCtrl+Alt+B",      IDM_EDIT_REMOVEBLANKLINES
+        END
+        POPUP "उन्नत (&N)"
+        BEGIN
+            MENUITEM "इंडेंट (&I)",                                  IDM_EDIT_INDENT
+            MENUITEM "इंडेंट हटाएं (&U)",                             IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            POPUP "पंक्ति टिप्पणी (&C)"
+            BEGIN
+                MENUITEM "टॉगल  (&T)\tCtrl+Q",               IDM_EDIT_LINECOMMENT
+                MENUITEM "जोड़ें  (&A)\tCtrl+Alt+Q",              IDM_EDIT_LINECOMMENT_ADD
+                MENUITEM "हटाएँ  (&R)\tCtrl+Alt+Shift+Q",     IDM_EDIT_LINECOMMENT_REMOVE
+                MENUITEM "ब्लॉक सम्पादित करें  (&B)\tAlt+Shift+Q",      IDM_EDIT_LINECOMMENT_BLOCKEDIT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Stream टिप्पणी (&R)\tCtrl+Shift+Q",            IDM_EDIT_STREAMCOMMENT
+            MENUITEM SEPARATOR
+            POPUP "चुनाव संलग्न करें (&E)"
+            BEGIN
+                MENUITEM "उद्धरण चिन्ह (&S)\tCtrl+1",        CMD_STRINGIFY
+                MENUITEM "दोहरा उद्धरण चिन्ह (&D)\tCtrl+2",   CMD_STRINGIFY2
+                MENUITEM SEPARATOR
+                MENUITEM "( )\tCtrl+3",                   CMD_EMBRACE
+                MENUITEM "[ ]\tCtrl+4",                   CMD_EMBRACE2
+                MENUITEM "{ }\tCtrl+5",                   CMD_EMBRACE3
+                MENUITEM SEPARATOR
+                MENUITEM "बैकटिक्स (&B)\tCtrl+6",            CMD_EMBRACE4
+                MENUITEM SEPARATOR
+                MENUITEM "इसके साथ (&W)...\tAlt+Q",               IDM_EDIT_ENCLOSESELECTION
+            END
+            MENUITEM "चुनाव/रेखा की प्रतिलिपि (&D)/Line\tCtrl+D", IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "रिक्त स्थान से भरें (&P)\tAlt+B",           IDM_EDIT_PADWITHSPACES
+            MENUITEM "पहला वर्ण मिटाएं (&F)\tAlt+Z",     IDM_EDIT_STRIP1STCHAR
+            MENUITEM "आखरी वर्ण मिटाएं (&L)\tAlt+U",      IDM_EDIT_STRIPLASTCHAR
+            MENUITEM "अनुगामी रिक्त स्थान मिटाएं (&T)\tAlt+W",     IDM_EDIT_TRIMLINES
+            MENUITEM "रिक्त स्थान कम करें (&B)\tCtrl+Alt+P",      IDM_EDIT_COMPRESS_BLANKS
+            MENUITEM SEPARATOR
+            MENUITEM "रेखा परिवर्तित करें (&M)...\tAlt+M",           IDM_EDIT_MODIFYLINES
+            MENUITEM "रेखा क्रमवार करें (&S)...\tAlt+O",             IDM_EDIT_SORTLINES
+            MENUITEM SEPARATOR
+            MENUITEM "संरेखित करें (&A)...\tAlt+J",            IDM_EDIT_ALIGN
+            MENUITEM "रेखाएं तोड़ें (&I)\tCtrl+I",                IDM_EDIT_SPLITLINES
+            MENUITEM "रेखाएं जोड़ें (&J)\tCtrl+J",                 IDM_EDIT_JOINLINES
+            MENUITEM "रेखाएं मिलाएं (&E)\tCtrl+Alt+J",             IDM_EDIT_JOINLN_NOSP
+            MENUITEM "पैराग्राफ़ संरक्षित करें (&V)\tCtrl+Shift+J",  IDM_EDIT_JOINLINES_PARA
+            MENUITEM SEPARATOR
+            MENUITEM "चुनाव के आरंभ में जाएं (&C)\tCtrl+,",   CMD_JUMP2SELSTART
+            MENUITEM "चुनाव के अंत में जाएं (&N)\tCtrl+.",    CMD_JUMP2SELEND
+        END
+        POPUP "बदलें (&V)"
+        BEGIN
+            MENUITEM "बड़ा अक्षर (&U)\tCtrl+Shift+U",           IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "छोटा अक्षर (&L)\tCtrl+U",                IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "छोटे-बड़ा बदलें (&I)\tCtrl+Alt+U",         IDM_EDIT_INVERTCASE
+            MENUITEM "टाइटल केस (&T)\tCtrl+Alt+I",           IDM_EDIT_TITLECASE
+            MENUITEM "वाक्य केस (&S)\tCtrl+Alt+O",            IDM_EDIT_SENTENCECASE
+            MENUITEM SEPARATOR
+            MENUITEM "चुनाव टैबिफ़ाई करें (&A)\tCtrl+Shift+T",   IDM_EDIT_CONVERTSPACES
+            MENUITEM "चुनाव अनटैबिफ़ाई करें (&N)\tCtrl+Shift+S",         IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "इंडेंट टैबिफ़ाई करें (&A)\tCtrl+Alt+T",        IDM_EDIT_CONVERTSPACES2
+            MENUITEM "इंडेंट अनटैबिफ़ाई करें (&F)\tCtrl+Alt+S",      IDM_EDIT_CONVERTTABS2
+            MENUITEM SEPARATOR
+            MENUITEM "बेस-64 एनकोड (&64)",                    IDM_EDIT_BASE64ENCODE
+            MENUITEM "बेस-64 डीकोड (6&4)",                    IDM_EDIT_BASE64DECODE
+            MENUITEM "बेस-64 डीकोड टू कोडपेज...",               IDM_EDIT_B64DECODESEL
+            MENUITEM SEPARATOR
+            MENUITEM "URL एन्कोड (&E)\tCtrl+Shift+E",            IDM_EDIT_URLENCODE
+            MENUITEM "URL डिकोड (&D)\tCtrl+Shift+R",            IDM_EDIT_URLDECODE
+            MENUITEM "फ़ाइल सिस्टम पथ टू URL\tCtrl+F10",           IDM_EDIT_PATH2URL
+            MENUITEM "URL टू फ़ाइल सिस्टम पथ\tAlt+F10",            IDM_EDIT_URL2PATH
+            MENUITEM SEPARATOR
+            MENUITEM "Backslashes इन्वर्ट करें",                     IDM_EDIT_INVERTBACKSLASH
+            MENUITEM "Slashes इन्वर्ट करें",                         IDM_EDIT_INVERTSLASH
+            MENUITEM SEPARATOR
+            MENUITEM "Char से Hex में (&H)\tCtrl+Alt+X",          IDM_EDIT_CHAR2HEX
+            MENUITEM "Hex से Char में (&C)\tCtrl+Alt+C",          IDM_EDIT_HEX2CHAR
+        END
+        POPUP "शामिल करें (&I)"
+        BEGIN
+            MENUITEM "नई रेखा ऊपर डालें (&N)\tCtrl+Enter",         CMD_INSERTNEWLINE
+            MENUITEM SEPARATOR
+            MENUITEM "HTML/XML टैग (&M)...\tAlt+X",               IDM_EDIT_INSERT_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "एन्कोडिंग अभिज्ञापक (&E)\tCtrl+F8",            IDM_EDIT_INSERT_ENCODING
+            MENUITEM SEPARATOR
+            MENUITEM "समय/दिनाँक (संक्षिप्त प्रकार)(&S)\tCtrl+F5",      IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "समय/दिनाँक (विस्तृत प्रकार)(&L)\tCtrl+Shift+F5", IDM_EDIT_INSERT_LONGDATE
+            MENUITEM "आज का समय और दिनाँक डालें (&T)",            CMD_INSERT_TIMESTAMP
+            MENUITEM "समय-दिनाँक अपडेट करें (&U)\tShift+F5",        CMD_UPDATE_TIMESTAMPS
+        END
+        POPUP "विविध (&M)"
+        BEGIN
+            MENUITEM "GUID क्लिपबोर्ड में कॉपी करें (&G)\tCtrl+Shift+.",      IDM_EDIT_INSERT_GUID
+            MENUITEM SEPARATOR
+            MENUITEM "C वर्ण एस्केप करें (&E)\tCtrl+Alt+E",                IDM_EDIT_ESCAPECCHARS
+            MENUITEM "C वर्ण अनएस्केप करें (&U)\tCtrl+Alt+R",              IDM_EDIT_UNESCAPECCHARS
+            MENUITEM SEPARATOR
+            MENUITEM "संख्या बढ़ाएं (&I)\tCtrl+Alt+NK+",             CMD_INCREASENUM
+            MENUITEM "संख्या घटाएं (&D)\tCtrl+Alt+NK-",             CMD_DECREASENUM
+            MENUITEM SEPARATOR
+            MENUITEM "कोष्ठक जोड़ा ढूँढें (&F)\tCtrl+B",               IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "कोष्ठक जोड़े तक चयनित करें (&M)\tCtrl+Shift+B",    IDM_EDIT_SELTOMATCHINGBRACE
+            MENUITEM SEPARATOR
+            MENUITEM "अगले तक चयनित करें (&N)\tCtrl+Alt+F2",               IDM_EDIT_SELTONEXT
+            MENUITEM "पिछले तक चयनित करें (&P)\tCtrl+Alt+Shift+F2",     IDM_EDIT_SELTOPREV
+            MENUITEM SEPARATOR
+            MENUITEM "शब्द या रेखा चयनित करें (&W)\tCtrl+Spc",            IDM_EDIT_SELECTWORD
+            MENUITEM "सारे मिलान बहु-चयनित करें (&A)\tCtrl+Shift+Spc",  IDM_EDIT_SELECTALLMATCHES
+            MENUITEM SEPARATOR
+            MENUITEM "पंक्ति-विराम पर पूर्ववत लेनदेन विभाजित करें",     IDM_VIEW_SPLIT_UNDOTYPSEQ_LNBRK
+        END
+        MENUITEM SEPARATOR
+        POPUP "बुकमार्क्स (&K)"
+        BEGIN
+            MENUITEM "टॉगल (&T)\tCtrl+F2",            BME_EDIT_BOOKMARKTOGGLE
+            MENUITEM SEPARATOR
+            MENUITEM "अगले पर जाएं (&N)\tF2",              BME_EDIT_BOOKMARKNEXT
+            MENUITEM "पिछले पर जाएं (&P)\tShift+F2",    BME_EDIT_BOOKMARKPREV
+            MENUITEM SEPARATOR
+            MENUITEM "सारा मिटाएं (&C)\tAlt+F2",          BME_EDIT_BOOKMARKCLEAR
+        END
+    END
+    POPUP "खोजें (&R)"
+    BEGIN
+        MENUITEM "ढूँढें (&F)...\tCtrl+F",                    IDM_EDIT_FIND
+        MENUITEM "ढूंढा हुआ शब्द सहेजें (&A)\tAlt+F3",          IDM_EDIT_SAVEFIND
+        MENUITEM "अगला ढूँढें (&N)\tF3",                      IDM_EDIT_FINDNEXT
+        MENUITEM "पिछला ढूँढें (&P)\tShift+F3",                IDM_EDIT_FINDPREV
+        MENUITEM "अगला चयनित ढूँढें (&X)\tCtrl+F3",            CMD_FINDNEXTSEL
+        MENUITEM "पिछला चयनित ढूँढें (&V)\tCtrl+Shift+F3",      CMD_FINDPREVSEL
+        MENUITEM "बदलें (&R)...\tCtrl+H",                    IDM_EDIT_REPLACE
+        MENUITEM "अगला शब्द बदलें (&E)\tF4",                  IDM_EDIT_REPLACENEXT
+        MENUITEM "यहाँ पर जाएं (&G)...\tCtrl+G",              IDM_EDIT_GOTOLINE
+    END
+    POPUP "दृश्य (&V)"
+    BEGIN
+        MENUITEM "शब्द लपेटें (&W)\tCtrl+W",                   IDM_VIEW_WORDWRAP
+        MENUITEM "दीर्घ रेखा चिन्हक (&L)\tCtrl+Alt+L",        IDM_VIEW_LONGLINEMARKER
+        MENUITEM "इंडेंटेशन निर्देशिका (&G)\tCtrl+Shift+G",    IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM SEPARATOR
+        MENUITEM "लपेटे हुए चिन्ह दिखाएं (&P)\tCtrl+Shift+7",     IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM "खाली स्थान दिखाएं (&B)\tCtrl+Shift+8",           IDM_VIEW_SHOWBLANKS
+        MENUITEM "वाक्य अंत दिखाएं (&E)\tCtrl+Shift+9",     IDM_VIEW_SHOWEOLS
+        MENUITEM SEPARATOR
+        POPUP "परिवर्तन इतिहास मार्कर"
+        BEGIN
+            MENUITEM "कोई मार्कर नहीं",                IDM_VIEW_CHGHIST_NONE
+            MENUITEM "केवल मार्जिन में दिखाएं",                 IDM_VIEW_CHGHIST_MARGIN
+            MENUITEM "केवल दस्तावेज़ में दिखाएं",               IDM_VIEW_CHGHIST_DOCTXT
+            MENUITEM "सभी परिवर्तन मार्कर दिखाएं",             IDM_VIEW_CHGHIST_ALL
+        END
+        MENUITEM "परिवर्तन/पूर्ववत इतिहास साफ़ करें"             IDM_VIEW_CHGHIST_CLEAR_UNDOREDO
+        MENUITEM SEPARATOR
+        MENUITEM "हाईपरलिंक हॉटस्पॉट (&H)\tCtrl+Alt+W",      IDM_VIEW_HYPERLINKHOTSPOTS
+        POPUP "रंग परिभाषा हॉटस्पॉट (&C)"
+        BEGIN
+            MENUITEM "बंद करें (&O)",                             IDM_VIEW_COLORDEFHOTSPOTS
+            MENUITEM "&RGB+A"                            IDM_VIEW_COLOR_RGBA
+            MENUITEM "&A+RGB"                            IDM_VIEW_COLOR_ARGB
+            MENUITEM "&BGRA"                             IDM_VIEW_COLOR_BGRA
+        END
+        MENUITEM "युनिकोड-बिन्दु हाइलाइट करें (&U)",            IDM_VIEW_UNICODE_POINTS
+        MENUITEM "Visual Brace मिलान (&V)\tCtrl+Shift+V", IDM_VIEW_MATCHBRACES
+        POPUP "चालू रेखा हाइलाइट करें (&I)\tCtrl+Shift+I"
+        BEGIN
+            MENUITEM "हाइलाइट न करें (&N)",                   IDM_VIEW_HILITCURLN_NONE
+            MENUITEM "पृष्ठभूमि का रंग (&C)",               IDM_VIEW_HILITCURLN_BACK
+            MENUITEM "ढांचा प्रारूप (&F)",                  IDM_VIEW_HILITCURLN_FRAME
+        END
+        POPUP "उपस्थिति चिन्हित करें (&O)"
+        BEGIN
+            MENUITEM "सक्रिय (&A)\tAlt+A",                  IDM_VIEW_MARKOCCUR_ONOFF
+            MENUITEM "बुकमार्क्स भी इस्तेमाल करें (&B)",              IDM_VIEW_MARKOCCUR_BOOKMARKS
+            MENUITEM SEPARATOR
+            MENUITEM "सिर्फ़ दिखाई देने वालों का मिलान करें (&V)",             IDM_VIEW_MARKOCCUR_VISIBLE
+            MENUITEM SEPARATOR
+            MENUITEM "मिलान करें केस मिलाएं (&C)",           IDM_VIEW_MARKOCCUR_CASE
+            POPUP "सिर्फ़ पूरा शब्द मिलाएं (&W)"
+            BEGIN
+                MENUITEM "बंद करें (&O)",                        IDM_VIEW_MARKOCCUR_WNONE
+                MENUITEM "पूरा शब्द मिलाएं (&S)",        IDM_VIEW_MARKOCCUR_WORD
+                MENUITEM "चालू शब्द मिलाएं (&C)",         IDM_VIEW_MARKOCCUR_CURRENT
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "रेखा संख्या (&N)\tCtrl+Shift+N",         IDM_VIEW_LINENUMBERS
+        MENUITEM "बुकमार्क मार्जिन (&M)\tCtrl+Shift+M",      IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "परिवर्तन इतिहास मार्जिन",               IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+        MENUITEM SEPARATOR
+        POPUP "फोलडिंग (&F)"
+        BEGIN
+            MENUITEM "कोड लपेटें (&F)",                   IDM_VIEW_FOLDING
+            MENUITEM "फोल्ड टॉगल करें (&T)\tCtrl+Alt+F",       IDM_VIEW_TOGGLEFOLDS
+            MENUITEM SEPARATOR
+            MENUITEM "अगले फोल्ड पे जाएं (&N)\tAlt+ +",         CMD_FOLDJUMPDOWN
+            MENUITEM "पिछले फोल्ड पे जाएं (&P)\tAlt+ –",         CMD_FOLDJUMPUP
+            MENUITEM SEPARATOR
+            MENUITEM "फोल्ड बंद करें (&C)\tAlt+ ←",          CMD_FOLDCOLLAPSE
+            MENUITEM "फोल्ड विस्तृत करें (&E)\tAlt+ →",            CMD_FOLDEXPAND
+        END
+        POPUP "डिस्प्ले (&D)"
+        BEGIN
+            MENUITEM "केंद्रित दृश्य (&F)\tCtrl+Alt+V",       IDM_VIEW_TOGGLE_VIEW
+            POPUP "दृश्य प्रकार"
+            BEGIN
+                MENUITEM "लपेटें",                        IDM_VIEW_FV_FOLD
+                MENUITEM "बुकमार्क",                    IDM_VIEW_FV_BOOKMARK
+                MENUITEM "हाइलाइट",                   IDM_VIEW_FV_HIGHLIGHT
+                MENUITEM "बुकमार्क करें और लपेटें",            IDM_VIEW_FV_BKMRKFOLD
+                MENUITEM "हाइलाइट करें और लपेटें",           IDM_VIEW_FV_HIGHLGFOLD
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "लॉग निगरानी (&M)",                 IDM_VIEW_CHASING_DOCTAIL
+            MENUITEM "फ़ाइल के आखिरी तक स्क्रॉल करें (&S)",        IDM_VIEW_SCROLLPASTEOF
+            MENUITEM "Hyperlink टूलटिप दिखाएं (&H)",         IDM_VIEW_SHOW_HYPLNK_CALLTIP
+        END
+        MENUITEM SEPARATOR
+        POPUP "पैनल (&A)"
+        BEGIN
+            MENUITEM "शीर्षक पट्टी दिखाएं",                      IDM_VIEW_TITLEBAR
+            MENUITEM "मेनूपट्टी दिखाएं (&M)",                    IDM_VIEW_MENUBAR
+            MENUITEM "औज़ारपट्टी दिखाएं (&T)",                  IDM_VIEW_TOOLBAR
+            MENUITEM "अवस्था पट्टी दिखाएं (&S)",                 IDM_VIEW_STATUSBAR
+            MENUITEM SEPARATOR
+            MENUITEM "औज़ारपट्टी थीम लोड करें (&L)...",          IDM_VIEW_LOADTHEMETB
+            MENUITEM "मनपसंद औज़ार पट्टी बनाएं (&C)...",         IDM_VIEW_CUSTOMIZETB
+            MENUITEM "औज़ार पट्टी टॉगल करें (&G)",                IDM_VIEW_TOGGLETB
+            MENUITEM "DPI स्तर औज़ारपट्टी (&D)",                 IDM_VIEW_DPISCALETB
+        END
+        POPUP "ज़ूम (&Z)"
+        BEGIN
+            MENUITEM "ज़ूम करें (&I)\tCtrl+ +",                 IDM_VIEW_ZOOMIN
+            MENUITEM "ज़ूम कम करें (&O)\tCtrl+ –",              IDM_VIEW_ZOOMOUT
+            MENUITEM "ज़ूम सामान्य करें (&R)\tCtrl+0",             IDM_VIEW_RESETZOOM
+        END
+        POPUP "स्तिथि (&P)"
+        BEGIN
+            MENUITEM "स्तिथि कोणांक कॉपी करें (&A)\tCtrl+Shift+K",           CMD_COPYWINPOS
+            MENUITEM "डिफ़ॉल्ट स्तिथि में वापस जाएं (&N)\tCtrl+Shift+P",     CMD_DEFAULTWINPOS
+            MENUITEM "डिफ़ॉल्ट स्तिथि के रूप में सहेजें (&S)",                   CMD_SAVEASDEFWINPOS
+            MENUITEM "सहेजी हुई डिफ़ॉल्ट स्तिथि साफ़ करें (&C)",               CMD_CLEARSAVEDWINPOS
+            MENUITEM "आरंभिक स्तिथि में वापस जाएं (&I)\tCtrl+F11",         CMD_INITIALWINPOS
+            MENUITEM "पूर्ण क्षेत्रफल स्तिथि टॉगल करें (&F)\tF11",             CMD_FULLSCRWINPOS
+            MENUITEM "विंडो स्तिथि Sticky बनाएं (&T)",                     IDM_VIEW_STICKYWINPOS
+        END
+    END
+    POPUP "दिखावट (&P)"
+    BEGIN
+        MENUITEM "मनपसंद स्कीम बनाएं (&C)...\tCtrl+F12",                 IDM_VIEW_SCHEMECONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "वाक्य-रचना स्कीम चुनें (&X)...\tF12",                   IDM_VIEW_SCHEME
+        MENUITEM "दूसरा सामान्य बेस (&2)\tShift+F12",                     IDM_VIEW_USE2NDDEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "व्यापक डिफ़ॉल्ट फॉन्ट (&D)...\tAlt+F12",                IDM_VIEW_FONT
+        MENUITEM "चालू स्कीम का डिफ़ॉल्ट फॉन्ट (&H)...\tCtrl+Alt+F12", IDM_VIEW_CURRENTSCHEME
+        MENUITEM SEPARATOR
+        MENUITEM "विंडोज़ गहरा मोड",                               IDM_VIEW_WIN_DARK_MODE
+    END
+    POPUP "सेटिंग (&S)"
+    BEGIN
+        MENUITEM "टैब को खाली जगह के रूप में डालें (&S)",           IDM_SET_TABSASSPACES
+        MENUITEM "टैब सेटिंग (&T)...\tCtrl+T",                   IDM_SET_TABSETTINGS
+        MENUITEM "शब्द लपेटने की सेटिंग (&W)...",                  IDM_SET_WORDWRAPSETTINGS
+        MENUITEM "लंबी रेखा की सेटिंग (&O)...",                    IDM_SET_LONGLINESETTINGS
+        MENUITEM "स्वत: टेक्स्ट को इंडेंट करें (&I)",                  IDM_SET_AUTOINDENTTEXT
+        MENUITEM "उद्धरण स्वत: बंद करें (&Q)",                        IDM_SET_AUTOCLOSEQUOTES
+        MENUITEM "कोष्ठक स्वत: बंद करें (&B)",                  IDM_SET_AUTOCLOSEBRACKETS
+        MENUITEM "HTML/XML स्वत: बंद करें (&H)\tCtrl+Shift+H",    IDM_SET_AUTOCLOSETAGS
+        MENUITEM "शब्द स्वतः पूर्ण करें (&U)",                       IDM_SET_AUTOCOMPLETEWORDS
+        MENUITEM "लेक्सर-की-वर्ड्स स्वतः पूर्ण करें (&K)",           IDM_SET_AUTOCLEXKEYWORDS
+        MENUITEM "वैकल्पिक शब्द विभाजक (&P)\tCtrl+Alt+A",    IDM_SET_ALTERNATE_WORD_SEPS
+        MENUITEM SEPARATOR
+        MENUITEM "प्रति फ़ाइल केवल एक अवस्था (&F)",                IDM_SET_SINGLEFILEINSTANCE
+        MENUITEM "फ़ाइल परिवर्तन अधिसूचना (&C)...\tAlt+F5",        IDM_SET_CHANGENOTIFY
+        ///MENUITEM "स्वतः-सहेजें / बैकअप सेटिंग...",            IDM_SET_AUTOSAVE_BACKUP
+        MENUITEM "संदेश आवाज़ बंद करें (&M)",                      IDM_SET_MUTE_MESSAGEBEEP
+        MENUITEM "&UNC-पथ में बदलें",                    IDM_SET_RESOLVE_UNC_PATHS
+        POPUP "ESC कुंजी उपयोग (&E)"
+        BEGIN
+            MENUITEM "कुछ न करें (&N)",                       IDM_SET_NOESCFUNC
+            MENUITEM "LumPad छोटा करें (&M)",          IDM_SET_ESCMINIMIZE
+            MENUITEM "LumPad से बाहर निकलें (&X)",              IDM_SET_ESCEXIT
+        END
+        MENUITEM "टूल चलाने से पूर्व सहेजें (&V)",      IDM_SET_SAVEBEFORERUNNINGTOOLS
+        MENUITEM "लघु व्यंजक की गणना करें (&X)",     IDM_SET_EVALTINYEXPRONSEL
+        MENUITEM "बहु-चुनाव सक्षम करें",   IDM_SET_MULTIPLE_SELECTION
+        POPUP "Default &Directory"
+        BEGIN
+            MENUITEM "वर्तमान फ़ाइल के &फ़ोल्डर पर सेट करें",  IDM_SET_DEFAULTDIR
+            MENUITEM "&डिफ़ॉल्ट पर रीसेट करें",                 IDM_SET_DEFAULTDIR_RESET
+        END
+        MENUITEM SEPARATOR
+        POPUP "स्मरण (&R)"
+        BEGIN
+            MENUITEM "हाल की फ़ाइल स्मरण रखें (&R)",      IDM_SET_NOSAVERECENT
+            MENUITEM "कैरट स्थान सुरक्षित करें (&C)",    IDM_SET_NOPRESERVECARET
+            MENUITEM "खोज स्वरूप याद रखें (&S)",    IDM_SET_NOSAVEFINDREPL
+            MENUITEM "नवीनतम फ़ाइल स्वतः लोड करें",       IDM_SET_AUTOLOAD_MRU_FILE
+        END
+        POPUP "विंडो (&N)"
+        BEGIN
+            POPUP "विंडो शीर्षक देखें (&W)"
+            BEGIN
+                MENUITEM "सिर्फ़ फ़ाइल का नाम (&F)",              IDM_SET_SHOWFILENAMEONLY
+                MENUITEM "फ़ाइल का नाम और उसकी निदेशिका (&D)",     IDM_SET_SHOWFILENAMEFIRST
+                MENUITEM "पूरा स्थान (&P)",              IDM_SET_SHOWFULLPATH
+                MENUITEM "टेक्स्ट उद्धरण (&T)\tCtrl+9",       IDM_SET_SHOWEXCERPT
+            END
+            MENUITEM "विंडो पुनर्प्रयोग करें (&R)\tCtrl+Shift+L",     IDM_SET_REUSEWINDOW
+            MENUITEM "सदैव शीर्ष पर रखें (&A)\tAlt+T",           IDM_SET_ALWAYSONTOP
+            MENUITEM "छोटा करें (&M)",               IDM_SET_MINTOTRAY
+            MENUITEM "पारदर्शी मोड (&T)\tAlt+G",        IDM_SET_TRANSPARENT
+        END
+        POPUP "प्रोद्योगिकी (&G)"
+        BEGIN
+            POPUP "संश्लेषण (&R)"
+            BEGIN
+                MENUITEM "DirectWrite (&Direct2D)",     IDM_SET_RENDER_TECH_D2D
+                MENUITEM "DirectWrite &Retain",         IDM_SET_RENDER_TECH_D2DRETAIN
+                MENUITEM "Direct&Write GDI DC",         IDM_SET_RENDER_TECH_D2DDC
+                MENUITEM "GDI (बिना लिगेचर के) (&G)",         IDM_SET_RENDER_TECH_GDI
+            END
+            POPUP "RTL ख़ाका (GDI) (&T)"
+            BEGIN
+                MENUITEM "क्षेत्रफल परिमार्जित करें (&E)",                  IDM_SET_RTL_LAYOUT_EDIT
+                MENUITEM "अन्य डायलॉग (&O)",              IDM_SET_RTL_LAYOUT_DLG
+            END
+            POPUP "दाएं-बाएं (&B)"
+            BEGIN
+                MENUITEM "कुछ नहीं (&N)",                        IDM_SET_BIDIRECTIONAL_NONE
+                MENUITEM "बाएं से दाएं (&L)",               IDM_SET_BIDIRECTIONAL_L2R
+                MENUITEM "दाएं से बाएं (&R)",               IDM_SET_BIDIRECTIONAL_R2L
+            END
+        END
+        POPUP "उन्नत कन्फ़िगरेशन (&A)"
+        BEGIN
+            MENUITEM "बाहर निकलते समय सेटिंग्स सहेजें (&X)",          IDM_SET_SAVESETTINGS
+            MENUITEM "सेटिंग्स अभी सहेजें (&N)\tF7",          IDM_SET_SAVESETTINGSNOW
+            MENUITEM "सेटिंग्स फ़ाइल खोलें (&O)\tCtrl+F7",    CMD_OPENINIFILE
+        END
+    END
+    POPUP "मदद (&H)"
+    BEGIN
+        MENUITEM "कमांड लाइन मदद (&C)...",               IDM_HELP_CMD
+        MENUITEM "परिचय (&A)...\tShift+F1",                 IDM_HELP_ABOUT
+    END
+END
+
+
+IDR_MUI_POPUPMENU MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "हाईपरलिंक खोलें",             CMD_OPEN_HYPERLINK
+        MENUITEM "हाइपरलिंक URL कॉपी करें",           CMD_COPY_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "पूर्ववत करें",                       IDM_EDIT_UNDO
+        MENUITEM "फिर से करें",                       IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "काटें",                        IDM_EDIT_CUT
+        MENUITEM "नकल करें",                       IDM_EDIT_COPY
+        MENUITEM "चिपकाएं",                      IDM_EDIT_PASTE
+        MENUITEM "मिटाएं",                     IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "सारा चुनें",                 IDM_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        POPUP "Convert Case"
+        BEGIN
+            MENUITEM "बड़े अक्षर",              CMD_CTX_UPPERCASE
+            MENUITEM "छोटे अक्षर",              CMD_CTX_LOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "केस पलटें",            CMD_CTX_INVERTCASE
+            MENUITEM "शीर्षक केस",             CMD_CTX_TITLECASE
+            MENUITEM "वाक्य केस",          CMD_CTX_SENTENCECASE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "चालू फोल्ड टॉगल करें",        IDM_VIEW_TOGGLE_CURRENT_FOLD
+        MENUITEM SEPARATOR
+        MENUITEM "वेब प्रक्रिया 1 खोलें",          CMD_WEBACTION1
+        MENUITEM "वेब प्रक्रिया 2 खोलें",          CMD_WEBACTION2
+        MENUITEM "फ़ाइल एक्स्प्लोरर खोलें",         IDM_FILE_EXPLORE_DIR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "शीर्षक पट्टी दिखाएं",            IDM_VIEW_TITLEBAR
+        MENUITEM "मेनुपट्टी दिखाएं",               IDM_VIEW_MENUBAR
+        MENUITEM "टूलपट्टी दिखाएं",               IDM_VIEW_TOOLBAR
+        MENUITEM "अवस्था पट्टी दिखाएं",             IDM_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "टूलपट्टी थीम लोड करें...",      IDM_VIEW_LOADTHEMETB
+        MENUITEM "टूलपट्टी मनपसंद बनाएं...",       IDM_VIEW_CUSTOMIZETB
+        MENUITEM "टॉगल टूलपट्टी",                 IDM_VIEW_TOGGLETB
+        MENUITEM "DPI स्तर औज़ारपट्टी",           IDM_VIEW_DPISCALETB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "मार्कर साफ़ करें",                IDM_EDIT_CLEAR_MARKER
+        MENUITEM "मार्कर-टाइप रेखाएं काटें",    IDM_EDIT_CUT_MARKED
+        MENUITEM "मार्कर-टाइप रेखाएं कॉपी करें",   IDM_EDIT_COPY_MARKED
+        MENUITEM "मार्कर-टाइप रेखाएं मिटाएं", IDM_EDIT_DELETE_MARKED
+        MENUITEM SEPARATOR
+        MENUITEM "फोलडिंग",                     IDM_VIEW_FOLDING
+        MENUITEM "रेखा संख्या",                IDM_VIEW_LINENUMBERS
+        MENUITEM "मार्जिन बुकमार्क करें",             IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "परिवर्तन इतिहास मार्जिन",       IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "LumPad खोलें",               IDM_TRAY_RESTORE
+        MENUITEM "LumPad से बाहर निकलें",               IDM_TRAY_EXIT
+    END
+END
+
+#endif    // Hindi (India) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

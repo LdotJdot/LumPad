@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_HUNGARIAN_HUNGARY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 227, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniPath"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,170,90,50,14
+    ICON            IDI_MINIPATH,IDC_STATIC,7,7,48,48,SS_ICON|SS_REALSIZECONTROL,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_VERSION,65,7,175,12
+    LTEXT           "",IDC_COPYRIGHT,65,23,175,8
+    LTEXT           "",IDC_WEBPAGE2,65,26,175,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_WEBPAGE,"SysLink",WS_TABSTOP,65,33,175,10
+    LTEXT           "",IDC_AUTHORNAME,65,51,116,8
+    LTEXT           "",IDC_EMAIL2,65,75,116,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_EMAIL,"SysLink",WS_TABSTOP,65,61,116,10
+    LTEXT           "",IDC_TRANSL_AUTH, 65, 78, 200, 8
+END
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Futtatás"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_RUN,IDC_STATIC,7,7,20,20
+    LTEXT           "Adja meg a futtatható programfájl nevét,\negy mappát vagy egy dokumentumot megnyitásra",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "OK",IDOK,112,64,50,14
+    PUSHBUTTON      "Mégsem",IDCANCEL,167,64,50,14
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 165, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Megnyitás ezzel..."
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OPENWITHDIR,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,7,151,69
+    PUSHBUTTON      "",IDC_GETOPENWITHDIR,7,83,13,13
+    LTEXT           "Kattinson ide a kedvenc alkalmazásaira mutató hivatkozásokat tartalmazó mappa megadásához",IDC_OPENWITHDESCR,26,83,132,26
+    DEFPUSHBUTTON   "OK",IDOK,52,108,50,14
+    PUSHBUTTON      "Mégsem",IDCANCEL,108,108,50,14
+    SCROLLBAR       IDC_RESIZEGRIP3,7,112,10,10
+END
+
+IDD_GOTO DIALOGEX 0, 0, 224, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ugrás"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_GOTO,IDC_STATIC,7,7,20,20
+    LTEXT           "Adja meg a megnyitandó fájl vagy mappa nevét,\nvagy válasszon egyet a korábban meglátogatott könyvtárak listájából",IDC_STATIC,35,7,182,26
+    COMBOBOX        IDC_GOTO,35,35,182,126,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,112,66,50,14,WS_DISABLED
+    PUSHBUTTON      "Mégsem",IDCANCEL,167,66,50,14
+    SCROLLBAR       IDC_RESIZEGRIP,7,70,10,10
+END
+
+IDD_FILTER DIALOGEX 0, 0, 189, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fájl szűrő"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Adjon meg egy új fájl s&zűrőt. Több szűrőt ;-vel válassza el",IDC_STATIC,7,7,175,8
+    EDITTEXT        IDC_FILTER,7,22,158,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSEFILTER,169,22,13,13
+    CONTROL         "Szűrőre illeszkedő fájlok ki&hagyása",IDC_NEGFILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,130,10
+    DEFPUSHBUTTON   "OK",IDOK,77,58,50,14
+    PUSHBUTTON      "Mégsem",IDCANCEL,132,58,50,14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 172, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Átnevezés"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Aktuális:",IDC_STATIC,7,9,28,8
+    EDITTEXT        IDC_OLDNAME,39,7,126,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Új:",IDC_STATIC,7,26,18,8
+    EDITTEXT        IDC_NEWNAME,39,25,126,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,53,50,14,WS_DISABLED
+    PUSHBUTTON      "Mégsem",IDCANCEL,115,53,50,14
+END
+
+IDD_NEWDIR DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Új mappa"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Adja meg az új mappa nevét:",IDC_STATIC,7,7,158,8
+    EDITTEXT        IDC_NEWDIR,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "Mégsem",IDCANCEL,115,45,50,14
+END
+
+IDD_COPYMOVE DIALOGEX 0, 0, 230, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Másolás/Mozgatás"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Forrás:",IDC_STATIC,7,7,26,8
+    EDITTEXT        IDC_SOURCE,7,18,216,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Cél:",IDC_STATIC,7,37,40,8
+    COMBOBOX        IDC_DESTINATION,7,48,199,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSEDESTINATION,210,48,13,13
+    LTEXT           "Művelet:",IDC_STATIC,7,66,30,8
+    CONTROL         "&Másolás",IDC_FUNCCOPY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,40,66,40,10
+    CONTROL         "Mo&zgatás",IDC_FUNCMOVE,"Button",BS_AUTORADIOBUTTON,40,78,45,10
+    DEFPUSHBUTTON   "OK",IDOK,117,74,50,14,WS_DISABLED
+    PUSHBUTTON      "Mégsem",IDCANCEL,173,74,50,14
+    SCROLLBAR       IDC_RESIZEGRIP2,7,78,10,10
+END
+
+IDPP_GENERAL DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Általános"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS,IDC_STATIC,10,10,20,20
+    LTEXT           "Adja meg a MiniPath általános beállításait",IDC_STATIC,40,15,153,8
+    CONTROL         "&Egyszeres kattintással nyitja meg az objektumokat",IDC_SINGLECLICK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,46,180,10
+    CONTROL         "&Track kiválasztás engedélyezése",IDC_TRACKSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,58,120,10
+    CONTROL         "Teljes s&oros kijelölés",IDC_FULLROWSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,70,95,10
+    CONTROL         "Mindig aktiválja a célablakot, amikor a fájl nyitva van",IDC_FOCUSEDIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,82,187,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,100,205,1
+    CONTROL         "Tartsa a &MiniPath ablakot mindig felül",IDC_ALWAYSONTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,140,10
+    CONTROL         "&Lekicsinyítés az óra mellé (kattintás az újranyitáshoz)",IDC_MINIMIZETOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,175,10
+    CONTROL         "&Használja újra a meglévő ablakot, amikor a MiniPath elindul",IDC_REUSEWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,133,210,17
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,151,205,1
+    CONTROL         "&Beállítások mentése kilépéskor",IDC_SAVESETTINGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,160,120,10
+END
+
+IDPP_ADVANCED DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Haladó"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS2,IDC_STATIC,10,10,20,20
+    LTEXT           "Adja meg a MiniPath haladó beállításait",IDC_STATIC,40,15,160,8
+    CONTROL         "&Kezdőmappa használata:",IDC_STARTUPDIR,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,46,95,10
+    CONTROL         "Legutoljára &használtak",IDC_GOTOMRU,"Button",BS_AUTORADIOBUTTON,105,46,95,10
+    CONTROL         """&Kedvencek"" mappa",IDC_GOTOFAV,"Button",BS_AUTORADIOBUTTON,105,58,780,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,76,205,1
+    CONTROL         "&Csak olvasható attribútum törlése a mentett fájlokról",IDC_CLEARREADONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,195,10
+    CONTROL         "Másoláskor átne&vezés, ha a név egyezik",IDC_RENAMEONCOLLISION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,97,150,10
+    CONTROL         "&Törölt fájlok mozgatása a Lomtárba",IDC_USERECYCLEBIN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,134,10
+    CONTROL         "&Ne kérjen megerősítést törléskor (nem ajánlott)",IDC_NOCONFIRMDELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,170,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,139,205,1
+    CONTROL         "Az ""&Esc"" gombbal:",IDC_ESCFUNCTION,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,148,85,10
+    CONTROL         "Ablak le&kicsinyítése",IDC_ESCMIN,"Button",BS_AUTORADIOBUTTON,100,148,80,10
+    CONTROL         "Kilé&pés a MiniPath-ból",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,100,160,90,10
+END
+
+IDPP_ITEMS DIALOGEX 0, 0, 225, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Elemek"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_ITEMS,IDC_STATIC,10,10,21,20
+    LTEXT           "Az elemek megjelenése a mappalistában",IDC_STATIC,40,15,140,8
+    GROUPBOX        "Színek",IDC_STATIC,10,41,205,134
+    LTEXT           "Használja ezt a szöveg színt, ha NINCS SZŰRŐ beállítva:",IDC_STATIC,20,54,189,8
+    CONTROL         "Alapértelmezett a&blak szín",IDC_COLOR_DEF1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,68,100,10
+    CONTROL         "&Egyedi szín:",IDC_COLOR_CUST1,"Button",BS_AUTORADIOBUTTON,20,82,60,10
+    EDITTEXT        IDC_COLOR_SAMP1,85,80,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Szín választása...",IDC_COLOR_PICK1,119,80,60,14
+    LTEXT           "Használja ezt a szöveg színt, amikor egy SZŰRŐ AKTÍV:",IDC_STATIC,20,105,190,8
+    CONTROL         "Alapértelme&zett ablak szín",IDC_COLOR_DEF2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,119,100,10
+    CONTROL         "E&gyedi szín:",IDC_COLOR_CUST2,"Button",BS_AUTORADIOBUTTON,20,133,60,10
+    EDITTEXT        IDC_COLOR_SAMP2,86,130,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Szín választása...",IDC_COLOR_PICK2,120,130,60,14
+END
+
+IDPP_PROG DIALOGEX 0, 0, 226, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Helyek"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_PROGS,IDC_STATIC,10,10,20,20
+    LTEXT           "Adja meg a külső programokat és útvonalakat",IDC_STATIC,40,15,180,8
+    LTEXT           "&Alapértelmezett ""Gyorsnézet"" program (Ctrl+Q):",IDC_STATIC,10,41,170,8
+    EDITTEXT        IDC_QUICKVIEW,10,52,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_Q,203,52,13,13,BS_BITMAP
+    LTEXT           "&Kedvencek mappa (F11):",IDC_STATIC,10,76,100,8
+    EDITTEXT        IDC_FAVORITES,10,87,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_F,203,87,13,13,BS_BITMAP
+END
+
+IDD_FINDTARGET DIALOGEX 0, 0, 281, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cél alkalmazás"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "Ne használjon más cél alkalmazást, csak egyszerűen indítsa el a kijelölt fájlt",IDC_LAUNCH,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,7,270,10
+    CONTROL         "A következő cél alkalmazás használata:",IDC_TARGET,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,21,140,10
+    LTEXT           "Művelet megadása, ha a cél alkalmazás már fut:",IDC_STATIC,7,64,220,8
+    EDITTEXT        IDC_TARGETPATH,20,35,235,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE,259,35,15,14,BS_BITMAP
+    LTEXT           "Üzenet:",IDC_STATIC,20,120,32,8
+    CONTROL         "Semmi, indítsa a cél alkalmazást minden alkalommal, amikor megnyitjuk a fájlt",IDC_ALWAYSRUN,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,78,273,10
+    CONTROL         "Küldjön egy megnyitás üzenetet a cél alkalmazásablaknak:",IDC_SENDDROPMSG,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,92,203,10
+    CONTROL         "A következő DDE parancs végrehajtása:",IDC_USEDDE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,106,143,10
+    LTEXT           "Alkalmazás:",IDC_STATIC,138,120,40,8
+    PUSHBUTTON      "Ablak keresése...",IDC_FINDWIN,214,91,60,14
+    LTEXT           "Téma:",IDC_STATIC,208,120,20,8
+    EDITTEXT        IDC_DDEMSG,20,130,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDEAPP,138,130,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDETOPIC,208,130,66,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,170,159,50,14
+    PUSHBUTTON      "Mégsem",IDCANCEL,224,159,50,14
+END
+
+IDD_FINDWIN DIALOGEX 0, 0, 210, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keresés ablak"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_CROSS1,IDC_CROSSCURSOR,7,7,21,20,SS_CENTERIMAGE
+    LTEXT           "Húzza a célkeresztet arra az ablakra, amit új célként szeretne kiválasztani, vagy nyomja meg az Esc gombot az elvetéshez",IDC_STATIC,35,7,168,26
+    EDITTEXT        IDC_WINTITLE,35,35,168,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Ablak osztály",IDC_WINCLASS,7,60,45,8,NOT WS_VISIBLE
+    LTEXT           "Ablak modul",IDC_WINMODULE,7,70,51,8,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "OK",IDOK,99,64,50,14,WS_DISABLED
+    PUSHBUTTON      "Mégsem",IDCANCEL,153,64,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_NEWDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COPYMOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDPP_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_PROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FINDTARGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FINDWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

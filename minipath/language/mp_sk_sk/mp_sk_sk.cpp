@@ -1,0 +1,7 @@
+﻿// encoding: UTF-8
+// mp_sk_sk.cpp: Definiert die exportierten Funktionen für die DLL-Anwendung.
+//
+
+#include "stdafx.h"
+
+

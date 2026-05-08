@@ -1,0 +1,152 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Indonesian (Indonesia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+LANGUAGE LANG_INDONESIAN, SUBLANG_INDONESIAN_INDONESIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDT_HISTORY_BACK        "Mundur"
+    IDT_HISTORY_FORWARD     "Maju"
+    IDT_UPDIR               "Direktori Induk"
+    IDT_ROOT                "Direktori Utama"
+    IDT_VIEW_FAVORITES      "Favorit"
+    IDT_FILE_PREV           "Berkas Sebelumnya"
+    IDT_FILE_NEXT           "Berkas Berikutnya"
+    IDT_FILE_RUN            "Jalankan"
+    IDT_FILE_QUICKVIEW      "Quickview"
+    IDT_FILE_SAVEAS         "Simpan sebagai"
+    IDT_FILE_COPYMOVE       "Salin/Pindah"
+    IDT_FILE_DELETE         "Hapus"
+    IDT_FILE_DELETE2        "Hapus (Permanen)"
+    IDT_VIEW_FILTER         "Saring"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE            "MiniPath"
+    IDS_NUMFILES            "%s Objek"
+    IDS_NUMFILES2           "%s Objek | Tersaring"
+    IDS_SAVEFILE            "Menyimpan ""%s""..."
+    IDS_OPEN_FILE_WITH      "Buka dengan %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CD              "Kesalahan Akses Direktori\nTidak dapat mengakses direktori\nPeriksa disk atau koneksi jaringan"
+    IDS_ERR_FILE            "Kesalahan Akses Berkas\nTidak dapat mengakses ""%s""\nBerkas ini mungkin sedang digunakan oleh aplikasi lain\nPeriksa disk atau koneksi jaringan"
+    IDS_ERR_NEW             "Kesalahan Akses Berkas\nTidak dapat membuat berkas\nPeriksa disk atau koneksi jaringan"
+    IDS_ERR_NEWDIR          "Kesalahan Akses Direktori\nTidak dapat membuat direktori\nPeriksa disk atau koneksi jaringan"
+    IDS_ERR_SAVEAS1         "Kesalahan Menyimpan Berkas\nKesalahan saat menyimpan ""%s""\nSepertinya berkas diproteksi"
+    IDS_ERR_SAVEAS2         "Kesalahan Menyimpan Berkas\nKesalahan saat menghapus atribut read-only pada berkas"
+    IDS_ERR_CMDLINE         "MiniPath\nKesalahan saat mengakses berkas atau direktori pada baris perintah"
+    IDS_ERR_STARTUPDIR      "MiniPath\nTidak dapat mengakses direktori startup"
+    IDS_ERR_DROP1           "MiniPath\nTidak dapat mengakses berkas atau direktori yang dilepas"
+    IDS_ERR_DROP2           "MiniPath\nHanya satu berkas atau direktori yang bisa dilepas dalam satu waktu"
+    IDS_ERR_FAVORITES       "Favorit\nTidak dapat mengakses folder ""Favorit""\nTentukan direktori pada menu ""Options"""
+    IDS_ERR_LNK_GETPATH     "Kesalahan Tautan\nJalur berkas sistem untuk objek tidak valid\nSepertinya tautan tidak menuju suatu berkas atau direktori"
+    IDS_ERR_LNK_NOACCESS    "Kesalahan Tautan\nTidak dapat mengakses berkas sistem\nPeriksa disk atau koneksi jaringan"
+    IDS_ERR_CREATELINK      "Kesalahan Tautan\nKesalahan saat membuat tautan\nSepertinya direktori dilindungi"
+    IDS_ERR_FILTER          "Kesalahan Menyaring Berkas\nTidak ada penyaringan lain yang ditentukan\nSilakan lihat berkas readme MiniPath untuk informasi lebih lanjut"
+    IDS_ERR_PREVWINDISABLED "MiniPath\nTerdapat jendela MiniPath lain yang sedang sibuk atau aktif\nApakan Anda ingin membuka jendela MiniPath baru?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_TARGETDISABLED  "MiniPath\nJendela target saat ini sedang sibuk atau aktif\nApakah Anda ingin membuka jendela baru?"
+    IDS_ERR_INVALIDTARGET   "MiniPath\nPastikan untuk mengisi semua kolom yang diperlukan\nAnda nanti juga harus menemukan jendela target apabila opsi tertentu diaktifkan"
+    IDS_ERR_INIOPEN         "MiniPath\nTidak dapat mengakses konfigurasi Minipath"
+    IDS_ERR_INICREATE       "Simpan Pengaturan\nKesalahan saat membuat konfigurasi"
+    IDS_ERR_INIWRITE        "Simpan Pengaturan\nPengaturan tidak tersimpan!\nTidak ada akses menulis konfigurasi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHEXE           "Cari Program Eksekusi"
+    IDS_GETQUICKVIEWER      "Cari Quickview"
+    IDS_GETTARGET           "Cari Editor"
+    IDS_NEWFILE             "Berkas Baru"
+    IDS_FILTER_ALL          "Semua berkas (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Berkas eksekusi (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\nSemua berkas (*.*)\n*.*\n"
+    IDS_GETDIRECTORY        "Buka direktori"
+    IDS_FAVORITES           "Tentukan direktori ""Favorit"""
+END
+
+STRINGTABLE
+BEGIN
+    SC_ALWAYSONTOP          "Tetap di &Atas"
+    SC_ABOUT                "&Info..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPENWITH            "Buka direktori aplikasi favorit Anda"
+    IDS_COPYMOVE            "Pilih direktori tujuan"
+    IDS_CREATELINK          "Pilih direktori tujuan untuk pintasan baru"
+    IDS_SAVESETTINGS        "Simpan Pengaturan\nPengaturan program tersimpan"
+    IDS_MUI_TRANSL_AUTHOR   "(id-ID) Terjemahan bahasa Indonesia oleh quadratz"
+END
+
+
+#endif    // Indonesian (Indonesia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

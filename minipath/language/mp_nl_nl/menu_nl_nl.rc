@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Openen",                     IDM_FILE_OPEN
+        MENUITEM "Openen &met...",              IDM_FILE_OPENWITH
+        MENUITEM "&Voorbeeld",                  IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Naam kopiëren",              IDM_POP_COPYNAME
+        MENUITEM "Snel&koppeling aanmaken...",  IDM_FILE_CREATELINK
+        MENUITEM "Opslaan &als...",             IDM_FILE_SAVEAS
+        MENUITEM "Kopiëren/ver&plaatsen...",    IDM_FILE_COPYMOVE
+        MENUITEM "Verwij&deren...",             IDM_FILE_DELETE
+        MENUITEM "He&rnoemen...",               IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Starten",                    IDM_FILE_LAUNCH
+        MENUITEM "&Uitvoeren...",               IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Eigenschappen",              IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Nieuw bestand...",           IDM_FILE_NEW
+        MENUITEM "Nieuwe &map...",              IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "&Filteren...",                IDM_VIEW_FILTER
+        MENUITEM "Filter &wissen",              IDM_VIEW_FILTERALL
+        POPUP "&Weergeven/verbergen"
+        BEGIN
+            MENUITEM "&Mappen",                 IDM_VIEW_FOLDERS
+            MENUITEM "&Bestanden",              IDM_VIEW_FILES
+            MENUITEM "&Systeemobjecten",        IDM_VIEW_HIDDEN
+        END
+        POPUP "S&orteren"
+        BEGIN
+            MENUITEM "op &Naam",                IDM_SORT_NAME
+            MENUITEM "op &Grootte",             IDM_SORT_SIZE
+            MENUITEM "op &Type",                IDM_SORT_TYPE
+            MENUITEM "op &Datum",               IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "Omgekee&rd",              IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Ga &naar...",                 IDM_FILE_GOTO
+        MENUITEM "&Favorieten",                 IDM_VIEW_FAVORITES
+        MENUITEM "Favorieten b&ewerken",        IDM_VIEW_EDITFAVORITES
+        MENUITEM "&Mappen...",                  IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Schij&ven",                   IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "Instellingen opsl&aan",       IDM_VIEW_SAVESETTINGS
+        MENUITEM "Doel ins&tellen...",          IDM_VIEW_FINDTARGET
+        MENUITEM "O&pties...",                  IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Mappen...",                  IDM_FILE_CHANGEDIR
+        MENUITEM "Schijfeigenscha&ppen",        IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "Schij&ven",                   IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Werkbalk tonen",              IDM_VIEW_TOOLBAR
+        MENUITEM "Werkbalk b&ewerken...",        IDM_VIEW_CUSTOMIZETB
+        MENUITEM "&Statusbalk tonen",            IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "MiniPath openen",              IDM_TRAY_RESTORE
+        MENUITEM "MiniPath afsluiten",           IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

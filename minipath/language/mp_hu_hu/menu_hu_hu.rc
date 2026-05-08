@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_HUNGARIAN_HUNGARY
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Megnyitás",                        IDM_FILE_OPEN
+        MENUITEM "Megnyitás m&ásik alkalmazással...", IDM_FILE_OPENWITH
+        MENUITEM "&Gyorsnézet",                       IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Név másolása",                     IDM_POP_COPYNAME
+        MENUITEM "&Hivatkozás készítése...",          IDM_FILE_CREATELINK
+        MENUITEM "Ment&és másként...",                IDM_FILE_SAVEAS
+        MENUITEM "Más&olás/Mozgatás...",              IDM_FILE_COPYMOVE
+        MENUITEM "&Törlés...",                        IDM_FILE_DELETE
+        MENUITEM "Átn&evezés...",                     IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Indítás",                          IDM_FILE_LAUNCH
+        MENUITEM "&Futtatás argumentumokkal...",      IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "T&ulajdonságok",                    IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Új fájl...",              IDM_FILE_NEW
+        MENUITEM "Új &mappa...",             IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Fájl s&zűrő...",           IDM_VIEW_FILTER
+        MENUITEM "Szűrő &visszaállítása",    IDM_VIEW_FILTERALL
+        POPUP "Me&gjelenítés"
+        BEGIN
+            MENUITEM "Ma&ppák",              IDM_VIEW_FOLDERS
+            MENUITEM "Fájlo&k",              IDM_VIEW_FILES
+            MENUITEM "&Rendszer objektumok", IDM_VIEW_HIDDEN
+        END
+        POPUP "Ren&dezés"
+        BEGIN
+            MENUITEM "&Név alapján",          IDM_SORT_NAME
+            MENUITEM "&Méret alapján",        IDM_SORT_SIZE
+            MENUITEM "&Típus alapján",        IDM_SORT_TYPE
+            MENUITEM "&Dátum alapján",        IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "&Fordítva",             IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Ugrás...",                 IDM_FILE_GOTO
+        MENUITEM "&Ugrás a Kedvencekhez",     IDM_VIEW_FAVORITES
+        MENUITEM "Kedvencek s&zerkesztése",   IDM_VIEW_EDITFAVORITES
+        MENUITEM "&Mappa...",                 IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Meghajtók m&egjelenítése",  IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "Beállít&ások mentése",      IDM_VIEW_SAVESETTINGS
+        MENUITEM "&Cél beállítása...",        IDM_VIEW_FINDTARGET
+        MENUITEM "Beállítás&ok...",           IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Mappa...",                 IDM_FILE_CHANGEDIR
+        MENUITEM "Meg&hajtó tulajdonságok",   IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "Meghajtók me&gjelenítése",  IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Esz&köztár megjelenítése",   IDM_VIEW_TOOLBAR
+        MENUITEM "Eszk&öztár szerkesztése...", IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Állapotso&r megjelenítése",  IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "MiniPath megnyitása",        IDM_TRAY_RESTORE
+        MENUITEM "Kilépés MiniPath-ból",       IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

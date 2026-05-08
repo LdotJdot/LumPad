@@ -1,0 +1,806 @@
+// Microsoft Visual C++ generated resource script.
+
+// encoding: UTF-8
+
+#pragma code_page(65001)  // UTF-8
+
+#include "resource.h"
+
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 2 resource.
+
+//
+
+#include "winresrc.h"
+
+#include "../common_res.h"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+// Korean (Korea) resources
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+
+LANGUAGE LANG_KOREAN, SUBLANG_KOREAN
+
+#pragma code_page(65001)  // UTF-8
+
+
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// TEXTINCLUDE
+
+//
+
+
+
+1 TEXTINCLUDE
+
+BEGIN
+
+    "resource.h\0"
+
+END
+
+
+
+2 TEXTINCLUDE
+
+BEGIN
+
+    "#include ""winresrc.h""\r\n"
+
+    "#include ""../common_res.h""\r\n"
+
+    "\0"
+
+END
+
+
+
+3 TEXTINCLUDE
+
+BEGIN
+
+    "\r\n"
+
+    "\0"
+
+END
+
+
+
+#endif    // APSTUDIO_INVOKED
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// String Table
+
+//
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_NEW            "새로 만들기"
+
+    IDT_FILE_OPEN           "열기"
+
+    IDT_FILE_SAVE           "저장"
+
+    IDT_FILE_RECENT         "사용 내역"
+
+    IDT_EDIT_UNDO           "실행 취소"
+
+    IDT_EDIT_REDO           "다시 실행"
+
+    IDT_EDIT_CUT            "잘라내기"
+
+    IDT_EDIT_COPY           "복사"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_EDIT_PASTE          "붙여넣기"
+
+    IDT_EDIT_FIND           "찾기"
+
+    IDT_EDIT_REPLACE        "바꾸기"
+
+    IDT_VIEW_WORDWRAP       "줄 바꿈"
+
+    IDT_VIEW_ZOOMIN         "확대"
+
+    IDT_VIEW_RESETZOOM      "확대/축소 재설정"
+
+    IDT_VIEW_ZOOMOUT        "축소"
+
+    IDT_VIEW_SCHEME         "구성표 선택"
+
+    IDT_VIEW_SCHEMECONFIG   "사용자 지정 구성표"
+
+    IDT_FILE_EXIT           "종료"
+
+    IDT_FILE_SAVEAS         "다른 이름으로 저장"
+
+    IDT_FILE_SAVECOPY       "복사본 저장"
+
+    IDT_EDIT_CLEAR          "삭제"
+
+    IDT_FILE_PRINT          "인쇄"
+
+    IDT_FILE_OPENFAV        "즐겨찾기"
+
+    IDT_FILE_ADDTOFAV       "즐겨찾기에 추가"
+
+    IDT_VIEW_TOGGLEFOLDS    "접기 전환"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_LAUNCH          "문서 실행"
+
+    IDT_VIEW_NEW_WINDOW      "새 빈 창"
+
+    IDT_VIEW_TOGGLE_VIEW     "집중 보기"
+
+    IDT_VIEW_CHASING_DOCTAIL "모니터링 로그(&M)"
+
+    IDT_VIEW_PIN_ON_TOP      "항상 맨 위에"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_APPTITLE_ELEVATED "%s : 상승된 권한"
+
+    IDS_MUI_APPTITLE_PASTEBOARD "%s : PASTEBOARD"
+
+    IDS_MUI_UNTITLED        "제목 없음"
+
+    IDS_MUI_TITLEEXCERPT    """%s"""
+
+    IDS_MUI_READONLY        "(읽기 전용)"
+
+    IDS_MUI_FILELOCKED      "<배타적>"
+
+    IDS_MUI_LOADFILE        "불러오는 중 ""%s""..."
+
+    IDS_MUI_SAVEFILE        "저장 중""%s""..."
+
+    IDS_MUI_PRINTFILE       "페이지 인쇄 중%i..."
+
+    IDS_MUI_SAVINGSETTINGS  "설정 저장 중..."
+
+    IDS_MUI_LINKDESCRIPTION "LumPad로 편집"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_FILTER_ALL      "모든 파일 (*.*)|*.*|"
+
+    IDS_MUI_FILTER_EXE      "실행 파일 (*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif)|*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif|모든 파일 (*.*)|*.*|"
+
+    IDS_MUI_FILTER_INI      "구성 파일 (*.ini)|*.ini|모든 파일 (*.*)|*.*|"
+
+    IDS_MUI_FILTER_BITMAP   "비트맵 파일 (*.bmp)|*.bmp|모든 파일 (*.*)|*.*|"
+
+    IDS_MUI_OPENWITH        "즐겨찾는 응용프로그램에 대한 링크가 있는 디렉터리를 선택하세요"
+
+    IDS_MUI_FAVORITES       "즐겨찾는 파일에 대한 링크가 있는 디렉터리를 선택하세요"
+
+    IDS_MUI_BACKSLASHHELP   "백슬래시 변환\n\n\\a\t경보 (BEL, Ascii 7)\n\\b\t백스페이스 (BS, Ascii 8)\n\\f\t폼 피드 (FF, Ascii 12)\n\\n\t새 줄 (LF, Ascii 10)\n\\r\t캐리지 리턴 (CR, Ascii 13)\n\\t\t가로 탭 (HT, Ascii 9)\n\\v\t세로 탭 (VT, Ascii 11)\n\\0oo\t8진수 값\n\\u####\t16진수 값\n\\xhh\t16진수 값\n\\\\\t백슬래시"
+
+    IDS_MUI_REGEXPHELP      "정규식 구문 (여러 줄)\n\n.\t모든 문자와 일치\n^\t새 줄 바로 뒤에 빈 문자열\n$\t줄 끝 바로 앞의 빈 문자열\n\\<\t단어의 시작\n\\>\t단어의 끝\n\\b\t단어 경계\n[...]\t문자 집합([abc]) 또는 범위 ([a-z])\n[^...]\t설정 또는 범위에 포함되지 않는 문자\n\\d\t모든 10진수\n\\D\t숫자가 아닌 문자\n\\s\t모든 공백 문자\n\\S\t공백이 아닌 문자\n\\w\t모든 ""단어"" 문자\n\\W\t모든 ""비-단어"" 문자\n\\x\t특별한 의미를 가진 Escape 문자\n\\xHH\tHex 값이 HH인 문자\n?\t0회 또는 1회 선행 일치\n*\t0회 이상 선행 일치\n+\t1회 이상 선행 일치\n*? or +?\t정량자 ""?"" 및 ""+""의 욕심 없는 일치\n(\t영역의 시작\n)\t영역의 끝\n\\n\t교체할 때 영역 참조 (n은 1-9)\n"
+
+    IDS_MUI_WILDCARDHELP    "와일드카드 검색\n\n*\t0개 이상의 문자와 일치합니다\n?\t정확하게 하나의 문자와 일치합니다"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_LOADFILE    """%s"" 파일을 불러오는 동안 오류가 발생하였습니다"
+
+    IDS_MUI_ERR_SAVEFILE    """%s"" 파일을 저장하는 동안 오류가 발생하였습니다"
+
+    IDS_MUI_ERR_PATHNOTFOUND """%s""의 경로는 더 이상 존재하지 않습니다.\n경로를 다시 생성하고 파일을 저장하시겠습니까?"
+
+    IDS_MUI_ERR_DLG_FORMAT  "오류 '%s', 원인:\n%s(ID:%d)\n"
+
+    IDS_MUI_ERR_BROWSE      "파일 탐색 플러그인을 찾을 수 없습니다\nMiniPath 파일 탐색 플러그인은 https://rizonesoft.com에서 다운로드할 수 있습니다"
+
+    IDS_MUI_ERR_GREPWIN     "파일 검색 플러그인을 찾을 수 없습니다\ngrepWin Portable 파일 검색 플러그인은 https://github.com/stefankueng/grepWin/releases 다운로드할 수 있습니다"
+
+    IDS_MUI_ERR_GREPWIN_PORTAPPS
+
+                            "파일 검색 플러그인을 찾을 수 없습니다\n최신 버전의 grepWinPortable을 PortableApps 플랫폼에 설치해 주세요."
+
+    IDS_MUI_ERR_MRUDLG      "선택한 파일에 접근할 수 없습니다!\n목록에서 제거하시겠습니까?"
+
+    IDS_MUI_ERR_CREATELINK  "바탕 화면 링크를 만드는 중에 오류가 발생하였습니다"
+
+    IDS_MUI_ERR_PREVWINDISABLED
+
+                            "기존 LumPad 창이 사용 중이거나 대화상자가 열려 있습니다\n다른 LumPad 창을 여시겠습니까?"
+
+    IDS_MUI_ERR_ENCODINGNA  "선택한 인코딩에 대한 코드 페이지 변환 테이블을 시스템에서 사용할 수 없습니다"
+
+    IDS_MUI_ERR_UNICODE     "이 유니코드 파일을 변환하는 동안 오류가 발생했습니다\n파일을 저장하면 데이터가 손실됩니다!"
+
+    IDS_MUI_ERR_BITMAP      "비트맵 ""%s""의 치수가 적합하지 않습니다\n적합한 치수: %i x %i (너비 >= %i x 높이)"
+
+    IDS_MUI_ERR_ELEVATED_RIGHTS
+
+                            "사용자 권한 상승 중 오류가 발생하였습니다!"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_UNICODE2    "현재 텍스트의 특정 문자는 선택한 인코딩에서 지원되지 않으며 저장할 때 기본 자리 표시자로 대체될 수 있습니다. 다른 파일 인코딩을 선택하는 것이 좋습니다. 계속하시겠습니까"
+
+    IDS_MUI_ERR_DROP        "한 번에 하나의 파일만 끌어서 놓을 수 있습니다!"
+
+    IDS_MUI_ERR_ACCESSDENIED
+
+                            """%s"" 파일을 저장할 수 없으며 보호할 수 있습니다\n\n%s을 '상승된 권한' 응용 프로그램으로 시작하시겠습니까?"
+
+    IDS_MUI_ERR_ADMINEXE    "관리 실행 파일이 없습니다\nhttps://rizonesoft.com에서 확인하시겠습니까?"
+
+    IDS_MUI_ABOUT_LDOTJDOT    "LdotJdot  https://github.com/LdotJdot\r\n2026 build (LumPad fork)\r\n\r\nThis build adds:\r\n- Multi-tab editing with file name tab titles and full path tooltips\r\n- Session restore (startup and File menu)\r\n- External file-change notice when switching back to a background tab\r\n- Layout polish between tab strip and editor"
+
+    IDS_MUI_WARN_LOAD_BIG_FILE
+
+                            "이 큰 파일을 여시겠습니까?\n\t(크기: %s >= %s)!\n(스타일링 및 구문 강조가 적용되지 않습니다!)"
+
+    IDS_MUI_ERR_FILE_TOO_LARGE
+
+                            "대용량 파일을 처리할 수 없습니다 (크기: %s)!"
+
+    IDS_MUI_WARN_UNKNOWN_EXT
+
+                            "알 수 없는 확장자 (%s)입니다!\n그래도 데이터를 불러오시겠습니까?"
+
+    IDS_MUI_INDENT_CONSISTENT   "파일에 일관된 들여쓰기가 있습니다!"
+
+    IDS_MUI_EOLMODENAME_CRLF   "Windows (CR+LF)"
+
+    IDS_MUI_EOLMODENAME_LF     "Unix/Mac (LF)"
+
+    IDS_MUI_EOLMODENAME_CR      "구식 Mac (CR)"
+
+    IDS_MUI_WARN_NORMALIZE_EOLS
+
+                            "모든 줄 끝을 '%s'로 정규화하시겠습니까?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SELRECT         "이 작업은 직사각형 선택 내에서 수행할 수 없습니다"
+
+    IDS_MUI_SELMULTI        "이 작업은 다중 선택 내에서 수행할 수 없습니다"
+
+    IDS_MUI_SELRECTORMULTI  "이 작업은 직사각형 또는 다중 선택 내에서 수행할 수 없습니다"
+
+    IDS_MUI_BUFFERTOOSMALL  "이 작업을 수행할 수 없습니다 (줄이 너무 깁니다)"
+
+    IDS_MUI_FIND_WRAPFW     "문서의 끝에 도달하여 검색을 처음부터 다시 시작합니다"
+
+    IDS_MUI_FIND_WRAPRE     "문서의 시작 부분에 도달하여 끝에서 검색을 다시 시작합니다"
+
+    IDS_MUI_NOTFOUND        "지정한 검색 패턴에 일치하는 항목을 찾을 수 없습니다"
+
+    IDS_MUI_REPLCOUNT       "지정한 검색 패턴이 %s개가 대체되었습니다"
+
+    IDS_MUI_ASK_ENCODING    "파일 인코딩을 한 인코딩에서 다른 인코딩으로 전환하면 지원되지 않는 텍스트가 기본 문자로 대체될 수 있으며 실행 취소 기록이 지워집니다. 계속하시겠습니까?"
+
+    IDS_MUI_ASK_ENCODING2   "빈 파일의 인코딩을 변경하려고 합니다. 새 인코딩과 동기화할 수 없기 때문에 실행 취소 기록이 지워집니다. 계속하시겠습니까?"
+
+    IDS_MUI_ASK_CLEAR_UNDO  "이 작업을 수행하면 실행 취소 기록이 지워집니다. 계속하시겠습니까?"
+
+    IDS_MUI_INF_SESSION_RESTORE_FAIL  "Unable to restore the last saved session. Files may be missing, or session data is empty."
+
+    IDS_MUI_READONLY_SAVE   """%s""은 읽기 전용입니다. 다른 파일로 저장하시겠습니까?"
+
+    IDS_MUI_FILECHANGENOTIFY
+
+                            "현재 파일이 외부 프로그램에 의해 수정되었습니다\n선택하세요:\n\n무시 -\t\t추가 변경사항 무시\n다시 불러오기 -\t\t파일 다시 불러오기\n모니터 -\t\t파일 모니터링으로 전환"
+
+    IDS_MUI_FILECHANGENOTIFY2 "현재 파일이 삭제되었습니다. 지금 저장하시겠습니까?"
+
+    IDS_MUI_FILELOCK_ERROR  """%s""에 대한 독점적인 파일 잠금을 얻을 수 없습니다"
+
+    IDS_MUI_STICKYWINPOS    "고정 창 위치가 활성화되었습니다. 새 LumPad 창은 현재 창 배치 설정을 사용합니다"
+
+    IDS_MUI_SAVEDSETTINGS   "현재 프로그램 설정이 저장되었습니다"
+
+    IDS_MUI_CREATEINI_FAIL  "구성 파일을 만드는 동안 오류가 발생했습니다"
+
+    IDS_MUI_WRITEINI_FAIL   "구성 파일에 설정을 쓰는 동안 오류가 발생했습니다"
+
+    IDS_MUI_INIFILE_READONLY
+
+                            "구성 파일이 읽기 전용입니다. 설정을 무시하고 재정의하시겠습니까?"
+
+    IDS_MUI_SETTINGSNOTSAVED
+
+                            "기존 구성 파일을 찾을 수 없습니다\n스타일 수정 사항을 유지하려면 지금 설정을 저장 (F7)하거나 구성표 구성 (Ctrl+F12)으로 돌아가 스타일을 내보내세요"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_RELOADSETTINGS   "프로그램을 다시 실행해서 저장된 설정을 활성화하시겠습니까?\n\n%s"
+
+    IDS_MUI_RELOADCFGSEX     "다시 시작하지 않고 계속하면 저장된 설정이 적용되지 않으며 프로그램 종료시 내부 설정이 무시됩니다!"
+
+    IDS_MUI_EXPORT_FAIL      "스타일 설정을 ""%s""으로 내보내는 중 오류가 발생하였습니다"
+
+    IDS_MUI_REGEX_INVALID    "정규 표현식을 평가하는 동안 오류가 발생했습니다. 표현식이 잘못되었습니다!"
+
+    IDS_MUI_DROP_NO_FILE     "검색된 유효한 파일 이름이 없습니다\n32비트 응용 프로그램에서 드롭하는 경우\nLumPad의 도구 모음으로 끌어서 놓으세요"
+
+    IDS_MUI_URL_DIR_EXISTS   "URL 지정 디렉터리가 있습니다!"
+
+    IDS_MUI_URL_FILE_EXISTS  "URL 지정 파일이 있습니다!"
+
+    IDS_MUI_URL_PATH_NOT_FOUND
+
+                             "URL 지정 경로를 찾을 수 없습니다!"
+
+    IDS_MUI_URL_OPEN_FILE    "\nAlt+클릭하여 파일을 엽니다"
+
+    IDS_MUI_URL_OPEN_BROWSER "\nCtrl+클릭하여 탐색기에서 링크를 엽니다"
+
+    IDS_MUI_UNMATCHED_BRACE  "Unmatched Brace"
+
+    IDS_MUI_NO_ENCLOSING_BRACE "No Enclosing Brace"
+
+    IDS_MUI_TAB_CTX_CLOSE_OTHERS "Close Other Tabs"
+
+    IDS_MUI_TAB_CTX_CLOSE_ALL "Close All Tabs"
+
+    IDS_MUI_TAB_CTX_SPLIT "Move to New Window"
+
+    IDS_MUI_INF_PRSVFILEMODTM
+
+                             "원래 파일 수정 타임스탬프를 보존할 수 있습니다\n이 옵션은 이 세션에 유지됩니다!"
+
+    IDS_MUI_OUT_OFF_OCCMRK   "발생 마커 (북마크/강조)가 부족합니다!"
+
+    IDS_MUI_DOCUMENT_READONLY
+
+                             "문서는 보기 전용으로 잠겨 있습니다. 편집을 방지하기 위해 잠금을 유지하시겠습니까?"""
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ASK_SAVE        "변경 사항을 저장하시겠습니까:\n%s?"
+
+    IDS_MUI_ASK_REVERT      "파일을 마지막으로 저장된 상태로 되돌리시겠습니까?"
+
+    IDS_MUI_ASK_RECODE      "기록하려면 디스크에서 파일을 다시 불러와야 합니다. 저장하지 않은 변경 사항은 손실됩니다!"
+
+    IDS_MUI_ASK_CREATE      """%s"" 파일을 찾을 수 없습니다\n이 파일을 만드시겠습니까?"
+
+    IDS_MUI_PRINT_HEADER    "파일 이름, 현재 날짜 및 시간|파일 이름, 현재 날짜|파일 이름|비워 두기"
+
+    IDS_MUI_PRINT_FOOTER    "페이지 번호|비워 두기"
+
+    IDS_MUI_PRINT_COLOR     "일반|색상 반전 (어두운 배경)|하얀색에 검은색|하얀색|하얀색(줄 번호 제외)|화면 색상"
+
+    IDS_MUI_PRINT_PAGENUM   "페이지 %i"
+
+    IDS_MUI_WARN_STYLE_RESET
+
+                            "이 작업은 스타일을 원하는 색상 모드의 출고시 기본값으로 재설정하고 활성 테마 파일을 표준 config .ini로 전환합니다!"
+
+    IDS_MUI_ASK_INSTANCE_EXISTS
+
+                            "단일 파일 인스턴스 모드:\n\n이미 불러온 파일 인스턴스에 초점을 설정하시겠습니까?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_PRINT_EMPTY     "이 문서에는 인쇄할 텍스트가 없습니다"
+
+    IDS_MUI_PRINT_ERROR     """%s"" 인쇄 오류!"
+
+    IDS_MUI_FAV_SUCCESS     "현재 파일에 대한 바로가기가 즐겨찾기 디렉터리에 만들어졌습니다"
+
+    IDS_MUI_FAV_FAILURE     "현재 파일에 대한 바로가기를 만들 수 없습니다\n같은 이름의 다른 파일이 없는지 확인하세요"
+
+    IDS_MUI_READONLY_MODIFY """%s""의 속성을 수정할 수 없습니다"
+
+    IDS_MUI_SAVEPOS         "위치 저장(&S)\tCtrl+S"
+
+    IDS_MUI_RESETPOS        "위치 재설정(&R)\tCtrl+R"
+
+    IDS_MUI_PREVIEW         "미리 보기 설정(&P)\tCtrl+P"
+
+    IDS_MUI_PASS_FAILURE    "암호가 잘못되었습니다\n다른 암호로 다시 시도하시겠습니까?"
+
+    IDS_MUI_NOPASS          "암호 해독이 취소되었습니다\n암호화된 원시 데이터를 읽으시겠습니까?"
+
+    IDS_MUI_STY_BASESTD     "BASE (기본 스타일):"
+
+    IDS_MUI_STY_BASE2ND     "BASE (두 번째 기본 스타일):"
+
+    IDS_MUI_STY_LEXDEF      "%s - 기본 스타일:"
+
+    IDS_MUI_STY_LEXSTYLE    "%s's  스타일:"
+
+    IDS_MUI_TITLE_RELBASE   "+++ BASE (%s) +++"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_TRANSL_AUTHOR   "(ko-KR) 한국어 번역: 비너스걸"
+
+    IDS_MUI_TITLE_FIXBASE   "BASE (%s)"
+
+    IDS_MUI_TITLE_RELCUR    "+++ %s: %s 스타일 +++"
+
+    IDS_MUI_TITLE_FIXCUR    "%s: %s 스타일"
+
+    IDS_MUI_TITLE_RELARB    "+++ 스타일 '%s' (%s) +++"
+
+    IDS_MUI_TITLE_FIXARB    "스타일 '%s' (%s)"
+
+    IDS_MUI_ASSOCIATED_EXT  "연결된 파일 이름 확장자:"
+
+    IDS_MUI_ZERO_LEN_MATCH  "^ 길이 0 일치"
+
+    IDS_MUI_GOTO_LINE       "줄 (1 - %s):"
+
+    IDS_MUI_GOTO_COLUMN     "열 (1 - %s):"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_MENU_LANGUAGE   "언어(&L)"
+
+    IDS_USE_LOCALE_DATEFMT  "언어가 날짜 형식 정의(&D)"
+
+    IDS_MUI_MENU_THEMES     "구성표 모음(&S)"
+
+    IDM_THEMES_FACTORY_RESET "초기로 재설정(&F)"
+
+    IDM_THEMES_STD_CFG       "표준 구성 (&S)"
+
+    IDS_MUI_STATUSBAR_PREFIXES "줄  ,열  ,선택  ,블럭 선택  ,줄 선택  ,일치  ,,,,,,,글자  ,교체  ,평가  ,U+,"
+
+    IDS_MUI_STATUSBAR_POSTFIXES ",,,,,,,,,,,,,,,,"
+
+    IDS_CLEAR_ALL           "모두 지우기"
+
+    IDS_MUI_CLEAR_FIND_HISTORY
+
+                            "찾기 내역 지우기"
+
+    IDS_MUI_CLEAR_REPL_HISTORY
+
+                            "바꾸기 내역 지우기"
+
+    IDS_MUI_SEARCHCLIPIFEMPTY
+
+                            "선택 항목이 비어 있는 경우 클립보드로 검색"
+
+    IDS_MUI_REPLCLIPTAG     "바로가기 [^c]의 클립보드로 바꾸기"
+
+    IDS_MUI_WRAPSEARCH_FWD  "위부터 반올림"
+
+    IDS_MUI_WRAPSEARCH_BCK  "아래부터 반올림"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SB_MARK_ALL_OCC   "모든 발생 표시..."
+
+    IDS_MUI_SB_TOGGLE_VIEW    "보기 전환..."
+
+    IDS_MUI_SB_REPLACE_ALL    "모두 바꾸기..."
+
+    IDS_MUI_SB_WRAP_LINES     "줄바꿈..."
+
+    IDS_MUI_SB_SORTING_LINES  "줄 정렬..."
+
+    IDS_MUI_SB_CONV_LNBRK     "줄 바꿈 변환 ..."
+
+    IDS_MUI_SB_RECODING_DOC   "문서 기록..."
+
+    IDS_MUI_SB_LEXER_STYLING  "렉서 스타일링 적용..."
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+IDS_MUI_CMDLINEHELP "\
+
+사용법:\r\n\
+
+LumPad [/?] [...[인코딩]] [...[줄 끝 모드]] [/e] [/g] [/m] [/l]\r\n\
+
+ \t[/q] [/s] [/d] [/h] [/x] [/c] [/b] [/n] [/r| [/p] [/t] [/i] [/o]\r\n\
+
+ \t[/f] [/u] [/v] [/vd] [/y] [/z] [[drive:][path]파일 이름[...]]\r\n\r\n\
+
+파일\t마지막 인수여야 하며, 기본적으로 따옴표로 묶인 공백을 허용하지 않음\r\n\
+
++\t여러 파일 인수를 수락함 (따옴표로 묶인 공백 포함)\r\n\
+
+-\t단일 파일 인수를 수락함 (따옴표로 묶인 공백 없음)\r\n\r\n\
+
+옵션:\r\n\
+
+/?\t이 도움말 메시지 표시\r\n\
+
+...\t인코딩 (/ansi, /unicode, /unicodebe, /utf8, /utf8sig)\r\n\
+
+...\t줄 끝 모드 (/crlf, /cr, /lf)\r\n\
+
+/e\t파일 소스 인코딩\r\n\
+
+/g\t지정된 위치로 이동 (/g -1 파일 끝)\r\n\
+
+/m\t지정된 텍스트 일치 (/m- 마지막, /mr 정규식, /mb 백슬래시)\r\n\
+
+/l\t수정된 파일 자동 다시 불러오기\r\n\
+
+/q\t확인 메시지 없이 새 파일 강제 생성\r\n\
+
+/s\t지정된 구문 구성표 선택\r\n\
+
+/d\t기본 텍스트 구성표 선택\r\n\
+
+/h\t웹 소스 코드 구성표선택\r\n\
+
+/x\tXML 문서 구성표 선택\r\n\
+
+/c\t새 창을 열고 클립보드 내용 붙여넣기\r\n\
+
+/b\t클립보드 항목을 수집할 새 붙여넣기 창 열기\r\n\
+
+/n\t항상 새 창 열기 (/ns 단일 파일 인스턴스)\r\n\
+
+/r\t창 재사용 (/rs 단일 파일 인스턴스)\r\n\
+
+/p\t창 위치 및 크기 지정 (/p0,/ps,/pd,f,l,t,r,b,m)\r\n\
+
+\t또는 /p <왼쪽>,<상단>,<너비>,<높이>[,<dpi>[,<최대>]]  (모두 정수)\r\n\
+
+/t\t창 제목 설정\r\n\
+
+/i\t트레이 아이콘으로 시작\r\n\
+
+/o\t창을 맨 위에 유지\r\n\
+
+/f\tini-파일 (/f0 ini 파일 없음)을 지정합니다\r\n\
+
+/u\t관리자 권한으로 시작\r\n\
+
+/v\t파일 즉시 인쇄하고 종료\r\n\
+
+/vd\t파일 인쇄 (프린터 대화 상자 열기)\r\n\
+
+/y\t상대 파일 이름인 경우 환경 PATH 검\r\n\
+
+/z\t다음 건너뛰기 (레지스트리 기반 메모장 대체용으로 사용 가능)\r\n\r\n\
+
+예시:\r\n\
+
+LumPad /utf8sig /crlf d:\\temp\\Test.txt\r\n\
+
+ \t... 새 파일 열기: ""Test.txt"" Encoding=UTF-8-BOM, EoL=CRLF\r\n\
+
+LumPad /v d:\\temp\\Test.txt\r\n\
+
+ \t... 파일 즉시 인쇄: ""Test.txt""\
+
+"
+
+
+
+IDS_MUI_STYLEEDIT_HELP "\
+
+파일 이름 확장자는 ';'로 구분해야 합니다\r\n\
+
+'*', '?' 또는 '.'가 포함된 항목은 전체 파일 이름 (와일드카드)과 일치합니다:\\r\n\
+
+   Makefile*;CMakeLists.txt;test_*.py\r\n\r\n\
+
+스타일 형식:\r\n\
+
+글꼴:이름; 크기:[+/-]nn.mm; 굵게; 기울임; 밑줄;\r\n\
+
+전경색:#ffffff; 배경색:#bbbbbb; 줄 끝 채우기; indic_gradient\r\n\r\n\
+
+스타일 속성은 복사 및 붙여넣기 또는 끌어서 놓기를 사용해 복사할 수 있습니다\
+
+"
+
+
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+
+
+IDS_MUI_ABOUT_RTF_0  "{\
+
+\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fswiss\\fcharset0 Segoe UI;}{\\f1\\fswiss\\fcharset129 Segoe UI;}}\
+
+{\\colortbl ;\\red80\\green160\\blue80;}\
+
+\\tx3500\\tx7000\\fs18\
+
+\\cf0 \\fs20\\b1\\ul1 \\f1\\'b0\\'b3\\'b9\\'df\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_1  "\
+
+\\cf0 \\fs20\\b1\\ul1 \\f1\\'b0\\'f8\\'c7\\'e5\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_2  "\
+
+\\cf0 \\fs20\\b1\\ul1 Open Source / \\f1\\'c1\\'a4\\'ba\\'b8\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_3  "\
+
+\\cf0 \\fs20\\b1\\ul1 \\f1\\'bc\\'f6\\'b0\\'ed\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_4  "\
+
+\\cf0 \\fs20\\b1\\ul1 \\f1\\'c0\\'da\\'b7\\'e1\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_5  "\
+
+\\cf0 \\fs20\\b1\\ul1 \\f1\\'b6\\'f3\\'c0\\'cc\\'bc\\'be\\'bd\\'ba\\f0 :\\ul0\\b0\\fs18\\par\
+
+"
+
+
+
+END
+
+
+
+#endif    // Korean (Korea) resources
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+#ifndef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 3 resource.
+
+//
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#endif    // not APSTUDIO_INVOKED
+
+
+

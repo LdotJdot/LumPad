@@ -1,0 +1,806 @@
+// Microsoft Visual C++ generated resource script.
+
+// encoding: UTF-8
+
+#pragma code_page(65001)  // UTF-8
+
+#include "resource.h"
+
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 2 resource.
+
+//
+
+#include "winresrc.h"
+
+#include "../common_res.h"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+// Italian (Italy) resources
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+
+#pragma code_page(65001)  // UTF-8
+
+
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// TEXTINCLUDE
+
+//
+
+
+
+1 TEXTINCLUDE
+
+BEGIN
+
+    "resource.h\0"
+
+END
+
+
+
+2 TEXTINCLUDE
+
+BEGIN
+
+    "#include ""winresrc.h""\r\n"
+
+    "#include ""../common_res.h""\r\n"
+
+    "\0"
+
+END
+
+
+
+3 TEXTINCLUDE
+
+BEGIN
+
+    "\r\n"
+
+    "\0"
+
+END
+
+
+
+#endif    // APSTUDIO_INVOKED
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// String Table
+
+//
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_NEW            "Nuovo"
+
+    IDT_FILE_OPEN           "Apri"
+
+    IDT_FILE_SAVE           "Salva"
+
+    IDT_FILE_RECENT         "Recenti"
+
+    IDT_EDIT_UNDO           "Annulla"
+
+    IDT_EDIT_REDO           "Ripristina"
+
+    IDT_EDIT_CUT            "Taglia"
+
+    IDT_EDIT_COPY           "Copia"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_EDIT_PASTE          "Incolla"
+
+    IDT_EDIT_FIND           "Trova"
+
+    IDT_EDIT_REPLACE        "Sostituisci"
+
+    IDT_VIEW_WORDWRAP       "A capo automatico"
+
+    IDT_VIEW_ZOOMIN         "Zoom+"
+
+    IDT_VIEW_RESETZOOM      "Ripristina Zoom"
+
+    IDT_VIEW_ZOOMOUT        "Zoom-"
+
+    IDT_VIEW_SCHEME         "Seleziona schema"
+
+    IDT_VIEW_SCHEMECONFIG   "Personalizza schemi"
+
+    IDT_FILE_EXIT           "Esci"
+
+    IDT_FILE_SAVEAS         "Salva con nome"
+
+    IDT_FILE_SAVECOPY       "Salva copia"
+
+    IDT_EDIT_CLEAR          "Elimina"
+
+    IDT_FILE_PRINT          "Stampa"
+
+    IDT_FILE_OPENFAV        "Preferiti"
+
+    IDT_FILE_ADDTOFAV       "Aggiungi ai preferiti"
+
+    IDT_VIEW_TOGGLEFOLDS    "Espandi/riduci tutti i raggruppamenti"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDT_FILE_LAUNCH          "Esegui documento"
+
+    IDT_VIEW_NEW_WINDOW      "Nuova finestra vuota"
+
+    IDT_VIEW_TOGGLE_VIEW     "Vista focalizzata"
+
+    IDT_VIEW_CHASING_DOCTAIL "Monitoraggio registro"
+
+    IDT_VIEW_PIN_ON_TOP      "Sempre in primo piano"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_APPTITLE_ELEVATED "%s : amministratore"
+
+    IDS_MUI_APPTITLE_PASTEBOARD "%s: CARTONE"
+
+    IDS_MUI_UNTITLED        "Senza titolo"
+
+    IDS_MUI_TITLEEXCERPT    """%s"""
+
+    IDS_MUI_READONLY        "(Sola lettura)"
+
+    IDS_MUI_FILELOCKED      "<Esclusivo>"
+
+    IDS_MUI_LOADFILE        "Apertura ""%s""..."
+
+    IDS_MUI_SAVEFILE        "Salvataggio ""%s""..."
+
+    IDS_MUI_PRINTFILE       "Stampa pagina %i..."
+
+    IDS_MUI_SAVINGSETTINGS  "Salvataggio impostazioni..."
+
+    IDS_MUI_LINKDESCRIPTION "Modifica con LumPad"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_FILTER_ALL      "Tutti i file (*.*)|*.*|"
+
+    IDS_MUI_FILTER_EXE      "File eseguibili (*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif)|*.exe;*.com;*.bat;*.cmd;*.lnk;*.pif|Tutti i file (*.*)|*.*|"
+
+    IDS_MUI_FILTER_INI      "File configurazione (*.ini)|*.ini|Tutti i file (*.*)|*.*|"
+
+    IDS_MUI_FILTER_BITMAP   "File bitmap (*.bmp)|*.bmp|Tutti i file (*.*)|*.*|"
+
+    IDS_MUI_OPENWITH        "Seleziona la cartella con i collegamenti alle applicazioni preferite"
+
+    IDS_MUI_FAVORITES       "Seleziona la cartella con i collegamenti ai file preferiti"
+
+    IDS_MUI_BACKSLASHHELP   "Trasformazioni backslash\n\n\\a\tAvviso (BEL, Ascii 7)\n\\b\tBackspace (BS, Ascii 8)\n\\f\tNuova pagina (FF, Ascii 12)\n\\n\tNuova linea (LF, Ascii 10)\n\\r\tA capo (CR, Ascii 13)\n\\t\tTabulazione orizzontale (HT, Ascii 9)\n\\v\tTabulazione verticale (VT, Ascii 11)\n\\0oo\tValore ottale\n\\u####\tValore esadecimale\n\\xhh\tValore esadecimale\n\\\\\tBackslash"
+
+    IDS_MUI_REGEXPHELP      "Sintassi occorrenze RegExp (Multi lines)\n\n.\tTrova qualunque carattere\n^\tStringa vuota immediatamente dopo un ritorno a capo\n$\tStringa vuota immediatamente prima dell'EOL\n\\<\tInizio di parola\n\\>\tFine di parola\n\\b\tConfini di parola\n[...]\tSet di caratteri ([abc]) o range ([a-z])\n[^...]\tCaratteri NON nel set o range\n\\d\tQualunque cifra numerica\n\\D\tQualunque carattere alfabetico\n\\s\tQualunque carattere spazio bianco\n\\S\tCarattere NON spazio bianco\n\\w\tQualunque carattere 'parola'\n\\W\tQualunque carattere 'non-parola'\n\\x\tCarattere di Escape con significato\n\taltrimenti speciale\n\\xHH\tChar con codice hex HH\n?\tTrova corrispondenza precedente 0 o 1 volta\n*\tTrova corrispondenza precedente 0 o più volte\n+\tTrova corrispondenza precedente 1 o più volte\n*? or +?\tAbbinamento non rigoroso dei quantificatori '?' e '+'\n(\tInizio regione\n)\tFine regione\n\\n\tRiferimento a una regione quando\n\tsostituisce (n è 1-9)\n"
+
+    IDS_MUI_WILDCARDHELP    "Cerca con caratteri jolly\n\n*\tTrova uno o più caratteri\n?\tTrova esattamente 1 carattere"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_LOADFILE    "Errore nell'apertura di '%s'"
+
+    IDS_MUI_ERR_SAVEFILE    "Errore nel salvataggio di '%s'"
+
+    IDS_MUI_ERR_PATHNOTFOUND "Il percorso per '%s' non esiste più.\nVuoi ricreare il percorso e salvare il file?"
+
+    IDS_MUI_ERR_DLG_FORMAT  "Errore '%s', causa:\n%s(ID:%d)\n"
+
+    IDS_MUI_ERR_BROWSE      "Nessun plugin file browser trovato\nMiniPath può essere scaricato da https://rizonesoft.com"
+
+    IDS_MUI_ERR_GREPWIN     "Nessun plugin ricerca file trovato\nIl plugin ricerca file grepWin portatile può essere scaricato da https://github.com/stefankueng/grepWin/releases"
+
+    IDS_MUI_ERR_GREPWIN_PORTAPPS
+
+                            "Nessun plug-in ricerca file trovato\nInstalla la versione più recente di grepWinPortable nella piattaforma PortableApps."
+
+    IDS_MUI_ERR_MRUDLG      "Nessun accesso al file selezionato!\nVuoi rimuoverlo dall'elenco?"
+
+    IDS_MUI_ERR_CREATELINK  "Errore nella creazione del collegamento sul desktop"
+
+    IDS_MUI_ERR_PREVWINDISABLED
+
+                            "La finestra LumPad è impegnata oppure ha una finestra di dialogo in attesa di input\nVuoi aprire una nuova finestra LumPad?"
+
+    IDS_MUI_ERR_ENCODINGNA  "In questo sistema non sono disponibili le tabelle di conversione della pagina codice per la codifica selezionata"
+
+    IDS_MUI_ERR_UNICODE     "Errore nella conversione di questo file Unicode\nSe salvi il file si verificherà una perdita di dati!"
+
+    IDS_MUI_ERR_BITMAP      "Dimensione bitmap non adeguata '%s'\nDimensione corretta: %i x %i (larghezza >= %i x altezza)"
+
+    IDS_MUI_ERR_ELEVATED_RIGHTS
+
+                            "Errore elevazione dei diritti utente!"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ERR_UNICODE2    "Alcuni set di caratteri nel testo attuale non sono supportati dalla codifica selezionata, e potrebbero essere al salvataggio rimpiazzati da segnaposto predefiniti. È opportuno selezionare una codifica differente. Vuoi continuare?"
+
+    IDS_MUI_ERR_DROP        "Con una unica operazione può essere rilasciato solo un file!"
+
+    IDS_MUI_ERR_ACCESSDENIED
+
+                            "Il file '%s' non può essere salvato e potrebbe essere protetto\n\nVuoi aprire '%s' con diritti amministrativi?"
+
+    IDS_MUI_ERR_ADMINEXE    "Nessun eseguibile amministrativo trovato\nVuoi controllare https://rizonesoft.com?"
+
+    IDS_MUI_ABOUT_LDOTJDOT    "LdotJdot  https://github.com/LdotJdot\r\n2026 build (LumPad fork)\r\n\r\nThis build adds:\r\n- Multi-tab editing with file name tab titles and full path tooltips\r\n- Session restore (startup and File menu)\r\n- External file-change notice when switching back to a background tab\r\n- Layout polish between tab strip and editor"
+
+    IDS_MUI_WARN_LOAD_BIG_FILE
+
+                            "Vuoi aprire questo file grande?\n\t(dimensione: %s >= %s)!\n(non saranno applicate le evidenziazioni di stile e sintassi !)"
+
+    IDS_MUI_ERR_FILE_TOO_LARGE
+
+                            "Impossibile gestire un file così grande (dimensione: %s)!"
+
+    IDS_MUI_WARN_UNKNOWN_EXT
+
+                            "Estensione sconosciuta (%s)!\nVuoi proseguire con il caricamento?"
+
+    IDS_MUI_INDENT_CONSISTENT  "Il file ha una indentazione consistente!"
+
+    IDS_MUI_EOLMODENAME_CRLF   "Windows (CR+LF)"
+
+    IDS_MUI_EOLMODENAME_LF     "Unix/Mac (LF)"
+
+    IDS_MUI_EOLMODENAME_CR     "Old Mac (CR)"
+
+    IDS_MUI_WARN_NORMALIZE_EOLS
+
+                            "Vuoi normalizzare tutti i terminatori di linea, in modo che siano '%s'?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SELRECT         "Questa operazione non può essere eseguita in una selezione rettangolare"
+
+    IDS_MUI_SELMULTI        "Questa operazione non può essere eseguita in una multi-selezione"
+
+    IDS_MUI_SELRECTORMULTI  "Questa operazione non può essere eseguita in una selezione rettangolare o in una multi-selezione"
+
+    IDS_MUI_BUFFERTOOSMALL  "Questa operazione non può essere eseguita (linee troppo lunghe)"
+
+    IDS_MUI_FIND_WRAPFW     "Raggiunta la fine del documento, la ricerca riprende dall'inizio"
+
+    IDS_MUI_FIND_WRAPRE     "Raggiunto l'inizio del documento, la ricerca riprende dalla fine"
+
+    IDS_MUI_NOTFOUND        "Nessuna corrispondenza trovata per il pattern di ricerca specificato"
+
+    IDS_MUI_REPLCOUNT       "%s occorrenze del pattern di ricerca specificato sono state sostituite"
+
+    IDS_MUI_ASK_ENCODING    "Cambiare la codifica del file potrebbe sostituire testo non supportato con un carattere di default, e la cronologia delle modifiche (annulla modifiche) sarà svuotata. Vuoi continuare?"
+
+    IDS_MUI_ASK_ENCODING2   "Stai per cambiare la codifica di un file vuoto. Questo cancellerà la cronologia delle modifiche (annulla modifiche), perché non può essere sincronizzata con la nuova codifica. Vuoi continuare?"
+
+    IDS_MUI_ASK_CLEAR_UNDO  "Questa operazione cancella la cronologia delle modifiche. Continuare?"
+
+    IDS_MUI_INF_SESSION_RESTORE_FAIL  "Unable to restore the last saved session. Files may be missing, or session data is empty."
+
+    IDS_MUI_READONLY_SAVE   "'%s' è in sola lettura. Salvare in un file differente?"
+
+    IDS_MUI_FILECHANGENOTIFY
+
+                            "Il file corrente è stato modificato da un programma esterno\nScegliere:\n\nIgnore -\t\tIgnora ulteriori modifiche\nRicarica -\t\tRicarica File\nMonitor -\t\tPassa al monitoraggio del file"
+
+    IDS_MUI_FILECHANGENOTIFY2 "Il file corrente è stato cancellato. Salvarlo adesso?"
+
+    IDS_MUI_FILELOCK_ERROR  "Impossibile ottenere il blocco esclusivo per '%s'!"
+
+    IDS_MUI_STICKYWINPOS    "La posizione della finestra 'sticky' è abilitata. Qualunque finestra LumPad userà le attuali impostazioni di posizione finestra"
+
+    IDS_MUI_SAVEDSETTINGS   "Le impostazioni correnti di LumPad sono state salvate"
+
+    IDS_MUI_CREATEINI_FAIL  "Errore nella creazione del file delle impostazioni"
+
+    IDS_MUI_WRITEINI_FAIL   "Errore nella scrittura del file delle impostazioni"
+
+    IDS_MUI_INIFILE_READONLY
+
+                            "Il file di configurazione è in Sola Lettura - Ignorare e sovrascrivere le impostazioni?"
+
+    IDS_MUI_SETTINGSNOTSAVED
+
+                            "Non è stato trovato un file delle impostazioni\nPer conservare le modifiche agli stili, salva le impostazioni adesso (F7) oppure ritorna alla configurazione degli Schemi (Ctrl+F12) ed esporta gli stili"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_RELOADSETTINGS   "Attivare le impostazioni salvate riavviando l'applicazione?\n\n%s"
+
+    IDS_MUI_RELOADCFGSEX     "Continuando senza riavviare, le impostazioni salvate non sono applicate e saranno sovrascritte dalle impostazioni interne all'uscita del programma!"
+
+    IDS_MUI_EXPORT_FAIL      "Errore nell'esportazione degli Stili su '%s'"
+
+    IDS_MUI_REGEX_INVALID    "Errore nella valutazione dell'espressione regolare. La RegExp non è valida!"
+
+    IDS_MUI_DROP_NO_FILE     "Nessun nome file valido\nSe stai facendo drag-n-drop da una applicazione 32-bit,\nrilascia il file nella barra strumenti di LumPad"
+
+    IDS_MUI_URL_DIR_EXISTS   "La cartella specificata nella URL esiste!"
+
+    IDS_MUI_URL_FILE_EXISTS  "Il file specificato nella URL esiste!"
+
+    IDS_MUI_URL_PATH_NOT_FOUND
+
+                             "Il percorso specificato nella URL non è stato trovato!"
+
+    IDS_MUI_URL_OPEN_FILE    "\nAlt + Click per aprire il file"
+
+    IDS_MUI_URL_OPEN_BROWSER "\nCtrl + Click per aprire il link nel browser"
+
+    IDS_MUI_UNMATCHED_BRACE  "Unmatched Brace"
+
+    IDS_MUI_NO_ENCLOSING_BRACE "No Enclosing Brace"
+
+    IDS_MUI_TAB_CTX_CLOSE_OTHERS "Close Other Tabs"
+
+    IDS_MUI_TAB_CTX_CLOSE_ALL "Close All Tabs"
+
+    IDS_MUI_TAB_CTX_SPLIT "Move to New Window"
+
+    IDS_MUI_INF_PRSVFILEMODTM
+
+                             "Conservazione della data di ultima modifica originale abilitata\nQuesta opzione rimarrà attiva per questa sessione!"
+
+    IDS_MUI_OUT_OFF_OCCMRK   "Marcatori occorrenza in esaurimento (Segnalibro/evidenziatura)!"
+
+    IDS_MUI_DOCUMENT_READONLY
+
+                             "Il documento è bloccato per la sola visualizzazione. Vuoi mantenere il blocco per prevenire le modifiche?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_ASK_SAVE        "Salvare le modifiche a:\n%s?"
+
+    IDS_MUI_ASK_REVERT      "Ripristinare il file all'ultimo salvataggio effettuato?"
+
+    IDS_MUI_ASK_RECODE      "La ricodifica richiede di ricaricare il file dal disco: eventuali modifiche non salvate saranno perse!"
+
+    IDS_MUI_ASK_CREATE      "'%s' non trovato\nVuoi creare questo file?"
+
+    IDS_MUI_PRINT_HEADER    "Nome file, data e ora attuali|Nome file, Data attuale|Nome file|Lascia vuoto"
+
+    IDS_MUI_PRINT_FOOTER    "Numero di pagina|Lascia vuoto"
+
+    IDS_MUI_PRINT_COLOR     "Normale|Inverti (sfondo scuro)|Nero su bianco|Colore su bianco|Colore su bianco (tranne i numeri di linea)|Colori a schermo"
+
+    IDS_MUI_PRINT_PAGENUM   "Pagina %i"
+
+    IDS_MUI_WARN_STYLE_RESET
+
+                            "Questa azione ripristina le impostazioni di fabbrica della modalità colore desiderata, e attiverà il file .ini della configurazione standard!"
+
+    IDS_MUI_ASK_INSTANCE_EXISTS
+
+                            "Modalità istanza singola:\n\nImpostare il focus sull'istanza del file già caricata?"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_PRINT_EMPTY     "Questo documento non contiene alcun testo da stampare"
+
+    IDS_MUI_PRINT_ERROR     "Errore nella stampa di '%s'!"
+
+    IDS_MUI_FAV_SUCCESS     "Un collegamento al file corrente è stato creato nella cartella Preferiti"
+
+    IDS_MUI_FAV_FAILURE     "Impossibile creare un collegamento al file corrente\nControlla che non ci sia già un file con lo stesso nome"
+
+    IDS_MUI_READONLY_MODIFY "Impossibile modificare gli attributi di '%s'"
+
+    IDS_MUI_SAVEPOS         "&Salva posizione\tCtrl+S"
+
+    IDS_MUI_RESETPOS        "&Ripristina posizione\tCtrl+R"
+
+    IDS_MUI_PREVIEW         "&Anteprima impostazioni\tCtrl+P"
+
+    IDS_MUI_PASS_FAILURE    "La frase d'accesso è sbagliata\nRiprovre con una frase d'accesso diversa?"
+
+    IDS_MUI_NOPASS          "Decrittazione annullata!\nLeggere i dati grezzi criptati?"
+
+    IDS_MUI_STY_BASESTD     "BASE (Stile di Default):"
+
+    IDS_MUI_STY_BASE2ND     "BASE (2° Stile di Default):"
+
+    IDS_MUI_STY_LEXDEF      "%s - Stile di Default:"
+
+    IDS_MUI_STY_LEXSTYLE    "Stile di %s:"
+
+    IDS_MUI_TITLE_RELBASE   "+++ BASE (%s) +++"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_TRANSL_AUTHOR   "(it-IT) Traduzione italiana di Matteo-Nigro"
+
+    IDS_MUI_TITLE_FIXBASE   "BASE (%s)"
+
+    IDS_MUI_TITLE_RELCUR    "+++ %s: Stile %s +++"
+
+    IDS_MUI_TITLE_FIXCUR    "%s: Stile %s"
+
+    IDS_MUI_TITLE_RELARB    "+++ Stile '%s' (%s) +++"
+
+    IDS_MUI_TITLE_FIXARB    "Stile '%s' (%s)"
+
+    IDS_MUI_ASSOCIATED_EXT  "Estensioni associate:"
+
+    IDS_MUI_ZERO_LEN_MATCH  "^ corrispondenza lunghezza 0"
+
+    IDS_MUI_GOTO_LINE       "Linea (1 - %s):"
+
+    IDS_MUI_GOTO_COLUMN     "Colonna (1 - %s):"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_MENU_LANGUAGE   "&Lingua"
+
+    IDS_USE_LOCALE_DATEFMT  "La lingua definisce il Formato &Data"
+
+    IDS_MUI_MENU_THEMES     "&Collezione di Schemi"
+
+    IDM_THEMES_FACTORY_RESET "Ripristino &fabbrica"
+
+    IDM_THEMES_STD_CFG       "Configurazione &standard"
+
+    IDS_MUI_STATUSBAR_PREFIXES "Ln  ,Col  ,Sel  ,Sb  ,SLn  ,Occ  ,,,,,,,Car  ,Sost  ,Ris  ,U+,"
+
+    IDS_MUI_STATUSBAR_POSTFIXES ",,,,,,,,,,,,,,,,"
+
+    IDS_CLEAR_ALL           "Pulisci tutto"
+
+    IDS_MUI_CLEAR_FIND_HISTORY
+
+                            "Pulisci Cronologia Ricerche"
+
+    IDS_MUI_CLEAR_REPL_HISTORY
+
+                            "Pulisci Cronologia Sostituzioni"
+
+    IDS_MUI_SEARCHCLIPIFEMPTY
+
+                            "Ricerca negli Appunti se la selezione è vuota"
+
+    IDS_MUI_REPLCLIPTAG     "Sostituisci con gli Appunti con la scorciatoia [^c]"
+
+    IDS_MUI_WRAPSEARCH_FWD  "Corrispondenza Wrap-Around dall'inizio"
+
+    IDS_MUI_WRAPSEARCH_BCK  "Corrispondenza Wrap-Around dalla fine"
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+    IDS_MUI_SB_MARK_ALL_OCC   "Contrassegna tutte le occorrenze..."
+
+    IDS_MUI_SB_TOGGLE_VIEW    "Commuta visualizzazione..."
+
+    IDS_MUI_SB_REPLACE_ALL    "Sostituisci tutto..."
+
+    IDS_MUI_SB_WRAP_LINES     "A capo automatico..."
+
+    IDS_MUI_SB_SORTING_LINES  "Ordinamento linee..."
+
+    IDS_MUI_SB_CONV_LNBRK     "Converti interruzioni di linea..."
+
+    IDS_MUI_SB_RECODING_DOC   "Ricodifica documento..."
+
+    IDS_MUI_SB_LEXER_STYLING  "Applica stile Lexer..."
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+IDS_MUI_CMDLINEHELP "\
+
+Utilizzo:\r\n\
+
+LumPad [/?] [...[Codifica]] [...[Terminazioni di linea]] [/e] [/g] [/m] [/l]\r\n\
+
+ \t[/q] [/s] [/d] [/h] [/x] [/c] [/b] [/n] [/r| [/p] [/t] [/i] [/o]\r\n\
+
+ \t[/f] [/u] [/v] [/vd] [/y] [/z] [[disco:][percorso]Nome file[...]]\r\n\r\n\
+
+file\tDeve essere l'ultimo argomento, nessuno spazio tra virgolette\r\n\tper impostazione predefinita\r\n\
+
++\tAccetta argomenti multipli di tipo file (con spazi tra virgolette)\r\n\
+
+-\tAccetta un solo argomento di tipo file (senza spazi tra virgolette)\r\n\r\n\
+
+Opzioni:\r\n\
+
+/?\tVisualizza questo messaggio di aiuto\r\n\
+
+...\tCodifica (/ansi, /unicode, /unicodebe, /utf8, /utf8sig)\r\n\
+
+...\tTerminazioni di linea (/crlf, /cr, /lf)\r\n\
+
+/e\tCodifica del file sorgente\r\n\
+
+/g\tSalta alla posizione specificata (/g -1 EOF)\r\n\
+
+/m\tTrova il testo specificato (/m- ultimo, /mr regex, /mb backslash)\r\n\
+
+/l\tRicarica automaticamente i file modificati\r\n\
+
+/q\tForza la creazione di nuovi file, senza richiedere conferma\r\n\
+
+/s\tSeleziona lo Schema sintattico specificato\r\n\
+
+/d\tSeleziona lo Schema predefinito per il testo\r\n\
+
+/h\tSeleziona lo Schema Codice sorgente Web\r\n\
+
+/x\tSeleziona lo Schema Documento XML\r\n\
+
+/c\tApri una nuova finestra e incolla il contenuto degli Appunti\r\n\
+
+/b\tApri una nuova scheda incolla per collezionare il testo copiato\r\n\tnegli Appunti\r\n\
+
+/n\tApri sempre una nuova finestra (/ns istanza singola)\r\n\
+
+/r\tRiutilizza finestra (/rs istanza singola)\r\n\
+
+/p\tImposta posizione e dimensione della finestra (/p0,/ps,/pd,f,l,t,r,b,m)\r\n\
+
+\to /p <sinistra>,<sopra>,<larghezza>,<altezza>[,<dpi>[,<max>]]  \r\n\t(numeri interi)\r\n\
+
+/t\tImposta titolo della finestra\r\n\
+
+/i\tAvvia come icona nell'area di notifica'\r\n\
+
+/o\tMantieni finestra in primo piano\r\n\
+
+/f\tSpecifica il file INI (/f0 nessun file INI)\r\n\
+
+/u\tAvvia con privilegi elevati\r\n\
+
+/v\tStampa il file immediatamente ed esci\r\n\
+
+/vd\tStampa il file (apre il dialogo di stampa)\r\n\
+
+/y\tCerca la variabile d'ambiente PATH nel caso di nome file relativo\r\n\
+
+/z\tSalta il successivo (utilizzabile per il sostituto del Blocco Note\r\n\tbasato su Registro)\r\n\r\n\
+
+Esempi:\r\n\
+
+LumPad /utf8sig /crlf d:\\temp\\Test.txt\r\n\
+
+ \t... Apri un nuovo file: 'Test.txt' con codifica=UTF-8-BOM, EoL=CRLF\r\n\
+
+LumPad /v d:\\temp\\Test.txt\r\n\
+
+ \t... Stampa il file: 'Test.txt' immediatamente\
+
+"
+
+
+
+IDS_MUI_STYLEEDIT_HELP "\
+
+Le estensioni devono essere separate con ';'\r\n\
+
+Voci contenenti '*', '?' or '.' corrispondono al nome file completo (carattere jolly):\r\n\
+
+   Makefile*;CMakeLists.txt;test_*.py\r\n\r\n\
+
+Formato stile:\r\n\
+
+font:Name; size:[+/-]nn.mm; bold; italic; underline;\r\n\
+
+fore:#ffffff; back:#bbbbbb; eolfilled; indic_gradient\r\n\r\n\
+
+Le proprietà di Stile possono essere copiate con copia e incolla o trascinamento\
+
+"
+
+
+
+END
+
+
+
+STRINGTABLE
+
+BEGIN
+
+
+
+IDS_MUI_ABOUT_RTF_0  "{\
+
+\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fswiss\\fcharset0 Segoe UI;}}\
+
+{\\colortbl ;\\red80\\green160\\blue80;}\
+
+\\tx3500\\tx7000\\fs18\
+
+\\cf0 \\fs20\\b1\\ul1 Sviluppo:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_1  "\
+
+\\cf0 \\fs20\\b1\\ul1 Collaboratori:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_2  "\
+
+\\cf0 \\fs20\\b1\\ul1 Open Source / Librerie:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_3  "\
+
+\\cf0 \\fs20\\b1\\ul1 Riconoscimenti:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_4  "\
+
+\\cf0 \\fs20\\b1\\ul1 Risorse:\\ul0\\b0\\fs18\\par\
+
+"
+
+IDS_MUI_ABOUT_RTF_5  "\
+
+\\cf0 \\fs20\\b1\\ul1 Licenze:\\ul0\\b0\\fs18\\par\
+
+"
+
+
+
+END
+
+
+
+#endif    // Italian (Italy) resources
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+#ifndef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+//
+
+// Generated from the TEXTINCLUDE 3 resource.
+
+//
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+#endif    // not APSTUDIO_INVOKED
+
+
+

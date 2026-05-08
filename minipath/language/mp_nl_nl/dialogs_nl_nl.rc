@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 227, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_NOFAILCREATE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniPath"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,170,90,50,14
+    ICON            IDI_MINIPATH,IDC_STATIC, 7, 7, 48, 48, SS_ICON|SS_REALSIZECONTROL, WS_EX_TRANSPARENT
+    LTEXT           "",IDC_VERSION,65,7,175,12
+    LTEXT           "",IDC_COPYRIGHT,65,23,175,8
+    LTEXT           "",IDC_WEBPAGE2,65,26,175,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_WEBPAGE,"SysLink",WS_TABSTOP,65,33,175,10
+    LTEXT           "",IDC_AUTHORNAME,65,51,116,8
+    LTEXT           "",IDC_EMAIL2,65,75,116,8,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_EMAIL,"SysLink",WS_TABSTOP,65,61,116,10
+    LTEXT           "",IDC_TRANSL_AUTH, 50, 78, 200, 8
+END
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uitvoeren"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_RUN,IDC_STATIC,7,7,20,20
+    LTEXT           "Voer de naam in van een uitvoerbaar programma,\neen map of een te openen document",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "OK",IDOK,112,64,50,14
+    PUSHBUTTON      "Annuleren",IDCANCEL,167,64,50,14
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 170, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Openen met..."
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OPENWITHDIR,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,7,156,69
+    PUSHBUTTON      "",IDC_GETOPENWITHDIR,7,83,13,13
+    LTEXT           "Klik hier om de map met koppelingen naar je favoriete applicaties te specificeren",IDC_OPENWITHDESCR,26,83,143,18
+    DEFPUSHBUTTON   "OK",IDOK,58,108,50,14
+    PUSHBUTTON      "Annuleren",IDCANCEL,115,108,50,14
+    SCROLLBAR       IDC_RESIZEGRIP3,7,118,10,10
+END
+
+IDD_GOTO DIALOGEX 0, 0, 224, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ga naar"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_GOTO,IDC_STATIC,7,7,20,20
+    LTEXT           "Voer de naam in van een bestand of map,\nof een recente map uit de lijst",IDC_STATIC,35,7,182,17
+    COMBOBOX        IDC_GOTO,35,35,182,126,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,112,66,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleren",IDCANCEL,167,66,50,14
+    SCROLLBAR       IDC_RESIZEGRIP,7,70,10,10
+END
+
+IDD_FILTER DIALOGEX 0, 0, 195, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bestandenfilter"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Geef een nieuw bestanden&filter op. Scheid filters met ';'",IDC_STATIC,7,7,187,8
+    EDITTEXT        IDC_FILTER,7,22,164,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSEFILTER,175,22,13,13
+    CONTROL         "Bestanden door filtering &uitsluiten",IDC_NEGFILTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,40,158,10
+    DEFPUSHBUTTON   "OK",IDOK,83,58,50,14
+    PUSHBUTTON      "Annuleren",IDCANCEL,138,58,50,14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 172, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hernoemen"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Huidig:",IDC_STATIC,7,9,28,8
+    EDITTEXT        IDC_OLDNAME,39,7,126,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Nieuw:",IDC_STATIC,7,26,28,8
+    EDITTEXT        IDC_NEWNAME,39,25,126,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,53,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleren",IDCANCEL,115,53,50,14
+END
+
+IDD_NEWDIR DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nieuwe map"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Voer de naam in voor de nieuwe map:",IDC_STATIC,7,7,158,8
+    EDITTEXT        IDC_NEWDIR,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleren",IDCANCEL,115,45,50,14
+END
+
+IDD_COPYMOVE DIALOGEX 0, 0, 230, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kopiëren/verplaatsen"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    LTEXT           "Bron:",IDC_STATIC,7,7,26,8
+    EDITTEXT        IDC_SOURCE,7,18,216,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Bestemming:",IDC_STATIC,7,37,45,8
+    COMBOBOX        IDC_DESTINATION,7,48,199,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BROWSEDESTINATION,210,48,13,13
+    LTEXT           "Actie:",IDC_STATIC,7,66,24,8
+    CONTROL         "&Kopiëren",IDC_FUNCCOPY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,35,66,40,10
+    CONTROL         "&Verplaatsen",IDC_FUNCMOVE,"Button",BS_AUTORADIOBUTTON,35,78,50,10
+    DEFPUSHBUTTON   "OK",IDOK,117,74,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleren",IDCANCEL,173,74,50,14
+    SCROLLBAR       IDC_RESIZEGRIP2,7,78,10,10
+END
+
+IDPP_GENERAL DIALOGEX 0, 0, 235, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Algemeen"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS,IDC_STATIC,10,10,20,20
+    LTEXT           "Algemene programmainstellingen voor MiniPath",IDC_STATIC,40,15,195,8
+    CONTROL         "Objecten openen met een enkele &muisklik",IDC_SINGLECLICK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,46,171,10
+    CONTROL         "&Spoorselectie inschakelen",IDC_TRACKSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,58,100,10
+    CONTROL         "&Volledige rij-selectie inschakelen",IDC_FULLROWSELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,70,125,10
+    CONTROL         "Doelvenster a&ctiveren wanneer een bestand wordt geopend",IDC_FOCUSEDIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,82,220,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,100,215,1
+    CONTROL         "MiniPath-venster altijd bovenop &houden",IDC_ALWAYSONTOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,150,10
+    CONTROL         "&Minimaliseren naar systeemvak (klik om te reactiveren)",IDC_MINIMIZETOTRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,195,10
+    CONTROL         "&Bestaand venster hergebruiken wanneer MiniPath wordt gestart",IDC_REUSEWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,133,220,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,151,215,1
+    CONTROL         "Instellingen op&slaan bij afsluiten",IDC_SAVESETTINGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,160,125,10
+END
+
+IDPP_ADVANCED DIALOGEX 0, 0, 235, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Geavanceerd"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_OPTIONS2,IDC_STATIC,10,10,20,20
+    LTEXT           "Geavanceerde instellingen voor MiniPath",IDC_STATIC,40,15,160,8
+    CONTROL         "Op&startmap:",IDC_STARTUPDIR,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,46,87,10
+    CONTROL         "&Recent gebruikt",IDC_GOTOMRU,"Button",BS_AUTORADIOBUTTON,100,46,79,10
+    CONTROL         "Map ""&Favorieten""",IDC_GOTOFAV,"Button",BS_AUTORADIOBUTTON,100,58,75,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,76,215,1
+    CONTROL         "Alleen-lezen kenmerk &wissen van opgeslagen bestanden",IDC_CLEARREADONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,200,10
+    CONTROL         "Gekopieerde bestanden hernoemen bij gelijke &naam",IDC_RENAMEONCOLLISION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,97,190,10
+    CONTROL         "Verwijderde bestanden naar de prullenbak &verplaatsen",IDC_USERECYCLEBIN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,200,10
+    CONTROL         "Bestanden verwijderen ZONDER &bevestiging (niet aanbevolen)",IDC_NOCONFIRMDELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,121,220,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,139,215,1
+    CONTROL         """&Esc""-toets instellen:",IDC_ESCFUNCTION,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,148,85,10
+    CONTROL         "Venster &minimaliseren",IDC_ESCMIN,"Button",BS_AUTORADIOBUTTON,100,148,90,10
+    CONTROL         "MiniPath af&sluiten",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,100,160,90,10
+END
+
+IDPP_ITEMS DIALOGEX 0, 0, 235, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Items"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_ITEMS,IDC_STATIC,10,10,21,20
+    LTEXT           "Weergave in de mappenlijst",IDC_STATIC,40,15,150,8
+    GROUPBOX        "Kleuren",IDC_STATIC,10,41,215,134
+    LTEXT           "Gebruik deze tekstkleur wanneer GEEN FILTER is ingesteld:",IDC_STATIC,20,54,195,8
+    CONTROL         "Standaard &windows",IDC_COLOR_DEF1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,68,89,10
+    CONTROL         "Aan&gepast:",IDC_COLOR_CUST1,"Button",BS_AUTORADIOBUTTON,20,82,60,10
+    EDITTEXT        IDC_COLOR_SAMP1,85,80,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Kies kleur...",IDC_COLOR_PICK1,119,80,50,14
+    LTEXT           "Gebruik deze tekstkleur bij een ACTIEF FILTER:",IDC_STATIC,20,105,195,8
+    CONTROL         "S&tandaard windows",IDC_COLOR_DEF2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,119,89,10
+    CONTROL         "Aange&past:",IDC_COLOR_CUST2,"Button",BS_AUTORADIOBUTTON,20,133,60,10
+    EDITTEXT        IDC_COLOR_SAMP2,86,130,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Kies kleur...",IDC_COLOR_PICK2,120,130,50,14
+END
+
+IDPP_PROG DIALOGEX 0, 0, 235, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Locaties"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_PROGS,IDC_STATIC,10,10,20,20
+    LTEXT           "Geef externe programma's en paden op",IDC_STATIC,40,15,140,8
+    LTEXT           "&Standaard ""Voorbeeld""-programma (Ctrl+Q):",IDC_STATIC,10,41,175,8
+    EDITTEXT        IDC_QUICKVIEW,10,52,201,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_Q,213,52,13,13,BS_BITMAP
+    LTEXT           "Map &Favorieten (F11):",IDC_STATIC,10,76,76,8
+    EDITTEXT        IDC_FAVORITES,10,87,201,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE_F,213,87,13,13,BS_BITMAP
+END
+
+IDD_FINDTARGET DIALOGEX 0, 0, 290, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Doeltoepassing"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    CONTROL         "Gebruik geen specifieke doeltoepassing, start gewoon het geselecteerde bestand",IDC_LAUNCH,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,7,280,10
+    CONTROL         "Gebruik de volgende doeltoepassing:",IDC_TARGET,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,21,135,10
+    LTEXT           "Geef de actie op als de doeltoepassing al wordt uitgevoerd:",IDC_STATIC,7,64,220,8
+    EDITTEXT        IDC_TARGETPATH,20,35,246,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BROWSE,270,35,15,14,BS_BITMAP
+    LTEXT           "Bericht:",IDC_STATIC,20,120,32,8
+    CONTROL         "Geen, voer doeltoepassing uit elke keer dat een bestand wordt geopend",IDC_ALWAYSRUN,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,78,255,10
+    CONTROL         "Verzend bericht Open bestand naar doeltoepassingsvenster:",IDC_SENDDROPMSG,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,92,208,10
+    CONTROL         "Voer de volgende DDE-opdracht uit:",IDC_USEDDE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,7,106,135,10
+    LTEXT           "Toepassing:",IDC_STATIC,147,120,40,8
+    PUSHBUTTON      "Venster aanwijzen...",IDC_FINDWIN,216,91,67,14
+    LTEXT           "Onderwerp:",IDC_STATIC,217,120,40,8
+    EDITTEXT        IDC_DDEMSG,20,130,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDEAPP,147,130,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DDETOPIC,217,130,66,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,179,159,50,14
+    PUSHBUTTON      "Annuleren",IDCANCEL,233,159,50,14
+END
+
+IDD_FINDWIN DIALOGEX 0, 0, 210, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Venster aanwijzen"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    ICON            IDI_CROSS1,IDC_CROSSCURSOR,7,7,21,20,SS_CENTERIMAGE
+    LTEXT           "Sleep de aanwijzer naar het doelvenster of druk op Esc om te annuleren",IDC_STATIC,35,7,168,22
+    EDITTEXT        IDC_WINTITLE,35,35,168,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Window Class",IDC_WINCLASS,7,60,45,8,NOT WS_VISIBLE
+    LTEXT           "Window Module",IDC_WINMODULE,7,70,51,8,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "OK",IDOK,99,64,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleren",IDCANCEL,153,64,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_NEWDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COPYMOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDPP_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_ITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDPP_PROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 215
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FINDTARGET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FINDWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese Brazilian (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Abrir",                       IDM_FILE_OPEN
+        MENUITEM "Abrir &com Aplicativo Alternativo...",   IDM_FILE_OPENWITH
+        MENUITEM "&Visualização Rápida",                  IDM_FILE_QUICKVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Copiar Nome",                  IDM_POP_COPYNAME
+        MENUITEM "Criar Lin&k...",             IDM_FILE_CREATELINK
+        MENUITEM "&Salvar Como...",                 IDM_FILE_SAVEAS
+        MENUITEM "Copiar/&Mover...",               IDM_FILE_COPYMOVE
+        MENUITEM "&xcluir...",                  IDM_FILE_DELETE
+        MENUITEM "Re&nomear...",                  IDM_FILE_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Iniciar",                     IDM_FILE_LAUNCH
+        MENUITEM "&Executar com Argumentos...",        IDM_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Propriedades",                 IDM_FILE_PROPERTIES
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Novo Arquivo...",                IDM_FILE_NEW
+        MENUITEM "No&va Pasta...",           IDM_FILE_NEWDIR
+        MENUITEM SEPARATOR
+        MENUITEM "&Filtro de Arquivo...",             IDM_VIEW_FILTER
+        MENUITEM "&Reiniciar Filtro",               IDM_VIEW_FILTERALL
+        POPUP "&Mostrar"
+        BEGIN
+            MENUITEM "&Pastas",            IDM_VIEW_FOLDERS
+            MENUITEM "&Arquivos",                  IDM_VIEW_FILES
+            MENUITEM "Objetos do &Sistema",         IDM_VIEW_HIDDEN
+        END
+        POPUP "&Ordenar"
+        BEGIN
+            MENUITEM "por &Nomes",                IDM_SORT_NAME
+            MENUITEM "por Tamanho&s",                IDM_SORT_SIZE
+            MENUITEM "por &Tipos",                IDM_SORT_TYPE
+            MENUITEM "por &Datas",                IDM_SORT_DATE
+            MENUITEM SEPARATOR
+            MENUITEM "Ordem Inve&rsa",                IDM_SORT_REVERSE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "I&r para...",                    IDM_FILE_GOTO
+        MENUITEM "&Ir para Favoritos",             IDM_VIEW_FAVORITES
+        MENUITEM "&Editar Favoritos",              IDM_VIEW_EDITFAVORITES
+        MENUITEM "&Pasta...",                      IDM_FILE_CHANGEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Mostrar &Unidades",                IDM_VIEW_DRIVEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "S&alvar Configurações",              IDM_VIEW_SAVESETTINGS
+        MENUITEM "Configurar Des&tino...",            IDM_VIEW_FINDTARGET
+        MENUITEM "O&pções...",                 IDM_VIEW_OPTIONS
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Pasta...",               IDM_FILE_CHANGEDIR
+        MENUITEM "&Propriedades da Unidade",           IDM_FILE_DRIVEPROP
+        MENUITEM SEPARATOR
+        MENUITEM "Mostrar &Unidades",                IDM_VIEW_DRIVEBOX
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Mostrar Barra de Ferramen&tas",               IDM_VIEW_TOOLBAR
+        MENUITEM "&Editar Barra de Ferramentas...",            IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Mostrar Barra de &Status",             IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Abrir MiniPath",               IDM_TRAY_RESTORE
+        MENUITEM "Sair do MiniPath",               IDM_TRAY_EXIT
+    END
+END
+
+
+#endif    // Portuguese Brazilian (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

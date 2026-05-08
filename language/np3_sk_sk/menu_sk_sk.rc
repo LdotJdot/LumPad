@@ -1,0 +1,637 @@
+// Microsoft Visual C++ generated resource script.
+// encoding: UTF-8
+#pragma code_page(65001)  // UTF-8
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#include "../common_res.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Slovak (Slovakia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SKY)
+LANGUAGE LANG_SLOVAK, SUBLANG_SLOVAK_SLOVAKIA
+#pragma code_page(65001)  // UTF-8
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "#include ""../common_res.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MUI_MAINMENU MENU
+BEGIN
+    POPUP "&Súbor"
+    BEGIN
+        MENUITEM "&Nový\tCtrl+N",                                   IDM_FILE_NEW
+
+        MENUITEM "Close &Tab",                                      IDM_FILE_CLOSETAB
+        MENUITEM "&Otvoriť...\tCtrl+O",                             IDM_FILE_OPEN
+        MENUITEM "&Uložiť\tCtrl+S",                                 IDM_FILE_SAVE
+        MENUITEM "Uložiť &ako...\tF6",                              IDM_FILE_SAVEAS
+        MENUITEM "Uložiť &kópiu...\tCtrl+F6",                       IDM_FILE_SAVECOPY
+        MENUITEM "Uložiť s pôvodným &dátumom a časom\tCtrl+Alt+F6", IDM_FILE_PRESERVE_FILEMODTIME
+        MENUITEM SEPARATOR
+        MENUITEM "&Len na čítanie",                                 IDM_FILE_READONLY
+        MENUITEM "&Zamknúť súbor (Zdieľané čítanie)",               IDM_FILE_LOCK_SHARE_READ
+        MENUITEM SEPARATOR
+        MENUITEM "Nastaviť šifrovanie prístupovou frázou...",       IDM_SETPASS
+        MENUITEM SEPARATOR
+        POPUP "Kopírovať cestu do schránky"
+        BEGIN
+            MENUITEM "Len &názov súboru\tCtrl+F9",          IDM_EDIT_INSERT_FILENAME
+            MENUITEM "Len umiestnenie &adresára",           IDM_EDIT_INSERT_DIRNAME
+            MENUITEM "&Plnú cestu\tCtrl+Shift+F9",          IDM_EDIT_INSERT_PATHNAME
+        END
+        POPUP "O&tvoriť"
+        BEGIN
+            MENUITEM "&Nové prázdne okno\tAlt+N",           IDM_FILE_NEWWINDOW
+            MENUITEM "&Duplicitná inštancia\tAlt+Shift+N",   IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "&Spustiť s vyšším oprávnením",        IDM_FILE_LAUNCH_ELEVATED
+            MENUITEM SEPARATOR
+            MENUITEM "&Spustiť dokument\tCtrl+L",           IDM_FILE_LAUNCH
+            MENUITEM "&Otvoriť pomocou...\tAlt+L",          IDM_FILE_OPENWITH
+            MENUITEM "&Príkaz...\tCtrl+R",                  IDM_FILE_RUN
+            MENUITEM SEPARATOR
+            MENUITEM "Webová šablóna &1\tCtrl+Shift+1",     CMD_WEBACTION1
+            MENUITEM "Webová šablóna &2\tCtrl+Shift+2",     CMD_WEBACTION2
+            MENUITEM SEPARATOR
+            MENUITEM "Otvoriť Pri&eskumníka",               IDM_FILE_EXPLORE_DIR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Vrátiť zo súboru\tF5",                   IDM_FILE_REVERT
+        MENUITEM "&Ignorovať varovanie",                      CMD_IGNORE_FILE_VARS
+        POPUP "&Kódovanie"
+        BEGIN
+            POPUP "V&rátiť zo súboru ako"
+            BEGIN
+                MENUITEM "&Predvolené nastavenie",         CMD_RECODEDEFAULT
+                MENUITEM "&ANSI\tCtrl+Shift+A",            CMD_RECODEANSI
+                MENUITEM "&OEM\tCtrl+Shift+O",             CMD_RECODEOEM
+                MENUITEM "&GB18030\tCtrl+Shift+F10",       CMD_RECODEGB18030
+                MENUITEM SEPARATOR
+                MENUITEM "AS&CII ako UTF-8\tCtrl+Shift+F8",        CMD_RELOADASCIIASUTF8
+                MENUITEM "&Vynútiť analýzu UCHARDET",              CMD_RELOADFORCEDETECTION
+                MENUITEM "&Ignorovať kódovanie tagov\tAlt+F8",     CMD_RELOADNOENCODETAGS
+                MENUITEM SEPARATOR
+                MENUITEM "Ďalši&e kódovania...\tF8",               IDM_ENCODING_RECODE
+            END
+            POPUP "&Nastaviť dokument ako"
+            BEGIN
+                MENUITEM "&ANSI",                           IDM_ENCODING_ANSI
+                MENUITEM "&Unicode",                        IDM_ENCODING_UNICODE
+                MENUITEM "Unicode &Big Endian",             IDM_ENCODING_UNICODEREV
+                MENUITEM "UTF-&8\tShift+F8",                IDM_ENCODING_UTF8
+                MENUITEM "UTF-8 &Signature",                IDM_ENCODING_UTF8SIGN
+                MENUITEM SEPARATOR
+                MENUITEM "Ďalšie &kódovania...\tF9",        IDM_ENCODING_SELECT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Nastaviť &predvolené kódovanie...",   IDM_ENCODING_SETDEFAULT
+        END
+        POPUP "Kon&ce riadkov"
+        BEGIN
+            MENUITEM "&Windows (CR+LF)",                    IDM_LINEENDINGS_CRLF
+            MENUITEM "&Mac (CR)",                           IDM_LINEENDINGS_CR
+            MENUITEM "&Unix (LF)",                          IDM_LINEENDINGS_LF
+            MENUITEM SEPARATOR
+            MENUITEM "P&redvolené...",                      IDM_LINEENDINGS_SETDEFAULT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Kon&trola odsadenia...",                  CMD_CHECK_INDENTATION
+        MENUITEM SEPARATOR
+        MENUITEM "&Nastavenie tlače...",                    IDM_FILE_PAGESETUP
+        MENUITEM "&Tlačiť...\tCtrl+P",                        IDM_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "V&lastnosti...",                          IDM_FILE_PROPERTIES
+        MENUITEM "Vytvoriť &zástupcu na Ploche",           IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "O&bľúbené súbory"
+        BEGIN
+            MENUITEM "Otvor&iť Obľúbené...\tAlt+I",         IDM_FILE_OPENFAV
+            MENUITEM "Pridať a&ktuálny súbor...\tAlt+K",    IDM_FILE_ADDTOFAV
+            MENUITEM "&Spravovať...\tAlt+F9",               IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "&Restore Last Session",                           IDM_FILE_RESTORE_SESSION
+        MENUITEM "Naposl&edy použité...\tCtrl+Alt+H",       IDM_FILE_RECENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Koniec\tAlt+F4",                         IDM_FILE_EXIT
+    END
+    POPUP "&Upraviť"
+    BEGIN
+        MENUITEM "Dokument &Len na čítanie"                 IDM_VIEW_READONLY
+        MENUITEM SEPARATOR
+        MENUITEM "&Späť\tCtrl+Z",                           IDM_EDIT_UNDO
+        MENUITEM "&Znova\tCtrl+Y",                          IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "V&ystrihnúť\tCtrl+X",                     IDM_EDIT_CUT
+        MENUITEM "&Kopírovať\tCtrl+C",                      IDM_EDIT_COPY
+        MENUITEM "K&opírovať všetko\tAlt+C",                IDM_EDIT_COPYALL
+        MENUITEM "Kopírov&ať pridané\tCtrl+E",              IDM_EDIT_COPYADD
+        MENUITEM "&Vložiť\tCtrl+V",                         IDM_EDIT_PASTE
+        MENUITEM "Z&ameniť\tCtrl+K",                        IDM_EDIT_SWAP
+        MENUITEM "Vy&brať všetko\tCtrl+A",                  IDM_EDIT_SELECTALL
+        MENUITEM "Z&mazať\tDel",                            IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Vyprázdniť &schránku",                    IDM_EDIT_CLEARCLIPBOARD
+        MENUITEM "Prepnúť &monitorovanie schránky",        IDM_EDIT_TOGGLE_PASTEBOARD
+        MENUITEM SEPARATOR
+        POPUP "&Slová"
+        BEGIN
+            MENUITEM "&Kompletné slovo\tCtrl+Alt+Enter",       IDM_EDIT_COMPLETEWORD
+            MENUITEM SEPARATOR
+            MENUITEM "Kurzorom po s&lovách vľavo\tCtrl+ ←",    CMD_CTRLLEFT
+            MENUITEM "Kurzorom po slovách v&pravo\tCtrl+ →",   CMD_CTRLRIGHT
+            MENUITEM "V&ymazať slovo vľavo\tCtrl+Back",        CMD_CTRLBACK
+            MENUITEM "Vy&mazať slovo vpravo\tCtrl+Del",        CMD_CTRLDEL
+        END
+        POPUP "&Riadky"
+        BEGIN
+            MENUITEM "Posun &hore\tAlt+ ↑",                    IDM_EDIT_MOVELINEUP
+            MENUITEM "Posun &dole\tAlt+ ↓",                    IDM_EDIT_MOVELINEDOWN
+            MENUITEM SEPARATOR
+            MENUITEM "Vystr&ihnúť vybratý/aktuálny riadok\tCtrl+X",       IDM_EDIT_CUT
+            MENUITEM "Vystrihnúť výber &celého riadku\tCtrl+Shift+X",     IDM_EDIT_CUTLINE
+            MENUITEM "&Kopírovať vybratý/aktuálny riadok\tCtrl+C",        IDM_EDIT_COPY
+            MENUITEM "Kopírovať vý&ber celého riadku\tCtrl+Shift+C",      IDM_EDIT_COPYLINE
+            MENUITEM SEPARATOR
+            MENUITEM "&Duplikovať riadok/výber\tCtrl+D",                  IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM "&Transponovať riadky\tAlt+D",                       IDM_EDIT_LINETRANSPOSE
+            MENUITEM "&Zmazať riadok\tCtrl+Shift+D",                      IDM_EDIT_DELETELINE
+            MENUITEM SEPARATOR
+            MENUITEM "Zmazať riadok vľavo od kurzora\tCtrl+Shift+Back",   IDM_EDIT_DELETELINELEFT
+            MENUITEM "Zmazať riadok vpravo od kurzora\tCtrl+Shift+Del",   IDM_EDIT_DELETELINERIGHT
+            MENUITEM SEPARATOR
+            MENUITEM "Za&lamovať podľa stĺpca...\tCtrl+Shift+W",       IDM_EDIT_COLUMNWRAP
+            MENUITEM SEPARATOR
+            MENUITEM "Zjednotiť &duplicitné riadky\tCtrl+Alt+D",       IDM_EDIT_UNITEDUPLICATELINES
+            MENUITEM "&Odstrániť duplicitné riadky",                  IDM_EDIT_REMOVEDUPLICATELINES
+            MENUITEM "Zlúčiť &prázdne riadky\tAlt+Y",            IDM_EDIT_MERGEEMPTYLINES
+            MENUITEM "Zlúčiť &nepopísané riadky\tCtrl+Alt+Y",     IDM_EDIT_MERGEBLANKLINES
+            MENUITEM "Odstrániť p&rázdne riadky\tAlt+R",         IDM_EDIT_REMOVEEMPTYLINES
+            MENUITEM "Odstrániť n&epopísané riadky\tCtrl+Alt+B", IDM_EDIT_REMOVEBLANKLINES
+        END
+        POPUP "Po&kročilé"
+        BEGIN
+            MENUITEM "&Odsadiť",                          IDM_EDIT_INDENT
+            MENUITEM "Z&rušiť odsadenie",                   IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            POPUP "Riadok &komentára"
+            BEGIN
+                MENUITEM "Pr&epnúť\tCtrl+Q",               IDM_EDIT_LINECOMMENT
+                MENUITEM "&Pridať\tCtrl+Alt+Q",              IDM_EDIT_LINECOMMENT_ADD
+                MENUITEM "&Odstrániť\tCtrl+Alt+Shift+Q",     IDM_EDIT_LINECOMMENT_REMOVE
+                MENUITEM "&Blokovať úpravy\tAlt+Shift+Q",      IDM_EDIT_LINECOMMENT_BLOCKEDIT
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Pr&enos komentára\tCtrl+Shift+Q",         IDM_EDIT_STREAMCOMMENT
+            MENUITEM SEPARATOR
+            POPUP "&Pripojiť výber"
+            BEGIN
+                MENUITEM "&Jednoduché úvodzovky\tCtrl+1",   CMD_STRINGIFY
+                MENUITEM "&Dvojité úvodzovky\tCtrl+2",      CMD_STRINGIFY2
+                MENUITEM SEPARATOR
+                MENUITEM "( )\tCtrl+3",                     CMD_EMBRACE
+                MENUITEM "[ ]\tCtrl+4",                     CMD_EMBRACE2
+                MENUITEM "{ }\tCtrl+5",                     CMD_EMBRACE3
+                MENUITEM SEPARATOR
+                MENUITEM "``\tCtrl+6",                  CMD_EMBRACE4
+                MENUITEM SEPARATOR
+                MENUITEM "&S...\tAlt+Q", IDM_EDIT_ENCLOSESELECTION
+            END
+            MENUITEM "&Duplikovať výber/riadok\tCtrl+D",    IDM_EDIT_DUPLINEORSELECTION
+            MENUITEM SEPARATOR
+            MENUITEM "&Podčiarnik\tAlt+B",               IDM_EDIT_PADWITHSPACES
+            MENUITEM "Odobrať &prvý znak\tAlt+Z",        IDM_EDIT_STRIP1STCHAR
+            MENUITEM "Odobrať p&osledný znak\tAlt+U",    IDM_EDIT_STRIPLASTCHAR
+            MENUITEM "Odobrať &koncové prázdne miesta\tAlt+W",   IDM_EDIT_TRIMLINES
+            MENUITEM "Komp&resia medzier\tCtrl+Alt+P",      IDM_EDIT_COMPRESS_BLANKS
+            MENUITEM SEPARATOR
+            MENUITEM "&Upraviť riadky...\tAlt+M",           IDM_EDIT_MODIFYLINES
+            MENUITEM "Zor&adiť riadky...\tAlt+O",           IDM_EDIT_SORTLINES
+            MENUITEM SEPARATOR
+            MENUITEM "Z&arovnať riadky...\tAlt+J",          IDM_EDIT_ALIGN
+            MENUITEM "&Rozdeliť riadky\tCtrl+I",            IDM_EDIT_SPLITLINES
+            MENUITEM "&Pripojiť riadky\tCtrl+J",            IDM_EDIT_JOINLINES
+            MENUITEM "Z&lúčiť riadky\tCtrl+Alt+J",          IDM_EDIT_JOINLN_NOSP
+            MENUITEM "&Zachovať odseky\tCtrl+Shift+J",      IDM_EDIT_JOINLINES_PARA
+            MENUITEM SEPARATOR
+            MENUITEM "Prejsť na &začiatok výberu\tCtrl+,",  CMD_JUMP2SELSTART
+            MENUITEM "Prejsť na &koniec výberu\tCtrl+.",    CMD_JUMP2SELEND
+        END
+        POPUP "&Konvertovať"
+        BEGIN
+            MENUITEM "&Veľké písmo\tCtrl+Shift+U",          IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "&Malé písmo\tCtrl+U",                 IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "&Invertovať veľkosť\tCtrl+Alt+U",     IDM_EDIT_INVERTCASE
+            MENUITEM "Prvý &znak slova veľký\tCtrl+Alt+I",  IDM_EDIT_TITLECASE
+            MENUITEM "V&eľký na začiatku vety\tCtrl+Alt+O", IDM_EDIT_SENTENCECASE
+            MENUITEM SEPARATOR
+            MENUITEM "&Tabify výber\tCtrl+Shift+T",         IDM_EDIT_CONVERTSPACES
+            MENUITEM "U&ntabify výber\tCtrl+Shift+S",       IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "Ta&bify odsadenie\tCtrl+Alt+T",       IDM_EDIT_CONVERTSPACES2
+            MENUITEM "Untabi&fy odsadenie\tCtrl+Alt+S",     IDM_EDIT_CONVERTTABS2
+            MENUITEM SEPARATOR
+            MENUITEM "Base&64 Kódovanie",                    IDM_EDIT_BASE64ENCODE
+            MENUITEM "Base6&4 Dekódovanie",                    IDM_EDIT_BASE64DECODE
+            MENUITEM "Base64 Dekódovanie kódovej stránky...",      IDM_EDIT_B64DECODESEL
+            MENUITEM SEPARATOR
+            MENUITEM "&Kódovať URL\tCtrl+Shift+E",          IDM_EDIT_URLENCODE
+            MENUITEM "&Dekódovať URL\tCtrl+Shift+R",        IDM_EDIT_URLDECODE
+            MENUITEM "Systémová cesta súboru do URL\tCtrl+F10",      IDM_EDIT_PATH2URL
+            MENUITEM "URL na systémovú cestu súboru\tAlt+F10",       IDM_EDIT_URL2PATH
+            MENUITEM SEPARATOR
+            MENUITEM "Invertovať opačné lomítko",           IDM_EDIT_INVERTBACKSLASH
+            MENUITEM "Invertovať lomítko",                  IDM_EDIT_INVERTSLASH
+            MENUITEM SEPARATOR
+            MENUITEM "Znaky na &Hex\tCtrl+Alt+X",           IDM_EDIT_CHAR2HEX
+            MENUITEM "He&x na znaky\tCtrl+Alt+C",           IDM_EDIT_HEX2CHAR
+        END
+        POPUP "&Vkladať"
+        BEGIN
+            MENUITEM "&Nový riadok vyššie\tCtrl+Enter",         CMD_INSERTNEWLINE
+            MENUITEM SEPARATOR
+            MENUITEM "&HTML/XML Tag...\tAlt+X",                 IDM_EDIT_INSERT_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "&Identifikátor kódovania\tCtrl+F8",       IDM_EDIT_INSERT_ENCODING
+            MENUITEM SEPARATOR
+            MENUITEM "Čas/Dátum (&krátky)\tCtrl+F5",            IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "Čas/Dátum (&dlhý)\tCtrl+Shift+F5",        IDM_EDIT_INSERT_LONGDATE
+            MENUITEM "&Aktuálne časové razítko",                CMD_INSERT_TIMESTAMP
+            MENUITEM "&Aktualizovať časové razítka\tShift+F5",  CMD_UPDATE_TIMESTAMPS
+        END
+        POPUP "&Rôzne"
+        BEGIN
+            MENUITEM "Kopírovať &GUID do schránky\tCtrl+Shift+.",      IDM_EDIT_INSERT_GUID
+            MENUITEM SEPARATOR
+            MENUITEM "&Escape C znaky\tCtrl+Alt+E",                    IDM_EDIT_ESCAPECCHARS
+            MENUITEM "&Unescape C znaky\tCtrl+Alt+R",                  IDM_EDIT_UNESCAPECCHARS
+            MENUITEM SEPARATOR
+            MENUITEM "&Zvýšiť číslo\tCtrl+Alt+NK+",                     CMD_INCREASENUM
+            MENUITEM "Z&nížiť číslo\tCtrl+Alt+NK-",                     CMD_DECREASENUM
+            MENUITEM SEPARATOR
+            MENUITEM "&Nájsť zodpovedajúcu zátvorku\tCtrl+B",          IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "&Vybrať zodpovedajúcu zátvorku\tCtrl+Shift+B",   IDM_EDIT_SELTOMATCHINGBRACE
+            MENUITEM SEPARATOR
+            MENUITEM "Vy&brať ďalšie\tCtrl+Alt+F2",                    IDM_EDIT_SELTONEXT
+            MENUITEM "Vyb&rať predchádzajúce\tCtrl+Alt+Shift+F2",      IDM_EDIT_SELTOPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Vybrať &slovo alebo riadok\tCtrl+Spc",           IDM_EDIT_SELECTWORD
+            MENUITEM "&Viacnásobný výber všetkých zhôd\tCtrl+Shift+Spc",  IDM_EDIT_SELECTALLMATCHES
+            MENUITEM SEPARATOR
+            MENUITEM "Rozdeliť a&kciu Späť po zalomení riadku",        IDM_VIEW_SPLIT_UNDOTYPSEQ_LNBRK
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Záložky"
+        BEGIN
+            MENUITEM "&Prepnúť\tCtrl+F2",                   BME_EDIT_BOOKMARKTOGGLE
+            MENUITEM SEPARATOR
+            MENUITEM "Ď&alšia\tF2",                         BME_EDIT_BOOKMARKNEXT
+            MENUITEM "P&redchádzajúca\tShift+F2",           BME_EDIT_BOOKMARKPREV
+            MENUITEM SEPARATOR
+            MENUITEM "Zmazať &všetky\tAlt+F2",              BME_EDIT_BOOKMARKCLEAR
+        END
+    END
+    POPUP "&V&yhľadávanie"
+    BEGIN
+        MENUITEM "&Hľadať...\tCtrl+F",                      IDM_EDIT_FIND
+        MENUITEM "&Uložiť hľadaný text\tAlt+F3",            IDM_EDIT_SAVEFIND
+        MENUITEM "Hľa&dať ďalej\tF3",                       IDM_EDIT_FINDNEXT
+        MENUITEM "Hľadať na&späť\tShift+F3",                IDM_EDIT_FINDPREV
+        MENUITEM "Hľadať ďalšie vybraté\tCtrl+F3",          CMD_FINDNEXTSEL
+        MENUITEM "Hľadať naspäť vybraté\tCtrl+Shift+F3",    CMD_FINDPREVSEL
+        MENUITEM "&Zameniť...\tCtrl+H",                     IDM_EDIT_REPLACE
+        MENUITEM "Z&ameniť ďalej\tF4",                      IDM_EDIT_REPLACENEXT
+        MENUITEM "Pr&ejsť na...\tCtrl+G",                   IDM_EDIT_GOTOLINE
+    END
+    POPUP "&Zobraziť"
+    BEGIN
+        MENUITEM "&Zalomenie textu\tCtrl+W",                    IDM_VIEW_WORDWRAP
+        MENUITEM "&Ohraničenie dĺžky riadku\tCtrl+Alt+L",       IDM_VIEW_LONGLINEMARKER
+        MENUITEM "Vodítka odsadenia\tCtrl+Shift+G",             IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM SEPARATOR
+        MENUITEM "Zobraziť &symboly zalomenia\tCtrl+Shift+7",   IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM "Zobraziť &prázdne miesta\tCtrl+Shift+8",     IDM_VIEW_SHOWBLANKS
+        MENUITEM "Zobraziť &konce riadkov\tCtrl+Shift+9",    IDM_VIEW_SHOWEOLS
+        MENUITEM SEPARATOR
+        POPUP "Značka histórie zmien"
+        BEGIN
+            MENUITEM "Značky bez zmeny",                        IDM_VIEW_CHGHIST_NONE
+            MENUITEM "Zobraziť len na okraji",                  IDM_VIEW_CHGHIST_MARGIN
+            MENUITEM "Zobraziť len v dokumente",                IDM_VIEW_CHGHIST_DOCTXT
+            MENUITEM "Zobraziť všetky značky zmien",            IDM_VIEW_CHGHIST_ALL
+        END
+        MENUITEM "Vymazať históriu príkazov Späť/Znova"             IDM_VIEW_CHGHIST_CLEAR_UNDOREDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Hyperlinkové prepojenia\tCtrl+Alt+W",        IDM_VIEW_HYPERLINKHOTSPOTS
+        POPUP "&Farba definície prepojenia"
+        BEGIN
+            MENUITEM "&VYP.",                            IDM_VIEW_COLORDEFHOTSPOTS
+            MENUITEM "&RGB+A"                            IDM_VIEW_COLOR_RGBA
+            MENUITEM "&A+RGB"                            IDM_VIEW_COLOR_ARGB
+            MENUITEM "&BGRA"                             IDM_VIEW_COLOR_BGRA
+        END
+        MENUITEM "Zvýrazniť body &Unicode",                      IDM_VIEW_UNICODE_POINTS
+        MENUITEM "&Zviditeľniť zladené zátvorky\tCtrl+Shift+V",  IDM_VIEW_MATCHBRACES
+        POPUP "Zvýrazniť &aktuálny riadok\tShift+Ctrl+I"
+        BEGIN
+            MENUITEM "Žiadne &zvýraznenie",                 IDM_VIEW_HILITCURLN_NONE
+            MENUITEM "Farba &pozadia",                      IDM_VIEW_HILITCURLN_BACK
+            MENUITEM "Len o&brys",                          IDM_VIEW_HILITCURLN_FRAME
+        END
+        POPUP "&Označiť výskyty"
+        BEGIN
+            MENUITEM "&Aktívne\tAlt+A",                     IDM_VIEW_MARKOCCUR_ONOFF
+            MENUITEM "Použiť aj na &záložky",                  IDM_VIEW_MARKOCCUR_BOOKMARKS
+            MENUITEM SEPARATOR
+            MENUITEM "Len &viditeľné zhody",                       IDM_VIEW_MARKOCCUR_VISIBLE
+            MENUITEM SEPARATOR
+            MENUITEM "Rozlišovať malé a veľké písmo",       IDM_VIEW_MARKOCCUR_CASE
+            POPUP "Zhoda len &celého slova"
+            BEGIN
+                MENUITEM "&VYP.",                           IDM_VIEW_MARKOCCUR_WNONE
+                MENUITEM "Zhoda &vybraného slova",         IDM_VIEW_MARKOCCUR_WORD
+                MENUITEM "Zhoda &aktuálneho slova",        IDM_VIEW_MARKOCCUR_CURRENT
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Číslovanie r&iadkov\tCtrl+Shift+N",       IDM_VIEW_LINENUMBERS
+        MENUITEM "&Okraj záložky\tCtrl+Shift+M",            IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Okraj histórie zmien",                    IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+        MENUITEM SEPARATOR
+        POPUP "&Skladanie"
+        BEGIN
+            MENUITEM "&Skladanie kódu",                         IDM_VIEW_FOLDING
+            MENUITEM "Prepnúť &uzly\tCtrl+Alt+F",          IDM_VIEW_TOGGLEFOLDS
+            MENUITEM SEPARATOR
+            MENUITEM "Prejsť na ď&alší uzol\tAlt+ +",            CMD_FOLDJUMPDOWN
+            MENUITEM "Prejsť na p&redchádzajúci uzol\tAlt+ –",   CMD_FOLDJUMPUP
+            MENUITEM SEPARATOR
+            MENUITEM "&Zvinúť uzol\tAlt+ ←",                     CMD_FOLDCOLLAPSE
+            MENUITEM "&Rozvinúť uzol\tAlt+ →",                   CMD_FOLDEXPAND
+        END
+        POPUP "Zo&brazenie"
+        BEGIN
+            MENUITEM "Zobraziť zameranie\tCtrl+Alt+V",      IDM_VIEW_TOGGLE_VIEW
+            POPUP "Režim zobrazenia"
+            BEGIN
+                MENUITEM "Uzol",                            IDM_VIEW_FV_FOLD
+                MENUITEM "Záložka",                         IDM_VIEW_FV_BOOKMARK
+                MENUITEM "Zvýraznenie",                     IDM_VIEW_FV_HIGHLIGHT
+                MENUITEM "Záložka a uzol",                  IDM_VIEW_FV_BKMRKFOLD
+                MENUITEM "Zvýraznenie a uzol",              IDM_VIEW_FV_HIGHLGFOLD
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "&Denník monitorovania",               IDM_VIEW_CHASING_DOCTAIL
+            MENUITEM "&Rolovať za koniec súboru",           IDM_VIEW_SCROLLPASTEOF
+            MENUITEM "Nápovedný &tip na odkaze",            IDM_VIEW_SHOW_HYPLNK_CALLTIP
+        END
+        MENUITEM SEPARATOR
+        POPUP "P&anely"
+        BEGIN
+            MENUITEM "Zobraziť tit&ulkový panel",           IDM_VIEW_TITLEBAR
+            MENUITEM "Zobraziť &textové menu",              IDM_VIEW_MENUBAR
+            MENUITEM "Zobraziť pan&el nástrojov",           IDM_VIEW_TOOLBAR
+            MENUITEM "Zobraziť &stavový riadok",            IDM_VIEW_STATUSBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Načítať motív panela nástrojov...",  IDM_VIEW_LOADTHEMETB
+            MENUITEM "&Prispôsobiť panel nástrojov...",     IDM_VIEW_CUSTOMIZETB
+            MENUITEM "Väčší/menší panel nástrojov",         IDM_VIEW_TOGGLETB
+            MENUITEM "&Mierka DPI panela nástrojov",        IDM_VIEW_DPISCALETB
+        END
+        POPUP "&Zväčšenie"
+        BEGIN
+            MENUITEM "Z&väčšiť\tCtrl+ +",                   IDM_VIEW_ZOOMIN
+            MENUITEM "Z&menšiť\tCtrl+ –",                   IDM_VIEW_ZOOMOUT
+            MENUITEM "&Resetovať\tCtrl+0",                  IDM_VIEW_RESETZOOM
+        END
+        POPUP "&Pozícia"
+        BEGIN
+            MENUITEM "Kopírovať polohu &argumentov\tCtrl+Shift+K",      CMD_COPYWINPOS
+            MENUITEM "Prichytiť k pre&dvolenej pozícii\tCtrl+Shift+P",  CMD_DEFAULTWINPOS
+            MENUITEM "Uložiť &ako predvolenú pozíciu",                  CMD_SAVEASDEFWINPOS
+            MENUITEM "Zmazať &uloženú predvolenú pozíciu",              CMD_CLEARSAVEDWINPOS
+            MENUITEM "Pr&ichytiť k úvodnej pozícii\tCtrl+F11",          CMD_INITIALWINPOS
+            MENUITEM "Prepnúť na &celú obrazovku\tF11",                 CMD_FULLSCRWINPOS
+            MENUITEM "&Kotviť pozíciu okna",                           IDM_VIEW_STICKYWINPOS
+        END
+    END
+    POPUP "&Vzhľad"
+    BEGIN
+        MENUITEM "&Prispôsobenie schémy...\tCtrl+F12",                  IDM_VIEW_SCHEMECONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "&Schémy syntaxov...\tF12",                            IDM_VIEW_SCHEME
+        MENUITEM "&2. spoločná schéma\tShift+F12",                      IDM_VIEW_USE2NDDEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "Globálne východzie &písmo...\tAlt+F12",               IDM_VIEW_FONT
+        MENUITEM "Východzie písmo akt&uálnej schémy...\tCtrl+Alt+F12",  IDM_VIEW_CURRENTSCHEME
+        MENUITEM SEPARATOR
+        MENUITEM "Tmavý režim Windows",                                 IDM_VIEW_WIN_DARK_MODE
+    END
+    POPUP "&Nastavenia"
+    BEGIN
+        MENUITEM "Tabulátor ako &medzerník",                     IDM_SET_TABSASSPACES
+        MENUITEM "Nastavenie &tabulátora...\tCtrl+T",            IDM_SET_TABSETTINGS
+        MENUITEM "Nastavenie zalom&enia slov...",                IDM_SET_WORDWRAPSETTINGS
+        MENUITEM "Nastavenie dĺžky &riadkov...",                 IDM_SET_LONGLINESETTINGS
+        MENUITEM "Automaticky &odsadiť text",                    IDM_SET_AUTOINDENTTEXT
+        MENUITEM "Automaticky &uzatvárať úvodzovky",             IDM_SET_AUTOCLOSEQUOTES
+        MENUITEM "Automaticky uzatvárať &zátvorky",              IDM_SET_AUTOCLOSEBRACKETS
+        MENUITEM "Automaticky uzatvárať &HTML/XML\tCtrl+Shift+H",    IDM_SET_AUTOCLOSETAGS
+        MENUITEM "Automaticky &dokončovať slová",                IDM_SET_AUTOCOMPLETEWORDS
+        MENUITEM "Auto-kompletizácia kľúčových slov &Lexer",     IDM_SET_AUTOCLEXKEYWORDS
+        MENUITEM "&Alternatívne oddeľovanie slov\tCtrl+Alt+A",   IDM_SET_ALTERNATE_WORD_SEPS
+        MENUITEM SEPARATOR
+        MENUITEM "&Iba jedna inštancia na súbor",                  IDM_SET_SINGLEFILEINSTANCE
+        MENUITEM "&Oznámenie o zmene súboru...\tAlt+F5",           IDM_SET_CHANGENOTIFY
+        ///MENUITEM "Auto-ukladanie / Nastavenie zálohovania...",  IDM_SET_AUTOSAVE_BACKUP
+        MENUITEM "&Stlmiť hlásenie pípnutím",                      IDM_SET_MUTE_MESSAGEBEEP
+        MENUITEM "Vyriešiť na &UNC-Paths",                    IDM_SET_RESOLVE_UNC_PATHS
+        POPUP "&Funkcia klávesy Esc"
+        BEGIN
+            MENUITEM "Ž&iadna",                             IDM_SET_NOESCFUNC
+            MENUITEM "&Minimalizovať LumPad",             IDM_SET_ESCMINIMIZE
+            MENUITEM "&Ukončiť LumPad",                   IDM_SET_ESCEXIT
+        END
+        MENUITEM "Uložiť pred spustením &nástrojov",        IDM_SET_SAVEBEFORERUNNINGTOOLS
+        MENUITEM "Výpočet drobných výrazov",                IDM_SET_EVALTINYEXPRONSEL
+        MENUITEM "Povoliť viacnásobný výber",               IDM_SET_MULTIPLE_SELECTION
+        POPUP "&Predvolený adresár"
+        BEGIN
+            MENUITEM "&Adresár aktuálneho súboru",  IDM_SET_DEFAULTDIR
+            MENUITEM "&Obnoviť predvolené",                 IDM_SET_DEFAULTDIR_RESET
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Pamätať si"
+        BEGIN
+            MENUITEM "&Naposledy použité súbory",             IDM_SET_NOSAVERECENT
+            MENUITEM "Zachovať pozíciu &kurzora",   IDM_SET_NOPRESERVECARET
+            MENUITEM "&Pamätať si voľbu hľadania",            IDM_SET_NOSAVEFINDREPL
+            MENUITEM "&Otvoriť naposledy použitý súbor", IDM_SET_AUTOLOAD_MRU_FILE
+        END
+        POPUP "&Okno"
+        BEGIN
+            POPUP "Zobraziť &titulok okna"
+            BEGIN
+                MENUITEM "Len &názov súboru",               IDM_SET_SHOWFILENAMEONLY
+                MENUITEM "&Adresár a názov súboru",         IDM_SET_SHOWFILENAMEFIRST
+                MENUITEM "&Celá cesta",                     IDM_SET_SHOWFULLPATH
+                MENUITEM "&Výňatok z textu\tCtrl+9",        IDM_SET_SHOWEXCERPT
+            END
+            MENUITEM "O&pätovné použitie okna\tCtrl+Shift+L",    IDM_SET_REUSEWINDOW
+            MENUITEM "&Vždy na vrchu\tAlt+T",                    IDM_SET_ALWAYSONTOP
+            MENUITEM "&Minimalizovať na panel úloh",             IDM_SET_MINTOTRAY
+            MENUITEM "R&ežim priehľadného okna\tAlt+G",          IDM_SET_TRANSPARENT
+        END
+        POPUP "Tech&nológia"
+        BEGIN
+            POPUP "&Vykresľovanie"
+            BEGIN
+                MENUITEM "DirectWrite (&Direct2D)",         IDM_SET_RENDER_TECH_D2D
+                MENUITEM "DirectWrite &Retain",             IDM_SET_RENDER_TECH_D2DRETAIN
+                MENUITEM "Direct&Write GDI DC",             IDM_SET_RENDER_TECH_D2DDC
+                MENUITEM "&GDI (bez ligatúr)",              IDM_SET_RENDER_TECH_GDI
+            END
+            POPUP "R&TL Rozloženie (GDI)"
+            BEGIN
+                MENUITEM "&Upraviť oblasť",                 IDM_SET_RTL_LAYOUT_EDIT
+                MENUITEM "Ďalšie &dialógy",                 IDM_SET_RTL_LAYOUT_DLG
+            END
+            POPUP "&Obojsmerne"
+            BEGIN
+                MENUITEM "Žiad&ne",                          IDM_SET_BIDIRECTIONAL_NONE
+                MENUITEM "&Zľava do prava",                   IDM_SET_BIDIRECTIONAL_L2R
+                MENUITEM "Zprava &do ľava",                   IDM_SET_BIDIRECTIONAL_R2L
+            END
+        END
+        POPUP "Ď&alšie nastavenia"
+        BEGIN
+            MENUITEM "Uložiť pri u&končení",                IDM_SET_SAVESETTINGS
+            MENUITEM "Uložiť &teraz\tF7",                   IDM_SET_SAVESETTINGSNOW
+            MENUITEM "&Otvoriť súbor nastavení\tCtrl+F7",   CMD_OPENINIFILE
+        END
+    END
+    POPUP "&Pomoc"
+    BEGIN
+        MENUITEM "&Nápoveda príkazového riadka...",         IDM_HELP_CMD
+        MENUITEM "O pro&grame...\tShift+F1",                IDM_HELP_ABOUT
+    END
+END
+
+
+IDR_MUI_POPUPMENU MENU
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "Otvoriť Hyperlink",                      CMD_OPEN_HYPERLINK
+        MENUITEM "Kopírovať adresu URL",           CMD_COPY_HYPERLINK
+        MENUITEM SEPARATOR
+        MENUITEM "Späť",                                   IDM_EDIT_UNDO
+        MENUITEM "Znova",                                  IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Vystrihnúť",                             IDM_EDIT_CUT
+        MENUITEM "Kopírovať",                              IDM_EDIT_COPY
+        MENUITEM "Vložiť",                                 IDM_EDIT_PASTE
+        MENUITEM "Zmazať",                                 IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Vybrať všetko",                          IDM_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        POPUP "Zmeniť veľkosť písma"
+        BEGIN
+            MENUITEM "Veľké písmená",              CMD_CTX_UPPERCASE
+            MENUITEM "Malé písmená",              CMD_CTX_LOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "Invertovať  veľkosť",            CMD_CTX_INVERTCASE
+            MENUITEM "Prvé veľké v slove",             CMD_CTX_TITLECASE
+            MENUITEM "Prvé veľké vo vete",          CMD_CTX_SENTENCECASE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Prepnúť aktuálny uzol",                  IDM_VIEW_TOGGLE_CURRENT_FOLD
+        MENUITEM SEPARATOR
+        MENUITEM "Webová šablóna 1",                       CMD_WEBACTION1
+        MENUITEM "Webová šablóna 2",                       CMD_WEBACTION2
+        MENUITEM "Otvoriť Prieskumníka",                   IDM_FILE_EXPLORE_DIR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Zobraziť titulkový panel",               IDM_VIEW_TITLEBAR
+        MENUITEM "Zobraziť textové menu",                  IDM_VIEW_MENUBAR
+        MENUITEM "Zobraziť panel nástrojov",               IDM_VIEW_TOOLBAR
+        MENUITEM "Zobraziť stavový riadok",                IDM_VIEW_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Načítať motív panela nástrojov...",      IDM_VIEW_LOADTHEMETB
+        MENUITEM "Prispôsobiť panel nástrojov...",         IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Väčší/menší panel nástrojov",            IDM_VIEW_TOGGLETB
+        MENUITEM "Mierka DPI panela nástrojov",            IDM_VIEW_DPISCALETB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Vymazať značku",                         IDM_EDIT_CLEAR_MARKER
+        MENUITEM "Vystrihnúť riadky so značkami",          IDM_EDIT_CUT_MARKED
+        MENUITEM "Kopírovať riadky so značkami",           IDM_EDIT_COPY_MARKED
+        MENUITEM "Zmazať riadky so značkami",              IDM_EDIT_DELETE_MARKED
+        MENUITEM SEPARATOR
+        MENUITEM "Skladanie",                              IDM_VIEW_FOLDING
+        MENUITEM "Číslovanie riadkov",                     IDM_VIEW_LINENUMBERS
+        MENUITEM "Okraj záložky",                          IDM_VIEW_BOOKMARK_MARGIN
+        MENUITEM "Okraj histórie zmien",                   IDM_VIEW_CHGHIST_TOGGLE_MARGIN
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Otvoriť LumPad",                       IDM_TRAY_RESTORE
+        MENUITEM "Ukončiť LumPad",                       IDM_TRAY_EXIT
+    END
+END
+
+#endif    // Slovak (Slovakia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
