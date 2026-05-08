@@ -3,6 +3,7 @@
 **Current release build:** `7.26.507.11` (see `Version.ps1` / `Versions\build.txt`).
 
 **LumPad** is a **Windows text editor** forked from [Notepad3](https://github.com/rizonesoft/Notepad3) (Rizonesoft, BSD-3-Clause). It keeps upstream Scintilla / Lexilla behaviour and settings style, while adding **multi-tab editing** and related workflow improvements. Maintained by **[LdotJdot](https://github.com/LdotJdot)**.
+<img width="1011" height="581" alt="image" src="https://github.com/user-attachments/assets/daa58e18-35f7-43db-85d3-c1a9dea77f02" />
 
 **简体中文说明** → [`Readme.zh-CN.md`](Readme.zh-CN.md)
 
