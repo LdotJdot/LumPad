@@ -173,6 +173,7 @@ static bool      s_bPasteBoardListening = false;
 static HHOOK     s_hhkDoubleCtrlLL = NULL;
 static HWND      s_hwndDoubleCtrlLLTarget = NULL;
 static DWORD     s_lastCtrlUpTickMs = 0;
+static bool      s_bCtrlUsedInCombo = false;  // true if other keys pressed while Ctrl held
 
 static int       s_WinCurrentWidth = 0;
 
@@ -228,6 +229,7 @@ static void         Lumpad_InstallDoubleCtrlHook(HWND hwndTarget);
 static void         Lumpad_RemoveDoubleCtrlHook(void);
 static bool         _LumPad_SendCopyDataOneFile(HWND hwndTarget, LPCWSTR wchPath);
 static bool         _IsDisposableEmptyUntitledBuffer(void);
+static bool         _IsUntitledDocCompletelyEmpty(void);
 
 // ----------------------------------------------------------------------------
 
@@ -713,6 +715,7 @@ static void _InitGlobals()
     Globals.CmdLnFlag_MultiFileArg = 0;
     Globals.CmdLnFlag_ShellUseSystemMRU = 0;
     Globals.CmdLnFlag_PrintFileAndLeave = 0;
+    Globals.CmdLnFlag_SingleTab = false;
 
     Globals.iWhiteSpaceSize = 2;
     Globals.iCaretOutLineFrameSize = 0;
@@ -1139,6 +1142,14 @@ int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
     // Adapt window class name
     if (s_flagPasteBoard) {
         StringCchCat(s_wchWndClass, COUNTOF(s_wchWndClass), L"B");
+    }
+    // Single-tab mode: modify window class name so the new process won't be detected by existing instances.
+    // Use the process ID to ensure each single-tab window has a unique class name, allowing multiple
+    // independent single-tab windows to coexist without one overwriting another.
+    if (Globals.CmdLnFlag_SingleTab) {
+        WCHAR wchPid[32] = { L'\0' };
+        StringCchPrintf(wchPid, COUNTOF(wchPid), L"S_%lu", GetCurrentProcessId());
+        StringCchCat(s_wchWndClass, COUNTOF(s_wchWndClass), wchPid);
     }
 
     // INI File Handling
@@ -3055,11 +3066,15 @@ static LRESULT CALLBACK Lumpad_LLKbdProc(int nCode, WPARAM wParam, LPARAM lParam
             UINT const vk = p->vkCode;
             bool const isCtrl = (vk == VK_LCONTROL) || (vk == VK_RCONTROL);
             if (!isCtrl) {
+                // Any other key pressed while Ctrl is held: this is a combo, reset double-tap
                 if ((vk != VK_PACKET) && (vk != VK_SHIFT) && (vk != VK_LSHIFT) && (vk != VK_RSHIFT) &&
                     (vk != VK_MENU) && (vk != VK_LMENU) && (vk != VK_RMENU) && (vk != VK_LWIN) && (vk != VK_RWIN)) {
                     s_lastCtrlUpTickMs = 0;
+                    s_bCtrlUsedInCombo = true;
                 }
             } else {
+                // Ctrl down: reset combo flag so we can detect "pure Ctrl" presses
+                s_bCtrlUsedInCombo = false;
                 DWORD const now = GetTickCount();
                 if (s_lastCtrlUpTickMs && ((now - s_lastCtrlUpTickMs) < 520U)) {
                     (void)PostMessageW(s_hwndDoubleCtrlLLTarget, WM_LUMPAD_DOUBLE_CTRL_FOCUS, 0, 0);
@@ -3068,7 +3083,11 @@ static LRESULT CALLBACK Lumpad_LLKbdProc(int nCode, WPARAM wParam, LPARAM lParam
             }
         } else if (wParam == WM_KEYUP || wParam == WM_SYSKEYUP) {
             if ((p->vkCode == VK_LCONTROL) || (p->vkCode == VK_RCONTROL)) {
-                s_lastCtrlUpTickMs = GetTickCount();
+                // Only count as a valid tap if Ctrl was pressed alone (no combo keys between down/up)
+                if (!s_bCtrlUsedInCombo) {
+                    s_lastCtrlUpTickMs = GetTickCount();
+                }
+                s_bCtrlUsedInCombo = false;
             }
         }
     }
@@ -3082,6 +3101,7 @@ static void Lumpad_InstallDoubleCtrlHook(HWND hwndTarget)
     }
     s_hwndDoubleCtrlLLTarget = hwndTarget;
     s_lastCtrlUpTickMs = 0;
+    s_bCtrlUsedInCombo = false;
     s_hhkDoubleCtrlLL = SetWindowsHookExW(WH_KEYBOARD_LL, Lumpad_LLKbdProc, GetModuleHandleW(NULL), 0);
 }
 
@@ -3089,6 +3109,7 @@ static void Lumpad_RemoveDoubleCtrlHook(void)
 {
     s_hwndDoubleCtrlLLTarget = NULL;
     s_lastCtrlUpTickMs = 0;
+    s_bCtrlUsedInCombo = false;
     if (s_hhkDoubleCtrlLL) {
         UnhookWindowsHookEx(s_hhkDoubleCtrlLL);
         s_hhkDoubleCtrlLL = NULL;
@@ -3198,7 +3219,7 @@ LRESULT MsgCreate(HWND hwnd, WPARAM wParam,LPARAM lParam)
 
     NP3_ApplyZoom(g_IniWinInfo.zoom ? g_IniWinInfo.zoom : NP3_DEFAULT_ZOOM);
 
-    if (!TabDoc_InitOnMsgCreate(hwnd)) {
+    if (!TabDoc_InitOnMsgCreate(hwnd, Globals.CmdLnFlag_SingleTab)) {
         return -1LL;
     }
 
@@ -3918,7 +3939,7 @@ static LRESULT _OnDropOneFile(HWND hwnd, HPATHL hFilePath, WININFO* wi)
         //~ ignore Flags.bReuseWindow
         bool const sameFile = (Path_StrgComparePath(hFilePath, Paths.CurrentFile, Paths.ModuleDirectory, true) == 0);
         if (IsKeyDown(VK_CONTROL) || wi) {
-            DialogNewWindow(hwnd, sameFile, hFilePath, wi);
+            DialogNewWindow(hwnd, sameFile, hFilePath, wi, false);
         } else {
             FileLoad(hFilePath, fLoadFlags, 0, 0);
         }
@@ -5104,9 +5125,11 @@ static bool _HandleFileCommands(HWND hwnd, UINT umsg, WPARAM wParam, LPARAM lPar
         FileLoadFlags fLoadFlags = FLF_New;
         fLoadFlags |= Settings.SkipUnicodeDetection ? FLF_SkipUnicodeDetect : 0;
         fLoadFlags |= Settings.SkipANSICodePageDetection ? FLF_SkipANSICPDetection : 0;
-        bool const needNewTab = !_IsDisposableEmptyUntitledBuffer() &&
-            (Path_IsNotEmpty(Paths.CurrentFile) || SciCall_GetModify() || (SciCall_GetTextLength() > 0));
-        if (needNewTab) {
+        // Always create a new tab for completely empty documents (zero characters).
+        // This allows creating multiple independent blank documents.
+        // Only reuse the current tab if the document has content or is a real file.
+        bool const currentIsEmpty = Path_IsEmpty(Paths.CurrentFile) && _IsUntitledDocCompletelyEmpty();
+        if (!currentIsEmpty) {
             (void)TabDoc_NewTabForNextDocument(hwnd);
         }
         FileLoad(hfile_pth, fLoadFlags, 0, 0);
@@ -5213,7 +5236,7 @@ static bool _HandleFileCommands(HWND hwnd, UINT umsg, WPARAM wParam, LPARAM lPar
     case IDM_FILE_NEWWINDOW2: {
         SaveAllSettings(false);
         HPATHL hpth = (iLoWParam == IDM_FILE_NEWWINDOW2) ? Paths.CurrentFile : NULL;
-        DialogNewWindow(hwnd, (hpth != NULL), hpth, NULL);
+        DialogNewWindow(hwnd, (hpth != NULL), hpth, NULL, false);
     }
     break;
 
@@ -10356,6 +10379,13 @@ static void ParseCmdLnOption(LPWSTR lp1, LPWSTR lp2, const size_t len)
             }
             break;
 
+        case L'W':
+            // Single-tab mode: launch with tab bar hidden, single document only
+            if (*CharUpper(lp1 + 1) == L'1') {
+                Globals.CmdLnFlag_SingleTab = true;
+            }
+            break;
+
         default:
             break;
         }
@@ -11507,10 +11537,17 @@ static bool _IsUntitledDocEffectivelyEmpty(void)
     return ((iPos < 0) || (iPos >= ft.chrg.cpMax));
 }
 
+// Untitled buffer has zero characters (strict check for "completely empty" documents).
+// This is used to determine whether we can create multiple independent blank documents.
+static bool _IsUntitledDocCompletelyEmpty(void)
+{
+    return (SciCall_GetTextLength() == 0);
+}
+
 // Untitled buffer FileLoad may replace without a new tab (same as skip-save / merge-open heuristic).
 static bool _IsDisposableEmptyUntitledBuffer(void)
 {
-    return Path_IsEmpty(Paths.CurrentFile) && _IsUntitledDocEffectivelyEmpty();
+    return Path_IsEmpty(Paths.CurrentFile) && _IsUntitledDocCompletelyEmpty();
 }
 
 bool NP3_IsDisposableEmptyUntitledBuffer(void)
@@ -12284,7 +12321,7 @@ bool FileSave(FileSaveFlags fSaveFlags)
             LONG const answer = InfoBoxLng(typ, Constants.SuppressKey.ReloadExSavedCfg, IDS_MUI_RELOADSETTINGS, tch);
             if (IsYesOkay(answer)) {
                 ///~SaveAllSettings(true); ~ already saved (CurrentFile)
-                DialogNewWindow(Globals.hwndMain, true, Paths.CurrentFile, NULL);
+                DialogNewWindow(Globals.hwndMain, true, Paths.CurrentFile, NULL, false);
                 CloseApplication();
             }
         }
@@ -12463,9 +12500,36 @@ static bool LumPad_TryStartupForwardToRunningInstance(void)
         return false;
     }
     if (!IsWindowEnabled(hwndPrev)) {
-        if (IsYesOkay(InfoBoxLng(MB_YESNO | MB_ICONWARNING, NULL, IDS_MUI_ERR_PREVWINDISABLED))) {
-            return false;
+        // Window is busy with a modal dialog (e.g., CRLF consistency check).
+        // Forward the files via WM_COPYDATA anyway — the window's MsgCopyData handler
+        // will enqueue them in the deferred queue and process them when the dialog
+        // is dismissed. This ensures batch opens are not lost due to blocking dialogs.
+        if (Path_IsNotEmpty(s_pthArgFilePath)) {
+            (void)_LumPad_SendCopyDataOneFile(hwndPrev, Path_Get(s_pthArgFilePath));
         }
+        for (int fi = 0; fi < s_cFileList; ++fi) {
+            if (!s_lpFileList[fi]) {
+                continue;
+            }
+            if (Path_IsNotEmpty(s_pthArgFilePath)) {
+                HPATHL hCmp = Path_Allocate(s_lpFileList[fi]);
+                if (hCmp) {
+                    Path_NormalizeEx(hCmp, Paths.WorkingDirectory, true, Flags.bSearchPathIfRelative);
+                    if (Path_StrgComparePath(hCmp, s_pthArgFilePath, Paths.WorkingDirectory, true) == 0) {
+                        Path_Release(hCmp);
+                        continue;
+                    }
+                    Path_Release(hCmp);
+                }
+            }
+            (void)_LumPad_SendCopyDataOneFile(hwndPrev, s_lpFileList[fi]);
+        }
+        // Activate the blocked window so the user can see the progress
+        if (IsIconic(hwndPrev)) {
+            ShowWindowAsync(hwndPrev, SW_RESTORE);
+        }
+        SetForegroundWindow(hwndPrev);
+        // Clean up and report "handled" — the deferred queue processes the files
         for (int j = 0; j < s_cFileList; ++j) {
             if (s_lpFileList[j]) {
                 LocalFree(s_lpFileList[j]);

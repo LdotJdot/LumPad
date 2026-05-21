@@ -47,6 +47,7 @@ static RECT       s_tabRects[LUMPAD_MAX_TABS];
 static HWND       s_hwndTabTips = NULL;
 static int        s_tooltipHoverIdx = -1;
 static HFONT      s_hfPlusBtn = NULL;
+static bool       s_showTabStrip = true;
 
 #define SUBCID_TABSTRIP 1u
 #define SUBCID_TABROWFILL 2u
@@ -614,11 +615,13 @@ static void _TabDoc_SaveActiveEditorState(void)
     }
     LUMPAD_TAB* const t = &s_tabs[s_activeTab];
     sptr_t const cur = SciCall_GetDocPointer();
-    SciCall_AddRefDocument(cur);
-    if (t->doc && t->doc != cur) {
-        _TabDoc_ReleaseDocIfOwned(t->doc);
+    if (t->doc != cur) {
+        SciCall_AddRefDocument(cur);
+        if (t->doc) {
+            _TabDoc_ReleaseDocIfOwned(t->doc);
+        }
+        t->doc = cur;
     }
-    t->doc = cur;
     if (!t->path) {
         t->path = Path_Allocate(NULL);
     }
@@ -638,22 +641,15 @@ static void _TabDoc_ApplyTabToEditor(int idx)
     LUMPAD_TAB* const t = &s_tabs[idx];
     sptr_t const cur = SciCall_GetDocPointer();
     if (!t->doc) {
-        // Placeholder tab: never call SCI_SETDOCPOINTER(0) here — in this codebase that creates a fresh
-        // empty document and releases the previous document from the view, which would destroy the old tab.
         int const docOptions = SC_DOCUMENTOPTION_DEFAULT;
         sptr_t const nd = SciCall_CreateDocument(0, docOptions);
         if (!nd) {
             return;
         }
-        SciCall_AddRefDocument(cur);
         SciCall_SetDocPointer(nd);
-        SciCall_ReleaseDocument(cur);
         t->doc = nd;
-        SciCall_AddRefDocument(t->doc);
     } else if (cur != t->doc) {
-        SciCall_AddRefDocument(cur);
         SciCall_SetDocPointer(t->doc);
-        SciCall_ReleaseDocument(cur);
     }
     Path_Reset(Paths.CurrentFile, Path_Get(t->path));
     Globals.fvCurFile = t->fv;
@@ -708,7 +704,7 @@ void TabDoc_SetStripRedraw(BOOL fRedraw)
 }
 
 
-bool TabDoc_InitOnMsgCreate(HWND hwndMain)
+bool TabDoc_InitOnMsgCreate(HWND hwndMain, bool bSingleTabMode)
 {
     for (int i = 0; i < LUMPAD_MAX_TABS; ++i) {
         ZeroMemory(&s_tabs[i], sizeof(s_tabs[i]));
@@ -716,6 +712,7 @@ bool TabDoc_InitOnMsgCreate(HWND hwndMain)
     }
     s_tabCount = 1;
     s_activeTab = 0;
+    s_showTabStrip = !bSingleTabMode;
     s_tabs[0].doc = SciCall_GetDocPointer();
     SciCall_AddRefDocument(s_tabs[0].doc);
     s_tabs[0].path = Path_Allocate(NULL);
@@ -726,22 +723,30 @@ bool TabDoc_InitOnMsgCreate(HWND hwndMain)
     s_tabs[0].dirty = SciCall_GetModify();
     _TabDoc_ReadPathFileSnap(s_tabs[0].path, &s_tabs[0].fileSnap, &s_tabs[0].fileSnapValid);
 
-    s_hwndTab = CreateWindowExW(0, WC_STATIC, L"",
-        WS_CHILD | WS_CLIPSIBLINGS | WS_VISIBLE | SS_NOTIFY | SS_NOPREFIX, 0, 0, 200, 24, hwndMain,
+    // In single-tab mode (from Move to New Window), hide the tab bar
+    DWORD const tabStyle = bSingleTabMode ? (WS_CHILD | WS_CLIPSIBLINGS | SS_NOTIFY | SS_NOPREFIX) 
+                                          : (WS_CHILD | WS_CLIPSIBLINGS | WS_VISIBLE | SS_NOTIFY | SS_NOPREFIX);
+    s_hwndTab = CreateWindowExW(0, WC_STATIC, L"", tabStyle, 0, 0, 200, 24, hwndMain,
         (HMENU)(UINT_PTR)IDC_TABSTRIP, Globals.hInstance, NULL);
     if (!s_hwndTab) {
         return false;
     }
     TabDoc_ApplyTheme();
 
-    s_hwndBtnNew = CreateWindowExW(0, WC_STATIC, L"+",
-        WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | SS_CENTER | SS_CENTERIMAGE | SS_NOTIFY | SS_NOPREFIX, 0, 0, 10, 10, hwndMain,
+    // In single-tab mode, hide the "+" new tab button as well
+    DWORD const btnStyle = bSingleTabMode ? (WS_CHILD | WS_CLIPSIBLINGS | SS_CENTER | SS_CENTERIMAGE | SS_NOTIFY | SS_NOPREFIX)
+                                          : (WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | SS_CENTER | SS_CENTERIMAGE | SS_NOTIFY | SS_NOPREFIX);
+    s_hwndBtnNew = CreateWindowExW(0, WC_STATIC, L"+", btnStyle, 0, 0, 10, 10, hwndMain,
         (HMENU)(UINT_PTR)IDC_TABBTN_NEW, Globals.hInstance, NULL);
     if (s_hwndBtnNew) {
         SetWindowSubclass(s_hwndBtnNew, _PlusBtnSubclassProc, SUBCID_PLUSBTN, (DWORD_PTR)hwndMain);
     }
+
+    // In single-tab mode, hide the tab row fill background as well
+    DWORD const fillStyle = bSingleTabMode ? (WS_CHILD | WS_CLIPSIBLINGS)
+                                            : (WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS);
     s_hwndTabRowFill = CreateWindowExW(
-        0, WC_STATIC, L"", WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 0, 0, 0, 0, hwndMain, (HMENU)(UINT_PTR)IDC_TABROW_FILL, Globals.hInstance, NULL);
+        0, WC_STATIC, L"", fillStyle, 0, 0, 0, 0, hwndMain, (HMENU)(UINT_PTR)IDC_TABROW_FILL, Globals.hInstance, NULL);
     if (s_hwndTabRowFill) {
         SetWindowSubclass(s_hwndTabRowFill, _TabRowFillSubclassProc, SUBCID_TABROWFILL, 0);
         SetWindowPos(s_hwndTabRowFill, HWND_BOTTOM, 0, 0, 0, 0, SWP_NOACTIVATE | SWP_NOMOVE | SWP_NOSIZE);
@@ -749,7 +754,9 @@ bool TabDoc_InitOnMsgCreate(HWND hwndMain)
     _StripLayoutItemRects();
     _StripEnsureTooltip(hwndMain);
     SetWindowSubclass(s_hwndTab, _StripSubclassProc, SUBCID_TABSTRIP, (DWORD_PTR)hwndMain);
-    InvalidateRect(s_hwndTab, NULL, TRUE);
+    if (!bSingleTabMode) {
+        InvalidateRect(s_hwndTab, NULL, TRUE);
+    }
     return true;
 }
 
@@ -788,11 +795,12 @@ void TabDoc_Uninit(void)
     s_hwndTab = NULL;
     s_hwndBtnNew = NULL;
     s_hwndTabRowFill = NULL;
+    s_showTabStrip = true;
 }
 
 int TabDoc_GetStripHeight(void)
 {
-    if (!s_hwndTab || !IsWindow(s_hwndTab)) {
+    if (!s_showTabStrip || !s_hwndTab || !IsWindow(s_hwndTab)) {
         return 0;
     }
     return ScaleIntToDPI(s_hwndTab, 28);
@@ -916,8 +924,8 @@ bool TabDoc_NewTabForNextDocument(HWND hwndMain)
 
     ++s_tabCount;
     s_activeTab = newIdx;
-    // Must attach the editor to this tab's document *before* FileLoad/EditSetNewText. Otherwise FLF_New
-    // typically reuses the same Scintilla document and SciCall_ClearAll() wipes the previous tab's buffer.
+    // Attach a separate Scintilla document before FileLoad/EditSetNewText, otherwise FLF_New would clear
+    // the previous tab's buffer.
     _TabDoc_ApplyTabToEditor(s_activeTab);
     // Fresh document can start with SCI_GETMODIFY true; clear so FileLoad / close-tab paths
     // do not treat the transient shell as user-edited "Untitled".
@@ -1140,11 +1148,30 @@ bool TabDoc_SplitTabToNewWindow(HWND hwndMain, int tabIdx)
     if (tabIdx < 0 || tabIdx >= s_tabCount) {
         return false;
     }
-    if (!TabDoc_SwitchToTab(hwndMain, tabIdx)) {
+    // Switch to the tab (may be the same tab; that's fine)
+    (void)TabDoc_SwitchToTab(hwndMain, tabIdx);
+
+    // Only allow split for files with a real path (saved documents).
+    // Unsaved untitled documents cannot be transferred to a new process via file path.
+    if (Path_IsEmpty(Paths.CurrentFile)) {
         return false;
     }
+
     SaveAllSettings(false);
-    DialogNewWindow(hwndMain, true, Paths.CurrentFile, NULL);
+    DialogNewWindow(hwndMain, false, Paths.CurrentFile, NULL, true);
+
+    // After the new window is launched, replace the current tab's content
+    // with a fresh empty document. We do this inline (not via PostMessage) because
+    // the tab switch above already syncs the editor state, and loading an empty
+    // doc is lightweight compared to full tab close/reshuffle.
+    HPATHL hEmpty = Path_Allocate(L"");
+    if (hEmpty) {
+        FileLoadFlags flg = FLF_New | FLF_DontSave;
+        flg |= Settings.SkipUnicodeDetection ? FLF_SkipUnicodeDetect : 0;
+        flg |= Settings.SkipANSICodePageDetection ? FLF_SkipANSICPDetection : 0;
+        (void)FileLoad(hEmpty, flg, 0, 0);
+        Path_Release(hEmpty);
+    }
     return true;
 }
 
@@ -1168,7 +1195,12 @@ void TabDoc_ShowTabContextMenu(HWND hwndMain, int screenX, int screenY, int tabI
     GetLngString(IDS_MUI_TAB_CTX_SPLIT, wch3, COUNTOF(wch3));
     (void)AppendMenuW(hMenu, MF_STRING | ((s_tabCount > 1) ? MF_ENABLED : MF_GRAYED), (UINT_PTR)IDM_TAB_CLOSE_OTHERS, wch1);
     (void)AppendMenuW(hMenu, MF_STRING, (UINT_PTR)IDM_TAB_CLOSE_ALL, wch2);
-    (void)AppendMenuW(hMenu, MF_STRING, (UINT_PTR)IDM_TAB_SPLIT_NEW_WINDOW, wch3);
+    // Disable "Move to New Window" if:
+    // - This is the only tab (s_tabCount <= 1), OR
+    // - The document is unsaved (no file path on disk)
+    // Untitled documents cannot be transferred to a new process via file path.
+    bool const bCanSplitToNewWindow = (s_tabCount > 1) && Path_IsNotEmpty(s_tabs[tabIndex].path);
+    (void)AppendMenuW(hMenu, MF_STRING | (bCanSplitToNewWindow ? MF_ENABLED : MF_GRAYED), (UINT_PTR)IDM_TAB_SPLIT_NEW_WINDOW, wch3);
 
     int px = screenX;
     int py = screenY;

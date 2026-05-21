@@ -566,6 +566,7 @@ typedef struct GLOBALS_T {
     int       CmdLnFlag_MultiFileArg;
     int       CmdLnFlag_ShellUseSystemMRU;
     int       CmdLnFlag_PrintFileAndLeave;
+    bool      CmdLnFlag_SingleTab;
 
     int       iWhiteSpaceSize;
     int       iCaretOutLineFrameSize;
