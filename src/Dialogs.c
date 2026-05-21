@@ -5117,7 +5117,7 @@ void RestorePrevScreenPos(HWND hwnd)
 //
 //  DialogNewWindow()
 //
-void DialogNewWindow(HWND hwnd, bool bSaveBeforeOpen, const HPATHL hFilePath, WININFO* wi)
+void DialogNewWindow(HWND hwnd, bool bSaveBeforeOpen, const HPATHL hFilePath, WININFO* wi, bool bSingleTabMode)
 {
     if (bSaveBeforeOpen && !FileSave(FSF_Ask)) {
         return;
@@ -5142,10 +5142,19 @@ void DialogNewWindow(HWND hwnd, bool bSaveBeforeOpen, const HPATHL hFilePath, WI
     }
     // Opening a concrete file in a new process must use "-n" (not "-ns"): "-ns" keeps
     // single-file-instance and routes the same path to an existing window (no new window).
-    if (Path_IsNotEmpty(hFilePath)) {
-        StrgCat(hparam_str, L" -n");
-    } else {
-        StrgCat(hparam_str, Flags.bSingleFileInstance ? L" -ns" : L" -n");
+    // For single-tab mode (Move to New Window), the new process must be fully independent,
+    // so we skip these flags entirely and rely on the unique window class name (LumPadS_<pid>).
+    if (!bSingleTabMode) {
+        if (Path_IsNotEmpty(hFilePath)) {
+            StrgCat(hparam_str, L" -n");
+        } else {
+            StrgCat(hparam_str, Flags.bSingleFileInstance ? L" -ns" : L" -n");
+        }
+    }
+
+    // Single-tab mode: launch with tab bar hidden, single document only (for Move to New Window)
+    if (bSingleTabMode) {
+        StrgCat(hparam_str, L" -w1");
     }
 
     WININFO const _wi = (Flags.bStickyWindowPosition ? g_IniWinInfo : 

@@ -4,7 +4,7 @@
 
 int  TabDoc_GetTabCount(void);
 LPCWSTR TabDoc_GetTabPath(int idx);
-bool TabDoc_InitOnMsgCreate(HWND hwndMain);
+bool TabDoc_InitOnMsgCreate(HWND hwndMain, bool bSingleTabMode);
 void TabDoc_SetStripRedraw(BOOL fRedraw);
 void TabDoc_Uninit(void);
 int  TabDoc_GetStripHeight(void);
